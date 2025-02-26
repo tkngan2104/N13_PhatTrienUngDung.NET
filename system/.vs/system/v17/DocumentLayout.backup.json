@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE6E2C31-39EB-4E69-B668-CEDA120967C9}|BUS\\BUS.csproj|e:\\pj25\\n19_phattrienungdung.net\\system\\bus\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE6E2C31-39EB-4E69-B668-CEDA120967C9}|BUS\\BUS.csproj|solutionrelative:bus\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73240316-EAD0-41B6-B859-C9F266368938}|ET\\ET.csproj|e:\\pj25\\n19_phattrienungdung.net\\system\\et\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73240316-EAD0-41B6-B859-C9F266368938}|ET\\ET.csproj|solutionrelative:et\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EFA5A55-B4CC-4C09-8638-2E782659B688}|DAL\\DAL.csproj|e:\\pj25\\n19_phattrienungdung.net\\system\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EFA5A55-B4CC-4C09-8638-2E782659B688}|DAL\\DAL.csproj|solutionrelative:dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4355DF8-09E2-4068-ADFD-5D54C4DC6904}|GUI\\GUI.csproj|e:\\pj25\\n19_phattrienungdung.net\\system\\gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C4355DF8-09E2-4068-ADFD-5D54C4DC6904}|GUI\\GUI.csproj|solutionrelative:gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C4355DF8-09E2-4068-ADFD-5D54C4DC6904}|GUI\\GUI.csproj|e:\\pj25\\n19_phattrienungdung.net\\system\\gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4355DF8-09E2-4068-ADFD-5D54C4DC6904}|GUI\\GUI.csproj|solutionrelative:gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,50 +19,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\BUS\\Class1.cs",
-              "RelativeDocumentMoniker": "BUS\\Class1.cs",
-              "ToolTip": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\BUS\\Class1.cs",
-              "RelativeToolTip": "BUS\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T18:11:19.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\ET\\Class1.cs",
-              "RelativeDocumentMoniker": "ET\\Class1.cs",
-              "ToolTip": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\ET\\Class1.cs",
-              "RelativeToolTip": "ET\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T18:11:06.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\DAL\\Class1.cs",
-              "RelativeDocumentMoniker": "DAL\\Class1.cs",
-              "ToolTip": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\DAL\\Class1.cs",
-              "RelativeToolTip": "DAL\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T18:10:47.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\GUI\\Form1.cs",
-              "RelativeDocumentMoniker": "GUI\\Form1.cs",
-              "ToolTip": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\GUI\\Form1.cs [Design]",
-              "RelativeToolTip": "GUI\\Form1.cs [Design]",
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\GUI\\Menu.cs",
+              "RelativeDocumentMoniker": "GUI\\Menu.cs",
+              "ToolTip": "E:\\PJ25\\N19_PhatTrienUngDung.NET\\system\\GUI\\Menu.cs [Design]",
+              "RelativeToolTip": "GUI\\Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T18:02:08.112Z",
               "EditorCaption": " [Design]"

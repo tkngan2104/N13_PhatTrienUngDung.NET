@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BUS
+namespace DAL
 {
-    public class Class1
+    public class DAL_Phong
     {
     }
 }
