@@ -1,0 +1,9 @@
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe.config
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.pdb
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
+E:\PJ25\N19_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb
