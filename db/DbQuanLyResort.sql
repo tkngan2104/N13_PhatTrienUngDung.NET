@@ -56,7 +56,8 @@ create table Phong(
 	maPhong varchar(5) not null primary key,
 	maLP varchar(5) not null references LoaiPhong(maLP),
 	maLG varchar(5) not null references LoaiGiuong(maLG),
-	giaP float not null,
+	giaPTN float not null,
+	giaPTG float not null,
 	trangThai nvarchar(45) not null)
 
 create table CoSoVatChat(
