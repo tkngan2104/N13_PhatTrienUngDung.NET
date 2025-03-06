@@ -1,6 +1,0 @@
-E:\PJ25\N19_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
-E:\PJ25\N19_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
-E:\PJ25\N19_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-E:\PJ25\N19_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-E:\PJ25\N19_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
-E:\PJ25\N19_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb

@@ -1,6 +1,0 @@
-E:\PJ25\N19_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
-E:\PJ25\N19_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
-E:\PJ25\N19_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-E:\PJ25\N19_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-E:\PJ25\N19_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
-E:\PJ25\N19_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
