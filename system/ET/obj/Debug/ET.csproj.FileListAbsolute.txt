@@ -1,0 +1,6 @@
+T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.pdb
+T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.CoreCompileInputs.cache
+T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.pdb

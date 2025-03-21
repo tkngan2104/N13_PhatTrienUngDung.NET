@@ -1,0 +1,14 @@
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe.config
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb

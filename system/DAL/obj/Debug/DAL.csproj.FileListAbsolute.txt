@@ -1,0 +1,9 @@
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
