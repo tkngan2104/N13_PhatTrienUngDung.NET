@@ -6,6 +6,8 @@ go
 set dateformat dmy
 go
 
+---drop database DbQuanLyResort
+
 ---tao bang du lieu.
 
 -----QUẢN LÝ KHÁCH HÀNG.
@@ -134,14 +136,14 @@ create table ChiTietDatDichVu (
 create table SuDungDichVu(
 	maSDDV varchar(8) not null primary key,
 	maDV varchar(5) not null references DichVu(maDV),
-	maCTDP varchar(12) not null references ChiTiecDatPhong(maCTDP),
+	maCTDP varchar(12) not null references ChiTietDatPhong(maCTDP),
 	soLuong int not null,
 	tongTien float not null)
 
 CREATE TABLE HoaDonDatPhong (
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
     maHDDP VARCHAR(10) NOT NULL PRIMARY KEY, 
-    maCTDP varchar(12) not null references ChiTiecDatPhong(maCTDP),
+    maCTDP varchar(12) not null references ChiTietDatPhong(maCTDP),
     maSDDV VARCHAR(8) NOT NULL REFERENCES SuDungDichVu(MaSDDV),
     ngayLap DATE NOT NULL,  
     tongTien float NOT NULL)
