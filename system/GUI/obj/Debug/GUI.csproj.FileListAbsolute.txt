@@ -25,3 +25,11 @@ T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DichVu.resources
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.MonAn.resources
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatPhong.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatTiec.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatDichVu.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources

@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class ChucVu
+    partial class LoaiMonAn
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTenCV = new System.Windows.Forms.TextBox();
-            this.lblTenCV = new System.Windows.Forms.Label();
-            this.txtMaCV = new System.Windows.Forms.TextBox();
-            this.lblMaCV = new System.Windows.Forms.Label();
-            this.lblQLChucVu = new System.Windows.Forms.Label();
-            this.dgvDSCV = new System.Windows.Forms.DataGridView();
+            this.txtTenLMA = new System.Windows.Forms.TextBox();
+            this.lblTenLMA = new System.Windows.Forms.Label();
+            this.txtMaLMA = new System.Windows.Forms.TextBox();
+            this.lblMaLMA = new System.Windows.Forms.Label();
+            this.lblQLoaiMonAn = new System.Windows.Forms.Label();
+            this.dgvDSLMA = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pnlTieuDe = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSCV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSLMA)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.pnlTieuDe.SuspendLayout();
@@ -52,74 +52,74 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtTenCV);
-            this.groupBox1.Controls.Add(this.lblTenCV);
-            this.groupBox1.Controls.Add(this.txtMaCV);
-            this.groupBox1.Controls.Add(this.lblMaCV);
+            this.groupBox1.Controls.Add(this.txtTenLMA);
+            this.groupBox1.Controls.Add(this.lblTenLMA);
+            this.groupBox1.Controls.Add(this.txtMaLMA);
+            this.groupBox1.Controls.Add(this.lblMaLMA);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(30, 126);
+            this.groupBox1.Location = new System.Drawing.Point(29, 127);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(422, 338);
-            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin chức vụ";
+            this.groupBox1.Text = "Thông tin loại món ăn";
             // 
-            // txtTenCV
+            // txtTenLMA
             // 
-            this.txtTenCV.Location = new System.Drawing.Point(62, 227);
-            this.txtTenCV.Name = "txtTenCV";
-            this.txtTenCV.Size = new System.Drawing.Size(303, 35);
-            this.txtTenCV.TabIndex = 3;
+            this.txtTenLMA.Location = new System.Drawing.Point(62, 227);
+            this.txtTenLMA.Name = "txtTenLMA";
+            this.txtTenLMA.Size = new System.Drawing.Size(303, 35);
+            this.txtTenLMA.TabIndex = 3;
             // 
-            // lblTenCV
+            // lblTenLMA
             // 
-            this.lblTenCV.AutoSize = true;
-            this.lblTenCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenCV.Location = new System.Drawing.Point(57, 198);
-            this.lblTenCV.Name = "lblTenCV";
-            this.lblTenCV.Size = new System.Drawing.Size(129, 26);
-            this.lblTenCV.TabIndex = 2;
-            this.lblTenCV.Text = "Tên chức vụ";
+            this.lblTenLMA.AutoSize = true;
+            this.lblTenLMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenLMA.Location = new System.Drawing.Point(57, 198);
+            this.lblTenLMA.Name = "lblTenLMA";
+            this.lblTenLMA.Size = new System.Drawing.Size(167, 26);
+            this.lblTenLMA.TabIndex = 2;
+            this.lblTenLMA.Text = "Tên loại món ăn";
             // 
-            // txtMaCV
+            // txtMaLMA
             // 
-            this.txtMaCV.Enabled = false;
-            this.txtMaCV.Location = new System.Drawing.Point(62, 115);
-            this.txtMaCV.Name = "txtMaCV";
-            this.txtMaCV.Size = new System.Drawing.Size(303, 35);
-            this.txtMaCV.TabIndex = 1;
+            this.txtMaLMA.Enabled = false;
+            this.txtMaLMA.Location = new System.Drawing.Point(62, 115);
+            this.txtMaLMA.Name = "txtMaLMA";
+            this.txtMaLMA.Size = new System.Drawing.Size(303, 35);
+            this.txtMaLMA.TabIndex = 1;
             // 
-            // lblMaCV
+            // lblMaLMA
             // 
-            this.lblMaCV.AutoSize = true;
-            this.lblMaCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaCV.Location = new System.Drawing.Point(57, 86);
-            this.lblMaCV.Name = "lblMaCV";
-            this.lblMaCV.Size = new System.Drawing.Size(123, 26);
-            this.lblMaCV.TabIndex = 0;
-            this.lblMaCV.Text = "Mã chức vụ";
+            this.lblMaLMA.AutoSize = true;
+            this.lblMaLMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaLMA.Location = new System.Drawing.Point(57, 86);
+            this.lblMaLMA.Name = "lblMaLMA";
+            this.lblMaLMA.Size = new System.Drawing.Size(161, 26);
+            this.lblMaLMA.TabIndex = 0;
+            this.lblMaLMA.Text = "Mã loại món ăn";
             // 
-            // lblQLChucVu
+            // lblQLoaiMonAn
             // 
-            this.lblQLChucVu.AutoSize = true;
-            this.lblQLChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQLChucVu.Location = new System.Drawing.Point(484, 21);
-            this.lblQLChucVu.Name = "lblQLChucVu";
-            this.lblQLChucVu.Size = new System.Drawing.Size(497, 58);
-            this.lblQLChucVu.TabIndex = 1;
-            this.lblQLChucVu.Text = "QUẢN LÝ CHỨC VỤ";
+            this.lblQLoaiMonAn.AutoSize = true;
+            this.lblQLoaiMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQLoaiMonAn.Location = new System.Drawing.Point(442, 19);
+            this.lblQLoaiMonAn.Name = "lblQLoaiMonAn";
+            this.lblQLoaiMonAn.Size = new System.Drawing.Size(601, 58);
+            this.lblQLoaiMonAn.TabIndex = 1;
+            this.lblQLoaiMonAn.Text = "QUẢN LÝ LOẠI MÓN ĂN";
             // 
-            // dgvDSCV
+            // dgvDSLMA
             // 
-            this.dgvDSCV.BackgroundColor = System.Drawing.Color.White;
-            this.dgvDSCV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSCV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSCV.Location = new System.Drawing.Point(3, 31);
-            this.dgvDSCV.Name = "dgvDSCV";
-            this.dgvDSCV.RowHeadersWidth = 62;
-            this.dgvDSCV.RowTemplate.Height = 28;
-            this.dgvDSCV.Size = new System.Drawing.Size(952, 304);
-            this.dgvDSCV.TabIndex = 0;
+            this.dgvDSLMA.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDSLMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSLMA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDSLMA.Location = new System.Drawing.Point(3, 31);
+            this.dgvDSLMA.Name = "dgvDSLMA";
+            this.dgvDSLMA.RowHeadersWidth = 62;
+            this.dgvDSLMA.RowTemplate.Height = 28;
+            this.dgvDSLMA.Size = new System.Drawing.Size(952, 304);
+            this.dgvDSLMA.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -129,16 +129,16 @@
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(30, 496);
+            this.groupBox2.Location = new System.Drawing.Point(29, 497);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1410, 123);
-            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.Tomato;
+            this.btnThoat.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
@@ -204,26 +204,26 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dgvDSCV);
+            this.groupBox3.Controls.Add(this.dgvDSLMA);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(482, 126);
+            this.groupBox3.Location = new System.Drawing.Point(481, 127);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(958, 338);
-            this.groupBox3.TabIndex = 24;
+            this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Danh sách chức vụ";
+            this.groupBox3.Text = "Danh sách loại món ăn";
             // 
             // pnlTieuDe
             // 
             this.pnlTieuDe.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.pnlTieuDe.Controls.Add(this.lblQLChucVu);
+            this.pnlTieuDe.Controls.Add(this.lblQLoaiMonAn);
             this.pnlTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTieuDe.Location = new System.Drawing.Point(0, 0);
             this.pnlTieuDe.Name = "pnlTieuDe";
             this.pnlTieuDe.Size = new System.Drawing.Size(1472, 100);
-            this.pnlTieuDe.TabIndex = 22;
+            this.pnlTieuDe.TabIndex = 30;
             // 
-            // ChucVu
+            // LoaiMonAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -234,11 +234,11 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pnlTieuDe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ChucVu";
-            this.Text = "ChucVu";
+            this.Name = "LoaiMonAn";
+            this.Text = "LoaiMonAn";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSCV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSLMA)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.pnlTieuDe.ResumeLayout(false);
@@ -248,13 +248,14 @@
         }
 
         #endregion
+
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtTenCV;
-        private System.Windows.Forms.Label lblTenCV;
-        private System.Windows.Forms.TextBox txtMaCV;
-        private System.Windows.Forms.Label lblMaCV;
-        private System.Windows.Forms.Label lblQLChucVu;
-        private System.Windows.Forms.DataGridView dgvDSCV;
+        private System.Windows.Forms.TextBox txtTenLMA;
+        private System.Windows.Forms.Label lblTenLMA;
+        private System.Windows.Forms.TextBox txtMaLMA;
+        private System.Windows.Forms.Label lblMaLMA;
+        private System.Windows.Forms.Label lblQLoaiMonAn;
+        private System.Windows.Forms.DataGridView dgvDSLMA;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnLamMoi;

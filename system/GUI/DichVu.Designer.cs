@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtGiaTien = new System.Windows.Forms.TextBox();
+            this.lblGiaTien = new System.Windows.Forms.Label();
             this.txtTenDV = new System.Windows.Forms.TextBox();
             this.lblTenDV = new System.Windows.Forms.Label();
             this.txtMaDV = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pnlTieuDe = new System.Windows.Forms.Panel();
-            this.txtGiaTien = new System.Windows.Forms.TextBox();
-            this.lblGiaTien = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSDV)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -67,6 +67,23 @@
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin dịch vụ";
+            // 
+            // txtGiaTien
+            // 
+            this.txtGiaTien.Location = new System.Drawing.Point(62, 329);
+            this.txtGiaTien.Name = "txtGiaTien";
+            this.txtGiaTien.Size = new System.Drawing.Size(303, 35);
+            this.txtGiaTien.TabIndex = 5;
+            // 
+            // lblGiaTien
+            // 
+            this.lblGiaTien.AutoSize = true;
+            this.lblGiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGiaTien.Location = new System.Drawing.Point(57, 300);
+            this.lblGiaTien.Name = "lblGiaTien";
+            this.lblGiaTien.Size = new System.Drawing.Size(87, 26);
+            this.lblGiaTien.TabIndex = 4;
+            this.lblGiaTien.Text = "Giá tiền";
             // 
             // txtTenDV
             // 
@@ -142,7 +159,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnThoat.BackColor = System.Drawing.Color.Tomato;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
@@ -226,23 +243,6 @@
             this.pnlTieuDe.Name = "pnlTieuDe";
             this.pnlTieuDe.Size = new System.Drawing.Size(1472, 100);
             this.pnlTieuDe.TabIndex = 26;
-            // 
-            // txtGiaTien
-            // 
-            this.txtGiaTien.Location = new System.Drawing.Point(62, 329);
-            this.txtGiaTien.Name = "txtGiaTien";
-            this.txtGiaTien.Size = new System.Drawing.Size(303, 35);
-            this.txtGiaTien.TabIndex = 5;
-            // 
-            // lblGiaTien
-            // 
-            this.lblGiaTien.AutoSize = true;
-            this.lblGiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGiaTien.Location = new System.Drawing.Point(57, 300);
-            this.lblGiaTien.Name = "lblGiaTien";
-            this.lblGiaTien.Size = new System.Drawing.Size(87, 26);
-            this.lblGiaTien.TabIndex = 4;
-            this.lblGiaTien.Text = "Giá tiền";
             // 
             // DichVu
             // 

@@ -315,6 +315,7 @@
             this.btnTTDatPhong.Text = "Thanh toán đặt phòng";
             this.btnTTDatPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTTDatPhong.UseVisualStyleBackColor = true;
+            this.btnTTDatPhong.Click += new System.EventHandler(this.btnTTDatPhong_Click);
             // 
             // btnTTDatTiec
             // 
@@ -329,6 +330,7 @@
             this.btnTTDatTiec.Text = "Thanh toán đặt tiệc";
             this.btnTTDatTiec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTTDatTiec.UseVisualStyleBackColor = true;
+            this.btnTTDatTiec.Click += new System.EventHandler(this.btnTTDatTiec_Click);
             // 
             // btnThanhToanDichVu
             // 
@@ -388,6 +390,7 @@
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDatPhong.UseVisualStyleBackColor = true;
+            this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
             // btnDatTiec
             // 

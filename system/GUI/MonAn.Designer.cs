@@ -45,10 +45,11 @@
             this.txtMaMA = new System.Windows.Forms.TextBox();
             this.lblMaMA = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLMA = new System.Windows.Forms.Button();
+            this.cboLoaiMA = new System.Windows.Forms.ComboBox();
             this.txtTenMA = new System.Windows.Forms.TextBox();
             this.lblQLMonAn = new System.Windows.Forms.Label();
             this.pnlTieuDe = new System.Windows.Forms.Panel();
-            this.cboLoaiMA = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSKH)).BeginInit();
@@ -73,7 +74,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.btnThoat.BackColor = System.Drawing.Color.Tomato;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
@@ -236,6 +237,7 @@
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.btnLMA);
             this.groupBox1.Controls.Add(this.txtMoTa);
             this.groupBox1.Controls.Add(this.lblMoTa);
             this.groupBox1.Controls.Add(this.cboLoaiMA);
@@ -253,6 +255,28 @@
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin món ăn";
+            // 
+            // btnLMA
+            // 
+            this.btnLMA.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.btnLMA.FlatAppearance.BorderSize = 0;
+            this.btnLMA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLMA.Location = new System.Drawing.Point(870, 80);
+            this.btnLMA.Name = "btnLMA";
+            this.btnLMA.Size = new System.Drawing.Size(38, 37);
+            this.btnLMA.TabIndex = 26;
+            this.btnLMA.Text = "...";
+            this.btnLMA.UseVisualStyleBackColor = false;
+            this.btnLMA.Click += new System.EventHandler(this.btnLMA_Click);
+            // 
+            // cboLoaiMA
+            // 
+            this.cboLoaiMA.FormattingEnabled = true;
+            this.cboLoaiMA.Location = new System.Drawing.Point(543, 80);
+            this.cboLoaiMA.Name = "cboLoaiMA";
+            this.cboLoaiMA.Size = new System.Drawing.Size(303, 37);
+            this.cboLoaiMA.TabIndex = 12;
             // 
             // txtTenMA
             // 
@@ -280,14 +304,6 @@
             this.pnlTieuDe.Name = "pnlTieuDe";
             this.pnlTieuDe.Size = new System.Drawing.Size(1472, 100);
             this.pnlTieuDe.TabIndex = 35;
-            // 
-            // cboLoaiMA
-            // 
-            this.cboLoaiMA.FormattingEnabled = true;
-            this.cboLoaiMA.Location = new System.Drawing.Point(543, 80);
-            this.cboLoaiMA.Name = "cboLoaiMA";
-            this.cboLoaiMA.Size = new System.Drawing.Size(303, 37);
-            this.cboLoaiMA.TabIndex = 12;
             // 
             // MonAn
             // 
@@ -338,5 +354,6 @@
         private System.Windows.Forms.Label lblQLMonAn;
         private System.Windows.Forms.Panel pnlTieuDe;
         private System.Windows.Forms.ComboBox cboLoaiMA;
+        private System.Windows.Forms.Button btnLMA;
     }
 }

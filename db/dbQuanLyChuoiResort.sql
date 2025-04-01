@@ -142,11 +142,12 @@ create table SuDungDichVu(
 
 CREATE TABLE HoaDonDatPhong (
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
-    maHDDP VARCHAR(10) NOT NULL PRIMARY KEY, 
+    maHDDP varchar(10) NOT NULL primary key, 
     maCTDP varchar(12) not null references ChiTietDatPhong(maCTDP),
-    maSDDV VARCHAR(8) NOT NULL REFERENCES SuDungDichVu(MaSDDV),
-    ngayLap DATE NOT NULL,  
-    tongTien float NOT NULL)
+    maSDDV varchar(8) not null references SuDungDichVu(MaSDDV),
+    ngayLap date not null,  
+    tongTien float not null,
+	trangThai nvarchar(150) not null)
 
 create table HoaDonDatTiec (
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),

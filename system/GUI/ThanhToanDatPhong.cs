@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class MonAn: Form
+    public partial class ThanhToanDatPhong: Form
     {
-        public MonAn()
+        public ThanhToanDatPhong()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Btn thanh toán.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+
         }
 
         /// <summary>
@@ -29,17 +39,6 @@ namespace GUI
             {
                 this.Close();
             }
-        }
-
-        /// <summary>
-        /// Btn loại món ăn.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnLMA_Click(object sender, EventArgs e)
-        {
-            Menu formMenu = (Menu)this.ParentForm;
-            formMenu.openChildForm(new LoaiMonAn());
         }
     }
 }

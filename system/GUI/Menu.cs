@@ -364,5 +364,62 @@ namespace GUI
                 dt.BringToFront();
             }
         }
+
+        /// <summary>
+        /// Btn thanh toán đặt phòng.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private ThanhToanDatPhong ttdp;
+        private void btnTTDatPhong_Click(object sender, EventArgs e)
+        {
+            if (ttdp == null || ttdp.IsDisposed)
+            {
+                openChildForm(new ThanhToanDatPhong());
+            }
+            else
+            {
+                ttdp.BringToFront();
+            }
+        }
+
+        /// <summary>
+        /// Btn đặt phòng.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private DatPhong dp;
+        private void btnDatPhong_Click(object sender, EventArgs e)
+        {
+            if (dp == null || dp.IsDisposed)
+            {
+                openChildForm(new DatPhong());
+            }
+            else
+            {
+                dp.BringToFront();
+            }
+        }
+
+        /// <summary>
+        /// Thanh toán đặt tiệc.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private ThanhToanDatTiec ttdt;
+        private void btnTTDatTiec_Click(object sender, EventArgs e)
+        {
+            if (ttdt == null || ttdt.IsDisposed)
+            {
+                openChildForm(new ThanhToanDatTiec());
+            }
+            else
+            {
+                ttdt.BringToFront();
+            }
+        }
     }
 }

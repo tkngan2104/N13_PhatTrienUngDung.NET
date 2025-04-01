@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietDatTiec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietDatTiec.Designer.cs">
+      <DependentUpon>ChiTietDatTiec.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,18 @@
     </Compile>
     <Compile Include="ComboMonAn.Designer.cs">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatDichVu.Designer.cs">
+      <DependentUpon>DatDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatPhong.Designer.cs">
+      <DependentUpon>DatPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="DatTiec.cs">
       <SubType>Form</SubType>
@@ -82,6 +100,12 @@
     </Compile>
     <Compile Include="LoaiGiuong.Designer.cs">
       <DependentUpon>LoaiGiuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaiMonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaiMonAn.Designer.cs">
+      <DependentUpon>LoaiMonAn.cs</DependentUpon>
     </Compile>
     <Compile Include="LoaiPhong.cs">
       <SubType>Form</SubType>
@@ -121,6 +145,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanhDatTiec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanhDatTiec.Designer.cs">
+      <DependentUpon>SanhDatTiec.cs</DependentUpon>
+    </Compile>
     <Compile Include="Setting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,11 +163,35 @@
     <Compile Include="SuDungDichVu.Designer.cs">
       <DependentUpon>SuDungDichVu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThanhToanDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToanDatPhong.Designer.cs">
+      <DependentUpon>ThanhToanDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToanDatTiec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToanDatTiec.Designer.cs">
+      <DependentUpon>ThanhToanDatTiec.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChiTietDatTiec.resx">
+      <DependentUpon>ChiTietDatTiec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChucVu.resx">
       <DependentUpon>ChucVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComboMonAn.resx">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatDichVu.resx">
+      <DependentUpon>DatDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatPhong.resx">
+      <DependentUpon>DatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatTiec.resx">
+      <DependentUpon>DatTiec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
@@ -147,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoaiGiuong.resx">
       <DependentUpon>LoaiGiuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoaiMonAn.resx">
+      <DependentUpon>LoaiMonAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoaiPhong.resx">
       <DependentUpon>LoaiPhong.cs</DependentUpon>
@@ -176,11 +233,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SanhDatTiec.resx">
+      <DependentUpon>SanhDatTiec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuDungDichVu.resx">
       <DependentUpon>SuDungDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToanDatPhong.resx">
+      <DependentUpon>ThanhToanDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToanDatTiec.resx">
+      <DependentUpon>ThanhToanDatTiec.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class MonAn: Form
+    public partial class DatPhong: Form
     {
-        public MonAn()
+        public DatPhong()
         {
             InitializeComponent();
         }
 
         /// <summary>
-        /// Btn thoát.
+        /// btn thoát.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -31,15 +31,14 @@ namespace GUI
             }
         }
 
-        /// <summary>
-        /// Btn loại món ăn.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnLMA_Click(object sender, EventArgs e)
+        private void btnSDDV_Click(object sender, EventArgs e)
         {
-            Menu formMenu = (Menu)this.ParentForm;
-            formMenu.openChildForm(new LoaiMonAn());
+            DialogResult a = MessageBox.Show("Đi tới màn hình sử dụng dịch vụ ?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (a == DialogResult.Yes)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new SuDungDichVu());
+            }
         }
     }
 }
