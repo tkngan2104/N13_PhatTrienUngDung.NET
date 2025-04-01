@@ -110,6 +110,7 @@
             // 
             // cboLoaiPhong
             // 
+            this.cboLoaiPhong.Enabled = false;
             this.cboLoaiPhong.FormattingEnabled = true;
             this.cboLoaiPhong.Location = new System.Drawing.Point(48, 216);
             this.cboLoaiPhong.Name = "cboLoaiPhong";
@@ -118,6 +119,7 @@
             // 
             // cboLoaiGiuong
             // 
+            this.cboLoaiGiuong.Enabled = false;
             this.cboLoaiGiuong.FormattingEnabled = true;
             this.cboLoaiGiuong.Location = new System.Drawing.Point(48, 330);
             this.cboLoaiGiuong.Name = "cboLoaiGiuong";

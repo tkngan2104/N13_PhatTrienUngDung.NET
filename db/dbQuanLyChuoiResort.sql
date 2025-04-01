@@ -123,7 +123,6 @@ create table ChiTiecDatTiec(
 	maDT varchar(12) not null references DatTiec(maDT),
 	maCB varchar(7) references ComboMonAn(maCB),
 	maMA varchar(7) references MonAn(maMA),
-	maDV varchar(5) not null references DichVu(maDV),
 	soLuong int not null)
 
 create table ChiTietDatDichVu (

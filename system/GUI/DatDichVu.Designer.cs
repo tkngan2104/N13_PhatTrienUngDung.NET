@@ -51,6 +51,8 @@
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.lblQLChucVu = new System.Windows.Forms.Label();
             this.pnlTieuDe = new System.Windows.Forms.Panel();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSDV)).BeginInit();
@@ -135,6 +137,8 @@
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.txtTongTien);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtDichVu);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.numericUpDown1);
@@ -298,10 +302,10 @@
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(54, 48);
+            this.btnThem.Location = new System.Drawing.Point(26, 48);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(183, 42);
+            this.btnThem.Size = new System.Drawing.Size(216, 42);
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm dịch vụ";
             this.btnThem.UseVisualStyleBackColor = false;
@@ -337,6 +341,25 @@
             this.pnlTieuDe.Name = "pnlTieuDe";
             this.pnlTieuDe.Size = new System.Drawing.Size(1467, 100);
             this.pnlTieuDe.TabIndex = 47;
+            // 
+            // txtTongTien
+            // 
+            this.txtTongTien.Enabled = false;
+            this.txtTongTien.Location = new System.Drawing.Point(1006, 93);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(303, 35);
+            this.txtTongTien.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1001, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 26);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Tổng tiền";
             // 
             // DatDichVu
             // 
@@ -390,5 +413,7 @@
         private System.Windows.Forms.Panel pnlTieuDe;
         private System.Windows.Forms.Button btnThemDatDV;
         private System.Windows.Forms.TextBox txtDichVu;
+        private System.Windows.Forms.TextBox txtTongTien;
+        private System.Windows.Forms.Label label1;
     }
 }

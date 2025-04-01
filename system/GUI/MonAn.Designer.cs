@@ -272,6 +272,7 @@
             // 
             // cboLoaiMA
             // 
+            this.cboLoaiMA.Enabled = false;
             this.cboLoaiMA.FormattingEnabled = true;
             this.cboLoaiMA.Location = new System.Drawing.Point(543, 80);
             this.cboLoaiMA.Name = "cboLoaiMA";

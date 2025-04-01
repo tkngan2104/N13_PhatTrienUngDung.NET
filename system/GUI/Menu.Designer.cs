@@ -40,8 +40,6 @@
             this.btnThongTinKhachHang = new System.Windows.Forms.Button();
             this.btnDuLieuResort = new System.Windows.Forms.Button();
             this.pnlBaoCaoThongKe = new System.Windows.Forms.Panel();
-            this.btnTKLuuLuongKhach = new System.Windows.Forms.Button();
-            this.btnTKDoanhSo = new System.Windows.Forms.Button();
             this.btnBaoCaoThongKe = new System.Windows.Forms.Button();
             this.pnlThanhToanDichVu = new System.Windows.Forms.Panel();
             this.btnTTDatPhong = new System.Windows.Forms.Button();
@@ -65,7 +63,6 @@
             this.pnlManHinh = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.pnlDuLieuResort.SuspendLayout();
-            this.pnlBaoCaoThongKe.SuspendLayout();
             this.pnlThanhToanDichVu.SuspendLayout();
             this.pnlDVResort.SuspendLayout();
             this.pnlLogo.SuspendLayout();
@@ -237,41 +234,11 @@
             // pnlBaoCaoThongKe
             // 
             this.pnlBaoCaoThongKe.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.pnlBaoCaoThongKe.Controls.Add(this.btnTKLuuLuongKhach);
-            this.pnlBaoCaoThongKe.Controls.Add(this.btnTKDoanhSo);
             this.pnlBaoCaoThongKe.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBaoCaoThongKe.Location = new System.Drawing.Point(0, 794);
             this.pnlBaoCaoThongKe.Name = "pnlBaoCaoThongKe";
             this.pnlBaoCaoThongKe.Size = new System.Drawing.Size(401, 132);
             this.pnlBaoCaoThongKe.TabIndex = 7;
-            // 
-            // btnTKLuuLuongKhach
-            // 
-            this.btnTKLuuLuongKhach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTKLuuLuongKhach.FlatAppearance.BorderSize = 0;
-            this.btnTKLuuLuongKhach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTKLuuLuongKhach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTKLuuLuongKhach.Location = new System.Drawing.Point(0, 58);
-            this.btnTKLuuLuongKhach.Name = "btnTKLuuLuongKhach";
-            this.btnTKLuuLuongKhach.Size = new System.Drawing.Size(401, 58);
-            this.btnTKLuuLuongKhach.TabIndex = 9;
-            this.btnTKLuuLuongKhach.Text = "Thống kê lưu lượng khách hàng";
-            this.btnTKLuuLuongKhach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTKLuuLuongKhach.UseVisualStyleBackColor = true;
-            // 
-            // btnTKDoanhSo
-            // 
-            this.btnTKDoanhSo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTKDoanhSo.FlatAppearance.BorderSize = 0;
-            this.btnTKDoanhSo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTKDoanhSo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTKDoanhSo.Location = new System.Drawing.Point(0, 0);
-            this.btnTKDoanhSo.Name = "btnTKDoanhSo";
-            this.btnTKDoanhSo.Size = new System.Drawing.Size(401, 58);
-            this.btnTKDoanhSo.TabIndex = 8;
-            this.btnTKDoanhSo.Text = "Thống kê doanh số";
-            this.btnTKDoanhSo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTKDoanhSo.UseVisualStyleBackColor = true;
             // 
             // btnBaoCaoThongKe
             // 
@@ -550,7 +517,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlMenu.ResumeLayout(false);
             this.pnlDuLieuResort.ResumeLayout(false);
-            this.pnlBaoCaoThongKe.ResumeLayout(false);
             this.pnlThanhToanDichVu.ResumeLayout(false);
             this.pnlDVResort.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
@@ -579,8 +545,6 @@
         private System.Windows.Forms.Button btnTTDatTiec;
         private System.Windows.Forms.Button btnBaoCaoThongKe;
         private System.Windows.Forms.Panel pnlBaoCaoThongKe;
-        private System.Windows.Forms.Button btnTKLuuLuongKhach;
-        private System.Windows.Forms.Button btnTKDoanhSo;
         private System.Windows.Forms.Panel pnlDuLieuResort;
         private System.Windows.Forms.Button btnThongTinNhanSu;
         private System.Windows.Forms.Button btnThongTinKhachHang;

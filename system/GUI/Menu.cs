@@ -120,7 +120,8 @@ namespace GUI
             }
             else
             {
-                pnlBaoCaoThongKe.Height = 77;
+                //pnlBaoCaoThongKe.Height = 77;
+                pnlBaoCaoThongKe.Height = 10;
             }
         }
 

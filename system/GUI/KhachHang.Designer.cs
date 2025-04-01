@@ -39,7 +39,6 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.lblSDT = new System.Windows.Forms.Label();
-            this.cboQuocTich = new System.Windows.Forms.ComboBox();
             this.lblQuocTich = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txtCCCD = new System.Windows.Forms.TextBox();
@@ -58,6 +57,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.txtQuocTich = new System.Windows.Forms.TextBox();
             this.pnlTieuDe.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -87,6 +87,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtQuocTich);
             this.groupBox1.Controls.Add(this.radNu);
             this.groupBox1.Controls.Add(this.radNam);
             this.groupBox1.Controls.Add(this.txtDiaChi);
@@ -95,7 +96,6 @@
             this.groupBox1.Controls.Add(this.lblEmail);
             this.groupBox1.Controls.Add(this.txtSDT);
             this.groupBox1.Controls.Add(this.lblSDT);
-            this.groupBox1.Controls.Add(this.cboQuocTich);
             this.groupBox1.Controls.Add(this.lblQuocTich);
             this.groupBox1.Controls.Add(this.dtpNgaySinh);
             this.groupBox1.Controls.Add(this.txtCCCD);
@@ -189,14 +189,6 @@
             this.lblSDT.Size = new System.Drawing.Size(139, 26);
             this.lblSDT.TabIndex = 13;
             this.lblSDT.Text = "Số điện thoại";
-            // 
-            // cboQuocTich
-            // 
-            this.cboQuocTich.FormattingEnabled = true;
-            this.cboQuocTich.Location = new System.Drawing.Point(543, 80);
-            this.cboQuocTich.Name = "cboQuocTich";
-            this.cboQuocTich.Size = new System.Drawing.Size(303, 37);
-            this.cboQuocTich.TabIndex = 12;
             // 
             // lblQuocTich
             // 
@@ -394,6 +386,13 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
             // 
+            // txtQuocTich
+            // 
+            this.txtQuocTich.Location = new System.Drawing.Point(543, 82);
+            this.txtQuocTich.Name = "txtQuocTich";
+            this.txtQuocTich.Size = new System.Drawing.Size(303, 35);
+            this.txtQuocTich.TabIndex = 21;
+            // 
             // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -433,7 +432,6 @@
         private System.Windows.Forms.TextBox txtCCCD;
         private System.Windows.Forms.Label lblCCCD;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
-        private System.Windows.Forms.ComboBox cboQuocTich;
         private System.Windows.Forms.Label lblQuocTich;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
@@ -451,5 +449,6 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.TextBox txtQuocTich;
     }
 }

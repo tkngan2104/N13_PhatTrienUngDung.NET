@@ -272,6 +272,7 @@
             // 
             // cboChucVu
             // 
+            this.cboChucVu.Enabled = false;
             this.cboChucVu.FormattingEnabled = true;
             this.cboChucVu.Location = new System.Drawing.Point(543, 80);
             this.cboChucVu.Name = "cboChucVu";
