@@ -3,6 +3,10 @@ create database DbQuanLyResort
 go
 use DbQuanLyResort
 go
+set dateformat dmy
+go
+
+---drop database DbQuanLyResort
 
 ---tao bang du lieu.
 
@@ -38,47 +42,32 @@ create table NhanSu(
     FOREIGN KEY (MaChucVu) REFERENCES ChucVu(MaChucVu) ON DELETE SET NULL)
 
 -----QUẢN LÝ RESORT
-create table CoSoVatChat(
-	maCSVC varchar(7) not null primary key,
-	tenCSVC nvarchar(45) not null,
-	giaTien float,
-	trangThai nvarchar(45) not null)
-
-create table LoaiPhong(
-	maLP varchar(5) not null primary key,
-	tenLP nvarchar(45) not null)
-
-create table LoaiGiuong(
-	maLG varchar(5) not null primary key,
-	tenLG nvarchar(45) not null)
 
 create table Phong(
 	maPhong varchar(5) not null primary key,
-	maLP varchar(5) not null references LoaiPhong(maLP),
-	maLG varchar(5) not null references LoaiGiuong(maLG),
+	tenLP nvarchar(45) not null,
+	tenLG nvarchar(45) not null,
 	giaP float not null,
 	trangThai nvarchar(45) not null)
 
 create table DatPhong(
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
-	maDP varchar(12) not null primary key, ---6: DT0001, 6: ddmmyy
-	maKH nvarchar(10) not null references KhachHang(maKH),
-	ngayDatPhong date not null,
-	ngayTraPhong date)
+	maDP varchar(12) not null primary key, ---6: DP0001, 6: ddmmyy
+	MaKH nvarchar(10) not null references KhachHang(MaKH),
+	ngayDatPhong date not null)
 
 create table ChiTietDatPhong(
 	maDP varchar(12) not null references DatPhong(maDP),
 	maCTDP varchar(12) not null primary key,
-	maLP varchar(5) not null references LoaiPhong(maLP),
-	maLG varchar(5) not null references LoaiGiuong(maLG),
-	soLuong int not null)
+	maPhong varchar(5) references Phong(maPhong),
+	ngayTraPhong date)
 
 create table DichVu(
 	maDV varchar(5) not null primary key,
 	tenDV nvarchar(45) not null,
 	giaTien int not null)
 
-	create table LoaiMonAn (
+create table LoaiMonAn (
 	maLMA varchar(7) not null primary key,
 	tenLMA nvarchar(45) not null)
 
@@ -92,26 +81,61 @@ create table MonAn (
 create table ComboMonAn (
 	maCB varchar(7) not null primary key,
 	tenCB nvarchar(150) not null,
-	maMA varchar(7) not null references MonAn(maMA),
 	giaCB float not null)
+
+create table ChiTietCombo (
+	maCTCB varchar(7) not null primary key,
+	maCB varchar(7) references ComboMonAn(maCB),
+	maMA varchar(7) references MonAn(maMA))
+
+create table SanhDatTiec (
+	maS varchar(4) not null primary key,
+	tenS nvarchar(45) not null,
+	giaSDT float)
+
+create table DatTiec (
+	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
+	maDT varchar(12) not null primary key, ---6: DT0001, 6: ddmmyy
+	MaKH nvarchar(10) not null references KhachHang(MaKH),
+	ngayDT date not null,
+	maS varchar(4) not null references SanhDatTiec(maS),
+	ghiChu nvarchar(250),
+	ngayBatDau date not null,
+	ngayKetThuc date,
+	tongTien float not null,
+	giaTriDC float not null)
+
+create table ChiTiecDatTiec(
+	maCTDT varchar(14) not null primary key, ---6 : ddmmyy, 6 : CTDT0001
+	maDT varchar(12) not null references DatTiec(maDT),
+	maCB varchar(7) references ComboMonAn(maCB),
+	maMA varchar(7) references MonAn(maMA),
+	soLuong int not null)
+
+create table ChiTietDatDichVu (
+	maCTDDV varchar(12) not null primary key,
+    maDT varchar(12) NOT NULL references DatTiec(maDT),
+    maDV varchar(5) NOT NULL references DichVu(maDV),
+    soLuong INT NOT NULL,
+    ghiChu nvarchar(250))
 
 create table SuDungDichVu(
 	maSDDV varchar(8) not null primary key,
 	maDV varchar(5) not null references DichVu(maDV),
-	maDP varchar(12) not null references DatPhong(maDP),
-	maCB varchar(7) null references ComboMonAn(maCB),
-	maMA varchar(7) null references MonAn(maMA),
+	maCTDP varchar(12) not null references ChiTietDatPhong(maCTDP),
 	soLuong int not null,
 	tongTien float not null)
 
-CREATE TABLE HoaDon (
-    maHD VARCHAR(10) NOT NULL PRIMARY KEY, 
-    maDP VARCHAR(12) NOT NULL REFERENCES DatPhong(maDP), 
-    maSDDV VARCHAR(8) NOT NULL REFERENCES SuDungDichVu(MaSDDV),
-    maCSVC VARCHAR(7) REFERENCES CoSoVatChat(maCSVC),
-    ngayLap DATE NOT NULL,  
-    tongTien float NOT NULL)
+CREATE TABLE HoaDonDatPhong (
+	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
+    maHDDP varchar(10) NOT NULL primary key, 
+    maCTDP varchar(12) not null references ChiTietDatPhong(maCTDP),
+    maSDDV varchar(8) not null references SuDungDichVu(MaSDDV),
+    ngayLap date not null,  
+    tongTien float not null,
+	trangThai nvarchar(150) not null)
 
+<<<<<<< HEAD
 
 insert into DichVu(maDV, tenDV, giaTien)
 values ('DV001', N'Đặt tiệc', 35000000)
@@ -580,3 +604,12 @@ INSERT INTO NhanSu (MaNhanSu, HoTen, NgaySinh, SDT, CCCD, Email, DiaChi, MaChucV
 ('NS198', N'Đặng Hữu Hậu', '1966/06/23', '983445044', '931739242236', 'robert12@gmail.com', N'Lake Julian', 'CV001', '2018/03/25', 23000000),
 ('NS199', N'Phan Thị Duy', '1976/12/27', '976550983', '367597090397', 'markrios@gmail.com', N'Newtonfurt', 'CV004', '2022/01/19', 20000000),
 ('NS200', N'Đặng Tuấn Hùng', '1976/12/12', '960060809', '157949092994', 'landerson@gmail.com', N'Brownport', 'CV020', '2016/06/28', 7000000);
+=======
+create table HoaDonDatTiec (
+	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
+	maHDDT varchar(12) not null primary key,
+	maDT varchar(12) NOT NULL references DatTiec(maDT),
+	ngayLap date not null,
+	tongTien float not null,
+	trangThai nvarchar(150) not null)
+>>>>>>> GiaoDien_KimNgan
