@@ -5,7 +5,7 @@ go
 --insert dữ liệu cho khách hàng
 insert into KhachHang (MaKH, TenKH, SoDT, NgaySinh, GioiTinh, Diachi, Email, CCCD, QuocTich)
 values
-('KH0001', N'Nguyễn Thị Mai', '0123456789', '1985-06-15', N'Nữ', N'Hà Nội', 'mai.yen@email.com', '123456789012', N'Việt Nam'),
+('KH0001', N'Nguyễn Thị Mai', '0123456789', '05-06-2007', N'Nữ', N'Hà Nội', 'mai.yen@email.com', '123456789012', N'Việt Nam'),
 ('KH0002', N'Lê Minh Tú', '0987654321', '1990-08-20', N'Nam', N'Hà Nội', 'tu.le@email.com', '234567890123', N'Việt Nam'),
 ('KH0003', N'Phạm Lan Anh', '0912345678', '1988-04-05', N'Nữ', N'Hà Nội', 'lan.anh@email.com', '345678901234', N'Việt Nam'),
 ('KH0004', N'Trương Quốc Anh', '0909876543', '1995-02-12', N'Nam', N'Hà Nội', 'quoc.anh@email.com', '456789012345', N'Việt Nam'),

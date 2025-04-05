@@ -42,24 +42,11 @@ create table NhanSu(
     FOREIGN KEY (MaChucVu) REFERENCES ChucVu(MaChucVu) ON DELETE SET NULL)
 
 -----QUẢN LÝ RESORT
-create table CoSoVatChat(
-	maCSVC varchar(7) not null primary key,
-	tenCSVC nvarchar(45) not null,
-	giaTien float,
-	trangThai nvarchar(45) not null)
-
-create table LoaiPhong(
-	maLP varchar(5) not null primary key,
-	tenLP nvarchar(45) not null)
-
-create table LoaiGiuong(
-	maLG varchar(5) not null primary key,
-	tenLG nvarchar(45) not null)
 
 create table Phong(
 	maPhong varchar(5) not null primary key,
-	maLP varchar(5) not null references LoaiPhong(maLP),
-	maLG varchar(5) not null references LoaiGiuong(maLG),
+	tenLP nvarchar(45) not null,
+	tenLG nvarchar(45) not null,
 	giaP float not null,
 	trangThai nvarchar(45) not null)
 
