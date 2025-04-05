@@ -31,6 +31,7 @@
             this.pnlTieuDe = new System.Windows.Forms.Panel();
             this.lblQLKhachHang = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtQuocTich = new System.Windows.Forms.TextBox();
             this.radNu = new System.Windows.Forms.RadioButton();
             this.radNam = new System.Windows.Forms.RadioButton();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
@@ -57,7 +58,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.txtQuocTich = new System.Windows.Forms.TextBox();
             this.pnlTieuDe.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -113,6 +113,13 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách hàng";
+            // 
+            // txtQuocTich
+            // 
+            this.txtQuocTich.Location = new System.Drawing.Point(543, 82);
+            this.txtQuocTich.Name = "txtQuocTich";
+            this.txtQuocTich.Size = new System.Drawing.Size(303, 35);
+            this.txtQuocTich.TabIndex = 21;
             // 
             // radNu
             // 
@@ -385,13 +392,6 @@
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
-            // 
-            // txtQuocTich
-            // 
-            this.txtQuocTich.Location = new System.Drawing.Point(543, 82);
-            this.txtQuocTich.Name = "txtQuocTich";
-            this.txtQuocTich.Size = new System.Drawing.Size(303, 35);
-            this.txtQuocTich.TabIndex = 21;
             // 
             // KhachHang
             // 

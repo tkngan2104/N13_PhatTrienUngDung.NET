@@ -95,23 +95,11 @@
     <Compile Include="KhachHang.Designer.cs">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoaiGiuong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoaiGiuong.Designer.cs">
-      <DependentUpon>LoaiGiuong.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoaiMonAn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoaiMonAn.Designer.cs">
       <DependentUpon>LoaiMonAn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoaiPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoaiPhong.Designer.cs">
-      <DependentUpon>LoaiPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -199,14 +187,8 @@
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoaiGiuong.resx">
-      <DependentUpon>LoaiGiuong.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoaiMonAn.resx">
       <DependentUpon>LoaiMonAn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoaiPhong.resx">
-      <DependentUpon>LoaiPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

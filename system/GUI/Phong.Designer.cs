@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnLoaiGiuong = new System.Windows.Forms.Button();
-            this.btnLoaiPhong = new System.Windows.Forms.Button();
             this.cboLoaiPhong = new System.Windows.Forms.ComboBox();
             this.cboLoaiGiuong = new System.Windows.Forms.ComboBox();
             this.cboTrangThai = new System.Windows.Forms.ComboBox();
@@ -60,8 +58,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnLoaiGiuong);
-            this.groupBox1.Controls.Add(this.btnLoaiPhong);
             this.groupBox1.Controls.Add(this.cboLoaiPhong);
             this.groupBox1.Controls.Add(this.cboLoaiGiuong);
             this.groupBox1.Controls.Add(this.cboTrangThai);
@@ -80,39 +76,11 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin phòng";
             // 
-            // btnLoaiGiuong
-            // 
-            this.btnLoaiGiuong.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.btnLoaiGiuong.FlatAppearance.BorderSize = 0;
-            this.btnLoaiGiuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoaiGiuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoaiGiuong.Location = new System.Drawing.Point(366, 330);
-            this.btnLoaiGiuong.Name = "btnLoaiGiuong";
-            this.btnLoaiGiuong.Size = new System.Drawing.Size(38, 37);
-            this.btnLoaiGiuong.TabIndex = 27;
-            this.btnLoaiGiuong.Text = "...";
-            this.btnLoaiGiuong.UseVisualStyleBackColor = false;
-            this.btnLoaiGiuong.Click += new System.EventHandler(this.btnLoaiGiuong_Click);
-            // 
-            // btnLoaiPhong
-            // 
-            this.btnLoaiPhong.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.btnLoaiPhong.FlatAppearance.BorderSize = 0;
-            this.btnLoaiPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoaiPhong.Location = new System.Drawing.Point(366, 216);
-            this.btnLoaiPhong.Name = "btnLoaiPhong";
-            this.btnLoaiPhong.Size = new System.Drawing.Size(38, 37);
-            this.btnLoaiPhong.TabIndex = 26;
-            this.btnLoaiPhong.Text = "...";
-            this.btnLoaiPhong.UseVisualStyleBackColor = false;
-            this.btnLoaiPhong.Click += new System.EventHandler(this.btnLoaiPhong_Click);
-            // 
             // cboLoaiPhong
             // 
             this.cboLoaiPhong.Enabled = false;
             this.cboLoaiPhong.FormattingEnabled = true;
-            this.cboLoaiPhong.Location = new System.Drawing.Point(48, 216);
+            this.cboLoaiPhong.Location = new System.Drawing.Point(62, 217);
             this.cboLoaiPhong.Name = "cboLoaiPhong";
             this.cboLoaiPhong.Size = new System.Drawing.Size(303, 37);
             this.cboLoaiPhong.TabIndex = 11;
@@ -121,7 +89,7 @@
             // 
             this.cboLoaiGiuong.Enabled = false;
             this.cboLoaiGiuong.FormattingEnabled = true;
-            this.cboLoaiGiuong.Location = new System.Drawing.Point(48, 330);
+            this.cboLoaiGiuong.Location = new System.Drawing.Point(62, 331);
             this.cboLoaiGiuong.Name = "cboLoaiGiuong";
             this.cboLoaiGiuong.Size = new System.Drawing.Size(303, 37);
             this.cboLoaiGiuong.TabIndex = 10;
@@ -129,7 +97,7 @@
             // cboTrangThai
             // 
             this.cboTrangThai.FormattingEnabled = true;
-            this.cboTrangThai.Location = new System.Drawing.Point(48, 560);
+            this.cboTrangThai.Location = new System.Drawing.Point(62, 561);
             this.cboTrangThai.Name = "cboTrangThai";
             this.cboTrangThai.Size = new System.Drawing.Size(303, 37);
             this.cboTrangThai.TabIndex = 9;
@@ -138,7 +106,7 @@
             // 
             this.lblTrangThai.AutoSize = true;
             this.lblTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangThai.Location = new System.Drawing.Point(43, 531);
+            this.lblTrangThai.Location = new System.Drawing.Point(57, 532);
             this.lblTrangThai.Name = "lblTrangThai";
             this.lblTrangThai.Size = new System.Drawing.Size(108, 26);
             this.lblTrangThai.TabIndex = 8;
@@ -146,7 +114,7 @@
             // 
             // txtGiaPhong
             // 
-            this.txtGiaPhong.Location = new System.Drawing.Point(48, 448);
+            this.txtGiaPhong.Location = new System.Drawing.Point(62, 449);
             this.txtGiaPhong.Name = "txtGiaPhong";
             this.txtGiaPhong.Size = new System.Drawing.Size(303, 35);
             this.txtGiaPhong.TabIndex = 7;
@@ -155,7 +123,7 @@
             // 
             this.lblGiaPhong.AutoSize = true;
             this.lblGiaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGiaPhong.Location = new System.Drawing.Point(43, 419);
+            this.lblGiaPhong.Location = new System.Drawing.Point(57, 420);
             this.lblGiaPhong.Name = "lblGiaPhong";
             this.lblGiaPhong.Size = new System.Drawing.Size(112, 26);
             this.lblGiaPhong.TabIndex = 6;
@@ -165,7 +133,7 @@
             // 
             this.lblLoaiGiuong.AutoSize = true;
             this.lblLoaiGiuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoaiGiuong.Location = new System.Drawing.Point(43, 301);
+            this.lblLoaiGiuong.Location = new System.Drawing.Point(57, 302);
             this.lblLoaiGiuong.Name = "lblLoaiGiuong";
             this.lblLoaiGiuong.Size = new System.Drawing.Size(124, 26);
             this.lblLoaiGiuong.TabIndex = 4;
@@ -175,7 +143,7 @@
             // 
             this.lblLoaiPhong.AutoSize = true;
             this.lblLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoaiPhong.Location = new System.Drawing.Point(43, 187);
+            this.lblLoaiPhong.Location = new System.Drawing.Point(57, 188);
             this.lblLoaiPhong.Name = "lblLoaiPhong";
             this.lblLoaiPhong.Size = new System.Drawing.Size(119, 26);
             this.lblLoaiPhong.TabIndex = 2;
@@ -184,7 +152,7 @@
             // txtMaPhong
             // 
             this.txtMaPhong.Enabled = false;
-            this.txtMaPhong.Location = new System.Drawing.Point(48, 104);
+            this.txtMaPhong.Location = new System.Drawing.Point(62, 105);
             this.txtMaPhong.Name = "txtMaPhong";
             this.txtMaPhong.Size = new System.Drawing.Size(303, 35);
             this.txtMaPhong.TabIndex = 1;
@@ -193,7 +161,7 @@
             // 
             this.lblMaPhong.AutoSize = true;
             this.lblMaPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaPhong.Location = new System.Drawing.Point(43, 75);
+            this.lblMaPhong.Location = new System.Drawing.Point(57, 76);
             this.lblMaPhong.Name = "lblMaPhong";
             this.lblMaPhong.Size = new System.Drawing.Size(108, 26);
             this.lblMaPhong.TabIndex = 0;
@@ -370,7 +338,5 @@
         private System.Windows.Forms.ComboBox cboLoaiGiuong;
         private System.Windows.Forms.ComboBox cboTrangThai;
         private System.Windows.Forms.ComboBox cboLoaiPhong;
-        private System.Windows.Forms.Button btnLoaiGiuong;
-        private System.Windows.Forms.Button btnLoaiPhong;
     }
 }
