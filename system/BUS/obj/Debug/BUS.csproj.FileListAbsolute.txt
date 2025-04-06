@@ -9,3 +9,16 @@ T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.ca
 T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
 T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
 T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
+D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
+D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
+D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
+D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
+D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
+D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll.config
+D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
+D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll.config
+D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
+D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb

@@ -3,12 +3,15 @@ create database DbQuanLyResort
 go
 use DbQuanLyResort
 go
-set dateformat dmy
+SET DATEFORMAT YMD;
+
 go
 
 ---drop database DbQuanLyResort
 
 ---tao bang du lieu.
+
+
 
 -----QUẢN LÝ KHÁCH HÀNG.
 create table KhachHang(
@@ -135,12 +138,9 @@ CREATE TABLE HoaDonDatPhong (
     tongTien float not null,
 	trangThai nvarchar(150) not null)
 
-<<<<<<< HEAD
-
 insert into DichVu(maDV, tenDV, giaTien)
 values ('DV001', N'Đặt tiệc', 35000000)
 go
-
 --insert dữ liệu cho khách hàng
 insert into KhachHang (MaKH, TenKH, SoDT, NgaySinh, GioiTinh, Diachi, Email, CCCD, QuocTich)
 values
@@ -604,7 +604,7 @@ INSERT INTO NhanSu (MaNhanSu, HoTen, NgaySinh, SDT, CCCD, Email, DiaChi, MaChucV
 ('NS198', N'Đặng Hữu Hậu', '1966/06/23', '983445044', '931739242236', 'robert12@gmail.com', N'Lake Julian', 'CV001', '2018/03/25', 23000000),
 ('NS199', N'Phan Thị Duy', '1976/12/27', '976550983', '367597090397', 'markrios@gmail.com', N'Newtonfurt', 'CV004', '2022/01/19', 20000000),
 ('NS200', N'Đặng Tuấn Hùng', '1976/12/12', '960060809', '157949092994', 'landerson@gmail.com', N'Brownport', 'CV020', '2016/06/28', 7000000);
-=======
+
 create table HoaDonDatTiec (
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
 	maHDDT varchar(12) not null primary key,
@@ -612,4 +612,4 @@ create table HoaDonDatTiec (
 	ngayLap date not null,
 	tongTien float not null,
 	trangThai nvarchar(150) not null)
->>>>>>> GiaoDien_KimNgan
+

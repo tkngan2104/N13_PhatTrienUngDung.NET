@@ -465,3 +465,18 @@ INSERT INTO NhanSu (MaNhanSu, HoTen, NgaySinh, SDT, CCCD, Email, DiaChi, MaChucV
 ('NS198', 'Do Quoc Khoa', '1985-11-02', '0929087252', '810369338329', 'doquockhoa504@gmail.com', 'Thanh Hoa', 'CV029', '2011-09-19', 21950202.00),
 ('NS199', 'Dang Hong Khoa', '2000-08-24', '0921398745', '431782662713', 'danghongkhoa330@gmail.com', 'Hai Phong', 'CV032', '2023-07-24', 33173055.00),
 ('NS200', 'Tran Hai Chau', '1993-08-13', '0938620613', '929739748895', 'tranhaichau722@gmail.com', 'Ha Noi', 'CV007', '2022-05-02', 31416954.00);
+
+
+
+
+
+-- Chèn dữ liệu mẫu vào bảng DichVu
+INSERT INTO DichVu (maDV, tenDV, giaTien)
+VALUES
+('DV011', N'Phòng nghỉ cao cấp', 1500000),     -- Giá phòng nghỉ cao cấp
+('DV211', N'Bể bơi ngoài trời', 200000),       -- Giá sử dụng bể bơi ngoài trời
+('DV031', N'Spa thư giãn', 500000),            -- Giá dịch vụ spa
+('DV041', N'Bữa tiệc BBQ ngoài trời', 350000), -- Giá dịch vụ BBQ
+('DV051', N'Chèo thuyền kayak', 100000);       -- Giá dịch vụ chèo thuyền kayak
+
+

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,27 @@ namespace GUI
 {
     public partial class KhachHang: Form
     {
+        BUS_KhachHang bus = new BUS_KhachHang();
         public KhachHang()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Load danh sách khách hàng lên datagridview
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void KhachHang_Load(object sender, EventArgs e)
+        {
+            layDSKH();
+        }
+        //Lấy danh sách khách hàng
+        public void layDSKH()
+        {
+            dgvDSKH.DataSource = bus.layDSKH();
+        }
+
+
 
         /// <summary>
         /// Btn thoát.
@@ -30,5 +48,7 @@ namespace GUI
                 this.Close();
             }
         }
+
+        
     }
 }
