@@ -39,27 +39,27 @@ namespace GUI
             this.mainForm = mainForm;
         }
 
-        /// <summary>
-        /// Btn loại phòng.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnLoaiPhong_Click(object sender, EventArgs e)
-        {
-            Menu formMenu = (Menu)this.ParentForm;
-            formMenu.openChildForm(new LoaiPhong());
-        }
+        ///// <summary>
+        ///// Btn loại phòng.
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
+        //private void btnLoaiPhong_Click(object sender, EventArgs e)
+        //{
+        //    Menu formMenu = (Menu)this.ParentForm;
+        //    formMenu.openChildForm(new LoaiPhong());
+        //}
 
-        /// <summary>
-        /// Btn loại giường.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        ///// <summary>
+        ///// Btn loại giường.
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
         
-        private void btnLoaiGiuong_Click(object sender, EventArgs e)
-        {
-            Menu formMenu = (Menu)this.ParentForm;
-            formMenu.openChildForm(new LoaiGiuong());
-        }
+        //private void btnLoaiGiuong_Click(object sender, EventArgs e)
+        //{
+        //    Menu formMenu = (Menu)this.ParentForm;
+        //    formMenu.openChildForm(new LoaiGiuong());
+        //}
     }
 }
