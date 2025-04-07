@@ -258,44 +258,30 @@ namespace GUI
         /// <param name="sender"></param>
         /// <param name="e"></param>
 
-        private LoaiPhong lp;
-        private void btnLoaiPhong_Click(object sender, EventArgs e)
-        {
-            if (lp == null || lp.IsDisposed)
-            {
-                openChildForm(new LoaiPhong());
-            }
-            else
-            {
-                lp.BringToFront();
-            }
-        }
+        //private LoaiPhong lp;
+        //private void btnLoaiPhong_Click(object sender, EventArgs e)
+        //{
 
-        /// <summary>
-        /// Btn loại giường.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        //}
 
-        private LoaiGiuong lg;
-        private void btnLoaiGiuong_Click(object sender, EventArgs e)
-        {
-            if (lg == null || lg.IsDisposed)
-            {
-                openChildForm(new LoaiGiuong());
-            }
-            else
-            {
-                lg.BringToFront();
-            }
-        }
+        ///// <summary>
+        ///// Btn loại giường.
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
+
+        //private LoaiGiuong lg;
+        //private void btnLoaiGiuong_Click(object sender, EventArgs e)
+        //{
+
+        //}
 
         /// <summary>
         /// Btn sử dụng dịch vụ.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        
+
         private SuDungDichVu sddv;
         private void btnSDDichVu_Click(object sender, EventArgs e)
         {

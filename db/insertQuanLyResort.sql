@@ -465,3 +465,85 @@ INSERT INTO NhanSu (MaNhanSu, HoTen, NgaySinh, SDT, CCCD, Email, DiaChi, MaChucV
 ('NS198', 'Do Quoc Khoa', '1985-11-02', '0929087252', '810369338329', 'doquockhoa504@gmail.com', 'Thanh Hoa', 'CV029', '2011-09-19', 21950202.00),
 ('NS199', 'Dang Hong Khoa', '2000-08-24', '0921398745', '431782662713', 'danghongkhoa330@gmail.com', 'Hai Phong', 'CV032', '2023-07-24', 33173055.00),
 ('NS200', 'Tran Hai Chau', '1993-08-13', '0938620613', '929739748895', 'tranhaichau722@gmail.com', 'Ha Noi', 'CV007', '2022-05-02', 31416954.00);
+
+
+
+
+-- Chèn dữ liệu mẫu vào bảng DichVu
+insert into DichVu (maDV, tenDV, giaTien) values
+('DV001', 'Dịch vụ spa', 500000),
+('DV002', 'Thuê phòng Deluxe', 2000000),
+('DV003', 'Chèo thuyền kayak', 300000),
+('DV004', 'Dịch vụ massage', 400000),
+('DV005', 'Dịch vụ đưa đón sân bay', 600000),
+('DV006', 'Bể bơi ngoài trời', 100000),
+('DV007', 'Lớp yoga buổi sáng', 250000),
+('DV008', 'Chuyến tham quan núi', 800000),
+('DV009', 'Bữa tối hải sản', 700000),
+('DV010', 'Tour du lịch trong thành phố', 600000),
+('DV011', 'Dịch vụ tổ chức sự kiện', 1500000),
+('DV012', 'Thuê xe đạp', 150000),
+('DV013', 'Dịch vụ tắm bùn', 350000),
+('DV014', 'Dịch vụ thư giãn tại phòng', 450000),
+('DV015', 'Dịch vụ nướng BBQ ngoài trời', 900000),
+('DV016', 'Thuê xe ô tô', 1200000),
+('DV017', 'Chèo thuyền cano', 500000),
+('DV018', 'Dịch vụ giặt ủi', 100000),
+('DV019', 'Dịch vụ làm đẹp', 300000),
+('DV020', 'Dịch vụ tổ chức tiệc cưới', 2500000);
+go
+
+
+-- Thêm các loại món ăn vào bảng LoaiMonAn
+INSERT INTO LoaiMonAn (maLMA, tenLMA) VALUES
+('LMA01', 'Món Á'),
+('LMA02', 'Món Âu'),
+('LMA03', 'Món Nhật'),
+('LMA04', 'Món Hàn'),
+('LMA05', 'Món Trung'),
+('LMA06', 'Món Hoa');
+
+-- Thêm các món ăn vào bảng MonAn với giá tiền là VND
+INSERT INTO MonAn (maMA, maLMA, tenMA, giaTien, mieuTa) VALUES
+-- Món Á (LMA01)
+('MA001', 'LMA01', 'Bò Wagyu Nướng Đá', 28200000.0, 'Miếng thịt bò Wagyu nướng trực tiếp trên đá nóng, kết hợp gia vị đặc trưng.'),
+('MA002', 'LMA01', 'Tôm Hùm Nướng Mặn', 35250000.0, 'Tôm hùm tươi sống nướng mặn với bơ tỏi, phục vụ cùng rau củ tươi.'),
+('MA003', 'LMA01', 'Foie Gras Nướng Mật Ong', 18800000.0, 'Gan ngỗng nướng nhẹ với mật ong, ăn kèm bánh mì nướng giòn.'),
+('MA004', 'LMA01', 'Sò Điệp Nướng Bơ', 11750000.0, 'Sò điệp tươi nướng cùng bơ và tỏi, một món ăn đơn giản nhưng đậm đà.'),
+('MA005', 'LMA01', 'Bò Kobe Nướng', 47000000.0, 'Thịt bò Kobe nướng hoàn hảo, ăn kèm với khoai tây nghiền và rau củ.'),
+
+-- Món Âu (LMA02)
+('MA006', 'LMA02', 'Sườn Cừu Nướng', 42300000.0, 'Sườn cừu nướng trên than hồng, phục vụ cùng nước sốt gia truyền.'),
+('MA007', 'LMA02', 'Trái Cây Tươi Cao Cấp', 8225000.0, 'Kết hợp nhiều loại trái cây nhập khẩu như dưa hấu, nho, và kiwi.'),
+('MA008', 'LMA02', 'Tôm Càng Xanh Sốt Bơ Tỏi', 16450000.0, 'Tôm càng xanh tươi sống, chế biến với sốt bơ tỏi thượng hạng.'),
+('MA009', 'LMA02', 'Mực Nướng', 14100000.0, 'Mực tươi nướng, gia vị tinh tế, đậm đà hương vị biển cả.'),
+('MA010', 'LMA02', 'Trái Cây Nướng', 9400000.0, 'Trái cây nướng nhẹ, hương vị caramel ngọt ngào và thơm phức.'),
+
+-- Món Nhật (LMA03)
+('MA011', 'LMA03', 'Súp Hào Nhồi Trứng Cá', 21150000.0, 'Hào tươi nhồi trứng cá, được chế biến thành súp thơm ngon, bổ dưỡng.'),
+('MA012', 'LMA03', 'Cánh Gà Nướng Sốt Mật', 15275000.0, 'Cánh gà nướng vàng ươm với sốt mật ong đặc biệt, ăn kèm khoai tây chiên.'),
+('MA013', 'LMA03', 'Chè Trái Cây Cao Cấp', 10525000.0, 'Chè trái cây với nhiều loại trái cây tươi ngon, kết hợp với nước cốt dừa béo ngậy.'),
+('MA014', 'LMA03', 'Mì Ý Hải Sản', 16450000.0, 'Mì Ý được kết hợp với hải sản tươi ngon như tôm, mực, và sò điệp.'),
+('MA015', 'LMA03', 'Gà Nướng Tỏi Thảo Mộc', 17625000.0, 'Gà tươi nướng chín đều, thơm ngon với gia vị thảo mộc tự nhiên.'),
+
+-- Món Hàn (LMA04)
+('MA016', 'LMA04', 'Salad Tôm Hùm', 25850000.0, 'Salad với tôm hùm tươi, rau xanh, và nước sốt dầu giấm.'),
+('MA017', 'LMA04', 'Pasta Nước Sốt Truffle', 22325000.0, 'Mì pasta trộn với nước sốt truffle thượng hạng, đậm đà hương vị.'),
+('MA018', 'LMA04', 'Bánh Mousse Chocolate', 11750000.0, 'Bánh mousse chocolate đậm đặc, mềm mịn, vị ngọt thanh.'),
+('MA019', 'LMA04', 'Gỏi Cá Ngừ', 18800000.0, 'Gỏi cá ngừ tươi, kèm rau sống và nước mắm chua ngọt.'),
+('MA020', 'LMA04', 'Tôm Càng Xanh Chiên Giòn', 17625000.0, 'Tôm càng xanh chiên giòn với gia vị đậm đà, chấm kèm nước sốt đặc biệt.'),
+
+-- Món Trung (LMA05)
+('MA021', 'LMA05', 'Chả Cá Lã Vọng', 22325000.0, 'Chả cá lạ Vọng thơm ngon, được chế biến từ cá tươi ngon nhất, ăn kèm rau sống.'),
+('MA022', 'LMA05', 'Bánh Trung Thu Cao Cấp', 9400000.0, 'Bánh trung thu với nhân thập cẩm cao cấp, vị ngọt thanh mát.'),
+('MA023', 'LMA05', 'Bò Stew Vang', 30550000.0, 'Món bò stew ninh mềm, nước dùng đậm đà với gia vị thảo mộc.'),
+('MA024', 'LMA05', 'Sò Điệp Nướng Truffle', 19975000.0, 'Sò điệp nướng với dầu truffle, thơm ngọt và béo ngậy.'),
+('MA025', 'LMA05', 'Caramel Pudding', 7050000.0, 'Pudding caramel mềm mịn, vị ngọt thanh nhẹ nhàng.'),
+
+-- Món Hoa (LMA06)
+('MA026', 'LMA06', 'Lẩu Hải Sản Cao Cấp', 42300000.0, 'Lẩu hải sản với các loại hải sản tươi ngon nhất, nước dùng đậm đà.'),
+('MA027', 'LMA06', 'Cơm Chiên Hải Sản', 16450000.0, 'Cơm chiên vàng, kết hợp với hải sản tươi như tôm, sò, và mực.'),
+('MA028', 'LMA06', 'Thịt Cừu Nướng Thảo Mộc', 37600000.0, 'Thịt cừu nướng thượng hạng, phủ lớp gia vị thảo mộc, ăn kèm sốt đặc biệt.'),
+('MA029', 'LMA06', 'Bánh Mì Bơ Tỏi', 7050000.0, 'Bánh mì giòn, phủ lớp bơ tỏi, nướng vừa phải cho vị bơ thơm ngậy.'),
+('MA030', 'LMA06', 'Bánh Trung Thu Cao Cấp', 9400000.0, 'Bánh trung thu với nhân thập cẩm cao cấp, vị ngọt thanh mát.');
+go

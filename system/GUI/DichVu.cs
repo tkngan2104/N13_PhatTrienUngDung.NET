@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace GUI
 {
     public partial class DichVu: Form
     {
+        private BUS_DichVu bus = new BUS_DichVu();
         public DichVu()
         {
             InitializeComponent();
@@ -29,6 +31,24 @@ namespace GUI
             {
                 this.Close();
             }
+        }
+
+        /// <summary>
+        /// Lấy danh sách dịch vụ
+        /// </summary>
+        public void layDSSV()
+        {
+            dgvDSDV.DataSource = bus.layDSSV();
+        }
+
+        /// <summary>
+        /// Load danh sách dịch vụ
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DichVu_Load(object sender, EventArgs e)
+        {
+            layDSSV();
         }
     }
 }
