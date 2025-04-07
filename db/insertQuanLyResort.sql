@@ -469,15 +469,29 @@ INSERT INTO NhanSu (MaNhanSu, HoTen, NgaySinh, SDT, CCCD, Email, DiaChi, MaChucV
 
 
 
-
 -- Chèn dữ liệu mẫu vào bảng DichVu
-INSERT INTO DichVu (maDV, tenDV, giaTien)
-VALUES
-('DV001', N'Phòng nghỉ cao cấp', 1500000),     -- Giá phòng nghỉ cao cấp
-('DV002', N'Bể bơi ngoài trời', 200000),       -- Giá sử dụng bể bơi ngoài trời
-('DV003', N'Spa thư giãn', 500000),            -- Giá dịch vụ spa
-('DV004', N'Bữa tiệc BBQ ngoài trời', 350000), -- Giá dịch vụ BBQ
-('DV005', N'Chèo thuyền kayak', 100000);       -- Giá dịch vụ chèo thuyền kayak
+insert into DichVu (maDV, tenDV, giaTien) values
+('DV001', 'Dịch vụ spa', 500000),
+('DV002', 'Thuê phòng Deluxe', 2000000),
+('DV003', 'Chèo thuyền kayak', 300000),
+('DV004', 'Dịch vụ massage', 400000),
+('DV005', 'Dịch vụ đưa đón sân bay', 600000),
+('DV006', 'Bể bơi ngoài trời', 100000),
+('DV007', 'Lớp yoga buổi sáng', 250000),
+('DV008', 'Chuyến tham quan núi', 800000),
+('DV009', 'Bữa tối hải sản', 700000),
+('DV010', 'Tour du lịch trong thành phố', 600000),
+('DV011', 'Dịch vụ tổ chức sự kiện', 1500000),
+('DV012', 'Thuê xe đạp', 150000),
+('DV013', 'Dịch vụ tắm bùn', 350000),
+('DV014', 'Dịch vụ thư giãn tại phòng', 450000),
+('DV015', 'Dịch vụ nướng BBQ ngoài trời', 900000),
+('DV016', 'Thuê xe ô tô', 1200000),
+('DV017', 'Chèo thuyền cano', 500000),
+('DV018', 'Dịch vụ giặt ủi', 100000),
+('DV019', 'Dịch vụ làm đẹp', 300000),
+('DV020', 'Dịch vụ tổ chức tiệc cưới', 2500000);
+go
 
 
 -- Thêm các loại món ăn vào bảng LoaiMonAn
@@ -532,3 +546,4 @@ INSERT INTO MonAn (maMA, maLMA, tenMA, giaTien, mieuTa) VALUES
 ('MA028', 'LMA06', 'Thịt Cừu Nướng Thảo Mộc', 37600000.0, 'Thịt cừu nướng thượng hạng, phủ lớp gia vị thảo mộc, ăn kèm sốt đặc biệt.'),
 ('MA029', 'LMA06', 'Bánh Mì Bơ Tỏi', 7050000.0, 'Bánh mì giòn, phủ lớp bơ tỏi, nướng vừa phải cho vị bơ thơm ngậy.'),
 ('MA030', 'LMA06', 'Bánh Trung Thu Cao Cấp', 9400000.0, 'Bánh trung thu với nhân thập cẩm cao cấp, vị ngọt thanh mát.');
+go
