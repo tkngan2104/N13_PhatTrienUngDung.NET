@@ -33,5 +33,16 @@ namespace ET.Properties {
                 return ((string)(this["DbQuanLyResortConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAM\\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Security=Tru" +
+            "e;Encrypt=True;TrustServerCertificate=True")]
+        public string DbQuanLyResortConnectionString1 {
+            get {
+                return ((string)(this["DbQuanLyResortConnectionString1"]));
+            }
+        }
     }
 }

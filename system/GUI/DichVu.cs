@@ -38,7 +38,7 @@ namespace GUI
         /// </summary>
         public void layDSSV()
         {
-            dataGridView1.DataSource = bus.layDSSV();
+            dgvDSDV.DataSource = bus.layDSSV();
         }
 
         /// <summary>

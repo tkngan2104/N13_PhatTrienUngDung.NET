@@ -10,7 +10,7 @@ namespace BUS
 {
     public class BUS_KhachHang
     {
-        private readonly DAL_KhachHang dal;
+        private readonly DAL_KhachHang dal = new DAL_KhachHang();
 
         //Lấy danh sách khách hàng
         public IQueryable layDSKH()

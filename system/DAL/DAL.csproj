@@ -51,11 +51,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="QLResort.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLResort.dbml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ET\ET.csproj">
@@ -68,14 +63,6 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="QLResort.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>QLResort.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QLResort.dbml.layout">
-      <DependentUpon>QLResort.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

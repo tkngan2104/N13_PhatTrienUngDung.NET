@@ -87,7 +87,7 @@ namespace ET
     #endregion
 		
 		public QLResortDataContext() : 
-				base(global::ET.Properties.Settings.Default.DbQuanLyResortConnectionString, mappingSource)
+				base(global::ET.Properties.Settings.Default.DbQuanLyResortConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
