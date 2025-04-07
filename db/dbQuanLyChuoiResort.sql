@@ -51,7 +51,7 @@ create table NhanSu(
 -----QUẢN LÝ RESORT
 
 create table Phong(
-	maPhong varchar(5) not null primary key,
+	maPhong varchar(10) not null primary key,
 	tenLP nvarchar(45) not null,
 	tenLG nvarchar(45) not null,
 	giaP float not null,
@@ -66,7 +66,7 @@ create table DatPhong(
 create table ChiTietDatPhong(
 	maDP varchar(12) not null references DatPhong(maDP),
 	maCTDP varchar(12) not null primary key,
-	maPhong varchar(5) references Phong(maPhong),
+	maPhong varchar(10) references Phong(maPhong),
 	ngayTraPhong date)
 
 create table DichVu(
@@ -96,7 +96,7 @@ create table ChiTietCombo (
 	maMA varchar(7) references MonAn(maMA))
 
 create table SanhDatTiec (
-	maS varchar(4) not null primary key,
+	maS varchar(5) not null primary key,
 	tenS nvarchar(45) not null,
 	giaSDT float)
 
@@ -105,7 +105,7 @@ create table DatTiec (
 	maDT varchar(12) not null primary key, ---6: DT0001, 6: ddmmyy
 	MaKH nvarchar(10) not null references KhachHang(MaKH),
 	ngayDT date not null,
-	maS varchar(4) not null references SanhDatTiec(maS),
+	maS varchar(5) not null references SanhDatTiec(maS),
 	ghiChu nvarchar(250),
 	ngayBatDau date not null,
 	ngayKetThuc date,
@@ -142,6 +142,7 @@ CREATE TABLE HoaDonDatPhong (
     tongTien float not null,
 	trangThai nvarchar(150) not null)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -615,6 +616,8 @@ INSERT INTO NhanSu (MaNhanSu, HoTen, NgaySinh, SDT, CCCD, Email, DiaChi, MaChucV
 ('NS199', N'Phan Thị Duy', '1976/12/27', '976550983', '367597090397', 'markrios@gmail.com', N'Newtonfurt', 'CV004', '2022/01/19', 20000000),
 ('NS200', N'Đặng Tuấn Hùng', '1976/12/12', '960060809', '157949092994', 'landerson@gmail.com', N'Brownport', 'CV020', '2016/06/28', 7000000);
 
+=======
+>>>>>>> origin/CRUD_KimNgan
 create table HoaDonDatTiec (
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
 	maHDDT varchar(12) not null primary key,
@@ -622,4 +625,7 @@ create table HoaDonDatTiec (
 	ngayLap date not null,
 	tongTien float not null,
 	trangThai nvarchar(150) not null)
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/CRUD_KimNgan
