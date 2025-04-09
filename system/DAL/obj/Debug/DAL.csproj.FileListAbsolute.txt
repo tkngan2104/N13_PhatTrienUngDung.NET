@@ -18,3 +18,14 @@ D:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.ca
 D:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
 D:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\DAL.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\ET.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\ET.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\ET.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.pdb

@@ -22,3 +22,16 @@ D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.ca
 D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
 D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
 D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\BUS.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\ET.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\DAL.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\ET.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\ET.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.csproj.Up2Date
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.pdb

@@ -24,6 +24,7 @@ namespace ET
             this.NgaySinh = ngaySinh;
         }
 
+        public ET_KhachHang() { }
         public string MaKH { get => maKH; set => maKH = value; }
         public string TenKH { get => tenKH; set => tenKH = value; }
         public string SoDT { get => soDT; set => soDT = value; }

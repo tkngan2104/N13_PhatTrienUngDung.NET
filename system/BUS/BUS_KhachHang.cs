@@ -24,8 +24,14 @@ namespace BUS
             return dal.themKhachHang(et);
         }
 
+        //Mã khách hàng tự động tăng
+        public string taoMaKH()
+        {
+            return dal.TaoMaKH();
+        }
+
         //xoá khách hàng khỏi danh sách
-        public bool xoaKhachHang(ET_KhachHang et)
+        public bool xoaKhachHang(string et)
         {
             return dal.xoaKhachHang(et);
         }

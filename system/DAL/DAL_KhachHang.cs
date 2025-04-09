@@ -21,28 +21,25 @@ namespace DAL
         }
 
         //Xoá khách hàng
-        public bool xoaKhachHang(ET_KhachHang et)
+        public bool xoaKhachHang(string maKH)
         {
-            bool flag = false;
-
-            if (string.IsNullOrEmpty(et.MaKH))
+            try
             {
-                throw new Exception("Vui lòng chọn mã khách hàng để xóa!");
+                var kh = db.KhachHangs.SingleOrDefault(k => k.MaKH == maKH);
+                if (kh != null)
+                {
+                    db.KhachHangs.DeleteOnSubmit(kh);
+                    db.SubmitChanges();
+                    return true;
+                }
+                return false;
             }
-
-            if (et.MaKH == null)
+            catch
             {
-                throw new Exception("Không tìm thấy khách hàng với mã: "+ et.MaKH);
+                return false;
             }
-            var xoa = db.KhachHangs.SingleOrDefault(kh => kh.MaKH == et.MaKH);
-            
-                db.KhachHangs.DeleteOnSubmit(xoa);
-                db.SubmitChanges();
-                flag = true;
-           
-            return flag;
-            
         }
+
 
         //Thêm khách hàng
         public bool themKhachHang(ET_KhachHang et)
@@ -73,31 +70,50 @@ namespace DAL
             return flag;
         }
 
+        //Mã khách hàng tăng tự động
+        public string TaoMaKH()
+        {
+            var khCuoi = db.KhachHangs
+                           .OrderByDescending(k => k.MaKH)
+                           .Select(k => k.MaKH)
+                           .FirstOrDefault();
+
+            if (khCuoi == null) return "KH0001";
+
+            // Bỏ phần "KH" để lấy số
+            string soKhCuoiStr = khCuoi.Substring(2);
+
+            // Chuyển sang số, tăng 1
+            int so = int.Parse(soKhCuoiStr) + 1;
+
+            // Ghép lại mã mới với 4 chữ số
+            return "KH" + so.ToString("D4"); // D4: luôn có 4 chữ số, thêm số 0 phía trước nếu cần
+        }
+
+        //sửa khách hàng
         public bool suaKhachHang(ET_KhachHang et)
         {
-            bool flag = false;
-            try
-            {
-                var sua = db.KhachHangs.SingleOrDefault(k => k.MaKH == et.MaKH);
-                if (sua != null)
-                {
-                    //Cập nhật các trường
-                    sua.TenKH = et.TenKH;
-                    sua.SoDT = et.SoDT;
-                    sua.GioiTinh = et.GioiTinh;
-                    sua.Email = et.Email;
-                    sua.CCCD = et.Cccd;
-                    sua.QuocTich = et.QuocTich;
-                    db.SubmitChanges();
-                    flag |= true;
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Lỗi: "+ex);
-            }
+            if (string.IsNullOrEmpty(et.MaKH))
+                throw new Exception("Mã khách hàng không được để trống!");
 
-            return flag;
+            var kh = db.KhachHangs.SingleOrDefault(x => x.MaKH == et.MaKH);
+
+            if (kh == null)
+                throw new Exception("Không tìm thấy khách hàng để cập nhật!");
+
+            // Cập nhật các thuộc tính
+            kh.TenKH = et.TenKH;
+            kh.SoDT = et.SoDT;
+            kh.NgaySinh = et.NgaySinh;
+            kh.GioiTinh = et.GioiTinh;
+            kh.Diachi = et.DiaChi;
+            kh.Email = et.Email;
+            kh.CCCD = et.Cccd;
+            kh.QuocTich = et.QuocTich;
+
+            db.SubmitChanges();
+            return true;
         }
+
     }
 }
