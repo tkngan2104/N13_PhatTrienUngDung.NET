@@ -51,3 +51,14 @@ C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.
 C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.dll
 C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb

@@ -61,3 +61,16 @@ C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.
 C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.dll
 C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb

@@ -74,7 +74,7 @@
             this.pnlTieuDe.Controls.Add(this.lblQLKhachHang);
             this.pnlTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTieuDe.Location = new System.Drawing.Point(0, 0);
-            this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTieuDe.Name = "pnlTieuDe";
             this.pnlTieuDe.Size = new System.Drawing.Size(996, 65);
             this.pnlTieuDe.TabIndex = 0;
@@ -113,9 +113,9 @@
             this.groupBox1.Controls.Add(this.lblMaKH);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(21, 83);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(933, 385);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -124,7 +124,7 @@
             // txtQuocTich
             // 
             this.txtQuocTich.Location = new System.Drawing.Point(362, 53);
-            this.txtQuocTich.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtQuocTich.Margin = new System.Windows.Forms.Padding(2);
             this.txtQuocTich.Name = "txtQuocTich";
             this.txtQuocTich.Size = new System.Drawing.Size(203, 26);
             this.txtQuocTich.TabIndex = 21;
@@ -134,7 +134,7 @@
             this.radNu.AutoSize = true;
             this.radNu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radNu.Location = new System.Drawing.Point(455, 200);
-            this.radNu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radNu.Margin = new System.Windows.Forms.Padding(2);
             this.radNu.Name = "radNu";
             this.radNu.Size = new System.Drawing.Size(45, 22);
             this.radNu.TabIndex = 20;
@@ -147,7 +147,7 @@
             this.radNam.Checked = true;
             this.radNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radNam.Location = new System.Drawing.Point(362, 202);
-            this.radNam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radNam.Margin = new System.Windows.Forms.Padding(2);
             this.radNam.Name = "radNam";
             this.radNam.Size = new System.Drawing.Size(58, 22);
             this.radNam.TabIndex = 19;
@@ -158,7 +158,7 @@
             // txtDiaChi
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(47, 266);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(839, 106);
@@ -178,7 +178,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(683, 126);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(203, 26);
             this.txtEmail.TabIndex = 16;
@@ -198,7 +198,7 @@
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(683, 53);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(203, 26);
             this.txtSDT.TabIndex = 14;
@@ -231,7 +231,7 @@
             this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgaySinh.Location = new System.Drawing.Point(362, 126);
-            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(2);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(203, 26);
             this.dtpNgaySinh.TabIndex = 10;
@@ -240,7 +240,7 @@
             // txtCCCD
             // 
             this.txtCCCD.Location = new System.Drawing.Point(47, 198);
-            this.txtCCCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCCCD.Margin = new System.Windows.Forms.Padding(2);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(203, 26);
             this.txtCCCD.TabIndex = 9;
@@ -282,7 +282,7 @@
             // txtTenKH
             // 
             this.txtTenKH.Location = new System.Drawing.Point(47, 126);
-            this.txtTenKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenKH.Name = "txtTenKH";
             this.txtTenKH.Size = new System.Drawing.Size(203, 26);
             this.txtTenKH.TabIndex = 3;
@@ -302,7 +302,7 @@
             // 
             this.txtMaKH.Enabled = false;
             this.txtMaKH.Location = new System.Drawing.Point(47, 53);
-            this.txtMaKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(203, 26);
             this.txtMaKH.TabIndex = 1;
@@ -323,9 +323,9 @@
             this.groupBox3.Controls.Add(this.dgvDSKH);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(21, 592);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(933, 275);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
@@ -339,7 +339,7 @@
             this.dgvDSKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSKH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDSKH.Location = new System.Drawing.Point(2, 21);
-            this.dgvDSKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDSKH.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDSKH.Name = "dgvDSKH";
             this.dgvDSKH.RowHeadersWidth = 62;
             this.dgvDSKH.RowTemplate.Height = 28;
@@ -356,9 +356,9 @@
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(21, 491);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(933, 80);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
@@ -371,7 +371,7 @@
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Location = new System.Drawing.Point(748, 31);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(144, 27);
             this.btnThoat.TabIndex = 26;
@@ -386,7 +386,7 @@
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
             this.btnLamMoi.Location = new System.Drawing.Point(571, 31);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(144, 27);
             this.btnLamMoi.TabIndex = 25;
@@ -401,7 +401,7 @@
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
             this.btnSua.Location = new System.Drawing.Point(393, 31);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(144, 27);
             this.btnSua.TabIndex = 24;
@@ -416,7 +416,7 @@
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Location = new System.Drawing.Point(216, 31);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(144, 27);
             this.btnXoa.TabIndex = 23;
@@ -431,7 +431,7 @@
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Location = new System.Drawing.Point(41, 31);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(144, 27);
             this.btnThem.TabIndex = 22;
@@ -455,7 +455,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pnlTieuDe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "KhachHang";
             this.Text = "KhachHang";
             this.Load += new System.EventHandler(this.KhachHang_Load);
