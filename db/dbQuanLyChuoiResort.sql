@@ -3,7 +3,7 @@ create database DbQuanLyResort
 go
 use DbQuanLyResort
 go
-SET DATEFORMAT YMD;
+SET DATEFORMAT ymd;
 
 go
 
@@ -45,6 +45,17 @@ create table NhanSu(
 
 -----QUẢN LÝ RESORT
 
+---khu A1 : khu tòa nhà (5 tòa).
+
+---khu A2 : khu villa (8 cái).
+
+
+create table NhaThue(
+	maNT varchar(10) not null primary key,
+	tenLG nvarchar(45) not null,
+	giaNha float not null,
+	tinhTrang nvarchar(45) not null)
+
 create table Phong(
 	maPhong varchar(10) not null primary key,
 	tenLP nvarchar(45) not null,
@@ -62,6 +73,7 @@ create table ChiTietDatPhong(
 	maDP varchar(12) not null references DatPhong(maDP),
 	maCTDP varchar(12) not null primary key,
 	maPhong varchar(10) references Phong(maPhong),
+	maNT varchar(10) references NhaThue(maNT),
 	ngayTraPhong date)
 
 create table DichVu(
