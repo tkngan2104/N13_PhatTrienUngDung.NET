@@ -13,7 +13,7 @@ namespace BUS
         DAL_LoaiMonAn dal = new DAL_LoaiMonAn();
 
         //Lấy danh sách loại món ăn
-        public IQueryable layDSLMA()
+        public IQueryable<ET.LoaiMonAn> layDSLMA()
         {
             return dal.layDSLMA();
         }

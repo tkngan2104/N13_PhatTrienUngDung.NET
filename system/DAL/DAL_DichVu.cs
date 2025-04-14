@@ -11,12 +11,18 @@ namespace DAL
     {
         QLResortDataContext db= new QLResortDataContext();
         // Lấy danh sách dịch vụ
-        public IQueryable layDSDV()
+        public IQueryable<ET.DichVu> layDSSV()
         {
-            IQueryable dv = from el in db.DichVus
+            // Lấy danh sách dịch vụ trực tiếp từ IQueryable
+            var dv = from el in db.DichVus
                      select el;
+
+            // Sắp xếp theo mã lớn nhất
+            dv = dv.OrderByDescending(et => et.maDV);
+
             return dv;
         }
+
 
         // Thêm dịch vụ
         public bool themDichVu(ET_DichVu et)

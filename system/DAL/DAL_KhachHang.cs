@@ -13,11 +13,15 @@ namespace DAL
         QLResortDataContext db = new QLResortDataContext();
 
         //Lấy danh sách khách hàng
-        public IQueryable layDSKH()
+        public IQueryable<ET.KhachHang> layDSKH()
         {
-            IQueryable kh = from el in db.KhachHangs
-                            select el;
-            return kh;
+            var dv = from el in db.KhachHangs
+                     select el;
+
+            // Sắp xếp theo mã lớn nhất
+            dv = dv.OrderByDescending(et => et.MaKH);
+
+            return dv;
         }
 
         //Xoá khách hàng

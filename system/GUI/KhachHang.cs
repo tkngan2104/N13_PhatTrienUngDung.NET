@@ -30,6 +30,8 @@ namespace GUI
         private void KhachHang_Load(object sender, EventArgs e)
         {
             layDSKH();
+            btnLamMoi_Click(sender, e);
+            dtpNgaySinh.MaxDate = DateTime.Today;
         }
         //Lấy danh sách khách hàng
         public void layDSKH()
@@ -220,16 +222,7 @@ namespace GUI
         /// <param name="e"></param>
         private void txtCCCD_TextChanged(object sender, EventArgs e)
         {
-            string cccd = txtCCCD.Text.Trim();
-            if (!string.IsNullOrEmpty(cccd) && (cccd.Length != 12 || !cccd.All(char.IsDigit)))
-            {
-                errorProvider1.SetError(txtCCCD, "CCCD phải gồm đúng 12 chữ số.");
-            }
-            else
-            {
-                errorProvider1.SetError(txtCCCD, "");
-            }
-            this.Focus();
+
         }
 
         /// <summary>
@@ -314,6 +307,9 @@ namespace GUI
 
             // Đưa focus về ô đầu tiên nếu muốn
             txtTenKH.Focus();
+
+            //gán mã tự động
+            txtMaKH.Text = bus.taoMaKH();
         }
 
         /// <summary>
@@ -410,6 +406,91 @@ namespace GUI
         }
 
 
+        /// <summary>
+        /// CCCD chỉ chứa số
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtCCCD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Nếu không phải số và không phải phím điều khiển (Backspace, Delete...) thì chặn
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtCCCD, "CCCD chỉ được nhập số.");
+                return;
+            }
 
+            // Nếu đã đủ 15 ký tự và không đang ghi đè (tức là không bôi đen) thì chặn
+            if (char.IsDigit(e.KeyChar) && txtCCCD.Text.Length >= 12 && txtCCCD.SelectionLength == 0)
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtCCCD, "CCCD tối đa 12 chữ số.");
+                return;
+            }
+
+            // Nếu hợp lệ thì xoá lỗi
+            errorProvider1.SetError(txtCCCD, "");
+        }
+
+
+        /// <summary>
+        /// Quốc tịch không được viết số và ký tự đặc biệt
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtQuocTich_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Cho phép ký tự chữ cái, phím backspace và khoảng trắng
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true; // chặn ký tự không hợp lệ
+                errorProvider1.SetError(txtQuocTich, "Quốc tịch chỉ được chứa chữ cái");
+            }
+            else
+            {
+                errorProvider1.SetError(txtQuocTich, "");
+            }
+        }
+
+
+        /// <summary>
+        /// Bắt lỗi số điện thoại chỉ có số
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Nếu ký tự không phải là số và không phải là phím điều khiển (Backspace...), thì chặn
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // chặn ký tự không hợp lệ
+                errorProvider1.SetError(txtSDT, "Số điện thoại chỉ được chứa số!");
+            }
+            else
+            {
+                errorProvider1.SetError(txtSDT, "");
+            }
+        }
+
+
+        /// <summary>
+        /// Bắt lỗi tên và họ không được viết số và ký tự đặc biệt
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtTenKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Cho phép ký tự chữ cái, phím backspace và khoảng trắng
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true; // chặn ký tự không hợp lệ
+                errorProvider1.SetError(txtTenKH, "Họ và tên chỉ được chứa chữ cái");
+            }
+            else
+            {
+                errorProvider1.SetError(txtTenKH, "");
+            }
+        }
     }
 }

@@ -33,8 +33,6 @@
             this.pnlDuLieuResort = new System.Windows.Forms.Panel();
             this.btnThucDon = new System.Windows.Forms.Button();
             this.btnMonAn = new System.Windows.Forms.Button();
-            this.btnLoaiGiuong = new System.Windows.Forms.Button();
-            this.btnLoaiPhong = new System.Windows.Forms.Button();
             this.btnPhong = new System.Windows.Forms.Button();
             this.btnThongTinNhanSu = new System.Windows.Forms.Button();
             this.btnThongTinKhachHang = new System.Windows.Forms.Button();
@@ -98,8 +96,6 @@
             this.pnlDuLieuResort.BackColor = System.Drawing.Color.AntiqueWhite;
             this.pnlDuLieuResort.Controls.Add(this.btnThucDon);
             this.pnlDuLieuResort.Controls.Add(this.btnMonAn);
-            this.pnlDuLieuResort.Controls.Add(this.btnLoaiGiuong);
-            this.pnlDuLieuResort.Controls.Add(this.btnLoaiPhong);
             this.pnlDuLieuResort.Controls.Add(this.btnPhong);
             this.pnlDuLieuResort.Controls.Add(this.btnThongTinNhanSu);
             this.pnlDuLieuResort.Controls.Add(this.btnThongTinKhachHang);
@@ -116,7 +112,7 @@
             this.btnThucDon.FlatAppearance.BorderSize = 0;
             this.btnThucDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThucDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThucDon.Location = new System.Drawing.Point(0, 276);
+            this.btnThucDon.Location = new System.Drawing.Point(0, 184);
             this.btnThucDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThucDon.Name = "btnThucDon";
             this.btnThucDon.Size = new System.Drawing.Size(363, 46);
@@ -132,7 +128,7 @@
             this.btnMonAn.FlatAppearance.BorderSize = 0;
             this.btnMonAn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMonAn.Location = new System.Drawing.Point(0, 230);
+            this.btnMonAn.Location = new System.Drawing.Point(0, 138);
             this.btnMonAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMonAn.Name = "btnMonAn";
             this.btnMonAn.Size = new System.Drawing.Size(363, 46);
@@ -141,36 +137,6 @@
             this.btnMonAn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMonAn.UseVisualStyleBackColor = true;
             this.btnMonAn.Click += new System.EventHandler(this.btnMonAn_Click);
-            // 
-            // btnLoaiGiuong
-            // 
-            this.btnLoaiGiuong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLoaiGiuong.FlatAppearance.BorderSize = 0;
-            this.btnLoaiGiuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoaiGiuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoaiGiuong.Location = new System.Drawing.Point(0, 184);
-            this.btnLoaiGiuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLoaiGiuong.Name = "btnLoaiGiuong";
-            this.btnLoaiGiuong.Size = new System.Drawing.Size(363, 46);
-            this.btnLoaiGiuong.TabIndex = 12;
-            this.btnLoaiGiuong.Text = "Loại giường";
-            this.btnLoaiGiuong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoaiGiuong.UseVisualStyleBackColor = true;
-            // 
-            // btnLoaiPhong
-            // 
-            this.btnLoaiPhong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLoaiPhong.FlatAppearance.BorderSize = 0;
-            this.btnLoaiPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoaiPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoaiPhong.Location = new System.Drawing.Point(0, 138);
-            this.btnLoaiPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLoaiPhong.Name = "btnLoaiPhong";
-            this.btnLoaiPhong.Size = new System.Drawing.Size(363, 46);
-            this.btnLoaiPhong.TabIndex = 11;
-            this.btnLoaiPhong.Text = "Loại phòng";
-            this.btnLoaiPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoaiPhong.UseVisualStyleBackColor = true;
             // 
             // btnPhong
             // 
@@ -576,7 +542,6 @@
         private System.Windows.Forms.Button btnThongTinNhanSu;
         private System.Windows.Forms.Button btnThongTinKhachHang;
         private System.Windows.Forms.Button btnDuLieuResort;
-        private System.Windows.Forms.Button btnLoaiPhong;
         private System.Windows.Forms.Button btnPhong;
         private System.Windows.Forms.PictureBox picExit;
         private System.Windows.Forms.PictureBox picSetting;
@@ -584,7 +549,6 @@
         private System.Windows.Forms.PictureBox picLogout;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnMonAn;
-        private System.Windows.Forms.Button btnLoaiGiuong;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblDauKetNoi;
         private System.Windows.Forms.Label lblTime;

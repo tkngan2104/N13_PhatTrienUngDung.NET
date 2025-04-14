@@ -252,29 +252,7 @@ namespace GUI
             }
         }
 
-        /// <summary>
-        /// Btn loại phòng.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
-        //private LoaiPhong lp;
-        //private void btnLoaiPhong_Click(object sender, EventArgs e)
-        //{
-
-        //}
-
-        ///// <summary>
-        ///// Btn loại giường.
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
-
-        //private LoaiGiuong lg;
-        //private void btnLoaiGiuong_Click(object sender, EventArgs e)
-        //{
-
-        //}
+        
 
         /// <summary>
         /// Btn sử dụng dịch vụ.

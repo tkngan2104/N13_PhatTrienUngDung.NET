@@ -12,9 +12,9 @@ namespace BUS
     {
         DAL_DichVu dal = new DAL_DichVu();
         // Lấy danh sách dịch vụ
-        public IQueryable layDSSV()
+        public IQueryable<ET.DichVu> layDSSV()
         {
-            return dal.layDSDV();
+            return dal.layDSSV();
         }
 
         //thêm dịch vụ

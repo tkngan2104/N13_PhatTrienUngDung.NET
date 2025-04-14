@@ -13,7 +13,7 @@ namespace BUS
         private readonly DAL_KhachHang dal = new DAL_KhachHang();
 
         //Lấy danh sách khách hàng
-        public IQueryable layDSKH()
+        public IQueryable<ET.KhachHang> layDSKH()
         {
             return dal.layDSKH();
         }

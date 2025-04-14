@@ -50,6 +50,7 @@ namespace GUI
         private void DichVu_Load(object sender, EventArgs e)
         {
             layDSSV();
+            LamMoi();
         }
 
         /// <summary>
@@ -166,6 +167,7 @@ namespace GUI
             txtMaDV.Clear();
             txtTenDV.Clear();
             txtGiaTien.Clear();
+            txtMaDV.Text = bus.taoMaDV();
         }
 
 
@@ -192,6 +194,7 @@ namespace GUI
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             LamMoi();
+
         }
 
         /// <summary>
@@ -222,7 +225,41 @@ namespace GUI
         private void txtGiaTien_Leave(object sender, EventArgs e)
         {
             KiemTraRong(txtGiaTien, "Giá tiền");
+
             this.Focus();
+        }
+
+        private void txtGiaTien_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Chỉ cho nhập số và phím điều khiển (Backspace, Delete...)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Chặn ký tự không hợp lệ
+                errorProvider1.SetError(txtGiaTien, "Chỉ được nhập số.");
+            }
+            else
+            {
+                errorProvider1.SetError(txtGiaTien, "");
+            }
+        }
+
+        private void txtGiaTien_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtGiaTien.Text.Trim(), out int giaTien))
+            {
+                if (giaTien < 20000)
+                    errorProvider1.SetError(txtGiaTien, "Giá tiền phải từ 20.000 trở lên.");
+                else
+                    errorProvider1.SetError(txtGiaTien, "");
+            }
+            else if (!string.IsNullOrWhiteSpace(txtGiaTien.Text))
+            {
+                errorProvider1.SetError(txtGiaTien, "Chỉ được nhập số.");
+            }
+            else
+            {
+                errorProvider1.SetError(txtGiaTien, "");
+            }
         }
     }
 }

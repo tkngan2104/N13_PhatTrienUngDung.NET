@@ -13,11 +13,15 @@ namespace DAL
         QLResortDataContext db = new QLResortDataContext();
 
         //Lấy danh sách loại món ăn
-        public IQueryable layDSLMA()
+        public IQueryable<ET.LoaiMonAn> layDSLMA()
         {
-            IQueryable lma = from el in db.LoaiMonAns
-                             select el;
-            return lma;
+            var dv = from el in db.LoaiMonAns
+                     select el;
+
+            // Sắp xếp theo mã lớn nhất
+            dv = dv.OrderByDescending(et => et.maLMA);
+
+            return dv;
         }
 
         //thêm loại món ăn vào danh sách

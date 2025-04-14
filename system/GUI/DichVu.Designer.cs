@@ -80,6 +80,8 @@
             this.txtGiaTien.Name = "txtGiaTien";
             this.txtGiaTien.Size = new System.Drawing.Size(269, 26);
             this.txtGiaTien.TabIndex = 5;
+            this.txtGiaTien.TextChanged += new System.EventHandler(this.txtGiaTien_TextChanged);
+            this.txtGiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaTien_KeyPress);
             this.txtGiaTien.Leave += new System.EventHandler(this.txtGiaTien_Leave);
             // 
             // lblGiaTien

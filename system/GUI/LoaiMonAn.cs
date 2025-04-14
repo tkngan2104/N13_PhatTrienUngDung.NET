@@ -145,7 +145,12 @@ namespace GUI
         //làm mới
         private void lamMoi()
         {
-            txtMaLMA.Clear();
+            txtMaLMA.Text = bus.taoMaLMA(); // Gán mã mới
+            txtTenLMA.Clear();
+
+            // Xoá lỗi nếu có
+            errorProvider1.SetError(txtMaLMA, "");
+            errorProvider1.SetError(txtTenLMA, "");
             txtTenLMA.Clear();
         }
 
@@ -157,6 +162,7 @@ namespace GUI
         private void LoaiMonAn_Load(object sender, EventArgs e)
         {
             layDSLMA();
+            lamMoi();
         }
 
         private void txtMaLMA_Leave(object sender, EventArgs e)
