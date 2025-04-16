@@ -1,13 +1,9 @@
-﻿﻿---tao database.
+﻿---tao database.
 create database DbQuanLyResort
 go
 use DbQuanLyResort
 go
-<<<<<<< HEAD
 SET DATEFORMAT ymd;
-=======
-SET DATEFORMAT dmy;
->>>>>>> CRUD_Tan
 
 go
 
@@ -77,10 +73,7 @@ create table ChiTietDatPhong(
 	maDP varchar(12) not null references DatPhong(maDP),
 	maCTDP varchar(12) not null primary key,
 	maPhong varchar(10) references Phong(maPhong),
-<<<<<<< HEAD
 	maNT varchar(10) references NhaThue(maNT),
-=======
->>>>>>> CRUD_Tan
 	ngayTraPhong date)
 
 create table DichVu(
