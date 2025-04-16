@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DbQuanLyResort" Class="QLResortDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+<<<<<<< HEAD
   <Connection Mode="AppSettings" ConnectionString="Data Source=LAM\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="ET.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString1" Provider="System.Data.SqlClient" />
+=======
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ADMIN-PC\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Security=True" SettingsObjectName="ET.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString3" Provider="System.Data.SqlClient" />
+>>>>>>> CRUD_Tan
   <Table Name="dbo.ComboMonAn" Member="ComboMonAns">
     <Type Name="ComboMonAn">
       <Column Name="maCB" Type="System.String" DbType="VarChar(7) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -57,7 +61,11 @@
     <Type Name="ChiTietDatPhong">
       <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
       <Column Name="maCTDP" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+<<<<<<< HEAD
       <Column Name="maPhong" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+=======
+      <Column Name="maPhong" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+>>>>>>> CRUD_Tan
       <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Association Name="ChiTietDatPhong_SuDungDichVu" Member="SuDungDichVus" ThisKey="maCTDP" OtherKey="maCTDP" Type="SuDungDichVu" />
       <Association Name="ChiTietDatPhong_HoaDonDatPhong" Member="HoaDonDatPhongs" ThisKey="maCTDP" OtherKey="maCTDP" Type="HoaDonDatPhong" />
@@ -89,7 +97,11 @@
       <Column Name="maDT" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="ngayDT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+<<<<<<< HEAD
       <Column Name="maS" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+=======
+      <Column Name="maS" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+>>>>>>> CRUD_Tan
       <Column Name="ghiChu" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
       <Column Name="ngayBatDau" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="ngayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
@@ -143,7 +155,11 @@
       <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TenKH" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="SoDT" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+<<<<<<< HEAD
       <Column Name="NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+=======
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+>>>>>>> CRUD_Tan
       <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="Diachi" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="Email" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
@@ -193,7 +209,11 @@
   </Table>
   <Table Name="dbo.Phong" Member="Phongs">
     <Type Name="Phong">
+<<<<<<< HEAD
       <Column Name="maPhong" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+=======
+      <Column Name="maPhong" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+>>>>>>> CRUD_Tan
       <Column Name="tenLP" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
       <Column Name="tenLG" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
       <Column Name="giaP" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
@@ -203,7 +223,11 @@
   </Table>
   <Table Name="dbo.SanhDatTiec" Member="SanhDatTiecs">
     <Type Name="SanhDatTiec">
+<<<<<<< HEAD
       <Column Name="maS" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+=======
+      <Column Name="maS" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+>>>>>>> CRUD_Tan
       <Column Name="tenS" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
       <Column Name="giaSDT" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="SanhDatTiec_DatTiec" Member="DatTiecs" ThisKey="maS" OtherKey="maS" Type="DatTiec" />

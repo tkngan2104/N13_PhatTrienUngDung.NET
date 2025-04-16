@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -42,8 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DAL_DichVu.cs" />
     <Compile Include="DAL_KhachHang.cs" />
+=======
+    <Compile Include="DAL_ChucVu.cs" />
+    <Compile Include="DAL_DichVu.cs" />
+    <Compile Include="DAL_KhachHang.cs" />
+    <Compile Include="DAL_LoaiMonAn.cs" />
+    <Compile Include="DAL_MonAn.cs" />
+>>>>>>> CRUD_Tan
     <Compile Include="DAL_Phong.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

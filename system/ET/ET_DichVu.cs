@@ -11,6 +11,10 @@ namespace ET
         private string maDV, tenDV;
         private int giaTien;
 
+<<<<<<< HEAD
+=======
+        public ET_DichVu() { }
+>>>>>>> CRUD_Tan
         public ET_DichVu(string maDV, string tenDV, int giaTien)
         {
             this.MaDV = maDV;

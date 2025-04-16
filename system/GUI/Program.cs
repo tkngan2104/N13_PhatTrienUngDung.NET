@@ -16,7 +16,11 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new KhachHang());
+=======
+            Application.Run(new Menu());
+>>>>>>> CRUD_Tan
         }
     }
 }

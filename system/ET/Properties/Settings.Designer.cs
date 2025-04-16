@@ -12,7 +12,11 @@ namespace ET.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+<<<<<<< HEAD
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.13.0.0")]
+=======
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.7.0.0")]
+>>>>>>> CRUD_Tan
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -44,5 +48,30 @@ namespace ET.Properties {
                 return ((string)(this["DbQuanLyResortConnectionString1"]));
             }
         }
+<<<<<<< HEAD
+=======
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=B202A-PC23\\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Secur" +
+            "ity=True")]
+        public string DbQuanLyResortConnectionString2 {
+            get {
+                return ((string)(this["DbQuanLyResortConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ADMIN-PC\\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Securit" +
+            "y=True")]
+        public string DbQuanLyResortConnectionString3 {
+            get {
+                return ((string)(this["DbQuanLyResortConnectionString3"]));
+            }
+        }
+>>>>>>> CRUD_Tan
     }
 }

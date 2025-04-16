@@ -87,7 +87,11 @@ namespace ET
     #endregion
 		
 		public QLResortDataContext() : 
+<<<<<<< HEAD
 				base(global::ET.Properties.Settings.Default.DbQuanLyResortConnectionString1, mappingSource)
+=======
+				base(global::ET.Properties.Settings.Default.DbQuanLyResortConnectionString3, mappingSource)
+>>>>>>> CRUD_Tan
 		{
 			OnCreated();
 		}
@@ -1497,7 +1501,11 @@ namespace ET
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maPhong", DbType="VarChar(5)")]
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maPhong", DbType="VarChar(10)")]
+>>>>>>> CRUD_Tan
 		public string maPhong
 		{
 			get
@@ -2201,7 +2209,11 @@ namespace ET
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maS", DbType="VarChar(4) NOT NULL", CanBeNull=false)]
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maS", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+>>>>>>> CRUD_Tan
 		public string maS
 		{
 			get
@@ -3401,7 +3413,11 @@ namespace ET
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgaySinh", DbType="DateTime")]
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgaySinh", DbType="Date")]
+>>>>>>> CRUD_Tan
 		public System.Nullable<System.DateTime> NgaySinh
 		{
 			get
@@ -4432,7 +4448,11 @@ namespace ET
 			OnCreated();
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maPhong", DbType="VarChar(5) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maPhong", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+>>>>>>> CRUD_Tan
 		public string maPhong
 		{
 			get
@@ -4610,7 +4630,11 @@ namespace ET
 			OnCreated();
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maS", DbType="VarChar(4) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maS", DbType="VarChar(5) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+>>>>>>> CRUD_Tan
 		public string maS
 		{
 			get
