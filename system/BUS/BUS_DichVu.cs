@@ -12,16 +12,11 @@ namespace BUS
     {
         DAL_DichVu dal = new DAL_DichVu();
         // Lấy danh sách dịch vụ
-<<<<<<< HEAD
         public List<ET_DichVu> layDSSV()
         {
             return dal.layDSDV();
         }
-=======
-        public IQueryable layDSSV()
-        {
-            return dal.layDSDV();
-        }
+      
 
         //thêm dịch vụ
         public bool themDichVu(ET_DichVu et)
@@ -46,7 +41,5 @@ namespace BUS
         {
             return dal.taoMaTuDong();
         }
-
->>>>>>> CRUD_Tan
     }
 }

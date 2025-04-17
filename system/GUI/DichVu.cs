@@ -1,8 +1,5 @@
 ﻿using BUS;
-<<<<<<< HEAD
-=======
 using ET;
->>>>>>> CRUD_Tan
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,8 +51,6 @@ namespace GUI
         {
             layDSSV();
         }
-<<<<<<< HEAD
-=======
 
         /// <summary>
         /// Thêm dịch vụ vào danh sách
@@ -229,6 +224,5 @@ namespace GUI
             KiemTraRong(txtGiaTien, "Giá tiền");
             this.Focus();
         }
->>>>>>> CRUD_Tan
     }
 }

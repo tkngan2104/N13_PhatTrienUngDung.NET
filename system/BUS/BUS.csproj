@@ -41,16 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="BUS_DichVu.cs" />
     <Compile Include="BUS_KhachHang.cs" />
-=======
     <Compile Include="BUS_ChucVu.cs" />
-    <Compile Include="BUS_DichVu.cs" />
-    <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_LoaiMonAn.cs" />
     <Compile Include="BUS_MonAn.cs" />
->>>>>>> CRUD_Tan
     <Compile Include="BUS_Phong.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

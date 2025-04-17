@@ -381,11 +381,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pnlTieuDe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-=======
             this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> CRUD_Tan
             this.Name = "DatDichVu";
             this.Text = "DatDichVu";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
