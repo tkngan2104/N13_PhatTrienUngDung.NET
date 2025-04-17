@@ -23,11 +23,7 @@ namespace ET
             this.QuocTich = quocTich;
             this.NgaySinh = ngaySinh;
         }
-
-<<<<<<< HEAD
-=======
         public ET_KhachHang() { }
->>>>>>> CRUD_Tan
         public string MaKH { get => maKH; set => maKH = value; }
         public string TenKH { get => tenKH; set => tenKH = value; }
         public string SoDT { get => soDT; set => soDT = value; }

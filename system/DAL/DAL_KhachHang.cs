@@ -21,7 +21,6 @@ namespace DAL
         }
 
         //Xoá khách hàng
-<<<<<<< HEAD
         public bool xoaKhachHang(ET_KhachHang et)
         {
             bool flag = false;
@@ -44,8 +43,6 @@ namespace DAL
             return flag;
             
         }
-
-=======
         public bool xoaKhachHang(string maKH)
         {
             try
@@ -65,8 +62,6 @@ namespace DAL
             }
         }
 
-
->>>>>>> CRUD_Tan
         //Thêm khách hàng
         public bool themKhachHang(ET_KhachHang et)
         {
@@ -95,35 +90,8 @@ namespace DAL
             };
             return flag;
         }
+       
 
-<<<<<<< HEAD
-        public bool suaKhachHang(ET_KhachHang et)
-        {
-            bool flag = false;
-            try
-            {
-                var sua = db.KhachHangs.SingleOrDefault(k => k.MaKH == et.MaKH);
-                if (sua != null)
-                {
-                    //Cập nhật các trường
-                    sua.TenKH = et.TenKH;
-                    sua.SoDT = et.SoDT;
-                    sua.GioiTinh = et.GioiTinh;
-                    sua.Email = et.Email;
-                    sua.CCCD = et.Cccd;
-                    sua.QuocTich = et.QuocTich;
-                    db.SubmitChanges();
-                    flag |= true;
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Lỗi: "+ex);
-            }
-
-            return flag;
-        }
-=======
         //Mã khách hàng tăng tự động
         public string TaoMaKH()
         {
@@ -168,7 +136,5 @@ namespace DAL
             db.SubmitChanges();
             return true;
         }
-
->>>>>>> CRUD_Tan
     }
 }

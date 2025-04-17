@@ -1,8 +1,6 @@
 ﻿using BUS;
-<<<<<<< HEAD
-=======
+using DAL;
 using ET;
->>>>>>> CRUD_Tan
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,11 +17,8 @@ namespace GUI
     public partial class KhachHang: Form
     {
         BUS_KhachHang bus = new BUS_KhachHang();
-<<<<<<< HEAD
-=======
         QLResortDataContext db = new QLResortDataContext();
         ET_KhachHang et = new ET_KhachHang();
->>>>>>> CRUD_Tan
         public KhachHang()
         {
             InitializeComponent();
@@ -58,10 +53,6 @@ namespace GUI
                 this.Close();
             }
         }
-
-<<<<<<< HEAD
-        
-=======
         /// <summary>
         /// Thêm khách hàng vào danh sách
         /// </summary>
@@ -417,9 +408,5 @@ namespace GUI
 
             return isValid;
         }
-
-
-
->>>>>>> CRUD_Tan
     }
 }

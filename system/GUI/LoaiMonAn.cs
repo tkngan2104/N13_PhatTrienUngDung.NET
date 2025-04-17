@@ -157,6 +157,7 @@ namespace GUI
         private void LoaiMonAn_Load(object sender, EventArgs e)
         {
             layDSLMA();
+            txtMaLMA.Text = bus.taoMaLMA();
         }
 
         private void txtMaLMA_Leave(object sender, EventArgs e)
