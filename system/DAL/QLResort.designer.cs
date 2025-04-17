@@ -90,7 +90,7 @@ namespace DAL
     #endregion
 		
 		public QLResortDataContext() : 
-				base(global::DAL.Properties.Settings.Default.DbQuanLyResortConnectionString, mappingSource)
+				base(global::DAL.Properties.Settings.Default.DbQuanLyResortConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}

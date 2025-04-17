@@ -47,7 +47,9 @@
     <Compile Include="ET_ChucVu.cs" />
     <Compile Include="ET_LoaiMonAn.cs" />
     <Compile Include="ET_MonAn.cs" />
+    <Compile Include="ET_NhanVien.cs" />
     <Compile Include="ET_Phong.cs" />
+    <Compile Include="ET_Sanh.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

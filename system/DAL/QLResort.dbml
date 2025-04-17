@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DbQuanLyResort" Class="QLResortDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-4HPV2E5\LISM;Initial Catalog=DbQuanLyResort;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ADMIN-PC\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ComboMonAn" Member="ComboMonAns">
     <Type Name="ComboMonAn">
       <Column Name="maCB" Type="System.String" DbType="VarChar(7) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
