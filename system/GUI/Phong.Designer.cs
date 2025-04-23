@@ -87,7 +87,7 @@
             this.cboLoaiPhong.Name = "cboLoaiPhong";
             this.cboLoaiPhong.Size = new System.Drawing.Size(203, 28);
             this.cboLoaiPhong.TabIndex = 11;
-            this.cboLoaiPhong.SelectedIndexChanged += new System.EventHandler(this.cboLoaiPhong_SelectedIndexChanged);
+            //this.cboLoaiPhong.SelectedIndexChanged += new System.EventHandler(this.cboLoaiPhong_SelectedIndexChanged);
             // 
             // cboLoaiGiuong
             // 
@@ -98,7 +98,7 @@
             this.cboLoaiGiuong.Name = "cboLoaiGiuong";
             this.cboLoaiGiuong.Size = new System.Drawing.Size(203, 28);
             this.cboLoaiGiuong.TabIndex = 10;
-            this.cboLoaiGiuong.SelectedIndexChanged += new System.EventHandler(this.cboLoaiGiuong_SelectedIndexChanged);
+            //this.cboLoaiGiuong.SelectedIndexChanged += new System.EventHandler(this.cboLoaiGiuong_SelectedIndexChanged);
             // 
             // cboTrangThai
             // 
@@ -127,7 +127,7 @@
             this.txtGiaPhong.Name = "txtGiaPhong";
             this.txtGiaPhong.Size = new System.Drawing.Size(203, 26);
             this.txtGiaPhong.TabIndex = 7;
-            this.txtGiaPhong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaPhong_KeyPress);
+            //this.txtGiaPhong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaPhong_KeyPress);
             // 
             // lblGiaPhong
             // 
@@ -205,8 +205,8 @@
             this.dgvDSPhong.RowTemplate.Height = 28;
             this.dgvDSPhong.Size = new System.Drawing.Size(635, 396);
             this.dgvDSPhong.TabIndex = 0;
-            this.dgvDSPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSPhong_CellContentClick);
-            this.dgvDSPhong.Click += new System.EventHandler(this.dgvDSPhong_Click);
+            //this.dgvDSPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSPhong_CellContentClick);
+            //this.dgvDSPhong.Click += new System.EventHandler(this.dgvDSPhong_Click);
             // 
             // groupBox2
             // 
@@ -253,7 +253,7 @@
             this.btnLamMoi.TabIndex = 25;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            //this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnSua
             // 
@@ -268,7 +268,7 @@
             this.btnSua.TabIndex = 24;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            //this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -283,7 +283,7 @@
             this.btnXoa.TabIndex = 23;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            //this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -298,7 +298,7 @@
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            //this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // groupBox3
             // 
@@ -338,7 +338,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Phong";
             this.Text = "Phong";
-            this.Load += new System.EventHandler(this.Phong_Load);
+            //this.Load += new System.EventHandler(this.Phong_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).EndInit();

@@ -357,7 +357,7 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân sự";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            //this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnChucVu
             // 
@@ -510,7 +510,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NhanSu";
             this.Text = "NhanSu";
-            this.Load += new System.EventHandler(this.NhanSu_Load);
+            //this.Load += new System.EventHandler(this.NhanSu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSNS)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

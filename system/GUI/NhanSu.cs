@@ -54,16 +54,6 @@ namespace GUI
             formMenu.openChildForm(new ChucVu());
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NhanSu_Load(object sender, EventArgs e)
-        {
-            BUS_NhanVien.Instance.DSNhanVien(dgvDSNS);
-            txtMaNS.Text = BUS_NhanVien.Instance.TaoMaTuDong();
-            BUS_NhanVien.Instance.DSChucVuCombobox(cboChucVu);
-        }
+       
     }
 }

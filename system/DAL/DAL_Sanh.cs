@@ -4,25 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ET;
-
 namespace DAL
 {
     public class DAL_Sanh
     {
         //Khai báo biến tĩnh
-        private static DAL_Phong instance;
+       // private static DAL_Phong instance;
 
-        public static DAL_Phong Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new DAL_Phong();
-                }
-                return instance;
-            }
-        }
+        //public static DAL_Phong Instance
+        //{
+        //    get
+        //    {
+        //        if (instance == null)
+        //        {
+        //            instance = new DAL_Phong();
+        //        }
+        //        return instance;
+        //    }
+        //}
 
         private QLResortDataContext db = new QLResortDataContext();
 
