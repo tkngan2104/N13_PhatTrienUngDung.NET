@@ -15,11 +15,11 @@
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net.git\\system\\dal\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\dal\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net.git\\system\\bus\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\bus\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,8 +67,7 @@
               "RelativeToolTip": "BUS\\BUS_DichVu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:07:22.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T15:07:22.459Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "DAL\\DAL_DichVu.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAuwBYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T14:59:47.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T14:59:47.534Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "DAL\\DAL_KhachHang.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T21:06:17.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T21:06:17.352Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "GUI\\DichVu.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAgwCkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:45:01.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:45:01.037Z"
             },
             {
               "$type": "Document",
@@ -118,8 +114,7 @@
               "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\DichVu.cs [Design]",
               "RelativeToolTip": "GUI\\DichVu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:44:59.949Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-08T20:44:59.949Z"
             },
             {
               "$type": "Document",
@@ -131,8 +126,7 @@
               "RelativeToolTip": "GUI\\KhachHang.cs",
               "ViewState": "AgIAAMsBAAAAAAAAAAAqwO4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:42:27.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T20:42:27.75Z"
             },
             {
               "$type": "Document",
@@ -143,8 +137,7 @@
               "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\KhachHang.cs [Design]",
               "RelativeToolTip": "GUI\\KhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T20:42:26.635Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-08T20:42:26.635Z"
             }
           ]
         }

@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net.git\\system\\gui\\loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\bus\\bus_loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\dal\\dal_loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net.git\\system\\dal\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net.git\\system\\bus\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\gui\\loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net.git\\system\\bus\\bus_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\dal\\dal_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\gui\\dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net.git\\system\\dal\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net.git\\system\\bus\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\gui\\dichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -45,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\gui\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\et\\et_loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,8 +42,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BUS_KhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\BUS\\BUS_KhachHang.cs",
+              "RelativeDocumentMoniker": "BUS\\BUS_KhachHang.cs",
+              "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\BUS\\BUS_KhachHang.cs",
+              "RelativeToolTip": "BUS\\BUS_KhachHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:14:06.159Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -89,82 +86,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BUS_LoaiMonAn.cs",
-              "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\BUS\\BUS_LoaiMonAn.cs",
-              "RelativeDocumentMoniker": "BUS\\BUS_LoaiMonAn.cs",
-              "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\BUS\\BUS_LoaiMonAn.cs*",
-              "RelativeToolTip": "BUS\\BUS_LoaiMonAn.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T09:40:52.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DAL_LoaiMonAn.cs",
-              "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\DAL\\DAL_LoaiMonAn.cs",
-              "RelativeDocumentMoniker": "DAL\\DAL_LoaiMonAn.cs",
-              "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\DAL\\DAL_LoaiMonAn.cs*",
-              "RelativeToolTip": "DAL\\DAL_LoaiMonAn.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:11:15.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ET_LoaiMonAn.cs",
-              "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\ET\\ET_LoaiMonAn.cs",
-              "RelativeDocumentMoniker": "ET\\ET_LoaiMonAn.cs",
-              "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\ET\\ET_LoaiMonAn.cs",
-              "RelativeToolTip": "ET\\ET_LoaiMonAn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:06:56.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoaiMonAn.cs",
-              "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\LoaiMonAn.cs",
-              "RelativeDocumentMoniker": "GUI\\LoaiMonAn.cs",
-              "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\LoaiMonAn.cs",
-              "RelativeToolTip": "GUI\\LoaiMonAn.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAawCgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T21:27:28.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoaiMonAn.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\LoaiMonAn.cs",
-              "RelativeDocumentMoniker": "GUI\\LoaiMonAn.cs",
-              "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\LoaiMonAn.cs [Design]",
-              "RelativeToolTip": "GUI\\LoaiMonAn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T21:27:26.97Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "DAL_KhachHang.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\DAL\\DAL_KhachHang.cs",
               "RelativeDocumentMoniker": "DAL\\DAL_KhachHang.cs",
               "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\DAL\\DAL_KhachHang.cs",
               "RelativeToolTip": "DAL\\DAL_KhachHang.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T21:06:17.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "DichVu.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\DichVu.cs",
               "RelativeDocumentMoniker": "GUI\\DichVu.cs",
@@ -177,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "DichVu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\DichVu.cs",
               "RelativeDocumentMoniker": "GUI\\DichVu.cs",
@@ -189,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "KhachHang.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\KhachHang.cs",
               "RelativeDocumentMoniker": "GUI\\KhachHang.cs",
@@ -202,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "KhachHang.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET.git\\system\\GUI\\KhachHang.cs",
               "RelativeDocumentMoniker": "GUI\\KhachHang.cs",
