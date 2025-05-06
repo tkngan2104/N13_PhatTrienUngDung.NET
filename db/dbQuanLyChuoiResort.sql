@@ -50,18 +50,14 @@ create table NhanSu(
 ---khu A2 : khu villa (8 cái).
 
 
-create table NhaThue(
-	maNT varchar(10) not null primary key,
-	tenLG nvarchar(45) not null,
-	giaNha float not null,
-	tinhTrang nvarchar(45) not null)
-
-create table Phong(
-	maPhong varchar(10) not null primary key,
-	tenLP nvarchar(45) not null,
-	tenLG nvarchar(45) not null,
-	giaP float not null,
-	trangThai nvarchar(45) not null)
+create table LoaiHinhLuuTru (
+	maLH varchar(10) not null primary key, ---VIP0001, THG0001, 0001
+	tenLH varchar(5) not null,
+	loaiHinh nvarchar(45) not null, ---phòng vip, phòng thường, villa
+	slNguoi int not null, --- 1, 2, 3, 4, 5, 7
+	giaTien float not null,
+	trangThai nvarchar(45) not null, ---trống, có người, đă đặt, đang dọn dẹp, đang bảo trì
+	ghiChu nvarchar(120))
 
 create table DatPhong(
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
@@ -72,8 +68,7 @@ create table DatPhong(
 create table ChiTietDatPhong(
 	maDP varchar(12) not null references DatPhong(maDP),
 	maCTDP varchar(12) not null primary key,
-	maPhong varchar(10) references Phong(maPhong),
-	maNT varchar(10) references NhaThue(maNT),
+	maLH varchar(10) references LoaiHinhLuuTru(maLH),
 	ngayTraPhong date)
 
 create table DichVu(
