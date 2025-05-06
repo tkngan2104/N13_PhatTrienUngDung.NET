@@ -1,10 +1,10 @@
-﻿use DbQuanLyResort
+﻿﻿﻿use DbQuanLyResort
 go
 set dateformat dmy
 go
-SELECT * FROM Phong WHERE tenLG = 'Đơn 1'
-SELECT * FROM Phong WHERE tenLP = 'VIP' OR tenLG = 'Đơn 1'
-SELECT * FROM Phong WHERE tenLG LIKE N'%Đơn%'
+--SELECT * FROM Phong WHERE tenLG = 'Đơn 1'
+--SELECT * FROM Phong WHERE tenLP = 'VIP' OR tenLG = 'Đơn 1'
+--SELECT * FROM Phong WHERE tenLG LIKE N'%Đơn%'
 --insert dữ liệu cho khách hàng
 insert into KhachHang (MaKH, TenKH, SoDT, NgaySinh, GioiTinh, Diachi, Email, CCCD, QuocTich)
 values
@@ -212,85 +212,279 @@ go
 
 -- Chèn dữ liệu mẫu vào bảng DichVu
 insert into DichVu (maDV, tenDV, giaTien) values
-('DV001', N'Dịch vụ spa', 500000),
+('DV001', N'Dịch vụ spa', 700000),
 ('DV002', N'Thuê phòng Deluxe', 2000000),
 ('DV003', N'Chèo thuyền kayak', 300000),
-('DV004', N'Dịch vụ massage', 400000),
-('DV005', N'Dịch vụ đưa đón sân bay', 600000),
-('DV006', N'Bể bơi ngoài trời', 100000),
-('DV007', N'Lớp yoga buổi sáng', 250000),
-('DV008', N'Chuyến tham quan núi', 800000),
-('DV009', N'Bữa tối hải sản', 700000),
-('DV010', N'Tour du lịch trong thành phố', 600000),
-('DV011', N'Dịch vụ tổ chức sự kiện', 1500000),
-('DV012', N'Thuê xe đạp', 150000),
-('DV013', N'Dịch vụ tắm bùn', 350000),
-('DV014', N'Dịch vụ thư giãn tại phòng', 450000),
-('DV015', N'Dịch vụ nướng BBQ ngoài trời', 900000),
-('DV016', N'Thuê xe ô tô', 1200000),
-('DV017', N'Chèo thuyền cano', 500000),
-('DV018', N'Dịch vụ giặt ủi', 100000),
-('DV019', N'Dịch vụ làm đẹp', 300000),
-('DV020', N'Dịch vụ tổ chức tiệc cưới', 2500000);
-
+('DV004', N'Dịch vụ đưa đón sân bay', 600000),
+('DV005', N'Lớp yoga buổi sáng', 150000),
+('DV006', N'Chuyến tham quan núi', 750000),
+('DV007', N'Tiệc nướng ngoài trời', 1700000),
+('DV008', N'Tour du lịch trong thành phố', 2500000),
+('DV009', N'Dịch vụ tổ chức sự kiện', 3000000),
+('DV010', N'Thuê xe đạp', 150000),
+('DV011', N'Thuê xe máy', 200000),
+('DV012', N'Thuê xe ô tô', 1200000),
+('DV013', N'Thuê thuyền cano', 1500000),
+('DV014', N'Dịch vụ tắm hơi', 350000),
+('DV015', N'Dịch vụ giặt ủi', 50000),
+('DV016', N'Dịch vụ thêm giường', 150000),
+('DV017', N'Buffet bữa sáng', 350000),
+('DV018', N'Buffet bữa tối', 500000),
+('DV019', N'Thực đơn phục vụ tại phòng', 50000),
+('DV020', N'Minibar - Thức uống & đồ ăn nhẹ trong phòng', 30000);
 go
 
 ---Loai Mon An
-
 INSERT INTO LoaiMonAn (maLMA, tenLMA) VALUES
 ('LMA01', N'Món Á'),
 ('LMA02', N'Món Âu'),
 ('LMA03', N'Món Nhật'),
 ('LMA04', N'Món Hàn'),
 ('LMA05', N'Món Trung'),
-('LMA06', N'Món Hoa');
+('LMA06', N'Món Việt');
 
 go
 
 ---Mon an
-
+--khai vị : k, chính : c, tráng miệng : t, đồ uống : d
+--MAK01
+--MAC01
+--MAT01
+--MAD01
 INSERT INTO MonAn (maMA, maLMA, tenMA, giaTien, mieuTa) VALUES
 -- Món Á (LMA01)
-('MA001', 'LMA01', N'Bò Wagyu Nướng Đá', 28200000.0, N'Miếng thịt bò Wagyu nướng trực tiếp trên đá nóng, kết hợp gia vị đặc trưng.'),
-('MA002', 'LMA01', N'Tôm Hùm Nướng Mặn', 35250000.0, N'Tôm hùm tươi sống nướng mặn với bơ tỏi, phục vụ cùng rau củ tươi.'),
-('MA003', 'LMA01', N'Foie Gras Nướng Mật Ong', 18800000.0, N'Gan ngỗng nướng nhẹ với mật ong, ăn kèm bánh mì nướng giòn.'),
-('MA004', 'LMA01', N'Sò Điệp Nướng Bơ', 11750000.0, N'Sò điệp tươi nướng cùng bơ và tỏi, một món ăn đơn giản nhưng đậm đà.'),
-('MA005', 'LMA01', N'Bò Kobe Nướng', 47000000.0, N'Thịt bò Kobe nướng hoàn hảo, ăn kèm với khoai tây nghiền và rau củ.'),
+---khai vị
+('MAK01', 'LMA01', N'Bánh Mì Kẹp Gà Nướng', 5000000.0, N'Món khai vị gồm bánh mì nướng giòn, kẹp thịt gà nướng cùng rau sống và sốt mayonnaise.'),
+('MAK02', 'LMA01', N'Súp Bánh Mì Xíu Mại', 6000000.0, N'Súp bánh mì truyền thống kết hợp với xíu mại tôm thịt, ăn kèm hành lá, gia vị đặc trưng.'),
+('MAK03', 'LMA01', N'Gỏi Cuốn Tôm Thịt', 2500000.0, N'Món khai vị truyền thống với tôm, thịt heo, bún và rau sống, chấm nước mắm chua ngọt.'),
+('MAK04', 'LMA01', N'Gỏi Cuốn Chay', 2500000.0, N'Món khai vị chay với bún, rau sống, đậu hũ, chấm nước mắm chua ngọt.'),
+---Đồ uống
+('MAD01', 'LMA01', N'Trà Sen Vàng', 1200000.0, N'Trà xanh ướp sen, hương thơm dịu nhẹ, giúp thanh lọc cơ thể và hỗ trợ tiêu hoá.'),
+('MAD02', 'LMA01', N'Nước Dừa Tươi', 2500000.0, N'Nước dừa tươi mát, bổ dưỡng, giúp thanh nhiệt cơ thể.'),
+('MAD03', 'LMA01', N'Trà Dâu Tằm', 4000000.0, N'Trà dâu tằm thơm mát, có tác dụng giải nhiệt.'),
+('MAD04', 'LMA01', N'Nước Mía Tươi', 2800000.0, N'Nước mía tươi ép, ngọt thanh và bổ dưỡng.'),
+---Món chính
+('MAC01', 'LMA01', N'Sườn Heo Nướng Mật Ong', 20000000.0, N'Sườn heo nướng mật ong, thấm đẫm hương vị ngọt ngào, ăn kèm cơm chiên.'),
+('MAC02', 'LMA01', N'Cà Ri Gà Cà Chua', 18000000.0, N'Món cà ri gà với cà chua và gia vị đặc trưng, ăn kèm bánh mì hoặc cơm.'),
+('MAC03', 'LMA01', N'Lẩu Tôm Hùm Tươi', 35000000.0, N'Lẩu tôm hùm tươi ngon, nước lẩu ngọt đậm đà từ xương và gia vị.'),
+('MAC04', 'LMA01', N'Thịt Lợn Sốt Xí Muội', 15000000.0, N'Thịt lợn kho với xí muội, kết hợp giữa ngọt, mặn và chua.'),
+('MAC05', 'LMA01', N'Mực Xào Dưa Chua', 12000000.0, N'Mực xào dưa chua thơm ngon, kết hợp vị mặn của mực và vị chua của dưa.'),
+('MAC06', 'LMA01', N'Bò Wagyu Nướng Đá', 28200000.0, N'Miếng thịt bò Wagyu nướng trực tiếp trên đá nóng, kết hợp gia vị đặc trưng.'),
+('MAC07', 'LMA01', N'Foie Gras Nướng Mật Ong', 18800000.0, N'Gan ngỗng nướng nhẹ với mật ong, ăn kèm bánh mì nướng giòn.'),
+---Tráng miệng
+('MAT01', 'LMA01', N'Chè Khúc Bạch', 1800000.0, N'Món tráng miệng mát lạnh với khúc bạch, nhãn, hạnh nhân rang và nước đường thanh mát.'),
+('MAT02', 'LMA01', N'Chè Ba Màu', 1800000.0, N'Món tráng miệng với ba màu thạch, đậu xanh, và nước cốt dừa béo ngậy.'),
+('MAT03', 'LMA01', N'Bánh Cốm Xoài', 4500000.0, N'Món tráng miệng với xoài chín, bánh cốm mềm mịn, nước cốt dừa béo ngậy.'),
+('MAT04', 'LMA01', N'Thạch Chanh Leo', 3500000.0, N'Thạch chanh leo mát lạnh, ăn kèm nước cốt dừa, tạo cảm giác sảng khoái.'),
 
 -- Món Âu (LMA02)
-('MA006', 'LMA02', N'Sườn Cừu Nướng', 42300000.0, N'Sườn cừu nướng trên than hồng, phục vụ cùng nước sốt gia truyền.'),
-('MA007', 'LMA02', N'Trái Cây Tươi Cao Cấp', 8225000.0, N'Kết hợp nhiều loại trái cây nhập khẩu như dưa hấu, nho, và kiwi.'),
-('MA008', 'LMA02', N'Tôm Càng Xanh Sốt Bơ Tỏi', 16450000.0, N'Tôm càng xanh tươi sống, chế biến với sốt bơ tỏi thượng hạng.'),
-('MA009', 'LMA02', N'Mực Nướng', 14100000.0, N'Mực tươi nướng, gia vị tinh tế, đậm đà hương vị biển cả.'),
-('MA010', 'LMA02', N'Trái Cây Nướng', 9400000.0, N'Trái cây nướng nhẹ, hương vị caramel ngọt ngào và thơm phức.'),
+---Khai vị
+('MAK05', 'LMA02', N'Gà Xé Phay Sốt Mù Tạt', 7500000.0, N'Gà xé phay trộn với sốt mù tạt và rau xanh, có vị chua nhẹ.'),
+('MAK06', 'LMA02', N'Tôm Sốt Aioli', 8500000.0, N'Tôm tươi ăn kèm sốt aioli, tạo ra sự kết hợp vị ngọt và béo ngậy.'),
+('MAK07', 'LMA02', N'Salad Cá Hồi Hun Khói', 7200000.0, N'Cá hồi hun khói, rau xanh tươi, dầu olive và sốt chanh dây.'),
+('MAK08', 'LMA02', N'Soup Măng Tây', 6500000.0, N'Soup măng tây nhẹ nhàng, thơm ngon, phù hợp làm khai vị.'),
+---Đồ uống
+('MAD05', 'LMA02', N'Rượu Vang Đỏ Ý', 12000000.0, N'Rượu vang nhập khẩu từ Ý, hương vị đậm đà, hậu vị mượt mà.'),
+('MAD06', 'LMA02', N'Rượu Vang Trắng', 9000000.0, N'Rượu vang trắng nhẹ, thơm mát, dùng kèm món chính.'),
+('MAD07', 'LMA02', N'Trà Xanh Lúa Mạch', 3000000.0, N'Trà xanh lúa mạch với hương thơm dịu, giúp thanh lọc cơ thể.'),
+('MAD08', 'LMA02', N'Nước Ép Cam', 2500000.0, N'Nước cam ép tươi nguyên chất, giúp bổ sung vitamin C.'),
+('MAC08', 'LMA02', N'Bò Bít Tết Sốt Tiêu Đen', 28000000.0, N'Bít tết bò thượng hạng ăn kèm sốt tiêu đen đậm đà.'),
+---Món chính
+('MAC09', 'LMA02', N'Cà Ri Hải Sản Nướng', 24000000.0, N'Cà ri hải sản nướng với nước sốt cay nồng.'),
+('MAC10', 'LMA02', N'Tôm Nướng Sốt Phô Mai', 21500000.0, N'Tôm nướng ăn kèm sốt phô mai đặc biệt, béo ngậy.'),
+('MAC11', 'LMA02', N'Pizza Hải Sản', 15500000.0, N'Pizza với hải sản tươi ngon, sốt cà chua và phô mai tan chảy.'),
+('MAC12', 'LMA02', N'Mì Ý Sốt Pesto', 12500000.0, N'Mì Ý xào sốt pesto thơm ngon, ăn kèm rau tươi.'),
+('MAC13', 'LMA02', N'Sườn Cừu Nướng', 42300000.0, N'Sườn cừu nướng trên than hồng, phục vụ cùng nước sốt gia truyền.'),
+('MAC14', 'LMA02', N'Tôm Càng Xanh Sốt Bơ Tỏi', 16450000.0, N'Tôm càng xanh tươi sống, chế biến với sốt bơ tỏi thượng hạng.'),
+---Tráng miệng
+('MAT05', 'LMA02', N'Bánh Choux Nướng', 6000000.0, N'Bánh choux nhân kem ngọt mềm, ăn kèm sốt chocolate.'),
+('MAT06', 'LMA02', N'Gelato Dâu Tây', 5500000.0, N'Kem gelato dâu tây mát lạnh, ngọt thanh.'),
+('MAT07', 'LMA02', N'Tiramisu', 7500000.0, N'Món tráng miệng Ý với lớp kem mềm mịn, cà phê và cacao.'),
+('MAT08', 'LMA02', N'Panna Cotta Dâu', 5600000.0, N'Món tráng miệng kiểu Ý mềm mịn, ăn kèm sốt dâu tươi.'),
 
--- Món Nhật (LMA03)
-('MA011', 'LMA03', N'Súp Hào Nhồi Trứng Cá', 21150000.0, N'Hào tươi nhồi trứng cá, được chế biến thành súp thơm ngon, bổ dưỡng.'),
-('MA012', 'LMA03', N'Cánh Gà Nướng Sốt Mật', 15275000.0, N'Cánh gà nướng vàng ươm với sốt mật ong đặc biệt, ăn kèm khoai tây chiên.'),
-('MA013', 'LMA03', N'Chè Trái Cây Cao Cấp', 10525000.0, N'Chè trái cây với nhiều loại trái cây tươi ngon, kết hợp với nước cốt dừa béo ngậy.'),
-('MA014', 'LMA03', N'Mì Ý Hải Sản', 16450000.0, N'Mì Ý được kết hợp với hải sản tươi ngon như tôm, mực, và sò điệp.'),
-('MA015', 'LMA03', N'Gà Nướng Tỏi Thảo Mộc', 17625000.0, N'Gà tươi nướng chín đều, thơm ngon với gia vị thảo mộc tự nhiên.'),
+-- Món Nhật 
+---Tráng miệng
+('MAK09', 'LMA03', N'Sashimi Cá Hồi', 12000000.0, N'Cá hồi tươi ngon, thái mỏng, ăn kèm với nước tương và gừng.'),
+('MAK10', 'LMA03', N'Gỏi Rong Biển Wakame', 4250000.0, N'Rong biển Wakame trộn mè rang, giấm gạo và nước tương Nhật.'),
+('MAK11', 'LMA03', N'Salad Tôm Nhật', 8500000.0, N'Salad tôm Nhật tươi ngon, kết hợp với rau và sốt wasabi nhẹ.'),
+('MAK12', 'LMA03', N'Chả Cá Cơm Sốt Miso', 6500000.0, N'Chả cá cơm chiên giòn, ăn kèm sốt miso đậm đà.'),
+---Đồ uống
+('MAD09', 'LMA03', N'Trái Cây Ép Nhật Bản', 3500000.0, N'Nước ép trái cây tươi Nhật Bản, thanh mát, bổ dưỡng.'),
+('MAD10', 'LMA03', N'Trà Yuzu', 4000000.0, N'Trái yuzu tươi pha trà thơm ngon, thanh lọc cơ thể.'),
+('MAD11', 'LMA03', N'Nước Uống Sake', 7000000.0, N'Sake Nhật Bản, rượu nhẹ, thơm ngon, dùng lạnh.'),
+('MAD12', 'LMA03', N'Trà Matcha Nóng', 3800000.0, N'Trà xanh Nhật nguyên chất, pha nóng, giúp thư giãn và thanh lọc.'),
+---Món chính
+('MAC15', 'LMA03', N'Sushi Tôm Tươi', 24000000.0, N'Sushi với tôm tươi, ăn kèm với wasabi và nước tương.'),
+('MAC16', 'LMA03', N'Mì Udon Tôm Tempura', 21000000.0, N'Mì udon nóng với tôm tempura giòn, nước dùng đậm đà.'),
+('MAC17', 'LMA03', N'Cơm Nắm Nhật Bản', 15000000.0, N'Cơm nắm trộn rong biển và cá hồi tươi ngon.'),
+('MAC18', 'LMA03', N'Steak Cá Hồi Nhật', 29000000.0, N'Steak cá hồi Nhật nướng mềm, ăn kèm nước sốt thơm ngon.'),
+('MAC19', 'LMA03', N'Sashimi Cá Ngừ', 28000000.0, N'Cá ngừ tươi ngon thái mỏng, ăn kèm với nước tương và gừng.'),
+('MAC20', 'LMA03', N'Súp Hào Nhồi Trứng Cá', 21150000.0, N'Hào tươi nhồi trứng cá, được chế biến thành súp thơm ngon, bổ dưỡng.'),
+('MAC21', 'LMA03', N'Gà Nướng Tỏi Thảo Mộc', 17625000.0, N'Gà tươi nướng chín đều, thơm ngon với gia vị thảo mộc tự nhiên.'),
+---Tráng miệng
+('MAT09', 'LMA03', N'Chè Đậu Đỏ Nhật Bản', 5000000.0, N'Chè đậu đỏ Nhật Bản ngọt mát, ăn kèm bánh mochi.'),
+('MAT10', 'LMA03', N'Bánh Matcha Nhật Bản', 6500000.0, N'Bánh matcha Nhật Bản mềm mịn, vị đắng nhẹ, ăn kèm kem vani.'),
+('MAT11', 'LMA03', N'Bánh Mochi Đậu Xanh', 5000000.0, N'Bánh mochi nhân đậu xanh, mềm mịn, ngọt nhẹ.'),
+('MAT12', 'LMA03', N'Mochi Kem Trà Xanh', 6200000.0, N'Bánh mochi mềm mịn nhân kem matcha mát lạnh, món tráng miệng thanh tao.'),
 
 -- Món Hàn (LMA04)
-('MA016', 'LMA04', N'Salad Tôm Hùm', 25850000.0, N'Salad với tôm hùm tươi, rau xanh, và nước sốt dầu giấm.'),
-('MA017', 'LMA04', N'Pasta Nước Sốt Truffle', 22325000.0, N'Mì pasta trộn với nước sốt truffle thượng hạng, đậm đà hương vị.'),
-('MA018', 'LMA04', N'Bánh Mousse Chocolate', 11750000.0, N'Bánh mousse chocolate đậm đặc, mềm mịn, vị ngọt thanh.'),
-('MA019', 'LMA04', N'Gỏi Cá Ngừ', 18800000.0, N'Gỏi cá ngừ tươi, kèm rau sống và nước mắm chua ngọt.'),
-('MA020', 'LMA04', N'Tôm Càng Xanh Chiên Giòn', 17625000.0, N'Tôm càng xanh chiên giòn với gia vị đậm đà, chấm kèm nước sốt đặc biệt.'),
+---Khai vị
+('MAK13', 'LMA04', N'Kimchi Chua Ngọt', 2500000.0, N'Kimchi cải thảo lên men tự nhiên, chua ngọt vừa phải.'),
+('MAK14', 'LMA04', N'Chả Giò Hàn Quốc', 5500000.0, N'Chả giò chiên giòn, nhân thịt và rau củ, ăn kèm kimchi.'),
+('MAK15', 'LMA04', N'Gimbap (Cơm Cuộn)', 3500000.0, N'Cơm cuộn rong biển, rau và thịt bò, ăn kèm kimchi.'),
+('MAK16', 'LMA04', N'Kimchi Tươi Của Nhà', 2500000.0, N'Kimchi cải thảo được ủ thủ công, vị cay nồng và giòn tan.'),
+---Đồ uống
+('MAD13', 'LMA04', N'Mật Ong Gừng', 3500000.0, N'Nước mật ong pha gừng tươi, giúp giải cảm, ấm bụng.'),
+('MAD14', 'LMA04', N'Trái Cây Nước Ép', 4000000.0, N'Nước ép trái cây tươi, giúp bổ sung vitamin C.'),
+('MAD15', 'LMA04', N'Nước Gạo Nguyên Chất', 3000000.0, N'Nước gạo tươi thanh mát, bổ dưỡng.'),
+('MAD16', 'LMA04', N'Rượu Gạo Makgeolli', 7200000.0, N'Rượu truyền thống Hàn Quốc, mùi thơm nhẹ, vị ngọt dịu, dùng lạnh.'),
+---Món chính
+('MAC22', 'LMA04', N'Gà Nướng Mật Ong Hàn Quốc', 22000000.0, N'Gà nướng mật ong đậm đà, kết hợp với gia vị Hàn Quốc.'),
+('MAC23', 'LMA04', N'Lẩu Gà Hàn Quốc', 28000000.0, N'Lẩu gà Hàn Quốc với nấm, rau củ và gia vị cay nồng.'),
+('MAC23', 'LMA04', N'Bánh Bao Kim Chi', 15000000.0, N'Bánh bao nhồi kim chi cay cay, ăn kèm thịt bò xào.'),
+('MAC25', 'LMA04', N'Tôm Càng Xanh Xào Tỏi', 18000000.0, N'Tôm càng xanh xào tỏi thơm lừng, ăn kèm cơm trắng.'),
+('MAC26', 'LMA04', N'Mỳ Xào Kim Chi', 12000000.0, N'Mỳ xào với kim chi cay, thịt bò và rau củ, đậm đà hương vị.'),
+('MAC27', 'LMA04', N'Gỏi Cá Ngừ', 18800000.0, N'Gỏi cá ngừ tươi, kèm rau sống và nước mắm chua ngọt.'),
+('MAC28', 'LMA04', N'Tôm Càng Xanh Chiên Giòn', 17625000.0, N'Tôm càng xanh chiên giòn với gia vị đậm đà, chấm kèm nước sốt đặc biệt.'),
+---Tráng miệng
+('MAT13', 'LMA04', N'Bánh Gạo Tteok', 4800000.0, N'Bánh gạo Hàn Quốc ngọt nhẹ, nhân đậu đỏ, ăn kèm chè xanh.'),
+('MAT14', 'LMA04', N'Kem Sữa Dừa', 5000000.0, N'Kem sữa dừa mát lạnh, ngọt béo, có chút hương thơm đặc biệt.'),
+('MAT15', 'LMA04', N'Bánh Pudding Hàn Quốc', 4200000.0, N'Bánh pudding mềm mịn với hương vị ngọt dịu.'),
+('MAT16', 'LMA04', N'Bánh Gạo Mật Ong (Yaksik)', 5800000.0, N'Món tráng miệng truyền thống với gạo nếp, hạt dẻ, táo tàu và mật ong.'),
 
 -- Món Trung (LMA05)
-('MA021', 'LMA05', N'Chả Cá Lã Vọng', 22325000.0, N'Chả cá lạ Vọng thơm ngon, được chế biến từ cá tươi ngon nhất, ăn kèm rau sống.'),
-('MA022', 'LMA05', N'Bánh Trung Thu Cao Cấp', 9400000.0, N'Bánh trung thu với nhân thập cẩm cao cấp, vị ngọt thanh mát.'),
-('MA023', 'LMA05', N'Bò Stew Vang', 30550000.0, N'Món bò stew ninh mềm, nước dùng đậm đà với gia vị thảo mộc.'),
-('MA024', 'LMA05', N'Sò Điệp Nướng Truffle', 19975000.0, N'Sò điệp nướng với dầu truffle, thơm ngọt và béo ngậy.'),
-('MA025', 'LMA05', N'Caramel Pudding', 7050000.0, N'Pudding caramel mềm mịn, vị ngọt thanh nhẹ nhàng.'),
+---Khai vị
+('MAK17', 'LMA05', N'Sủi Cảo', 6800000.0, N'Sủi cảo nhân thịt tươi ngon, ăn kèm với nước chấm đặc biệt.'),
+('MAK18', 'LMA05', N'Xá Xíu Cuộn Dưa Leo', 6200000.0, N'Thịt xá xíu thái mỏng, cuộn với dưa leo và sốt tương gừng.'),
+('MAK19', 'LMA05', N'Bao Tử Xào Cần Tây', 5000000.0, N'Bao tử heo xào với cần tây giòn ngon, ăn kèm gia vị đặc biệt.'),
+('MAK20', 'LMA05', N'Mực Nhồi Thịt', 7500000.0, N'Mực nhồi thịt xay, hấp mềm, ăn kèm nước sốt đậm đà.'),
+---Đồ uống
+('MAD17', 'LMA05', N'Nước Nhãn Đường Phèn', 2500000.0, N'Nước nhãn ngọt mát, pha đường phèn thanh mát.'), 
+('MAD18', 'LMA05', N'Rượu Bạch Mai', 6500000.0, N'Rượu bạch mai thơm ngon, nồng ấm, giúp kích thích tiêu hóa.'), 
+('MAD19', 'LMA05', N'Nước Mơ', 3000000.0, N'Nước mơ ngọt thanh, mát lạnh.'),
+('MAD20', 'LMA05', N'Trà Ô Long Nóng', 3800000.0, N'Trà ô long pha nóng, hương thơm nhẹ, giúp cân bằng vị giác.'),
+---Món chính
+('MAC29', 'LMA05', N'Vịt Quay Quảng Đông', 38000000.0, N'Vịt quay da giòn, thịt mềm, ăn kèm bánh tráng và nước sốt đặc biệt.'),
+('MAC30', 'LMA05', N'Cháo Lươn Hấp', 22000000.0, N'Cháo lươn với nước dùng ngọt thanh, lươn tươi ngon, ăn kèm hành lá.'),
+('MAC31', 'LMA05', N'Chân Gà Hấp Tỏi', 12000000.0, N'Chân gà hấp tỏi, mềm ngon, ăn kèm sốt chua ngọt.'),
+('MAC32', 'LMA05', N'Xíu Mại Hải Sản', 20000000.0, N'Xíu mại nhân hải sản tươi ngon, ăn kèm nước sốt đặc biệt.'),
+('MAC33', 'LMA05', N'Chân Gà Ngâm Sả Tắc', 9500000.0, N'Chân gà ngâm sả tắc giòn ngon, đậm đà hương vị.'),
+('MAC34', 'LMA05', N'Chả Cá Lã Vọng', 22325000.0, N'Chả cá Lã Vọng thơm ngon, được chế biến từ cá tươi ngon nhất, ăn kèm rau sống.'),
+('MAC35', 'LMA05', N'Vịt Quay Bắc Kinh', 38500000.0, N'Vịt quay da giòn, thịt mềm, ăn kèm bánh tráng, hành và nước chấm đặc biệt.'),
+---Tráng miệng
+('MAT17', 'LMA05', N'Chè Đậu Xanh', 3500000.0, N'Chè đậu xanh ngọt thanh, ăn kèm dừa tươi.'),
+('MAT18', 'LMA05', N'Bánh Bao Ngọt', 4500000.0, N'Bánh bao ngọt nhân đậu đỏ, bột mềm mịn.'),
+('MAT19', 'LMA05', N'Chè Sen Long', 7500000.0, N'Chè sen long với các nguyên liệu từ sen và nước cốt dừa, mát lạnh.'),
+('MAT20', 'LMA05', N'Chè Dương Chi Cam Lộ', 7800000.0, N'Món tráng miệng nổi tiếng Quảng Đông với bưởi, xoài, trân châu và nước cốt dừa mát lạnh.'),
 
--- Món Hoa (LMA06)
-('MA026', 'LMA06', N'Lẩu Hải Sản Cao Cấp', 42300000.0, N'Lẩu hải sản với các loại hải sản tươi ngon nhất, nước dùng đậm đà.'),
-('MA027', 'LMA06', N'Cơm Chiên Hải Sản', 16450000.0, N'Cơm chiên vàng, kết hợp với hải sản tươi như tôm, sò, và mực.'),
-('MA028', 'LMA06', N'Thịt Cừu Nướng Thảo Mộc', 37600000.0, N'Thịt cừu nướng thượng hạng, phủ lớp gia vị thảo mộc, ăn kèm sốt đặc biệt.'),
-('MA029', 'LMA06', N'Bánh Mì Bơ Tỏi', 7050000.0, N'Bánh mì giòn, phủ lớp bơ tỏi, nướng vừa phải cho vị bơ thơm ngậy.'),
-('MA030', 'LMA06', N'Bánh Trung Thu Cao Cấp', 9400000.0, N'Bánh trung thu với nhân thập cẩm cao cấp, vị ngọt thanh mát.');
+-- Món Việt (LMA06)
+---Khai vị
+('MAK21', 'LMA06', N'Bánh Xèo', 4500000.0, N'Bánh xèo giòn rụm, nhân tôm, thịt, giá đỗ, ăn kèm rau sống.'),
+('MAK22', 'LMA06', N'Nem Rán Hà Nội', 6200000.0, N'Chả giò giòn tan, nhân thịt và mộc nhĩ, ăn kèm rau sống và nước mắm chua ngọt.'),
+('MAK23', 'LMA06', N'Chả Cá Lã Vọng', 4500000.0, N'Chả cá Lã Vọng nướng thơm ngon, ăn kèm bún và rau sống.'),
+('MAK24', 'LMA06', N'Nộm Gà Bắp Cải', 3500000.0, N'Nộm gà xé phay với bắp cải, rau thơm và nước mắm chua ngọt.'),
+---Đồ uống
+('MAD21', 'LMA06', N'Nước Mát Lá Nha Đam', 2800000.0, N'Nước uống mát gan, làm từ lá nha đam tươi, thanh mát, tốt cho sức khoẻ.'),
+('MAD22', 'LMA06', N'Nước Mía', 2500000.0, N'Nước mía tươi ngọt thanh, mát lạnh.'),
+('MAD23', 'LMA06', N'Đá Me', 2200000.0, N'Nước me ngọt thanh, mát lạnh.'), 
+('MAD24', 'LMA06', N'Nước Dừa Tươi', 3000000.0, N'Nước dừa tươi mát, bổ dưỡng cho sức khỏe.'),
+---Món chính
+('MAC36', 'LMA06', N'Lẩu Thái Hải Sản', 28000000.0, N'Lẩu Thái với hải sản tươi ngon, nước dùng cay đặc trưng.'),
+('MAC37', 'LMA06', N'Bánh Canh Cua', 22000000.0, N'Bánh canh cua với nước lèo ngọt thanh, thịt cua tươi ngon.'),
+('MAC38', 'LMA06', N'Gà Hấp Sả', 17000000.0, N'Gà hấp sả tươi ngon, kết hợp gia vị đậm đà.'),
+('MAC39', 'LMA06', N'Cháo Lòng', 15000000.0, N'Cháo lòng đặc biệt, nước dùng ngọt, lòng non thơm ngon.'),
+('MAC40', 'LMA06', N'Món Bún Riêu', 13000000.0, N'Bún riêu cua thơm ngon, nước dùng đậm đà, ăn kèm rau sống.'),
+('MAC41', 'LMA06', N'Lẩu Hải Sản Cao Cấp', 42300000.0, N'Lẩu hải sản với các loại hải sản tươi ngon nhất, nước dùng đậm đà.'),
+('MAC42', 'LMA06', N'Bún Bò Huế Đặc Biệt', 18500000.0, N'Món đặc sản Huế với nước dùng cay thơm, chả, giò heo và bún sợi to.'),
+---Tráng miệng
+('MAT21', 'LMA06', N'Chè Trôi Nước', 3500000.0, N'Chè trôi nước mềm mịn, ăn kèm nước đường ngọt ngào.'),
+('MAT22', 'LMA06', N'Bánh Chuối Nướng', 4000000.0, N'Bánh chuối nướng giòn, thơm mùi dừa và chuối chín.'),
+('MAT23', 'LMA06', N'Chè Bắp', 3500000.0, N'Chè bắp ngọt ngào, thơm mát, ăn kèm nước cốt dừa.'),
+('MAT24', 'LMA06', N'Bánh Chuối Nướng', 4200000.0, N'Món tráng miệng dân dã với chuối chín, dừa và nước cốt dừa nướng vàng ươm.');
+
+-- Insert vào bảng ComboMonAn
+INSERT INTO ComboMonAn (maCB, tenCB, giaCB) VALUES
+('CB00001', 'Buffet Sáng', 250000),
+('CB00002', 'Buffet Tối', 350000),
+('CB00003', 'Thực đơn gọi món tại phòng', 300000),
+('CB00004', 'Thực đơn tiệc truyền thống', 500000),
+('CB00005', 'Thực đơn tiệc hiện đại', 600000);
+
+-- Insert vào bảng ChiTietCombo
+-- Combo buffet sáng (CB00001)
+INSERT INTO ChiTietCombo (maCTCB, maCB, maMA) VALUES
+('CTCB00001', 'CB00001', 'MA0001'),
+('CTCB00002', 'CB00001', 'MA0002'),
+('CTCB00003', 'CB00001', 'MA0003'),
+('CTCB00004', 'CB00001', 'MA0004'),
+('CTCB00005', 'CB00001', 'MA0005'),
+('CTCB00006', 'CB00001', 'MA0006'),
+('CTCB00007', 'CB00001', 'MA0007'),
+('CTCB00008', 'CB00001', 'MA0008'),
+('CTCB00009', 'CB00001', 'MA0009'),
+('CTCB00010', 'CB00001', 'MA0010');
+
+-- Combo buffet tối (CB00002)
+INSERT INTO ChiTietCombo (maCTCB, maCB, maMA) VALUES
+('CTCB00011', 'CB00002', 'MA0011'),
+('CTCB00012', 'CB00002', 'MA0012'),
+('CTCB00013', 'CB00002', 'MA0013'),
+('CTCB00014', 'CB00002', 'MA0014'),
+('CTCB00015', 'CB00002', 'MA0015'),
+('CTCB00016', 'CB00002', 'MA0016'),
+('CTCB00017', 'CB00002', 'MA0017'),
+('CTCB00018', 'CB00002', 'MA0018'),
+('CTCB00019', 'CB00002', 'MA0019'),
+('CTCB00020', 'CB00002', 'MA0020');
+
+-- Combo gọi món tại phòng (CB00003)
+INSERT INTO ChiTietCombo (maCTCB, maCB, maMA) VALUES
+('CTCB00021', 'CB00003', 'MA0001'),
+('CTCB00022', 'CB00003', 'MA0002'),
+('CTCB00023', 'CB00003', 'MA0003'),
+('CTCB00024', 'CB00003', 'MA0004'),
+('CTCB00025', 'CB00003', 'MA0005'),
+('CTCB00026', 'CB00003', 'MA0006'),
+('CTCB00027', 'CB00003', 'MA0007'),
+('CTCB00028', 'CB00003', 'MA0008'),
+('CTCB00029', 'CB00003', 'MA0009'),
+('CTCB00030', 'CB00003', 'MA0010'),
+('CTCB00031', 'CB00003', 'MA0011'),
+('CTCB00032', 'CB00003', 'MA0012'),
+('CTCB00033', 'CB00003', 'MA0013'),
+('CTCB00034', 'CB00003', 'MA0014'),
+('CTCB00035', 'CB00003', 'MA0015'),
+('CTCB00036', 'CB00003', 'MA0016'),
+('CTCB00037', 'CB00003', 'MA0017'),
+('CTCB00038', 'CB00003', 'MA0018'),
+('CTCB00039', 'CB00003', 'MA0019'),
+('CTCB00040', 'CB00003', 'MA0020');
+
+-- Combo tiệc truyền thống (CB00004)
+INSERT INTO ChiTietCombo (maCTCB, maCB, maMA) VALUES
+('CTCB00041', 'CB00004', 'MA0021'), 
+('CTCB00042', 'CB00004', 'MA0023'), 
+('CTCB00043', 'CB00004', 'MA0026'), 
+('CTCB00044', 'CB00004', 'MA0024'),
+('CTCB00045', 'CB00004', 'MA0025'),
+('CTCB00046', 'CB00004', 'MA0027'),
+('CTCB00047', 'CB00004', 'MA0015'),
+('CTCB00048', 'CB00004', 'MA0019'),
+('CTCB00049', 'CB00004', 'MA0028'),
+('CTCB00050', 'CB00004', 'MA0010');
+
+-- Combo tiệc hiện đại (CB00005)
+INSERT INTO ChiTietCombo (maCTCB, maCB, maMA) VALUES
+('CTCB00051', 'CB00005', 'MA0022'), 
+('CTCB00052', 'CB00005', 'MA0024'), 
+('CTCB00053', 'CB00005', 'MA0027'), 
+('CTCB00054', 'CB00005', 'MA0021'),
+('CTCB00055', 'CB00005', 'MA0025'),
+('CTCB00056', 'CB00005', 'MA0017'),
+('CTCB00057', 'CB00005', 'MA0016'),
+('CTCB00058', 'CB00005', 'MA0013'),
+('CTCB00059', 'CB00005', 'MA0014'),
+('CTCB00060', 'CB00005', 'MA0008');
 
 ---chức vụ.
 go
@@ -520,227 +714,13 @@ insert into NhanSu(MaNhanSu, HoTen, NgaySinh, SDT, CCCD, Email, DiaChi, MaChucVu
 ('NV160', N'Phan Minh Tâm', '18/12/1993', '0912345839', '623456789021', 'minhtam1@gmail.com', N'20 Nguyễn Thái Bình, Quận 5, TP HCM', 'CV021', '06/04/2024', 25000000);
 
 ---phòng.
-go
-insert into Phong (maPhong, tenLP, tenLG, giaP, trangThai) values
+---insert into Phong(maPhong, tenPhong, loaiHinh, slNguoi, giaTien, trangThai, ghiChu) values
 
----phòng vip đơn 1 giường.
-('PVIPDON001', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON002', N'VIP', N'Đơn 1', 2000000, N'Đang dọn dẹp'),
-('PVIPDON003', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON004', N'VIP', N'Đơn 1', 2000000, N'Đã đặt'),
-('PVIPDON005', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON006', N'VIP', N'Đơn 1', 2000000, N'Đã đặt'),
-('PVIPDON007', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON008', N'VIP', N'Đơn 1', 2000000, N'Đang dọn dẹp'),
-('PVIPDON009', N'VIP', N'Đơn 1', 2000000, N'Đã đặt'),
-('PVIPDON010', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON011', N'VIP', N'Đơn 1', 2000000, N'Đang dọn dẹp'),
-('PVIPDON012', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON013', N'VIP', N'Đơn 1', 2000000, N'Đang dọn dẹp'),
-('PVIPDON014', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON015', N'VIP', N'Đơn 1', 2000000, N'Đã đặt'),
-('PVIPDON016', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON017', N'VIP', N'Đơn 1', 2000000, N'Đang dọn dẹp'),
-('PVIPDON018', N'VIP', N'Đơn 1', 2000000, N'Đã đặt'),
-('PVIPDON019', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON020', N'VIP', N'Đơn 1', 2000000, N'Đang dọn dẹp'),
-('PVIPDON021', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON022', N'VIP', N'Đơn 1', 2000000, N'Đang dọn dẹp'),
-('PVIPDON023', N'VIP', N'Đơn 1', 2000000, N'Đã đặt'),
-('PVIPDON024', N'VIP', N'Đơn 1', 2000000, N'Trống'),
-('PVIPDON025', N'VIP', N'Đơn 1', 2000000, N'Đã đặt'),
-
----phòng vip đơn 2 giường.
-('PVIPDON026', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON027', N'VIP', N'Đơn 2', 4000000, N'Đang dọn dẹp'),
-('PVIPDON028', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON029', N'VIP', N'Đơn 2', 4000000, N'Đã đặt'),
-('PVIPDON030', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON031', N'VIP', N'Đơn 2', 4000000, N'Đã đặt'),
-('PVIPDON032', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON033', N'VIP', N'Đơn 2', 4000000, N'Đang dọn dẹp'),
-('PVIPDON034', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON035', N'VIP', N'Đơn 2', 4000000, N'Đã đặt'),
-('PVIPDON036', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON037', N'VIP', N'Đơn 2', 4000000, N'Đang dọn dẹp'),
-('PVIPDON038', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON039', N'VIP', N'Đơn 2', 4000000, N'Đã đặt'),
-('PVIPDON040', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON041', N'VIP', N'Đơn 2', 4000000, N'Đang dọn dẹp'),
-('PVIPDON042', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON043', N'VIP', N'Đơn 2', 4000000, N'Đã đặt'),
-('PVIPDON044', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON045', N'VIP', N'Đơn 2', 4000000, N'Đang dọn dẹp'),
-('PVIPDON046', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON047', N'VIP', N'Đơn 2', 4000000, N'Đã đặt'),
-('PVIPDON048', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-('PVIPDON049', N'VIP', N'Đơn 2', 4000000, N'Đang dọn dẹp'),
-('PVIPDON050', N'VIP', N'Đơn 2', 4000000, N'Trống'),
-
----phòng VIP đôi 1 giường.
-('PVIPDOI001', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI002', N'VIP', N'Đôi 1', 4000000, N'Đang dọn dẹp'),
-('PVIPDOI003', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI004', N'VIP', N'Đôi 1', 4000000, N'Đã đặt'),
-('PVIPDOI005', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI006', N'VIP', N'Đôi 1', 4000000, N'Đã đặt'),
-('PVIPDOI007', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI008', N'VIP', N'Đôi 1', 4000000, N'Đang dọn dẹp'),
-('PVIPDOI009', N'VIP', N'Đôi 1', 4000000, N'Đã đặt'),
-('PVIPDOI010', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI011', N'VIP', N'Đôi 1', 4000000, N'Đang dọn dẹp'),
-('PVIPDOI012', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI013', N'VIP', N'Đôi 1', 4000000, N'Đang dọn dẹp'),
-('PVIPDOI014', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI015', N'VIP', N'Đôi 1', 4000000, N'Đã đặt'),
-('PVIPDOI016', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI017', N'VIP', N'Đôi 1', 4000000, N'Đang dọn dẹp'),
-('PVIPDOI018', N'VIP', N'Đôi 1', 4000000, N'Đã đặt'),
-('PVIPDOI019', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI020', N'VIP', N'Đôi 1', 4000000, N'Đang dọn dẹp'),
-('PVIPDOI021', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI022', N'VIP', N'Đôi 1', 4000000, N'Đang dọn dẹp'),
-('PVIPDOI023', N'VIP', N'Đôi 1', 4000000, N'Đã đặt'),
-('PVIPDOI024', N'VIP', N'Đôi 1', 4000000, N'Trống'),
-('PVIPDOI025', N'VIP', N'Đôi 1', 4000000, N'Đã đặt'),
-
----phòng VIP đôi 2 giường.
-('PVIPDOI026', N'VIP', N'Đôi 2', 8000000, N'Đã đặt'),
-('PVIPDOI027', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI028', N'VIP', N'Đôi 2', 8000000, N'Đang dọn dẹp'),
-('PVIPDOI029', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI030', N'VIP', N'Đôi 2', 8000000, N'Đã đặt'),
-('PVIPDOI031', N'VIP', N'Đôi 2', 8000000, N'Đang dọn dẹp'),
-('PVIPDOI032', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI033', N'VIP', N'Đôi 2', 8000000, N'Đã đặt'),
-('PVIPDOI034', N'VIP', N'Đôi 2', 8000000, N'Đang dọn dẹp'),
-('PVIPDOI035', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI036', N'VIP', N'Đôi 2', 8000000, N'Đã đặt'),
-('PVIPDOI037', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI038', N'VIP', N'Đôi 2', 8000000, N'Đang dọn dẹp'),
-('PVIPDOI039', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI040', N'VIP', N'Đôi 2', 8000000, N'Đã đặt'),
-('PVIPDOI041', N'VIP', N'Đôi 2', 8000000, N'Đang dọn dẹp'),
-('PVIPDOI042', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI043', N'VIP', N'Đôi 2', 8000000, N'Đã đặt'),
-('PVIPDOI044', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI045', N'VIP', N'Đôi 2', 8000000, N'Đang dọn dẹp'),
-('PVIPDOI046', N'VIP', N'Đôi 2', 8000000, N'Đã đặt'),
-('PVIPDOI047', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI048', N'VIP', N'Đôi 2', 8000000, N'Đang dọn dẹp'),
-('PVIPDOI049', N'VIP', N'Đôi 2', 8000000, N'Trống'),
-('PVIPDOI050', N'VIP', N'Đôi 2', 8000000, N'Đã đặt'),
-
----phòng thường đơn 1 giường.
-('PTHGDON001', N'Thường', N'Đơn 1', 800000, N'Đã đặt'),
-('PTHGDON002', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON003', N'Thường', N'Đơn 1', 800000, N'Đang dọn dẹp'),
-('PTHGDON004', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON005', N'Thường', N'Đơn 1', 800000, N'Đã đặt'),
-('PTHGDON006', N'Thường', N'Đơn 1', 800000, N'Đang dọn dẹp'),
-('PTHGDON007', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON008', N'Thường', N'Đơn 1', 800000, N'Đang dọn dẹp'),
-('PTHGDON009', N'Thường', N'Đơn 1', 800000, N'Đã đặt'),
-('PTHGDON010', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON011', N'Thường', N'Đơn 1', 800000, N'Đang dọn dẹp'),
-('PTHGDON012', N'Thường', N'Đơn 1', 800000, N'Đã đặt'),
-('PTHGDON013', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON014', N'Thường', N'Đơn 1', 800000, N'Đang dọn dẹp'),
-('PTHGDON015', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON016', N'Thường', N'Đơn 1', 800000, N'Đã đặt'),
-('PTHGDON017', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON018', N'Thường', N'Đơn 1', 800000, N'Đang dọn dẹp'),
-('PTHGDON019', N'Thường', N'Đơn 1', 800000, N'Đã đặt'),
-('PTHGDON020', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON021', N'Thường', N'Đơn 1', 800000, N'Đang dọn dẹp'),
-('PTHGDON022', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON023', N'Thường', N'Đơn 1', 800000, N'Đã đặt'),
-('PTHGDON024', N'Thường', N'Đơn 1', 800000, N'Trống'),
-('PTHGDON025', N'Thường', N'Đơn 1', 800000, N'Đang dọn dẹp'),
-
----phòng thường đơn 2 giường.
-('PTHGDON026', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-('PTHGDON027', N'Thường', N'Đơn 2', 1600000, N'Trống'),
-('PTHGDON028', N'Thường', N'Đơn 2', 1600000, N'Đang dọn dẹp'),
-('PTHGDON029', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-('PTHGDON030', N'Thường', N'Đơn 2', 1600000, N'Trống'),
-('PTHGDON031', N'Thường', N'Đơn 2', 1600000, N'Đang dọn dẹp'),
-('PTHGDON032', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-('PTHGDON033', N'Thường', N'Đơn 2', 1600000, N'Trống'),
-('PTHGDON034', N'Thường', N'Đơn 2', 1600000, N'Đang dọn dẹp'),
-('PTHGDON035', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-('PTHGDON036', N'Thường', N'Đơn 2', 1600000, N'Trống'),
-('PTHGDON037', N'Thường', N'Đơn 2', 1600000, N'Đang dọn dẹp'),
-('PTHGDON038', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-('PTHGDON039', N'Thường', N'Đơn 2', 1600000, N'Trống'),
-('PTHGDON040', N'Thường', N'Đơn 2', 1600000, N'Đang dọn dẹp'),
-('PTHGDON041', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-('PTHGDON042', N'Thường', N'Đơn 2', 1600000, N'Trống'),
-('PTHGDON043', N'Thường', N'Đơn 2', 1600000, N'Đang dọn dẹp'),
-('PTHGDON044', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-('PTHGDON045', N'Thường', N'Đơn 2', 1600000, N'Trống'),
-('PTHGDON046', N'Thường', N'Đơn 2', 1600000, N'Đang dọn dẹp'),
-('PTHGDON047', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-('PTHGDON048', N'Thường', N'Đơn 2', 1600000, N'Trống'),
-('PTHGDON049', N'Thường', N'Đơn 2', 1600000, N'Đang dọn dẹp'),
-('PTHGDON050', N'Thường', N'Đơn 2', 1600000, N'Đã đặt'),
-
----phòng thường đôi 1 giường.
-('PTHGDOI001', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-('PTHGDOI002', N'Thường', N'Đôi 1', 1600000, N'Trống'),
-('PTHGDOI003', N'Thường', N'Đôi 1', 1600000, N'Đang dọn dẹp'),
-('PTHGDOI004', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-('PTHGDOI005', N'Thường', N'Đôi 1', 1600000, N'Trống'),
-('PTHGDOI006', N'Thường', N'Đôi 1', 1600000, N'Đang dọn dẹp'),
-('PTHGDOI007', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-('PTHGDOI008', N'Thường', N'Đôi 1', 1600000, N'Trống'),
-('PTHGDOI009', N'Thường', N'Đôi 1', 1600000, N'Đang dọn dẹp'),
-('PTHGDOI010', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-('PTHGDOI011', N'Thường', N'Đôi 1', 1600000, N'Trống'),
-('PTHGDOI012', N'Thường', N'Đôi 1', 1600000, N'Đang dọn dẹp'),
-('PTHGDOI013', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-('PTHGDOI014', N'Thường', N'Đôi 1', 1600000, N'Trống'),
-('PTHGDOI015', N'Thường', N'Đôi 1', 1600000, N'Đang dọn dẹp'),
-('PTHGDOI016', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-('PTHGDOI017', N'Thường', N'Đôi 1', 1600000, N'Trống'),
-('PTHGDOI018', N'Thường', N'Đôi 1', 1600000, N'Đang dọn dẹp'),
-('PTHGDOI019', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-('PTHGDOI020', N'Thường', N'Đôi 1', 1600000, N'Trống'),
-('PTHGDOI021', N'Thường', N'Đôi 1', 1600000, N'Đang dọn dẹp'),
-('PTHGDOI022', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-('PTHGDOI023', N'Thường', N'Đôi 1', 1600000, N'Trống'),
-('PTHGDOI024', N'Thường', N'Đôi 1', 1600000, N'Đang dọn dẹp'),
-('PTHGDOI025', N'Thường', N'Đôi 1', 1600000, N'Đã đặt'),
-
----phòng thường đôi 2 giường.
-('PTHGDOI026', N'Thường', N'Đôi 2', 3200000, N'Đã đặt'),
-('PTHGDOI027', N'Thường', N'Đôi 2', 3200000, N'Trống'),
-('PTHGDOI028', N'Thường', N'Đôi 2', 3200000, N'Đang dọn dẹp'),
-('PTHGDOI029', N'Thường', N'Đôi 2', 3200000, N'Đã đặt'),
-('PTHGDOI030', N'Thường', N'Đôi 2', 3200000, N'Trống'),
-('PTHGDOI031', N'Thường', N'Đôi 2', 3200000, N'Đang dọn dẹp'),
-('PTHGDOI032', N'Thường', N'Đôi 2', 3200000, N'Đã đặt'),
-('PTHGDOI033', N'Thường', N'Đôi 2', 3200000, N'Trống'),
-('PTHGDOI034', N'Thường', N'Đôi 2', 3200000, N'Đang dọn dẹp'),
-('PTHGDOI035', N'Thường', N'Đôi 2', 3200000, N'Đã đặt'),
-('PTHGDOI036', N'Thường', N'Đôi 2', 3200000, N'Trống'),
-('PTHGDOI037', N'Thường', N'Đôi 2', 3200000, N'Đang dọn dẹp'),
-('PTHGDOI038', N'Thường', N'Đôi 2', 3200000, N'Đã đặt'),
-('PTHGDOI039', N'Thường', N'Đôi 2', 3200000, N'Trống'),
-('PTHGDOI040', N'Thường', N'Đôi 2', 3200000, N'Đang dọn dẹp'),
-('PTHGDOI041', N'Thường', N'Đôi 2', 3200000, N'Đã đặt'),
-('PTHGDOI042', N'Thường', N'Đôi 2', 3200000, N'Trống'),
-('PTHGDOI043', N'Thường', N'Đôi 2', 3200000, N'Đang dọn dẹp'),
-('PTHGDOI044', N'Thường', N'Đôi 2', 3200000, N'Đã đặt'),
-('PTHGDOI045', N'Thường', N'Đôi 2', 3200000, N'Trống'),
-('PTHGDOI046', N'Thường', N'Đôi 2', 3200000, N'Đang dọn dẹp'),
-('PTHGDOI047', N'Thường', N'Đôi 2', 3200000, N'Đã đặt'),
-('PTHGDOI048', N'Thường', N'Đôi 2', 3200000, N'Trống'),
-('PTHGDOI049', N'Thường', N'Đôi 2', 3200000, N'Đang dọn dẹp'),
-('PTHGDOI050', N'Thường', N'Đôi 2', 3200000, N'Đã đặt');
+----phòng thường - đơn.
+---('THG0001', 'A001', N'Phòng thường', 1, );
 
 ---sảnh tiệc.
-go
+---go
 insert into SanhDatTiec (maS, tenS, giaSDT) values
 ('SANHA',N'Sảnh A',7000000),
 ('SANHB',N'Sảnh B',9000000),
