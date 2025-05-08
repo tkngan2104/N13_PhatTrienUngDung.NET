@@ -149,7 +149,7 @@
             this.btnPhong.Name = "btnPhong";
             this.btnPhong.Size = new System.Drawing.Size(402, 58);
             this.btnPhong.TabIndex = 10;
-            this.btnPhong.Text = "Phòng thuê";
+            this.btnPhong.Text = "Loại hình lưu trú";
             this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhong.UseVisualStyleBackColor = true;
             this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);

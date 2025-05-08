@@ -3,19 +3,27 @@
   "WorkspaceRootPath": "N:\\N13_PhatTrienUngDung.NET\\system\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|n:\\n13_phattrienungdung.net\\system\\dal\\dal_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|N:\\N13_PhatTrienUngDung.NET\\system\\dal\\dal_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|n:\\n13_phattrienungdung.net\\system\\bus\\bus_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|N:\\N13_PhatTrienUngDung.NET\\system\\bus\\bus_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|N:\\N13_PhatTrienUngDung.NET\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,11 +34,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Phong.cs [Design]",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Phong.cs",
+              "RelativeDocumentMoniker": "GUI\\Phong.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Phong.cs [Design]",
+              "RelativeToolTip": "GUI\\Phong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T19:47:55.249Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Menu.cs",
+              "RelativeDocumentMoniker": "GUI\\Menu.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Menu.cs [Design]",
+              "RelativeToolTip": "GUI\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T19:47:41.621Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BUS_NhanVien.cs",
               "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_NhanVien.cs",
               "RelativeDocumentMoniker": "BUS\\BUS_NhanVien.cs",
@@ -38,12 +70,11 @@
               "RelativeToolTip": "BUS\\BUS_NhanVien.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAMwGEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T19:15:44.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T19:15:44.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DAL_NhanVien.cs",
               "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_NhanVien.cs",
               "RelativeDocumentMoniker": "DAL\\DAL_NhanVien.cs",
@@ -51,12 +82,11 @@
               "RelativeToolTip": "DAL\\DAL_NhanVien.cs",
               "ViewState": "AgIAAMQAAAAAAAAAAAAiwMUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T19:15:22.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T19:15:22.781Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "NhanSu.cs",
               "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
               "RelativeDocumentMoniker": "GUI\\NhanSu.cs",
@@ -69,15 +99,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "NhanSu.cs [Design]",
               "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
               "RelativeDocumentMoniker": "GUI\\NhanSu.cs",
               "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs [Design]",
               "RelativeToolTip": "GUI\\NhanSu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T19:10:53.171Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-08T19:10:53.171Z"
             }
           ]
         }
