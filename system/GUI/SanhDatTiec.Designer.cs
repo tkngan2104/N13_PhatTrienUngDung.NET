@@ -98,6 +98,7 @@
             this.btnLamMoi.TabIndex = 25;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnSua
             // 
@@ -111,6 +112,7 @@
             this.btnSua.TabIndex = 24;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -124,6 +126,7 @@
             this.btnXoa.TabIndex = 23;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -137,6 +140,7 @@
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // groupBox2
             // 
@@ -166,6 +170,7 @@
             // 
             // dgvDSSanhDT
             // 
+            this.dgvDSSanhDT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDSSanhDT.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSSanhDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSSanhDT.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -175,6 +180,7 @@
             this.dgvDSSanhDT.RowTemplate.Height = 28;
             this.dgvDSSanhDT.Size = new System.Drawing.Size(952, 382);
             this.dgvDSSanhDT.TabIndex = 0;
+            this.dgvDSSanhDT.Click += new System.EventHandler(this.dgvDSSanhDT_Click);
             // 
             // txtGiaTien
             // 
@@ -182,6 +188,7 @@
             this.txtGiaTien.Name = "txtGiaTien";
             this.txtGiaTien.Size = new System.Drawing.Size(303, 35);
             this.txtGiaTien.TabIndex = 5;
+            this.txtGiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaTien_KeyPress);
             // 
             // lblGiaTien
             // 
@@ -199,6 +206,7 @@
             this.txtTenSanh.Name = "txtTenSanh";
             this.txtTenSanh.Size = new System.Drawing.Size(303, 35);
             this.txtTenSanh.TabIndex = 3;
+            this.txtTenSanh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenSanh_KeyPress);
             // 
             // lblTenSanh
             // 
@@ -257,6 +265,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SanhDatTiec";
             this.Text = "SanhDatTiec";
+            this.Load += new System.EventHandler(this.SanhDatTiec_Load);
             this.pnlTieuDe.ResumeLayout(false);
             this.pnlTieuDe.PerformLayout();
             this.groupBox2.ResumeLayout(false);

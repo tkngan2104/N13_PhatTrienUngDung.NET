@@ -4,12 +4,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
     public class DAL_ChucVu
     {
+        private static DAL_ChucVu instance;
+
+        public static DAL_ChucVu Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new DAL_ChucVu();
+                }
+                return instance;
+            }
+        }
+
         QLResortDataContext db = new QLResortDataContext();
+
         public IQueryable loadDSCV()
         {
             IQueryable chucVu = from cv in db.ChucVus
@@ -84,6 +100,19 @@ namespace DAL
                 throw new Exception("Khong sua duoc: " + ex.Message);
             }
             return flag;
+        }
+
+        /// <summary>
+        /// Đổ dữ liệu chức vụ.
+        /// </summary>
+        /// <param name="cbo"></param>
+        /// <returns></returns>
+        public IQueryable DSChucVuCombobox(ComboBox cbo)
+        {
+            IQueryable chucvu = from cv in db.ChucVus
+                                orderby cv.MaChucVu descending
+                                select new { cv.MaChucVu, cv.TenChucVu };
+            return chucvu;
         }
     }
 }

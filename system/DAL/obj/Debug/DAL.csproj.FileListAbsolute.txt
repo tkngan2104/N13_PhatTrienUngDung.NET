@@ -64,3 +64,14 @@ T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.ca
 T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
 T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll.config
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb

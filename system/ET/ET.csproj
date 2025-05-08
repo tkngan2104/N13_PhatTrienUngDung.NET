@@ -42,12 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ET_ChiTiecDatTiec.cs" />
+    <Compile Include="ET_ChiTietCombo.cs" />
+    <Compile Include="ET_ChiTietDatDichVu.cs" />
+    <Compile Include="ET_ChiTietDatPhong.cs" />
+    <Compile Include="ET_ComboMonAn.cs" />
+    <Compile Include="ET_DatPhong.cs" />
+    <Compile Include="ET_DatTiec.cs" />
     <Compile Include="ET_DichVu.cs" />
+    <Compile Include="ET_HoaDonDatPhong.cs" />
+    <Compile Include="ET_HoaDonDatTiec.cs" />
     <Compile Include="ET_KhachHang.cs" />
     <Compile Include="ET_ChucVu.cs" />
+    <Compile Include="ET_LoaiHinhLuuTru.cs" />
     <Compile Include="ET_LoaiMonAn.cs" />
     <Compile Include="ET_MonAn.cs" />
-    <Compile Include="ET_Phong.cs" />
+    <Compile Include="ET_NhanVien.cs" />
+    <Compile Include="ET_Sanh.cs" />
+    <Compile Include="ET_SuDungDichVu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

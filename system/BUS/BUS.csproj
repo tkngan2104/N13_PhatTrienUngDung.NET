@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,9 +45,12 @@
     <Compile Include="BUS_DichVu.cs" />
     <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_ChucVu.cs" />
+    <Compile Include="BUS_LoaiHinhLuuTru.cs" />
     <Compile Include="BUS_LoaiMonAn.cs" />
     <Compile Include="BUS_MonAn.cs" />
+    <Compile Include="BUS_NhanVien.cs" />
     <Compile Include="BUS_Phong.cs" />
+    <Compile Include="BUS_Sanh.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

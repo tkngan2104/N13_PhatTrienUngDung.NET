@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "T:\\N13_PhatTrienUngDung.NET\\system\\",
+  "WorkspaceRootPath": "N:\\N13_PhatTrienUngDung.NET\\system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|n:\\n13_phattrienungdung.net\\system\\dal\\dal_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|n:\\n13_phattrienungdung.net\\system\\bus\\bus_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|t:\\n13_phattrienungdung.net\\system\\dal\\qlresort.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
-      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\qlresort.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,76 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MonAn.cs",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\MonAn.cs",
-              "RelativeDocumentMoniker": "GUI\\MonAn.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\MonAn.cs",
-              "RelativeToolTip": "GUI\\MonAn.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwC4AAAAAAAAAAAAAAA==",
+              "Title": "BUS_NhanVien.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_NhanVien.cs",
+              "RelativeDocumentMoniker": "BUS\\BUS_NhanVien.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_NhanVien.cs",
+              "RelativeToolTip": "BUS\\BUS_NhanVien.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAMwGEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T03:33:48.028Z",
+              "WhenOpened": "2025-05-08T19:15:44.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Menu.cs [Design]",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Menu.cs",
-              "RelativeDocumentMoniker": "GUI\\Menu.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Menu.cs [Design]",
-              "RelativeToolTip": "GUI\\Menu.cs [Design]",
+              "Title": "DAL_NhanVien.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_NhanVien.cs",
+              "RelativeDocumentMoniker": "DAL\\DAL_NhanVien.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_NhanVien.cs",
+              "RelativeToolTip": "DAL\\DAL_NhanVien.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAiwMUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T03:33:23.569Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-08T19:15:22.781Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoaiMonAn.cs",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\LoaiMonAn.cs",
-              "RelativeDocumentMoniker": "GUI\\LoaiMonAn.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\LoaiMonAn.cs",
-              "RelativeToolTip": "GUI\\LoaiMonAn.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAwwJoAAAApAAAAAAAAAA==",
+              "Title": "NhanSu.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
+              "RelativeDocumentMoniker": "GUI\\NhanSu.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
+              "RelativeToolTip": "GUI\\NhanSu.cs",
+              "ViewState": "AgIAAIYBAAAAAAAAAAAAAGQBAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T03:33:12.062Z",
+              "WhenOpened": "2025-05-08T19:11:27.76Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoaiMonAn.cs [Design]",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\LoaiMonAn.cs",
-              "RelativeDocumentMoniker": "GUI\\LoaiMonAn.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\LoaiMonAn.cs [Design]",
-              "RelativeToolTip": "GUI\\LoaiMonAn.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T03:30:57.686Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MonAn.cs [Design]",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\MonAn.cs",
-              "RelativeDocumentMoniker": "GUI\\MonAn.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\MonAn.cs [Design]",
-              "RelativeToolTip": "GUI\\MonAn.cs [Design]",
+              "Title": "NhanSu.cs [Design]",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
+              "RelativeDocumentMoniker": "GUI\\NhanSu.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs [Design]",
+              "RelativeToolTip": "GUI\\NhanSu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T03:27:45.568Z",
+              "WhenOpened": "2025-05-08T19:10:53.171Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "QLResort.dbml",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\DAL\\QLResort.dbml",
-              "RelativeDocumentMoniker": "DAL\\QLResort.dbml",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\DAL\\QLResort.dbml",
-              "RelativeToolTip": "DAL\\QLResort.dbml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2025-04-17T03:27:29.473Z",
-              "EditorCaption": ""
             }
           ]
         }
