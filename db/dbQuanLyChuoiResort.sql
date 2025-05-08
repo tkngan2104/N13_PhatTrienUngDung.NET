@@ -33,8 +33,8 @@ create table ChucVu(
 create table NhanSu(
 	MaNhanSu varchar(8) PRIMARY KEY,
     HoTen NVARCHAR(50) NOT NULL,
-    NgaySinh DATE,
 	GioiTinh nvarchar(3),
+    NgaySinh DATE,
     SDT NVARCHAR(15),
     CCCD NVARCHAR(12),
     Email NVARCHAR(100) UNIQUE,

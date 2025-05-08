@@ -35,11 +35,11 @@ insert into ChucVu (MaChucVu, TenChucVu) values
 -----NHÂN VIÊN
 
 go
-insert into NhanSu(MaNhanSu, HoTen, NgaySinh, GioiTinh, SDT, CCCD, Email, DiaChi, MaChucVu, NgayVaoLam, Luong) values
+insert into NhanSu(MaNhanSu, HoTen, GioiTinh, NgaySinh, SDT, CCCD, Email, DiaChi, MaChucVu, NgayVaoLam, Luong) values
 
 ---ban điều hành.
 
-('CEO',N'Đào Minh Trí','06/04/2025',N'Nam','0011223344','667788990011','minhtri@gmail.com',N'21 Lê Văn Thịnh, Thủ Đức, TP HCM','CV001',NULL,NULL),
+('CEO',N'Đào Minh Trí',N'Nam','06/02/2025','0011223344','667788990011','minhtri@gmail.com',N'21 Lê Văn Thịnh, Thủ Đức, TP HCM','CV001',NULL,NULL),
 ('GD001', N'Nguyễn Minh Tuấn',N'Nam', '01/01/1985', '0912345678', '123456789012', 'minhtuan@gmail.com', N'12 Nguyễn Huệ, Quận 1, TP HCM', 'CV002', '06/04/2024', 25000000),
 ('GD002', N'Phạm Thanh Hương',N'Nữ', '10/03/1990', '0934567890', '223456789013', 'thanhhuong@gmail.com', N'22 Lê Quang Định, Bình Thạnh, TP HCM', 'CV003','06/04/2024', 28000000),
 ('GD003', N'Lê Quốc Anh',N'Nam', '15/07/1982', '0945678901', '323456789014', 'quocanh@gmail.com', N'33 Phạm Ngọc Thạch, Quận 3, TP HCM', 'CV004', '06/04/2024', 27000000),
