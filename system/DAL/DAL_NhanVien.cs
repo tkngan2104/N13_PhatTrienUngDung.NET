@@ -33,9 +33,10 @@ namespace DAL
         /// <returns></returns>
         public IQueryable DSChucVuCombobox(ComboBox cbo)
         {
-            IQueryable dl = from cv in db.ChucVus
-                            select new { cv.MaChucVu, cv.TenChucVu };
-            return dl;
+            IQueryable chucvu = from cv in db.ChucVus
+                                  orderby cv.MaChucVu descending
+                                  select cv.TenChucVu;
+            return chucvu;
         }
 
         /// <summary>
@@ -44,27 +45,17 @@ namespace DAL
         /// <returns></returns>
         public string TaoMaTuDong()
         {
-            int countMaNV = db.NhanSus.Count() + 1;
+            int countMaNS = db.NhanSus
+                      .Where(nv => nv.MaNhanSu.StartsWith("NV"))
+                      .Count() + 1;
 
-            //Tạo mã mới.
-            string newMaNV;
+            string newMaKH;
             do
             {
-                if (countMaNV < 10)
-                {
-                    newMaNV = $"NV00{countMaNV}";
-                }
-                if (countMaNV < 100)
-                {
-                    newMaNV = $"NV0{countMaNV}";
-                }
-                else
-                {
-                    newMaNV = $"MV{countMaNV}";
-                }
-                countMaNV++;
-            } while (db.NhanSus.Any(nv => nv.MaNhanSu == newMaNV));
-            return newMaNV;
+                newMaKH = $"NV{countMaNS}";
+                countMaNS++;
+            } while (db.NhanSus.Any(kh => kh.MaNhanSu == newMaKH));
+            return newMaKH;
         }
 
         /// <summary>
@@ -74,6 +65,7 @@ namespace DAL
         public IQueryable DSNhanVien()
         {
             IQueryable nhanvien = from nv in db.NhanSus
+                                  orderby nv.MaNhanSu descending
                                   select nv;
             return nhanvien;
         }

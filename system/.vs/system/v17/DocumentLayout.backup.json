@@ -3,24 +3,68 @@
   "WorkspaceRootPath": "N:\\N13_PhatTrienUngDung.NET\\system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|n:\\n13_phattrienungdung.net\\system\\dal\\dal_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_hoadondattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_hoadondattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\sanhdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\sanhdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_hoadondatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_hoadondatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|n:\\n13_phattrienungdung.net\\system\\bus\\bus_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\sanhdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\sanhdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_chitietdatdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_chitietdatdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_chitiecdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_chitiecdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_chitietcombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_chitietcombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_combomonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_combomonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_loaimonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_chitietdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_chitietdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|n:\\n13_phattrienungdung.net\\system\\et\\et_datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1407C3-0EB1-4D12-AC0C-7B60F6E0A011}|ET\\ET.csproj|solutionrelative:et\\et_datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|N:\\N13_PhatTrienUngDung.NET\\system\\dal\\dal_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|N:\\N13_PhatTrienUngDung.NET\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|N:\\N13_PhatTrienUngDung.NET\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|N:\\N13_PhatTrienUngDung.NET\\system\\bus\\bus_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +74,211 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SanhDatTiec.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SanhDatTiec.cs",
-              "RelativeDocumentMoniker": "GUI\\SanhDatTiec.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SanhDatTiec.cs",
-              "RelativeToolTip": "GUI\\SanhDatTiec.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAowCUAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "NhanSu.cs [Design]",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
+              "RelativeDocumentMoniker": "GUI\\NhanSu.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs [Design]",
+              "RelativeToolTip": "GUI\\NhanSu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:04:25.082Z",
+              "WhenOpened": "2025-05-07T20:19:47.324Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ET_HoaDonDatTiec.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_HoaDonDatTiec.cs",
+              "RelativeDocumentMoniker": "ET\\ET_HoaDonDatTiec.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_HoaDonDatTiec.cs",
+              "RelativeToolTip": "ET\\ET_HoaDonDatTiec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T02:30:06.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ET_HoaDonDatPhong.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_HoaDonDatPhong.cs",
+              "RelativeDocumentMoniker": "ET\\ET_HoaDonDatPhong.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_HoaDonDatPhong.cs",
+              "RelativeToolTip": "ET\\ET_HoaDonDatPhong.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAvwBAAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T02:26:35.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ET_SuDungDichVu.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_SuDungDichVu.cs",
+              "RelativeDocumentMoniker": "ET\\ET_SuDungDichVu.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_SuDungDichVu.cs",
+              "RelativeToolTip": "ET\\ET_SuDungDichVu.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADgvxcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T02:23:37.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SanhDatTiec.cs [Design]",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SanhDatTiec.cs",
-              "RelativeDocumentMoniker": "GUI\\SanhDatTiec.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SanhDatTiec.cs [Design]",
-              "RelativeToolTip": "GUI\\SanhDatTiec.cs [Design]",
+              "Title": "ET_ChiTietDatDichVu.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ChiTietDatDichVu.cs",
+              "RelativeDocumentMoniker": "ET\\ET_ChiTietDatDichVu.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ChiTietDatDichVu.cs",
+              "RelativeToolTip": "ET\\ET_ChiTietDatDichVu.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAvwA4AAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:03:42.928Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BUS_Sanh.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_Sanh.cs",
-              "RelativeDocumentMoniker": "BUS\\BUS_Sanh.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_Sanh.cs",
-              "RelativeToolTip": "BUS\\BUS_Sanh.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowFYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:03:13.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DAL_Sanh.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_Sanh.cs",
-              "RelativeDocumentMoniker": "DAL\\DAL_Sanh.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_Sanh.cs",
-              "RelativeToolTip": "DAL\\DAL_Sanh.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwDoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:02:24.426Z",
+              "WhenOpened": "2025-05-08T02:21:02.603Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ET_Sanh.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_Sanh.cs",
-              "RelativeDocumentMoniker": "ET\\ET_Sanh.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_Sanh.cs",
-              "RelativeToolTip": "ET\\ET_Sanh.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBgAAAABAAAAAAAAAA==",
+              "Title": "ET_ChiTiecDatTiec.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ChiTiecDatTiec.cs",
+              "RelativeDocumentMoniker": "ET\\ET_ChiTiecDatTiec.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ChiTiecDatTiec.cs",
+              "RelativeToolTip": "ET\\ET_ChiTiecDatTiec.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAvwBMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T20:01:21.754Z",
+              "WhenOpened": "2025-05-08T01:48:32.204Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ET_DatTiec.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_DatTiec.cs",
+              "RelativeDocumentMoniker": "ET\\ET_DatTiec.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_DatTiec.cs",
+              "RelativeToolTip": "ET\\ET_DatTiec.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADgvxAAAAC2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T01:45:09.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ET_ChiTietCombo.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ChiTietCombo.cs",
+              "RelativeDocumentMoniker": "ET\\ET_ChiTietCombo.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ChiTietCombo.cs",
+              "RelativeToolTip": "ET\\ET_ChiTietCombo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T01:42:08.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ET_ComboMonAn.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ComboMonAn.cs",
+              "RelativeDocumentMoniker": "ET\\ET_ComboMonAn.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ComboMonAn.cs",
+              "RelativeToolTip": "ET\\ET_ComboMonAn.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADgvw4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T01:41:03.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ET_LoaiMonAn.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_LoaiMonAn.cs",
+              "RelativeDocumentMoniker": "ET\\ET_LoaiMonAn.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_LoaiMonAn.cs",
+              "RelativeToolTip": "ET\\ET_LoaiMonAn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T01:40:44.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ET_ChiTietDatPhong.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ChiTietDatPhong.cs",
+              "RelativeDocumentMoniker": "ET\\ET_ChiTietDatPhong.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_ChiTietDatPhong.cs",
+              "RelativeToolTip": "ET\\ET_ChiTietDatPhong.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAMwAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T01:39:05.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ET_DatPhong.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_DatPhong.cs",
+              "RelativeDocumentMoniker": "ET\\ET_DatPhong.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_DatPhong.cs",
+              "RelativeToolTip": "ET\\ET_DatPhong.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAMwA4AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T01:37:25.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ET_NhanVien.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_NhanVien.cs",
+              "RelativeDocumentMoniker": "ET\\ET_NhanVien.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\ET\\ET_NhanVien.cs",
+              "RelativeToolTip": "ET\\ET_NhanVien.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:48:46.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NhanSu.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
+              "RelativeDocumentMoniker": "GUI\\NhanSu.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
+              "RelativeToolTip": "GUI\\NhanSu.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAmwFgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:19:52.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BUS_NhanVien.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_NhanVien.cs",
+              "RelativeDocumentMoniker": "BUS\\BUS_NhanVien.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_NhanVien.cs",
+              "RelativeToolTip": "BUS\\BUS_NhanVien.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:19:33.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DAL_NhanVien.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_NhanVien.cs",
+              "RelativeDocumentMoniker": "DAL\\DAL_NhanVien.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_NhanVien.cs",
+              "RelativeToolTip": "DAL\\DAL_NhanVien.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwDEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T20:18:40.53Z"
             }
           ]
         }

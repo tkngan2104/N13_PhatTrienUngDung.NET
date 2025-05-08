@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,6 +50,43 @@ namespace GUI
         {
             Menu formMenu = (Menu)this.ParentForm;
             formMenu.openChildForm(new ChucVu());
+        }
+
+        private void NhanSu_Load(object sender, EventArgs e)
+        {
+            btnSua.Enabled = false;
+            BUS_NhanVien.Instance.DSNhanVien(dgvDSNS);
+            txtMaNS.Text = BUS_NhanVien.Instance.TaoMaTuDong();
+            BUS_NhanVien.Instance.DSChucVuCombobox(cboChucVu);
+        }
+
+        private void dgvDSNS_Click(object sender, EventArgs e)
+        {
+            int dong = dgvDSNS.CurrentCell.RowIndex;
+            txtMaNS.Text = dgvDSNS.Rows[dong].Cells[0].Value?.ToString() ?? "";
+            txtTenNS.Text = dgvDSNS.Rows[dong].Cells[1].Value?.ToString() ?? "";
+
+            if (DateTime.TryParse(dgvDSNS.Rows[dong].Cells[2].Value?.ToString(), out DateTime birthDate))
+            {
+                if (birthDate < dtpNgaySinh.MinDate || birthDate > dtpNgaySinh.MaxDate)
+                {
+                    dtpNgaySinh.Value = DateTime.Today; // Set to current date or any valid date
+                }
+                else
+                {
+                    dtpNgaySinh.Value = birthDate; // Only set this if within valid range
+                }
+            }
+            else
+            {
+                dtpNgaySinh.Value = DateTime.Today; // or any default value if parsing fails
+            }
+
+            txtSDT.Text = dgvDSNS.Rows[dong].Cells[3].Value?.ToString() ?? "";
+            txtCCCD.Text = dgvDSNS.Rows[dong].Cells[4].Value?.ToString() ?? "";
+            txtEmail.Text = dgvDSNS.Rows[dong].Cells[5].Value?.ToString() ?? "";
+            txtDiaChi.Text = dgvDSNS.Rows[dong].Cells[6].Value?.ToString() ?? "";
+            cboChucVu.Text = dgvDSNS.Rows[dong].Cells[7].Value?.ToString() ?? "";
         }
     }
 }

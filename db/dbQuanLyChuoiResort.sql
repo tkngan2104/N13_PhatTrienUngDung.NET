@@ -34,6 +34,7 @@ create table NhanSu(
 	MaNhanSu varchar(8) PRIMARY KEY,
     HoTen NVARCHAR(50) NOT NULL,
     NgaySinh DATE,
+	gioiTinh nvarchar(3) not null,
     SDT NVARCHAR(15),
     CCCD NVARCHAR(12),
     Email NVARCHAR(100) UNIQUE,

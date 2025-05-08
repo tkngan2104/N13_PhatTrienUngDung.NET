@@ -79,8 +79,9 @@
             this.dgvDSNS.Name = "dgvDSNS";
             this.dgvDSNS.RowHeadersWidth = 62;
             this.dgvDSNS.RowTemplate.Height = 28;
-            this.dgvDSNS.Size = new System.Drawing.Size(1394, 355);
+            this.dgvDSNS.Size = new System.Drawing.Size(1394, 457);
             this.dgvDSNS.TabIndex = 0;
+            this.dgvDSNS.Click += new System.EventHandler(this.dgvDSNS_Click);
             // 
             // groupBox3
             // 
@@ -88,7 +89,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(32, 897);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1400, 389);
+            this.groupBox3.Size = new System.Drawing.Size(1400, 491);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách nhân sự";
@@ -272,7 +273,7 @@
             // 
             // cboChucVu
             // 
-            this.cboChucVu.Enabled = false;
+            this.cboChucVu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboChucVu.FormattingEnabled = true;
             this.cboChucVu.Location = new System.Drawing.Point(543, 80);
             this.cboChucVu.Name = "cboChucVu";
@@ -462,7 +463,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1472, 918);
+            this.ClientSize = new System.Drawing.Size(1472, 1084);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pnlTieuDe);
@@ -470,6 +471,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NhanSu";
             this.Text = "NhanSu";
+            this.Load += new System.EventHandler(this.NhanSu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSNS)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
