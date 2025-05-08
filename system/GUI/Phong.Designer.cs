@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
+            this.lblGhiChu = new System.Windows.Forms.Label();
+            this.txtTenLH = new System.Windows.Forms.TextBox();
+            this.lblTenLH = new System.Windows.Forms.Label();
             this.txtSLNguoi = new System.Windows.Forms.TextBox();
             this.cboLoaiHinh = new System.Windows.Forms.ComboBox();
             this.cboTrangThai = new System.Windows.Forms.ComboBox();
@@ -49,10 +53,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pnlTieuDe = new System.Windows.Forms.Panel();
-            this.txtTenLH = new System.Windows.Forms.TextBox();
-            this.lblTenLH = new System.Windows.Forms.Label();
-            this.txtGhiChu = new System.Windows.Forms.TextBox();
-            this.lblGhiChu = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSLHLT)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -84,12 +84,51 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin loại hình lưu trú";
             // 
+            // txtGhiChu
+            // 
+            this.txtGhiChu.Location = new System.Drawing.Point(1051, 105);
+            this.txtGhiChu.Multiline = true;
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(303, 147);
+            this.txtGhiChu.TabIndex = 16;
+            this.txtGhiChu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGhiChu_KeyPress);
+            // 
+            // lblGhiChu
+            // 
+            this.lblGhiChu.AutoSize = true;
+            this.lblGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGhiChu.Location = new System.Drawing.Point(1046, 76);
+            this.lblGhiChu.Name = "lblGhiChu";
+            this.lblGhiChu.Size = new System.Drawing.Size(87, 26);
+            this.lblGhiChu.TabIndex = 15;
+            this.lblGhiChu.Text = "Ghi chú";
+            // 
+            // txtTenLH
+            // 
+            this.txtTenLH.Location = new System.Drawing.Point(62, 336);
+            this.txtTenLH.Name = "txtTenLH";
+            this.txtTenLH.Size = new System.Drawing.Size(303, 35);
+            this.txtTenLH.TabIndex = 14;
+            this.txtTenLH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenLH_KeyPress);
+            // 
+            // lblTenLH
+            // 
+            this.lblTenLH.AutoSize = true;
+            this.lblTenLH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenLH.Location = new System.Drawing.Point(57, 307);
+            this.lblTenLH.Name = "lblTenLH";
+            this.lblTenLH.Size = new System.Drawing.Size(135, 26);
+            this.lblTenLH.TabIndex = 13;
+            this.lblTenLH.Text = "Tên loại hình";
+            // 
             // txtSLNguoi
             // 
             this.txtSLNguoi.Location = new System.Drawing.Point(553, 105);
             this.txtSLNguoi.Name = "txtSLNguoi";
             this.txtSLNguoi.Size = new System.Drawing.Size(303, 35);
             this.txtSLNguoi.TabIndex = 12;
+            this.txtSLNguoi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSLNguoi_KeyPress);
+            this.txtSLNguoi.Validated += new System.EventHandler(this.txtSLNguoi_Validated);
             // 
             // cboLoaiHinh
             // 
@@ -126,6 +165,7 @@
             this.txtGiaTien.Name = "txtGiaTien";
             this.txtGiaTien.Size = new System.Drawing.Size(303, 35);
             this.txtGiaTien.TabIndex = 7;
+            this.txtGiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaTien_KeyPress);
             // 
             // lblGiaPhong
             // 
@@ -304,41 +344,6 @@
             this.pnlTieuDe.Name = "pnlTieuDe";
             this.pnlTieuDe.Size = new System.Drawing.Size(1472, 100);
             this.pnlTieuDe.TabIndex = 26;
-            // 
-            // txtTenLH
-            // 
-            this.txtTenLH.Location = new System.Drawing.Point(62, 336);
-            this.txtTenLH.Name = "txtTenLH";
-            this.txtTenLH.Size = new System.Drawing.Size(303, 35);
-            this.txtTenLH.TabIndex = 14;
-            // 
-            // lblTenLH
-            // 
-            this.lblTenLH.AutoSize = true;
-            this.lblTenLH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenLH.Location = new System.Drawing.Point(57, 307);
-            this.lblTenLH.Name = "lblTenLH";
-            this.lblTenLH.Size = new System.Drawing.Size(135, 26);
-            this.lblTenLH.TabIndex = 13;
-            this.lblTenLH.Text = "Tên loại hình";
-            // 
-            // txtGhiChu
-            // 
-            this.txtGhiChu.Location = new System.Drawing.Point(1051, 105);
-            this.txtGhiChu.Multiline = true;
-            this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(303, 147);
-            this.txtGhiChu.TabIndex = 16;
-            // 
-            // lblGhiChu
-            // 
-            this.lblGhiChu.AutoSize = true;
-            this.lblGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGhiChu.Location = new System.Drawing.Point(1046, 76);
-            this.lblGhiChu.Name = "lblGhiChu";
-            this.lblGhiChu.Size = new System.Drawing.Size(87, 26);
-            this.lblGhiChu.TabIndex = 15;
-            this.lblGhiChu.Text = "Ghi chú";
             // 
             // Phong
             // 

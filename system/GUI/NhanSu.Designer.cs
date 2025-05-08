@@ -51,8 +51,6 @@
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnChucVu = new System.Windows.Forms.Button();
-            this.txtLuong = new System.Windows.Forms.TextBox();
-            this.lblLuong = new System.Windows.Forms.Label();
             this.dtpNgayVaoLam = new System.Windows.Forms.DateTimePicker();
             this.lblNgayVaoLam = new System.Windows.Forms.Label();
             this.txtCCCD = new System.Windows.Forms.TextBox();
@@ -135,6 +133,7 @@
             this.btnLamMoi.TabIndex = 25;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnSua
             // 
@@ -148,6 +147,7 @@
             this.btnSua.TabIndex = 24;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -161,6 +161,7 @@
             this.btnXoa.TabIndex = 23;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -174,6 +175,7 @@
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // radNu
             // 
@@ -206,6 +208,7 @@
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(775, 109);
             this.txtDiaChi.TabIndex = 18;
+            this.txtDiaChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiaChi_KeyPress);
             // 
             // lblDiaChi
             // 
@@ -223,6 +226,8 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(302, 35);
             this.txtEmail.TabIndex = 16;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // lblEmail
             // 
@@ -260,6 +265,8 @@
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(302, 35);
             this.txtSDT.TabIndex = 14;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
+            this.txtSDT.Leave += new System.EventHandler(this.txtSDT_Leave);
             // 
             // lblSDT
             // 
@@ -299,12 +306,11 @@
             this.dtpNgaySinh.Size = new System.Drawing.Size(302, 35);
             this.dtpNgaySinh.TabIndex = 10;
             this.dtpNgaySinh.Value = new System.DateTime(2025, 3, 28, 16, 40, 28, 0);
+            this.dtpNgaySinh.Leave += new System.EventHandler(this.dtpNgaySinh_Leave);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnChucVu);
-            this.groupBox1.Controls.Add(this.txtLuong);
-            this.groupBox1.Controls.Add(this.lblLuong);
             this.groupBox1.Controls.Add(this.dtpNgayVaoLam);
             this.groupBox1.Controls.Add(this.lblNgayVaoLam);
             this.groupBox1.Controls.Add(this.radNu);
@@ -348,23 +354,6 @@
             this.btnChucVu.UseVisualStyleBackColor = false;
             this.btnChucVu.Click += new System.EventHandler(this.btnChucVu_Click);
             // 
-            // txtLuong
-            // 
-            this.txtLuong.Location = new System.Drawing.Point(1024, 409);
-            this.txtLuong.Name = "txtLuong";
-            this.txtLuong.Size = new System.Drawing.Size(302, 35);
-            this.txtLuong.TabIndex = 24;
-            // 
-            // lblLuong
-            // 
-            this.lblLuong.AutoSize = true;
-            this.lblLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLuong.Location = new System.Drawing.Point(1020, 380);
-            this.lblLuong.Name = "lblLuong";
-            this.lblLuong.Size = new System.Drawing.Size(72, 26);
-            this.lblLuong.TabIndex = 23;
-            this.lblLuong.Text = "Lương";
-            // 
             // dtpNgayVaoLam
             // 
             this.dtpNgayVaoLam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -391,6 +380,8 @@
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(302, 35);
             this.txtCCCD.TabIndex = 9;
+            this.txtCCCD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCCCD_KeyPress);
+            this.txtCCCD.Leave += new System.EventHandler(this.txtCCCD_Leave);
             // 
             // lblCCCD
             // 
@@ -428,6 +419,7 @@
             this.txtTenNS.Name = "txtTenNS";
             this.txtTenNS.Size = new System.Drawing.Size(302, 35);
             this.txtTenNS.TabIndex = 3;
+            this.txtTenNS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenNS_KeyPress);
             // 
             // lblTenNS
             // 
@@ -517,8 +509,6 @@
         private System.Windows.Forms.Label lblMaNS;
         private System.Windows.Forms.DateTimePicker dtpNgayVaoLam;
         private System.Windows.Forms.Label lblNgayVaoLam;
-        private System.Windows.Forms.TextBox txtLuong;
-        private System.Windows.Forms.Label lblLuong;
         private System.Windows.Forms.Button btnChucVu;
     }
 }

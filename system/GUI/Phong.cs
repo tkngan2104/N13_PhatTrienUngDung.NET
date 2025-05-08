@@ -202,5 +202,88 @@ namespace GUI
             txtGiaTien.Clear();
             btnSua.Enabled = false;
         }
+
+        /// <summary>
+        /// Bắt lỗi tên loại hình.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtTenLH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Không thể nhập kí tự đặc biệt !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (txtGhiChu.Text.Length > 149 && e.KeyChar != '\b')
+            {
+                e.Handled = true;
+                MessageBox.Show("Không thể nhập địa chỉ quá 150 ký tự !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Bắt lỗi số lượng người.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtSLNguoi_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Không nhập khoảng trắng, ký tự đặc biệt hay chữ !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtSLNguoi_Validated(object sender, EventArgs e)
+        {
+            if (decimal.TryParse(txtSLNguoi.Text, out decimal soLuong))
+            {
+                if (soLuong < 1 || soLuong > 4)
+                {
+                    MessageBox.Show("Số lượng người chỉ có thể từ 1 đến 4.", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtSLNguoi.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập một giá trị hợp lệ.", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSLNguoi.Focus();
+            }
+        }
+
+        /// <summary>
+        /// Bắt lỗi giá tiền.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtGiaTien_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Không nhập khoảng trắng, ký tự đặc biệt hay chữ !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Bắt lỗi ghi chú.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtGhiChu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '-' && e.KeyChar != ',')
+            {
+                e.Handled = true;
+                MessageBox.Show("Không thể nhập kí tự đặc biệt trừ khoảng trắng, '-' và ',' !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (txtGhiChu.Text.Length > 149 && e.KeyChar != '\b')
+            {
+                e.Handled = true;
+                MessageBox.Show("Không thể nhập địa chỉ quá 150 ký tự !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

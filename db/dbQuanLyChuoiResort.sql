@@ -15,7 +15,7 @@ go
 
 create table KhachHang(
 	MaKH nvarchar(10) not null,
-	TenKH nvarchar(20) not null,
+	TenKH nvarchar(50) not null,
 	SoDT nvarchar(10) not null,
 	NgaySinh date,
 	GioiTinh nvarchar(20) not null,
@@ -33,15 +33,14 @@ create table ChucVu(
 create table NhanSu(
 	MaNhanSu varchar(8) PRIMARY KEY,
     HoTen NVARCHAR(50) NOT NULL,
+	GioiTinh nvarchar(3),
     NgaySinh DATE,
-	gioiTinh nvarchar(3) not null,
     SDT NVARCHAR(15),
     CCCD NVARCHAR(12),
     Email NVARCHAR(100) UNIQUE,
-    DiaChi TEXT,
+    DiaChi NTEXT,
     MaChucVu varchar(5),
     NgayVaoLam DATE,
-    Luong DECIMAL(15,2),
     FOREIGN KEY (MaChucVu) REFERENCES ChucVu(MaChucVu) ON DELETE SET NULL)
 
 -----QUẢN LÝ RESORT
