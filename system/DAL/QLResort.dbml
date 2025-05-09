@@ -211,4 +211,27 @@
       <Association Name="DichVu_SuDungDichVu" Member="DichVu" ThisKey="maDV" OtherKey="maDV" Type="DichVu" IsForeignKey="true" />
     </Type>
   </Table>
+  <Function Name="dbo.sp_TimChiTietDatPhongTheoTenLH" Method="sp_TimChiTietDatPhongTheoTenLH">
+    <Parameter Name="tenLH" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="sp_TimChiTietDatPhongTheoTenLHResult">
+      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="tenLH" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="loaiHinh" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_TimKiemLoaiHinhLuuTru" Method="sp_TimKiemLoaiHinhLuuTru">
+    <Parameter Name="tenLH" Type="System.String" DbType="NVarChar(5)" />
+    <ElementType Name="sp_TimKiemLoaiHinhLuuTruResult">
+      <Column Name="maLH" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="tenLH" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="loaiHinh" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="slNguoi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="giaTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="trangThai" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

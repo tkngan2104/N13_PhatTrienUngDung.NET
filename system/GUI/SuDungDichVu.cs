@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using ET;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,6 +57,188 @@ namespace GUI
                 Menu formMenu = (Menu)this.ParentForm;
                 formMenu.openChildForm(new ThanhToanDatPhong());
             }
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string tenLH = txtTimPhong.Text.Trim();
+            var ds = BUS_ChiTietDatPhong.Instance.TimTheoTenLoaiHinh(tenLH);
+            dgvKetQuaTimKiem.DataSource = ds;
+            dgvKetQuaTimKiem.Columns[4].Visible = false;
+            dgvKetQuaTimKiem.Columns[5].Visible = false;
+            //MessageBox.Show(ds + "TimTheoTenLoaiHinh");
+        }
+
+        private void dgvKetQuaTimKiem_Click(object sender, EventArgs e)
+        {
+            int dong = dgvKetQuaTimKiem.CurrentCell.RowIndex;
+            txtCTDP.Text = dgvKetQuaTimKiem.Rows[dong].Cells[1].Value?.ToString() ?? "";
+
+            try
+            {
+                string maCTDP = dgvKetQuaTimKiem.Rows[dong].Cells[1].Value?.ToString() ?? "";
+                BUS_SuDungDichVu.Instance.DSSDDV(dgvDSDichVu, maCTDP);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lấy danh sách dịch vụ: " + ex.Message);
+            }
+        }
+
+        private void SuDungDichVu_Load(object sender, EventArgs e)
+        {
+            txtMaSDDV.Text = BUS_SuDungDichVu.Instance.TaoMaTuDong();
+
+            AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
+
+            List<string> dsTenDV = BUS_DichVu.Instance.LayTatCaTenDichVu();
+            collection.AddRange(dsTenDV.ToArray());
+
+            txtDichVu.AutoCompleteCustomSource = collection;
+            txtDichVu.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            txtDichVu.AutoCompleteSource = AutoCompleteSource.CustomSource;
+        }
+
+        private void TinhThanhTien()
+        {
+            string tenDV = txtDichVu.Text.Trim();
+            int soLuong = (int)numSL.Value;
+
+            int giaTien = BUS_DichVu.Instance.LayGiaDichVuTheoTen(tenDV);
+
+            int thanhTien = soLuong * giaTien;
+
+            txtThanhTien.Text = thanhTien.ToString();
+        }
+
+        private void numSL_ValueChanged(object sender, EventArgs e)
+        {
+            TinhThanhTien();
+        }
+
+        private void txtDichVu_TextChanged(object sender, EventArgs e)
+        {
+            TinhThanhTien();
+        }
+
+        private void dgvDSDichVu_Click(object sender, EventArgs e)
+        {
+            int dong = dgvDSDichVu.CurrentCell.RowIndex;
+            txtMaSDDV.Text = dgvDSDichVu.Rows[dong].Cells[0].Value?.ToString() ?? "";
+            txtDichVu.Text = dgvDSDichVu.Rows[dong].Cells[1].Value?.ToString() ?? "";
+            txtCTDP.Text = dgvDSDichVu.Rows[dong].Cells[2].Value?.ToString() ?? "";
+            numSL.Text = dgvDSDichVu.Rows[dong].Cells[3].Value?.ToString() ?? "";
+            txtThanhTien.Text = dgvDSDichVu.Rows[dong].Cells[4].Value?.ToString() ?? "";
+        }
+
+        public bool KTraMa(string maP)
+        {
+            if (maP.Equals(dgvDSDichVu.CurrentRow.Cells[0].Value.ToString()) == true)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool KtraBoTrong()
+        {
+            if (txtCTDP.Text.Length == 0 || txtDichVu.Text.Length == 0)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Xác nhận thêm dữ liệu đã nhập ?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (d == DialogResult.Yes)
+            {
+                if (KtraBoTrong())
+                {
+                    string tenDV = txtDichVu.Text.Trim();
+                    ET_SuDungDichVu etSDDV = new ET_SuDungDichVu(
+                        txtMaSDDV.Text,
+                        tenDV,
+                        txtCTDP.Text,
+                        (int)numSL.Value,
+                        float.Parse(txtThanhTien.Text)
+                    );
+
+                    // Gọi BUS để thêm dịch vụ
+                    BUS_SuDungDichVu.Instance.ThemSDDV(etSDDV);
+                    BUS_SuDungDichVu.Instance.DSSDDV(dgvDSDichVu, txtCTDP.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Không được để trống bất kỳ trường dữ liệu nào !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (dgvDSDichVu.SelectedRows.Count > 0)
+            {
+                DialogResult ret = MessageBox.Show("Hãy chắc chắn rằng bạn muốn xóa dữ liệu vừa chọn !", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (ret == DialogResult.Yes)
+                {
+                    BUS_SuDungDichVu.Instance.XoaSDDV(dgvDSDichVu);
+                    BUS_SuDungDichVu.Instance.DSSDDV(dgvDSDichVu, txtCTDP.Text);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dữ liệu !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Hãy chắc chắn rằng bạn muốn sửa dữ liệu vừa nhập !", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (d == DialogResult.Yes)
+            {
+                if (KtraBoTrong() == true)
+                {
+                    if (KTraMa(txtMaSDDV.Text) == true)
+                    {
+                        BUS_SuDungDichVu.Instance.SuaSDDV(new ET_SuDungDichVu(
+                            txtMaSDDV.Text,
+                            txtDichVu.Text,
+                            txtCTDP.Text,
+                            (int)numSL.Value,
+                            float.Parse(txtThanhTien.Text)
+                        ));
+                        BUS_SuDungDichVu.Instance.DSSDDV(dgvDSDichVu, txtCTDP.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Vui lòng không sửa mã " + dgvDSDichVu.CurrentRow.Cells[0].Value.ToString(), "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtMaSDDV.Text = dgvDSDichVu.CurrentRow.Cells[0].Value.ToString();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Không thể bỏ trống bất kỳ trường nào !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dòng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Làm mới dữ liệu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            txtMaSDDV.Text = BUS_SuDungDichVu.Instance.TaoMaTuDong();
+            txtDichVu.Clear();
+            numSL.Value = numSL.Minimum;
+            txtThanhTien.Clear();
         }
     }
 }

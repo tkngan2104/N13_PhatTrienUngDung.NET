@@ -200,5 +200,26 @@ namespace DAL
 
             db.SubmitChanges();
         }
+
+        /// <summary>
+        /// Tìm kiếm loại hình lưu trú.
+        /// </summary>
+        /// <param name="tenCanTim"></param>
+        /// <returns></returns>
+        public List<ET_LoaiHinhLuuTru> TimTheoTen(string tenCanTim)
+        {
+            var ds = from lh in db.LoaiHinhLuuTrus
+                     where lh.tenLH.Contains(tenCanTim)
+                     select new ET_LoaiHinhLuuTru(
+                         lh.maLH,
+                         lh.tenLH,
+                         lh.loaiHinh,
+                         lh.trangThai,
+                         lh.ghiChu,
+                         lh.slNguoi,
+                         (float)lh.giaTien
+                     );
+            return ds.ToList();
+        }
     }
 }

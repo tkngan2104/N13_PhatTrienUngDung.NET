@@ -119,5 +119,16 @@ namespace BUS
             dal_p.SuaLoaiHinh(etLH);
             MessageBox.Show("Hoàn tất sửa dữ liệu !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        /// <summary>
+        /// Tìm kiếm loại hình lưu trú.
+        /// </summary>
+        /// <param name="tenCanTim"></param>
+        /// <returns></returns>
+        public List<ET_LoaiHinhLuuTru> TimTheoTen(string tenCanTim)
+        {
+            return dal_p.TimTheoTen(tenCanTim);
+        }
+
     }
 }
