@@ -149,6 +149,11 @@ namespace GUI
             return true;
         }
 
+        /// <summary>
+        /// Thêm sử dụng dịch vụ.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnThem_Click(object sender, EventArgs e)
         {
             DialogResult d = MessageBox.Show("Xác nhận thêm dữ liệu đã nhập ?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -176,6 +181,11 @@ namespace GUI
             }
         }
 
+        /// <summary>
+        /// Xóa sử dụng dịch vụ.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (dgvDSDichVu.SelectedRows.Count > 0)
@@ -193,6 +203,11 @@ namespace GUI
             }
         }
 
+        /// <summary>
+        /// Sửa sử dụng dịch vụ.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSua_Click(object sender, EventArgs e)
         {
             DialogResult d = MessageBox.Show("Hãy chắc chắn rằng bạn muốn sửa dữ liệu vừa nhập !", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -239,6 +254,19 @@ namespace GUI
             txtDichVu.Clear();
             numSL.Value = numSL.Minimum;
             txtThanhTien.Clear();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtDichVu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsPunctuation(e.KeyChar) || Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -233,6 +233,7 @@
             this.txtDichVu.Size = new System.Drawing.Size(302, 35);
             this.txtDichVu.TabIndex = 5;
             this.txtDichVu.TextChanged += new System.EventHandler(this.txtDichVu_TextChanged);
+            this.txtDichVu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDichVu_KeyPress);
             // 
             // lblDichVu
             // 
