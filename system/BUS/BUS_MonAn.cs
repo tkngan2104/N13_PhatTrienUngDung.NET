@@ -32,9 +32,9 @@ namespace BUS
         {
             return dal.suaMA(et);
         }
-        public string taoMaMA()
+        public string taoMaMA(string maMA)
         {
-            return dal.taoMaTuDong();
+            return dal.TaoMaTuDong(maMA);
         }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -132,18 +133,48 @@ namespace DAL
             return flag;
         }
 
-        public string taoMaTuDong()
+        public string TaoMaTuDong(string maMA)
         {
-            var maCuoi = db.MonAns
-                .OrderByDescending(d => d.maMA)
-                .Select(d => d.maMA)
-                .FirstOrDefault();
+            string loaiLower = maMA.Trim().ToLower();
+            string maMonAn;
+            switch (loaiLower)
+            {
+                case "khai vị":
+                    maMonAn = "MAK";
+                    break;
+                case "món chính":
+                    maMonAn = "MAC";
+                    break;
+                case "tráng miệng":
+                    maMonAn = "MAT";
+                    break;
+                case "đồ uống":
+                    maMonAn = "MAD";
+                    break;
+                default:
+                    maMonAn = "MA";
+                    break;
+            }
 
-            if (maCuoi == null)
-                return "MA01";
+            int countMaM = db.MonAns.Count(m => m.maMA.StartsWith(maMonAn)) + 1; ;
 
-            int so = int.Parse(maCuoi.Substring(2)) + 1;
-            return "MA" + so.ToString("D2");
+            string newMa;
+            do
+            {
+                if (countMaM < 10)
+                {
+                    newMa = $"{maMonAn}0{countMaM}";
+                }               
+                else
+                {
+                    newMa = $"{maMonAn}{countMaM}";
+                }
+
+                countMaM++;
+
+            } while (db.MonAns.Any(p => p.maMA == newMa));
+
+            return newMa;
         }
     }
 }
