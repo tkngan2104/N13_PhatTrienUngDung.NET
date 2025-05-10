@@ -232,5 +232,28 @@ namespace DAL
                      );
             return ds.ToList();
         }
+
+        /// <summary>
+        /// Lấy thông tin loại hình theo loại hình.
+        /// </summary>
+        /// <param name="loaiHinh"></param>
+        /// <returns></returns>
+        public List<ET_LoaiHinhLuuTru> LayLoaiHinhTrongTheoLoai(string loaiHinh)
+        {
+            var ds = from lh in db.LoaiHinhLuuTrus
+                     where lh.loaiHinh == loaiHinh && lh.trangThai == "Trống"
+                     select new ET_LoaiHinhLuuTru(
+                         lh.maLH,
+                         lh.tenLH,
+                         lh.loaiHinh,
+                         lh.trangThai,
+                         lh.ghiChu,
+                         lh.slNguoi,
+                         (float)lh.giaTien
+                     );
+
+            return ds.ToList();
+        }
+
     }
 }

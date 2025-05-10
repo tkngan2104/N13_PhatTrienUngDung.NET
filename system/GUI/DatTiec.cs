@@ -171,10 +171,15 @@ namespace GUI
         private void dtpNgayKetThuc_ValueChanged(object sender, EventArgs e)
         {
             TimeSpan chenhLech = dtpNgayKetThuc.Value - dtpNgayBatDau.Value;
-            if (chenhLech.TotalDays > 7)
-            {
-                MessageBox.Show("Không được đặt tiệc quá 7 ngày !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+            if (dtpNgayKetThuc.Value < dtpNgayBatDau.Value)
+            {
+                MessageBox.Show("Ngày trả phòng không được nhỏ hơn ngày đặt phòng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpNgayKetThuc.Value = dtpNgayBatDau.Value;
+            }
+            else if (chenhLech.TotalDays > 7)
+            {
+                MessageBox.Show("Không được đặt phòng quá 7 ngày!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 dtpNgayKetThuc.Value = dtpNgayBatDau.Value.AddDays(7);
             }
         }

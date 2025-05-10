@@ -5,7 +5,7 @@ go
 
 -----SELECT
 
-
+SELECT * FROM LoaiHinhLuuTru WHERE loaiHinh = 'Phòng' AND trangThai = 'Trống';
 
 -----CHỨC VỤ
 go

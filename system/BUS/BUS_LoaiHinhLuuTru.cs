@@ -141,5 +141,15 @@ namespace BUS
             return dal_p.TimTheoTen(tenCanTim);
         }
 
+        /// <summary>
+        /// Lấy thông tin loại hình theo loại hình.
+        /// </summary>
+        /// <param name="loaiHinh"></param>
+        /// <returns></returns>
+        public List<ET_LoaiHinhLuuTru> LayLoaiHinhTrongTheoLoai(string loaiHinh)
+        {
+            return DAL_LoaiHinhLuuTru.Instance.LayLoaiHinhTrongTheoLoai(loaiHinh);
+        }
+
     }
 }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ET;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +51,98 @@ namespace DAL
             }
 
             return ds;
+        }
+
+        /// <summary>
+        /// Mã tự động chi tiết đặt phòng.
+        /// </summary>
+        /// <returns></returns>
+        public string TaoMaTuDong()
+        {
+            string dinhdangngay = DateTime.Now.ToString("ddMMyy");
+            int countMa = db.ChiTietDatPhongs.Count() + 1;
+
+            //Tạo mã mới.
+            string newMa;
+            do
+            {
+                if (countMa < 10)
+                {
+                    newMa = $"CTDP{dinhdangngay}00{countMa}";
+                }
+                else if (countMa < 100)
+                {
+                    newMa = $"CTDP{dinhdangngay}0{countMa}";
+                }
+                else
+                {
+                    newMa = $"CTDP{dinhdangngay}{countMa}";
+                }
+                countMa++;
+            } while (db.ChiTietDatPhongs.Any(dv => dv.maCTDP == newMa));
+            return newMa;
+        }
+
+        /// <summary>
+        /// Hiển thị loại hình trống
+        /// </summary>
+        /// <param name="maLH"></param>
+        /// <returns></returns>
+        public IQueryable HienThiPhongTrong(string maLH)
+        {
+            IQueryable loaihinh1 = from gb in db.LoaiHinhLuuTrus
+                                    where gb.loaiHinh == maLH && gb.trangThai == "Trống"
+                                    select gb;
+            return loaihinh1;
+        }
+
+       
+
+        /// <summary>
+        /// Hiển thị chi tiết thêm phòng.
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable DSChiTietDatPhong()
+        {
+            IQueryable chitiet = from ctdp in db.ChiTietDatPhongs
+                                 join lh in db.LoaiHinhLuuTrus on ctdp.maLH equals lh.maLH
+                                 select new
+                                 {
+                                     MaDP = ctdp.maDP,
+                                     MaCTDP = ctdp.maCTDP,
+                                     MaLH = ctdp.maLH,
+                                     NgayTraPhong = ctdp.ngayTraPhong
+                                 };
+            return chitiet;
+        }
+
+        /// <summary>
+        /// Thêm chi tiết đặt phòng.
+        /// </summary>
+        /// <param name="etCT"></param>
+        /// <returns></returns>
+        public bool ThemCTDP(ET_ChiTietDatPhong etCT)
+        {
+            try
+            {
+                //Tạo một đối tượng mới.
+                ChiTietDatPhong ct = new ChiTietDatPhong
+                {
+                    maDP = etCT.MaDP,
+                    maCTDP = etCT.MaCTDP,
+                    maLH = etCT.MaLH,
+                    ngayTraPhong = etCT.NgayTraPhong
+                };
+                //Thêm loại hàng vào cơ sở dữ liệu
+                db.ChiTietDatPhongs.InsertOnSubmit(ct);
+            }
+            finally
+            {
+                // Lưu các thay đổi vào cơ sở dữ liệu
+                db.SubmitChanges();
+            }
+            // Trả về true để báo hiệu việc thêm mới thành công
+            return true;
         }
     }
 }

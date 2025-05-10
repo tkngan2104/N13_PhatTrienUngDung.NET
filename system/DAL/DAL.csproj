@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_ChiTietDatPhong.cs" />
+    <Compile Include="DAL_DatPhong.cs" />
     <Compile Include="DAL_DatTiec.cs" />
     <Compile Include="DAL_DichVu.cs" />
     <Compile Include="DAL_KhachHang.cs" />
