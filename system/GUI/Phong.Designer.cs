@@ -53,6 +53,8 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pnlTieuDe = new System.Windows.Forms.Panel();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.txtTimPhong = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSLHLT)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -77,7 +79,7 @@
             this.groupBox1.Controls.Add(this.txtMaLH);
             this.groupBox1.Controls.Add(this.lblMaLH);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(30, 126);
+            this.groupBox1.Location = new System.Drawing.Point(23, 133);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1415, 400);
             this.groupBox1.TabIndex = 27;
@@ -247,7 +249,7 @@
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(30, 551);
+            this.groupBox2.Location = new System.Drawing.Point(23, 558);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1415, 123);
             this.groupBox2.TabIndex = 29;
@@ -328,7 +330,7 @@
             // 
             this.groupBox3.Controls.Add(this.dgvDSLHLT);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(30, 693);
+            this.groupBox3.Location = new System.Drawing.Point(26, 755);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1415, 356);
             this.groupBox3.TabIndex = 28;
@@ -345,12 +347,40 @@
             this.pnlTieuDe.Size = new System.Drawing.Size(1472, 100);
             this.pnlTieuDe.TabIndex = 26;
             // 
+            // btnTim
+            // 
+            this.btnTim.BackColor = System.Drawing.Color.Tan;
+            this.btnTim.FlatAppearance.BorderSize = 0;
+            this.btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTim.ForeColor = System.Drawing.Color.Black;
+            this.btnTim.Location = new System.Drawing.Point(1322, 707);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(116, 41);
+            this.btnTim.TabIndex = 39;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            // 
+            // txtTimPhong
+            // 
+            this.txtTimPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimPhong.Location = new System.Drawing.Point(1000, 707);
+            this.txtTimPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTimPhong.Multiline = true;
+            this.txtTimPhong.Name = "txtTimPhong";
+            this.txtTimPhong.Size = new System.Drawing.Size(307, 43);
+            this.txtTimPhong.TabIndex = 37;
+            // 
             // Phong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1472, 1077);
+            this.Controls.Add(this.btnTim);
+            this.Controls.Add(this.txtTimPhong);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
@@ -367,6 +397,7 @@
             this.pnlTieuDe.ResumeLayout(false);
             this.pnlTieuDe.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -397,5 +428,7 @@
         private System.Windows.Forms.Label lblTenLH;
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Label lblGhiChu;
+        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.TextBox txtTimPhong;
     }
 }

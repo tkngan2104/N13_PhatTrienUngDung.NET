@@ -290,5 +290,23 @@ namespace GUI
                 MessageBox.Show("Không thể nhập địa chỉ quá 150 ký tự !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        /// <summary>
+        /// Tìm phòng.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string tenLH = txtTimPhong.Text.Trim();
+            if (string.IsNullOrEmpty(tenLH))
+            {
+                MessageBox.Show("Vui lòng nhập tên loại hình lưu trữ.");
+                return;
+            }
+
+            var result = BUS_LoaiHinhLuuTru.Instance.TimKiemLoaiHinhLuuTru(tenLH);
+            dgvDSLHLT.DataSource = result;
+        }
     }
 }

@@ -204,6 +204,17 @@ namespace DAL
         /// <summary>
         /// Tìm kiếm loại hình lưu trú.
         /// </summary>
+        /// <param name="tenLH"></param>
+        /// <returns></returns>
+        public List<sp_TimKiemLoaiHinhLuuTruResult> TimKiemLoaiHinhLuuTru(string tenLH)
+        {
+            var result = db.sp_TimKiemLoaiHinhLuuTru(tenLH).ToList();
+            return result;
+        }
+
+        /// <summary>
+        /// Tìm kiếm loại hình lưu trú theo tên.
+        /// </summary>
         /// <param name="tenCanTim"></param>
         /// <returns></returns>
         public List<ET_LoaiHinhLuuTru> TimTheoTen(string tenCanTim)

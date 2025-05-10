@@ -1,86 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "N:\\N13_PhatTrienUngDung.NET\\system\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NhanSu.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
-              "RelativeDocumentMoniker": "GUI\\NhanSu.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
-              "RelativeToolTip": "GUI\\NhanSu.cs",
-              "ViewState": "AgIAACYBAAAAAAAAAAAWwCwBAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T07:39:41.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NhanSu.cs [Design]",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs",
-              "RelativeDocumentMoniker": "GUI\\NhanSu.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\NhanSu.cs [Design]",
-              "RelativeToolTip": "GUI\\NhanSu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T07:39:35.073Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatTiec.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
-              "RelativeDocumentMoniker": "GUI\\DatTiec.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
-              "RelativeToolTip": "GUI\\DatTiec.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAcwIQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T07:32:48.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatTiec.cs [Design]",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
-              "RelativeDocumentMoniker": "GUI\\DatTiec.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs [Design]",
-              "RelativeToolTip": "GUI\\DatTiec.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T07:32:47.691Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
