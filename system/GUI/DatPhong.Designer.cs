@@ -46,6 +46,7 @@
             this.txtCCCD = new System.Windows.Forms.TextBox();
             this.lblCCCD = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dgvDSPhong = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.txtSDTKH = new System.Windows.Forms.TextBox();
@@ -61,15 +62,14 @@
             this.btnDatPhong = new System.Windows.Forms.Button();
             this.btnSuaPhong = new System.Windows.Forms.Button();
             this.btnXoaPhong = new System.Windows.Forms.Button();
-            this.dgvDSPhong = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSDatPhong)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.pnlTieuDe.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvDSDatPhong
@@ -84,6 +84,7 @@
             this.dgvDSDatPhong.RowTemplate.Height = 28;
             this.dgvDSDatPhong.Size = new System.Drawing.Size(1413, 408);
             this.dgvDSDatPhong.TabIndex = 0;
+            this.dgvDSDatPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSDatPhong_CellContentClick);
             // 
             // lblNgayDatPhong
             // 
@@ -262,6 +263,19 @@
             this.groupBox3.TabIndex = 40;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách phòng";
+            // 
+            // dgvDSPhong
+            // 
+            this.dgvDSPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDSPhong.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDSPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSPhong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDSPhong.Location = new System.Drawing.Point(3, 31);
+            this.dgvDSPhong.Name = "dgvDSPhong";
+            this.dgvDSPhong.RowHeadersWidth = 62;
+            this.dgvDSPhong.RowTemplate.Height = 28;
+            this.dgvDSPhong.Size = new System.Drawing.Size(1413, 263);
+            this.dgvDSPhong.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -447,19 +461,6 @@
             this.btnXoaPhong.Text = "Xóa phòng";
             this.btnXoaPhong.UseVisualStyleBackColor = false;
             // 
-            // dgvDSPhong
-            // 
-            this.dgvDSPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDSPhong.BackgroundColor = System.Drawing.Color.White;
-            this.dgvDSPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSPhong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSPhong.Location = new System.Drawing.Point(3, 31);
-            this.dgvDSPhong.Name = "dgvDSPhong";
-            this.dgvDSPhong.RowHeadersWidth = 62;
-            this.dgvDSPhong.RowTemplate.Height = 28;
-            this.dgvDSPhong.Size = new System.Drawing.Size(1413, 263);
-            this.dgvDSPhong.TabIndex = 1;
-            // 
             // DatPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -481,13 +482,13 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.pnlTieuDe.ResumeLayout(false);
             this.pnlTieuDe.PerformLayout();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhong)).EndInit();
             this.ResumeLayout(false);
 
         }

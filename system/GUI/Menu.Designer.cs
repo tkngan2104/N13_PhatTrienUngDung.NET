@@ -59,8 +59,10 @@
             this.picExit = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlManHinh = new System.Windows.Forms.Panel();
+            this.btnThongKeDatTiec = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlDuLieuResort.SuspendLayout();
+            this.pnlBaoCaoThongKe.SuspendLayout();
             this.pnlThanhToanDichVu.SuspendLayout();
             this.pnlDVResort.SuspendLayout();
             this.pnlLogo.SuspendLayout();
@@ -100,7 +102,7 @@
             this.pnlDuLieuResort.Controls.Add(this.btnThongTinNhanSu);
             this.pnlDuLieuResort.Controls.Add(this.btnThongTinKhachHang);
             this.pnlDuLieuResort.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDuLieuResort.Location = new System.Drawing.Point(0, 987);
+            this.pnlDuLieuResort.Location = new System.Drawing.Point(0, 1187);
             this.pnlDuLieuResort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlDuLieuResort.Name = "pnlDuLieuResort";
             this.pnlDuLieuResort.Size = new System.Drawing.Size(402, 416);
@@ -195,7 +197,7 @@
             this.btnDuLieuResort.ForeColor = System.Drawing.Color.Black;
             this.btnDuLieuResort.Image = global::GUI.Properties.Resources.down_arrow;
             this.btnDuLieuResort.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDuLieuResort.Location = new System.Drawing.Point(0, 926);
+            this.btnDuLieuResort.Location = new System.Drawing.Point(0, 1126);
             this.btnDuLieuResort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDuLieuResort.Name = "btnDuLieuResort";
             this.btnDuLieuResort.Size = new System.Drawing.Size(402, 61);
@@ -208,11 +210,12 @@
             // pnlBaoCaoThongKe
             // 
             this.pnlBaoCaoThongKe.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.pnlBaoCaoThongKe.Controls.Add(this.btnThongKeDatTiec);
             this.pnlBaoCaoThongKe.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBaoCaoThongKe.Location = new System.Drawing.Point(0, 794);
             this.pnlBaoCaoThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBaoCaoThongKe.Name = "pnlBaoCaoThongKe";
-            this.pnlBaoCaoThongKe.Size = new System.Drawing.Size(402, 132);
+            this.pnlBaoCaoThongKe.Size = new System.Drawing.Size(402, 332);
             this.pnlBaoCaoThongKe.TabIndex = 7;
             // 
             // btnBaoCaoThongKe
@@ -494,6 +497,22 @@
             this.pnlManHinh.Size = new System.Drawing.Size(1489, 1045);
             this.pnlManHinh.TabIndex = 6;
             // 
+            // btnThongKeDatTiec
+            // 
+            this.btnThongKeDatTiec.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKeDatTiec.FlatAppearance.BorderSize = 0;
+            this.btnThongKeDatTiec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKeDatTiec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKeDatTiec.Location = new System.Drawing.Point(0, 0);
+            this.btnThongKeDatTiec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThongKeDatTiec.Name = "btnThongKeDatTiec";
+            this.btnThongKeDatTiec.Size = new System.Drawing.Size(402, 58);
+            this.btnThongKeDatTiec.TabIndex = 10;
+            this.btnThongKeDatTiec.Text = "Thống kê đặt tiệc";
+            this.btnThongKeDatTiec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKeDatTiec.UseVisualStyleBackColor = true;
+            this.btnThongKeDatTiec.Click += new System.EventHandler(this.btnThongKeDatTiec_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -508,8 +527,10 @@
             this.Name = "Menu";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.pnlMenu.ResumeLayout(false);
             this.pnlDuLieuResort.ResumeLayout(false);
+            this.pnlBaoCaoThongKe.ResumeLayout(false);
             this.pnlThanhToanDichVu.ResumeLayout(false);
             this.pnlDVResort.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
@@ -554,6 +575,7 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Panel pnlManHinh;
         private System.Windows.Forms.Button btnThucDon;
+        private System.Windows.Forms.Button btnThongKeDatTiec;
     }
 }
 

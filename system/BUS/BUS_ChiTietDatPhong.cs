@@ -118,5 +118,22 @@ namespace BUS
             }
         }
 
+        /// <summary>
+        /// Cập nhật trạng thái phòng theo ngày.
+        /// </summary>
+        public void CapNhatTrangThaiPhongTheoNgay()
+        {
+            DAL_ChiTietDatPhong.Instance.CapNhatTrangThaiPhongTheoNgay();
+        }
+
+        /// <summary>
+        /// Cập nhật trạng thái phòng.
+        /// </summary>
+        /// <param name="maLH"></param>
+        /// <param name="trangThai"></param>
+        public void CapNhatTrangThaiPhong(string maLH, string trangThai)
+        {
+            DAL_ChiTietDatPhong.Instance.CapNhatTrangThaiPhong(maLH, trangThai);
+        }
     }
 }

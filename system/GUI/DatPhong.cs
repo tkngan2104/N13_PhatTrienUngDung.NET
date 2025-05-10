@@ -76,6 +76,8 @@ namespace GUI
             bindingSourcePhong.DataSource = danhSachPhongTam;
             dgvDSPhong.DataSource = bindingSourcePhong;
             dgvDSPhong.AutoGenerateColumns = true;
+
+            BUS_ChiTietDatPhong.Instance.CapNhatTrangThaiPhongTheoNgay();
         }
 
         /// <summary>
@@ -145,10 +147,11 @@ namespace GUI
                     string maDP = txtDatPhong.Text;
                     string maKH = txtMaKH.Text;
                     string maLH = cboMaPhong.SelectedValue.ToString();
+                    string maNS = txtMaNS.Text;
                     DateTime ngayTP = dtpNgayTraPhong.Value;
 
                     // Lưu thông tin đặt phòng chung trước
-                    ET_DatPhong datPhong = new ET_DatPhong(maDP, maKH, maLH, ngayTP);
+                    ET_DatPhong datPhong = new ET_DatPhong(maNS,maDP, maKH, ngayTP);
                     BUS_DatPhong.Instance.ThemDatPhong(datPhong);
 
                     // Sau đó thêm từng chi tiết phòng
@@ -160,6 +163,8 @@ namespace GUI
                     MessageBox.Show("Đặt phòng thành công!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     danhSachPhongTam.Clear();
                     bindingSourcePhong.ResetBindings(false);
+                    BUS_DatPhong.Instance.DSDatPhong(dgvDSDatPhong);
+
                 }
                 catch (Exception ex)
                 {
@@ -211,7 +216,11 @@ namespace GUI
                         };
 
                         danhSachPhongTam.Add(phongMoi);
+
+                        BUS_ChiTietDatPhong.Instance.CapNhatTrangThaiPhong(maPhong, "Đã đặt");
+
                         bindingSourcePhong.ResetBindings(false);
+                        
                     }
                     else
                     {
@@ -233,33 +242,12 @@ namespace GUI
         /// <param name="e"></param>
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            BUS_DatPhong.Instance.DSDatPhong(dgvDSDatPhong);
-            txtMaNS.Text = "NV025";
-            txtDatPhong.Text = BUS_DatPhong.Instance.TaoMaTuDong();
-            txtMaCTDP.Text = BUS_ChiTietDatPhong.Instance.TaoMaTuDong();
-            BUS_LoaiHinhLuuTru.Instance.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
-            BUS_ChiTietDatPhong.Instance.HienThiPhongTrong(cboMaPhong, cboLoaiHinh.SelectedValue.ToString());
+            
+        }
 
-            dtpNgayDatPhong.MinDate = DateTime.Today;
-            DateTime maxDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(4).AddDays(-1);
-            dtpNgayDatPhong.MaxDate = maxDate;
+        private void dgvDSDatPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-            dtpNgayTraPhong.MinDate = DateTime.Today;
-            dtpNgayTraPhong.MaxDate = DateTime.Today.AddMonths(4);
-
-            AutoCompleteStringCollection cccdSuggestions = new AutoCompleteStringCollection();
-            List<string> dsCCCD = BUS_KhachHang.Instance.LayTatCaCCCD();
-            cccdSuggestions.AddRange(dsCCCD.ToArray());
-
-            txtCCCD.AutoCompleteCustomSource = cccdSuggestions;
-            txtCCCD.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            txtCCCD.AutoCompleteSource = AutoCompleteSource.CustomSource;
-
-            //khúc này là đặt phòng.
-
-            bindingSourcePhong.DataSource = danhSachPhongTam;
-            dgvDSPhong.DataSource = bindingSourcePhong;
-            dgvDSPhong.AutoGenerateColumns = true;
         }
     }
 }

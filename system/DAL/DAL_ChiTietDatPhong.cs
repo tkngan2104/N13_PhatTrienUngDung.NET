@@ -144,5 +144,52 @@ namespace DAL
             // Trả về true để báo hiệu việc thêm mới thành công
             return true;
         }
+
+        /// <summary>
+        /// Cập nhật trạng thái theo ngày.
+        /// </summary>
+        public void CapNhatTrangThaiPhongTheoNgay()
+        {
+            using (var context = new QLResortDataContext())
+            {
+                DateTime ngayHienTai = DateTime.Now.Date;
+
+                // Lấy danh sách phòng có ngày trả phòng đúng ngày hôm nay
+                var phongCanCapNhat = context.ChiTietDatPhongs
+                    .Where(p => p.ngayTraPhong.HasValue && p.ngayTraPhong.Value.Date == ngayHienTai)
+                    .ToList();
+                
+                // Cập nhật trạng thái
+                foreach (var phong in phongCanCapNhat)
+                {
+                    var loaiHinh = context.LoaiHinhLuuTrus
+                .FirstOrDefault(l => l.maLH == phong.maLH);
+
+                    if (loaiHinh != null)
+                    {
+                        loaiHinh.trangThai = "Trống";
+                    }
+
+                }
+
+                // Lưu thay đổi vào CSDL
+                context.SubmitChanges();
+            }
+        }
+
+        /// <summary>
+        /// Cập nhật trạng thái phòng.
+        /// </summary>
+        /// <param name="maLH"></param>
+        /// <param name="trangThai"></param>
+        public void CapNhatTrangThaiPhong(string maLH, string trangThai)
+        {
+            var phong = db.LoaiHinhLuuTrus.SingleOrDefault(p => p.maLH == maLH);
+            if (phong != null)
+            {
+                phong.trangThai = trangThai;
+                db.SubmitChanges();
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-use DbQuanLyResort
+﻿use DbQuanLyResort
 go
 set dateformat dmy
 go
@@ -34,3 +34,84 @@ BEGIN
 END
 
 EXEC sp_TimChiTietDatPhongTheoTenLH @tenLH = 'A101'
+
+select * from DatTiec
+----Danh sách đặt tiệc theo ngày tháng năm.
+go
+CREATE PROCEDURE DSDatTiecTheoNgay
+    @SearchDate DATE
+AS
+BEGIN
+    SELECT 
+        MaNhanSu,
+        maDT,
+        MaKH,
+        ngayDT,
+        maS,
+        ghiChu,
+        ngayBatDau,
+        ngayKetThuc,
+        tongTien,
+        giaTriDC
+    FROM 
+        DatTiec
+    WHERE 
+        ngayDT = @SearchDate
+    ORDER BY 
+        ngayDT;
+END;
+
+EXEC DSDatTiecTheoNgay '2025-05-05';
+
+go
+CREATE PROCEDURE DSDatTiecTheoThang
+    @Year INT,
+    @Month INT
+AS
+BEGIN
+    SELECT 
+        MaNhanSu,
+        maDT,
+        MaKH,
+        ngayDT,
+        maS,
+        ghiChu,
+        ngayBatDau,
+        ngayKetThuc,
+        tongTien,
+        giaTriDC
+    FROM 
+        DatTiec
+    WHERE 
+        YEAR(ngayDT) = @Year AND MONTH(ngayDT) = @Month
+    ORDER BY 
+        ngayDT;
+END;
+
+EXEC DSDatTiecTheoThang 2025, 05;
+
+go
+CREATE PROCEDURE DSDatTiecTheoNam
+    @Year INT
+AS
+BEGIN
+    SELECT 
+        MaNhanSu,
+        maDT,
+        MaKH,
+        ngayDT,
+        maS,
+        ghiChu,
+        ngayBatDau,
+        ngayKetThuc,
+        tongTien,
+        giaTriDC
+    FROM 
+        DatTiec
+    WHERE 
+        YEAR(ngayDT) = @Year
+    ORDER BY 
+        ngayDT;
+END;
+
+EXEC DSDatTiecTheoNam 2025;

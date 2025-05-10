@@ -1384,6 +1384,7 @@ insert into ChiTietDatPhong (maDP, maCTDP, maLH, ngayTraPhong) values
 ('DP0505250049', 'CTDP050525105', 'THG0105', '06/05/2025'),
 ('DP0505250049', 'CTDP050525106', 'THG0106', '07/05/2025');
 
+SELECT * FROM ChiTietDatPhong
 -----SỬ DỤNG DỊCH VỤ
 
 insert into SuDungDichVu (maSDDV, maDV, maCTDP, soLuong, tongTien) values
@@ -1432,4 +1433,3 @@ insert into DatTiec (MaNhanSu, maDT, MaKH, ngayDT, maS, ghiChu, ngayBatDau, ngay
 ('NV023', 'DT0505250009', 'KH0009', '12/05/2025', 'SANHB', Null, '21/05/2025', '22/05/2025', 21000000, 3700000),
 ('NV024', 'DT0505250010', 'KH0010', '13/05/2025', 'SANHC', Null, '23/05/2025', '24/05/2025', 22000000, 3800000),
 ('NV025', 'DT0505250011', 'KH0011', '14/05/2025', 'SANHA', Null, '25/05/2025', '26/05/2025', 23000000, 3900000);
-

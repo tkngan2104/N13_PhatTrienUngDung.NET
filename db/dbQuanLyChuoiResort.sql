@@ -151,3 +151,16 @@ create table HoaDonDatTiec (
 	ngayLap date not null,
 	tongTien float not null,
 	trangThai nvarchar(150) not null)
+
+create table TaiKhoan (
+	taikhoan varchar(10) primary key,
+	matkhau varchar(10) not null,
+	MaNhanSu varchar(8) references NhanSu(MaNhanSu))
+
+insert into TaiKhoan (taikhoan, matkhau, MaNhanSu) values
+('CEO','2104','CEO'),
+('NV001','123','NV001'), ---quản lý nhân sự
+('NV011','456','NV011'), ---quản lý lễ tân
+('NV031','789','NV031') ---phục vụ
+
+---delete from TaiKhoan where taikhoan = '004'
