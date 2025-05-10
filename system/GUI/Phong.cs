@@ -66,6 +66,7 @@ namespace GUI
             txtGhiChu.Text = dgvDSLHLT.Rows[dong].Cells[6].Value?.ToString() ?? "";
 
             btnSua.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         private void LoadDSPhongTheoLuaChon()
@@ -200,7 +201,11 @@ namespace GUI
             txtSLNguoi.Clear();
             txtGhiChu.Clear();
             txtGiaTien.Clear();
+
+            dgvDSLHLT.ClearSelection();
+
             btnSua.Enabled = false;
+            btnThem.Enabled = true;
         }
 
         /// <summary>

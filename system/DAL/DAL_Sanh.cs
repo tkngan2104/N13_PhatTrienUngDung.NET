@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
@@ -131,6 +132,34 @@ namespace DAL
             update.giaSDT = etS.GiaSDT;
 
             db.SubmitChanges();
+        }
+
+        /// <summary>
+        /// Đổ dữ liệu sảnh.
+        /// </summary>
+        /// <param name="cbo"></param>
+        /// <returns></returns>
+        public IQueryable DSSanhCombobox(ComboBox cbo)
+        {
+            IQueryable sanh = from s in db.SanhDatTiecs
+                                select new { s.maS, s.tenS };
+            return sanh;
+        }
+
+        /// <summary>
+        /// Lấy giá sảnh theo mã.
+        /// </summary>
+        /// <param name="maS"></param>
+        /// <returns></returns>
+        public float LayGiaSTheoMa(string maS)
+        {
+            var sanh = db.SanhDatTiecs.FirstOrDefault(s => s.maS == maS);
+
+            if (sanh != null && sanh.giaSDT.HasValue)
+            {
+                return (float)sanh.giaSDT.Value;
+            }
+            return 0f;
         }
     }
 }

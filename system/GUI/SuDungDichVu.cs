@@ -97,6 +97,9 @@ namespace GUI
             txtDichVu.AutoCompleteCustomSource = collection;
             txtDichVu.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtDichVu.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+            btnSua.Enabled = false;
+            btnThem.Enabled = true;
         }
 
         private void TinhThanhTien()
@@ -129,6 +132,9 @@ namespace GUI
             txtCTDP.Text = dgvDSDichVu.Rows[dong].Cells[2].Value?.ToString() ?? "";
             numSL.Text = dgvDSDichVu.Rows[dong].Cells[3].Value?.ToString() ?? "";
             txtThanhTien.Text = dgvDSDichVu.Rows[dong].Cells[4].Value?.ToString() ?? "";
+
+            btnSua.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         public bool KTraMa(string maP)
@@ -254,6 +260,11 @@ namespace GUI
             txtDichVu.Clear();
             numSL.Value = numSL.Minimum;
             txtThanhTien.Clear();
+
+            dgvDSDichVu.ClearSelection();
+
+            btnSua.Enabled = false;
+            btnThem.Enabled = true;
         }
 
         /// <summary>

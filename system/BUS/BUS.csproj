@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_ChiTietDatPhong.cs" />
+    <Compile Include="BUS_DatTiec.cs" />
     <Compile Include="BUS_DichVu.cs" />
     <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_ChucVu.cs" />

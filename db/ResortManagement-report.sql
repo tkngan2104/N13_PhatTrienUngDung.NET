@@ -32,3 +32,5 @@ BEGIN
     WHERE 
         lhlt.tenLH LIKE '%' + @tenLH + '%'
 END
+
+EXEC sp_TimChiTietDatPhongTheoTenLH @tenLH = 'A101'

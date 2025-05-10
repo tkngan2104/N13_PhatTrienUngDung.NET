@@ -48,6 +48,7 @@ namespace GUI
             txtGiaTien.Text = dgvDSSanhDT.Rows[dong].Cells[2].Value?.ToString() ?? "";
 
             btnSua.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         public bool KTraMa(string maP)
@@ -154,8 +155,10 @@ namespace GUI
             txtMaSanh.Text = BUS_Sanh.Instance.TaoMaTuDong();
             txtTenSanh.Clear();
             txtGiaTien.Clear();
+            dgvDSSanhDT.ClearSelection();
 
             btnSua.Enabled = false;
+            btnThem.Enabled = true;
         }
 
         /// <summary>
