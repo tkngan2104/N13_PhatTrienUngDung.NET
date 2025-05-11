@@ -5,11 +5,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BUS
 {
     public class BUS_DichVu
     {
+        //Khai báo biến tĩnh.
+        private static BUS_DichVu instance;
+        private DAL_DichVu dal_dv = new DAL_DichVu();
+
+        public static BUS_DichVu Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new BUS_DichVu();
+                }
+                return instance;
+            }
+        }
+
         DAL_DichVu dal = new DAL_DichVu();
         // Lấy danh sách dịch vụ
         public List<ET_DichVu> layDSSV()
@@ -40,6 +57,35 @@ namespace BUS
         public string taoMaDV()
         {
             return dal.taoMaTuDong();
+        }
+
+        /// <summary>
+        /// Lấy gợi ý dịch vụ.
+        /// </summary>
+        /// <returns></returns>
+        public List<string> LayTatCaTenDichVu()
+        {
+            return DAL_DichVu.Instance.LayTatCaTenDichVu();
+        }
+
+        /// <summary>
+        /// Lấy giá dịch vụ theo tên.
+        /// </summary>
+        /// <param name="tenDV"></param>
+        /// <returns></returns>
+        public int LayGiaDichVuTheoTen(string tenDV)
+        {
+            return dal.LayGiaDichVuTheoTen(tenDV);
+        }
+
+        /// <summary>
+        /// Lấy mã dịch vụ theo tên.
+        /// </summary>
+        /// <param name="tenDV"></param>
+        /// <returns></returns>
+        public List<DichVu> LayMaDichVuTheoTen(string tenDV)
+        {
+            return DAL_DichVu.Instance.LayMaDichVuTheoTen(tenDV);
         }
     }
 }

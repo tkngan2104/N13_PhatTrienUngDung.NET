@@ -78,10 +78,35 @@ namespace BUS
             }
         }
 
+        /// <summary>
+        /// Sửa sảnh.
+        /// </summary>
+        /// <param name="etS"></param>
         public void SuaSanh(ET_Sanh etS)
         {
             dal_s.SuaSanh(etS);
             MessageBox.Show("Hoàn tất sửa dữ liệu !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        /// <summary>
+        /// Đổ dữ liệu sảnh.
+        /// </summary>
+        /// <param name="cbo"></param>
+        public void DSSanhCombobox(ComboBox cbo)
+        {
+            cbo.DataSource = DAL_Sanh.Instance.DSSanhCombobox(cbo);
+            cbo.DisplayMember = "tenS";
+            cbo.ValueMember = "maS";
+        }
+
+        /// <summary>
+        /// Lấy giá sảnh theo mã.
+        /// </summary>
+        /// <param name="maS"></param>
+        /// <returns></returns>
+        public float LayGiaSTheoMa(string maS)
+        {
+            return DAL_Sanh.Instance.LayGiaSTheoMa(maS);
         }
     }
 }

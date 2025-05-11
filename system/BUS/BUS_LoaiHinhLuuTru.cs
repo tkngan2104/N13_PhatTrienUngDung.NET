@@ -119,5 +119,37 @@ namespace BUS
             dal_p.SuaLoaiHinh(etLH);
             MessageBox.Show("Hoàn tất sửa dữ liệu !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+
+        /// <summary>
+        /// Tìm kiếm loại hình lưu trú.
+        /// </summary>
+        /// <param name="tenLH"></param>
+        /// <returns></returns>
+        public List<sp_TimKiemLoaiHinhLuuTruResult> TimKiemLoaiHinhLuuTru(string tenLH)
+        {
+            return dal_p.TimKiemLoaiHinhLuuTru(tenLH);
+        }
+
+        /// <summary>
+        /// Tìm kiếm loại hình lưu trú theo tên.
+        /// </summary>
+        /// <param name="tenCanTim"></param>
+        /// <returns></returns>
+        public List<ET_LoaiHinhLuuTru> TimTheoTen(string tenCanTim)
+        {
+            return dal_p.TimTheoTen(tenCanTim);
+        }
+
+        /// <summary>
+        /// Lấy thông tin loại hình theo loại hình.
+        /// </summary>
+        /// <param name="loaiHinh"></param>
+        /// <returns></returns>
+        public List<ET_LoaiHinhLuuTru> LayLoaiHinhTrongTheoLoai(string loaiHinh)
+        {
+            return DAL_LoaiHinhLuuTru.Instance.LayLoaiHinhTrongTheoLoai(loaiHinh);
+        }
+
     }
 }

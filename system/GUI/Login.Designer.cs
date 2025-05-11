@@ -31,9 +31,9 @@
             this.pnlLogin = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.lblUser = new System.Windows.Forms.Label();
             this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
@@ -43,9 +43,9 @@
             this.pnlLogin.BackColor = System.Drawing.Color.Tan;
             this.pnlLogin.Controls.Add(this.btnExit);
             this.pnlLogin.Controls.Add(this.btnLogin);
-            this.pnlLogin.Controls.Add(this.textBox2);
+            this.pnlLogin.Controls.Add(this.txtPass);
             this.pnlLogin.Controls.Add(this.lblPassword);
-            this.pnlLogin.Controls.Add(this.textBox1);
+            this.pnlLogin.Controls.Add(this.txtUser);
             this.pnlLogin.Controls.Add(this.lblUser);
             this.pnlLogin.Location = new System.Drawing.Point(12, 82);
             this.pnlLogin.Name = "pnlLogin";
@@ -82,16 +82,16 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(28, 160);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(347, 35);
-            this.textBox2.TabIndex = 3;
+            this.txtPass.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(28, 160);
+            this.txtPass.Multiline = true;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(347, 35);
+            this.txtPass.TabIndex = 3;
             // 
             // lblPassword
             // 
@@ -104,16 +104,16 @@
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password";
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(28, 63);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(347, 35);
-            this.textBox1.TabIndex = 1;
+            this.txtUser.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(28, 63);
+            this.txtUser.Multiline = true;
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(347, 35);
+            this.txtUser.TabIndex = 1;
             // 
             // lblUser
             // 
@@ -147,9 +147,9 @@
 
         #endregion
         private System.Windows.Forms.Panel pnlLogin;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExit;

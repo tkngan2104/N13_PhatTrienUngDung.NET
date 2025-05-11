@@ -12,6 +12,8 @@ namespace ET
 
         private DateTime ngayTraPhong;
 
+        public ET_ChiTietDatPhong() { }
+
         public ET_ChiTietDatPhong(string maDP, string maCTDP, string maLH, DateTime ngayTraPhong)
         {
             this.maDP = maDP;

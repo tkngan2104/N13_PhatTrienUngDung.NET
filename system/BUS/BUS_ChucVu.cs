@@ -49,6 +49,10 @@ namespace BUS
             return dal.taoMaTuDong();
         }
 
+        /// <summary>
+        /// Đổ dữ liệu chức vu
+        /// </summary>
+        /// <param name="cbo"></param>
         public void DSChucVuCombobox(ComboBox cbo)
         {
             cbo.DataSource = DAL_ChucVu.Instance.DSChucVuCombobox(cbo);

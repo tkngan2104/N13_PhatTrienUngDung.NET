@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,47 @@ namespace GUI
             toogglePnlBCTK();
             toogglePnlDLRS();
             timer1.Start();
+        }
+        public string Data { get; set; }
+
+        public string tenTaiKhoan;
+
+        public Menu(string taiKhoan)
+        {
+            InitializeComponent();
+            Data = taiKhoan;
+            // Bạn có thể thao tác với dữ liệu ở đây, ví dụ hiển thị lên một control nào đó
+            tenTaiKhoan = Data;
+        }
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            if (BUS_TaiKhoan.Instance.KiemTraPhanQuyen(tenTaiKhoan) == true)
+            {
+                //true là hiện, false là ẩn
+                btnThongTinNhanSu.Visible = true;
+                btnPhong.Visible = true;
+                btnMonAn.Visible = true;
+                btnThucDon.Visible = true;
+
+                btnDatTiec.Visible = true;
+                btnDatPhong.Visible = true;
+                btnSDDichVu.Visible = true;
+                btnTTDatTiec.Visible = true;
+                btnTTDatPhong.Visible = true;
+            }
+            else
+            {
+                btnThongTinNhanSu.Visible = false;
+                btnPhong.Visible = false;
+                btnMonAn.Visible = false;
+                btnThucDon.Visible = false;
+
+                btnDatTiec.Visible = true;
+                btnDatPhong.Visible = true;
+                btnSDDichVu.Visible = true;
+                btnTTDatTiec.Visible = true;
+                btnTTDatPhong.Visible = true;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -402,6 +444,19 @@ namespace GUI
             if (ttdt == null || ttdt.IsDisposed)
             {
                 openChildForm(new ThanhToanDatTiec());
+            }
+            else
+            {
+                ttdt.BringToFront();
+            }
+        }
+
+        private ThongKeDatTiec tkdt;
+        private void btnThongKeDatTiec_Click(object sender, EventArgs e)
+        {
+            if (tkdt == null || ttdt.IsDisposed)
+            {
+                openChildForm(new ThongKeDatTiec());
             }
             else
             {

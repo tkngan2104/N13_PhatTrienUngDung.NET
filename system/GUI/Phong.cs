@@ -66,6 +66,7 @@ namespace GUI
             txtGhiChu.Text = dgvDSLHLT.Rows[dong].Cells[6].Value?.ToString() ?? "";
 
             btnSua.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         private void LoadDSPhongTheoLuaChon()
@@ -200,7 +201,11 @@ namespace GUI
             txtSLNguoi.Clear();
             txtGhiChu.Clear();
             txtGiaTien.Clear();
+
+            dgvDSLHLT.ClearSelection();
+
             btnSua.Enabled = false;
+            btnThem.Enabled = true;
         }
 
         /// <summary>
@@ -284,6 +289,24 @@ namespace GUI
                 e.Handled = true;
                 MessageBox.Show("Không thể nhập địa chỉ quá 150 ký tự !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        /// <summary>
+        /// Tìm phòng.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string tenLH = txtTimPhong.Text.Trim();
+            if (string.IsNullOrEmpty(tenLH))
+            {
+                MessageBox.Show("Vui lòng nhập tên loại hình lưu trữ.");
+                return;
+            }
+
+            var result = BUS_LoaiHinhLuuTru.Instance.TimKiemLoaiHinhLuuTru(tenLH);
+            dgvDSLHLT.DataSource = result;
         }
     }
 }
