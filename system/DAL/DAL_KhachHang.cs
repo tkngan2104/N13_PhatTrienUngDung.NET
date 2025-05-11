@@ -15,10 +15,9 @@ namespace DAL
         //Lấy danh sách khách hàng
         public IQueryable layDSKH()
         {
-            IQueryable kh = from el in db.KhachHangs
-                            select el;
-            return kh;
+            return db.KhachHangs.OrderByDescending(k => k.MaKH);
         }
+
 
         //Xoá khách hàng
         public bool xoaKhachHang(ET_KhachHang et)

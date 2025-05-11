@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DbQuanLyResort" Class="QLResortDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-4HPV2E5\LISM;Initial Catalog=DbQuanLyResort;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAM\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ComboMonAn" Member="ComboMonAns">
     <Type Name="ComboMonAn">
       <Column Name="maCB" Type="System.String" DbType="VarChar(7) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -9,12 +9,16 @@
       <Association Name="ComboMonAn_ChiTietCombo" Member="ChiTietCombos" ThisKey="maCB" OtherKey="maCB" Type="ChiTietCombo" />
     </Type>
   </Table>
-  <Table Name="dbo.SanhDatTiec" Member="SanhDatTiecs">
-    <Type Name="SanhDatTiec">
-      <Column Name="maS" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="tenS" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
-      <Column Name="giaSDT" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Association Name="SanhDatTiec_DatTiec" Member="DatTiecs" ThisKey="maS" OtherKey="maS" Type="DatTiec" />
+  <Table Name="dbo.SuDungDichVu" Member="SuDungDichVus">
+    <Type Name="SuDungDichVu">
+      <Column Name="maSDDV" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maDV" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="soLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tongTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="SuDungDichVu_HoaDonDatPhong" Member="HoaDonDatPhongs" ThisKey="maSDDV" OtherKey="maSDDV" Type="HoaDonDatPhong" />
+      <Association Name="ChiTietDatPhong_SuDungDichVu" Member="ChiTietDatPhong" ThisKey="maCTDP" OtherKey="maCTDP" Type="ChiTietDatPhong" IsForeignKey="true" />
+      <Association Name="DichVu_SuDungDichVu" Member="DichVu" ThisKey="maDV" OtherKey="maDV" Type="DichVu" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ChiTiecDatTiec" Member="ChiTiecDatTiecs">
@@ -52,11 +56,11 @@
   <Table Name="dbo.ChiTietDatPhong" Member="ChiTietDatPhongs">
     <Type Name="ChiTietDatPhong">
       <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="maCTDP" Type="System.String" DbType="VarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="ChiTietDatPhong_HoaDonDatPhong" Member="HoaDonDatPhongs" ThisKey="maCTDP" OtherKey="maCTDP" Type="HoaDonDatPhong" />
       <Association Name="ChiTietDatPhong_SuDungDichVu" Member="SuDungDichVus" ThisKey="maCTDP" OtherKey="maCTDP" Type="SuDungDichVu" />
+      <Association Name="ChiTietDatPhong_HoaDonDatPhong" Member="HoaDonDatPhongs" ThisKey="maCTDP" OtherKey="maCTDP" Type="HoaDonDatPhong" />
       <Association Name="DatPhong_ChiTietDatPhong" Member="DatPhong" ThisKey="maDP" OtherKey="maDP" Type="DatPhong" IsForeignKey="true" />
       <Association Name="LoaiHinhLuuTru_ChiTietDatPhong" Member="LoaiHinhLuuTru" ThisKey="maLH" OtherKey="maLH" Type="LoaiHinhLuuTru" IsForeignKey="true" />
     </Type>
@@ -94,9 +98,9 @@
       <Association Name="DatTiec_ChiTiecDatTiec" Member="ChiTiecDatTiecs" ThisKey="maDT" OtherKey="maDT" Type="ChiTiecDatTiec" />
       <Association Name="DatTiec_ChiTietDatDichVu" Member="ChiTietDatDichVus" ThisKey="maDT" OtherKey="maDT" Type="ChiTietDatDichVu" />
       <Association Name="DatTiec_HoaDonDatTiec" Member="HoaDonDatTiecs" ThisKey="maDT" OtherKey="maDT" Type="HoaDonDatTiec" />
-      <Association Name="SanhDatTiec_DatTiec" Member="SanhDatTiec" ThisKey="maS" OtherKey="maS" Type="SanhDatTiec" IsForeignKey="true" />
       <Association Name="KhachHang_DatTiec" Member="KhachHang" ThisKey="MaKH" OtherKey="MaKH" Type="KhachHang" IsForeignKey="true" />
       <Association Name="NhanSu_DatTiec" Member="NhanSu" ThisKey="MaNhanSu" OtherKey="MaNhanSu" Type="NhanSu" IsForeignKey="true" />
+      <Association Name="SanhDatTiec_DatTiec" Member="SanhDatTiec" ThisKey="maS" OtherKey="maS" Type="SanhDatTiec" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.DichVu" Member="DichVus">
@@ -104,22 +108,22 @@
       <Column Name="maDV" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="tenDV" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
       <Column Name="giaTien" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="DichVu_ChiTietDatDichVu" Member="ChiTietDatDichVus" ThisKey="maDV" OtherKey="maDV" Type="ChiTietDatDichVu" />
       <Association Name="DichVu_SuDungDichVu" Member="SuDungDichVus" ThisKey="maDV" OtherKey="maDV" Type="SuDungDichVu" />
+      <Association Name="DichVu_ChiTietDatDichVu" Member="ChiTietDatDichVus" ThisKey="maDV" OtherKey="maDV" Type="ChiTietDatDichVu" />
     </Type>
   </Table>
   <Table Name="dbo.HoaDonDatPhong" Member="HoaDonDatPhongs">
     <Type Name="HoaDonDatPhong">
       <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
       <Column Name="maHDDP" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="maCTDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
       <Column Name="maSDDV" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
       <Column Name="ngayLap" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="tongTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Column Name="trangThai" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
       <Association Name="ChiTietDatPhong_HoaDonDatPhong" Member="ChiTietDatPhong" ThisKey="maCTDP" OtherKey="maCTDP" Type="ChiTietDatPhong" IsForeignKey="true" />
-      <Association Name="NhanSu_HoaDonDatPhong" Member="NhanSu" ThisKey="MaNhanSu" OtherKey="MaNhanSu" Type="NhanSu" IsForeignKey="true" />
       <Association Name="SuDungDichVu_HoaDonDatPhong" Member="SuDungDichVu" ThisKey="maSDDV" OtherKey="maSDDV" Type="SuDungDichVu" IsForeignKey="true" />
+      <Association Name="NhanSu_HoaDonDatPhong" Member="NhanSu" ThisKey="MaNhanSu" OtherKey="MaNhanSu" Type="NhanSu" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.HoaDonDatTiec" Member="HoaDonDatTiecs">
@@ -137,7 +141,7 @@
   <Table Name="dbo.KhachHang" Member="KhachHangs">
     <Type Name="KhachHang">
       <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="SoDT" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
@@ -199,16 +203,12 @@
       <Association Name="ChucVu_NhanSu" Member="ChucVu" ThisKey="MaChucVu" OtherKey="MaChucVu" Type="ChucVu" IsForeignKey="true" DeleteRule="SET NULL" />
     </Type>
   </Table>
-  <Table Name="dbo.SuDungDichVu" Member="SuDungDichVus">
-    <Type Name="SuDungDichVu">
-      <Column Name="maSDDV" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="maDV" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="maCTDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="soLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="tongTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Association Name="SuDungDichVu_HoaDonDatPhong" Member="HoaDonDatPhongs" ThisKey="maSDDV" OtherKey="maSDDV" Type="HoaDonDatPhong" />
-      <Association Name="ChiTietDatPhong_SuDungDichVu" Member="ChiTietDatPhong" ThisKey="maCTDP" OtherKey="maCTDP" Type="ChiTietDatPhong" IsForeignKey="true" />
-      <Association Name="DichVu_SuDungDichVu" Member="DichVu" ThisKey="maDV" OtherKey="maDV" Type="DichVu" IsForeignKey="true" />
+  <Table Name="dbo.SanhDatTiec" Member="SanhDatTiecs">
+    <Type Name="SanhDatTiec">
+      <Column Name="maS" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenS" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="giaSDT" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="SanhDatTiec_DatTiec" Member="DatTiecs" ThisKey="maS" OtherKey="maS" Type="DatTiec" />
     </Type>
   </Table>
 </Database>

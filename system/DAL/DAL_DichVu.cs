@@ -10,11 +10,9 @@ namespace DAL
     public class DAL_DichVu
     {
         QLResortDataContext db= new QLResortDataContext();
-        public List<ET_DichVu> layDSDV()
+        public IQueryable layDSDV()
         {
-            var dv = from el in db.DichVus
-                     select new ET_DichVu(el.maDV, el.tenDV, el.giaTien); // Chuyển đổi thành đối tượng ET_DichVu
-            return dv.ToList(); // Trả về danh sách
+            return db.DichVus.OrderByDescending(k => k.maDV);
         }
         
 

@@ -40,6 +40,7 @@ namespace GUI
         public void layDSSV()
         {
             dgvDSDV.DataSource = bus.layDSSV();
+            txtMaDV.Text = bus.taoMaDV();
         }
 
         /// <summary>
@@ -166,6 +167,7 @@ namespace GUI
             txtMaDV.Clear();
             txtTenDV.Clear();
             txtGiaTien.Clear();
+            txtMaDV.Text = bus.taoMaDV();
         }
 
 

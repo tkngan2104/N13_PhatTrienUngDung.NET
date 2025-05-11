@@ -67,7 +67,7 @@ create table DatPhong(
 
 create table ChiTietDatPhong(
 	maDP varchar(12) not null references DatPhong(maDP),
-	maCTDP varchar(12) not null primary key,
+	maCTDP varchar(13) not null primary key,
 	maLH varchar(10) references LoaiHinhLuuTru(maLH),
 	ngayTraPhong date)
 
@@ -131,14 +131,14 @@ create table ChiTietDatDichVu (
 create table SuDungDichVu(
 	maSDDV varchar(8) not null primary key,
 	maDV varchar(5) not null references DichVu(maDV),
-	maCTDP varchar(12) not null references ChiTietDatPhong(maCTDP),
+	maCTDP varchar(13) not null references ChiTietDatPhong(maCTDP),
 	soLuong int not null,
 	tongTien float not null)
 
 CREATE TABLE HoaDonDatPhong (
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
     maHDDP varchar(10) NOT NULL primary key, 
-    maCTDP varchar(12) not null references ChiTietDatPhong(maCTDP),
+    maCTDP varchar(13) not null references ChiTietDatPhong(maCTDP),
     maSDDV varchar(8) not null references SuDungDichVu(MaSDDV),
     ngayLap date not null,  
     tongTien float not null,
@@ -151,3 +151,6 @@ create table HoaDonDatTiec (
 	ngayLap date not null,
 	tongTien float not null,
 	trangThai nvarchar(150) not null)
+
+
+
