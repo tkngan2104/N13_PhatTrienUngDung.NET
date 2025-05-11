@@ -1,14 +1,3 @@
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
 D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
 D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
 D:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
@@ -22,3 +11,81 @@ D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.ca
 D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
 D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
 D:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\BUS.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\ET.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\DAL.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\ET.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\bin\Debug\ET.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.csproj.Up2Date
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\BUS\obj\Debug\BUS.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\BUS.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\BUS.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\DAL.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\ET.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\DAL.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\DAL.dll.config
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\ET.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\ET.dll.config
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\BUS.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\BUS.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\DAL.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\ET.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\DAL.dll.config
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\ET.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\bin\Debug\ET.dll.config
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\BUS\obj\Debug\BUS.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll.config
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll.config
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
+N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
+N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
+N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
+N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
+N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
+N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll.config
+N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
+N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll.config
+N:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+N:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+N:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
+N:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
+N:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb

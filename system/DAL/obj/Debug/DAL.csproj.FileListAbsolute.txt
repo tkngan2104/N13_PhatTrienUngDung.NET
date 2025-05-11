@@ -1,12 +1,3 @@
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
 D:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
 D:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
 D:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
@@ -18,3 +9,69 @@ D:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.ca
 D:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
 D:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\DAL.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\ET.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\ET.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\bin\Debug\ET.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\DAL\obj\Debug\DAL.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\DAL.dll.config
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\DAL.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\DAL.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\ET.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\ET.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\ET.dll.config
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\DAL.dll.config
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\DAL.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\ET.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\ET.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\bin\Debug\ET.dll.config
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\DAL\obj\Debug\DAL.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll.config
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
+N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll.config
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
+N:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb

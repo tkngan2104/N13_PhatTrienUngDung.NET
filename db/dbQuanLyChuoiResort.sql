@@ -3,7 +3,7 @@ create database DbQuanLyResort
 go
 use DbQuanLyResort
 go
-SET DATEFORMAT YMD;
+SET DATEFORMAT ymd;
 
 go
 
@@ -15,7 +15,7 @@ go
 
 create table KhachHang(
 	MaKH nvarchar(10) not null,
-	TenKH nvarchar(20) not null,
+	TenKH nvarchar(50) not null,
 	SoDT nvarchar(10) not null,
 	NgaySinh date,
 	GioiTinh nvarchar(20) not null,
@@ -33,24 +33,31 @@ create table ChucVu(
 create table NhanSu(
 	MaNhanSu varchar(8) PRIMARY KEY,
     HoTen NVARCHAR(50) NOT NULL,
+	GioiTinh nvarchar(3),
     NgaySinh DATE,
     SDT NVARCHAR(15),
     CCCD NVARCHAR(12),
     Email NVARCHAR(100) UNIQUE,
-    DiaChi TEXT,
+    DiaChi NTEXT,
     MaChucVu varchar(5),
     NgayVaoLam DATE,
-    Luong DECIMAL(15,2),
     FOREIGN KEY (MaChucVu) REFERENCES ChucVu(MaChucVu) ON DELETE SET NULL)
 
 -----QUẢN LÝ RESORT
 
-create table Phong(
-	maPhong varchar(10) not null primary key,
-	tenLP nvarchar(45) not null,
-	tenLG nvarchar(45) not null,
-	giaP float not null,
-	trangThai nvarchar(45) not null)
+---khu A1 : khu tòa nhà (5 tòa).
+
+---khu A2 : khu villa (8 cái).
+
+
+create table LoaiHinhLuuTru (
+	maLH varchar(10) not null primary key, ---VIP0001, THG0001, 0001
+	tenLH varchar(5) not null,
+	loaiHinh nvarchar(45) not null, ---phòng vip, phòng thường, villa
+	slNguoi int not null, --- 1, 2, 3, 4, 5, 7
+	giaTien float not null,
+	trangThai nvarchar(45) not null, ---trống, có người, đă đặt, đang dọn dẹp, đang bảo trì
+	ghiChu nvarchar(120))
 
 create table DatPhong(
 	MaNhanSu varchar(8) references NhanSu(MaNhanSu),
@@ -61,7 +68,7 @@ create table DatPhong(
 create table ChiTietDatPhong(
 	maDP varchar(12) not null references DatPhong(maDP),
 	maCTDP varchar(12) not null primary key,
-	maPhong varchar(10) references Phong(maPhong),
+	maLH varchar(10) references LoaiHinhLuuTru(maLH),
 	ngayTraPhong date)
 
 create table DichVu(

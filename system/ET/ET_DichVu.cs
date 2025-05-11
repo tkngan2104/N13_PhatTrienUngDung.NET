@@ -10,6 +10,7 @@ namespace ET
     {
         private string maDV, tenDV;
         private int giaTien;
+        public ET_DichVu() { }
 
         public ET_DichVu(string maDV, string tenDV, int giaTien)
         {
