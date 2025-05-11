@@ -125,7 +125,6 @@ namespace DAL
         {
             try
             {
-                //Tạo một đối tượng mới.
                 ChiTietDatPhong ct = new ChiTietDatPhong
                 {
                     maDP = etCT.MaDP,
@@ -133,12 +132,10 @@ namespace DAL
                     maLH = etCT.MaLH,
                     ngayTraPhong = etCT.NgayTraPhong
                 };
-                //Thêm loại hàng vào cơ sở dữ liệu
                 db.ChiTietDatPhongs.InsertOnSubmit(ct);
             }
             finally
             {
-                // Lưu các thay đổi vào cơ sở dữ liệu
                 db.SubmitChanges();
             }
             // Trả về true để báo hiệu việc thêm mới thành công

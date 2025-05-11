@@ -51,6 +51,9 @@
     <StartupObject>GUI.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -102,10 +105,20 @@
     <Compile Include="ComboMonAn.Designer.cs">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSetDSDatTiecTheoThang2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetThongKeDatTiecTheoNgay.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetThongKeDatTiecTheoNgay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongKeDatTiecTheoThang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongKeDatTiecTheoThang.xsd</DependentUpon>
     </Compile>
     <Compile Include="DatDichVu.cs">
       <SubType>Form</SubType>
@@ -175,6 +188,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rpt_ThongKeDatTiecTheoNam.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ThongKeDatTiecTheoNam.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SanhDatTiec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +283,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report_ThongKeTheoThang.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNam.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ThongKeDatTiecTheoNam.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNgay.rdlc" />
     <EmbeddedResource Include="SanhDatTiec.resx">
       <DependentUpon>SanhDatTiec.cs</DependentUpon>
@@ -283,6 +307,17 @@
     <EmbeddedResource Include="ThongKeDatTiec.resx">
       <DependentUpon>ThongKeDatTiec.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSetDSDatTiecTheoThang2.xsc">
+      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDSDatTiecTheoThang2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDSDatTiecTheoThang2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetDSDatTiecTheoThang2.xss">
+      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    </None>
     <None Include="DataSetThongKeDatTiecTheoNgay.xsc">
       <DependentUpon>DataSetThongKeDatTiecTheoNgay.xsd</DependentUpon>
     </None>
@@ -293,6 +328,17 @@
     </None>
     <None Include="DataSetThongKeDatTiecTheoNgay.xss">
       <DependentUpon>DataSetThongKeDatTiecTheoNgay.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoThang.xsc">
+      <DependentUpon>DataSetThongKeDatTiecTheoThang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoThang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongKeDatTiecTheoThang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoThang.xss">
+      <DependentUpon>DataSetThongKeDatTiecTheoThang.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -378,6 +424,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

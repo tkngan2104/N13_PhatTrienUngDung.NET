@@ -40,5 +40,25 @@ namespace DAL
              (float)(r.tongTien),
              (float)(r.giaTriDC))).ToList();
         }
+
+        //public List<ET_ThongKeDatTiec> ThongKeDatTiecTheoThang(DateTime ngayDT)
+        //{
+        //    var results = db.DSDatTiecTheoThang(ngayDT);
+
+        //    var danhSachThongKe = results.Select(r => new ET_ThongKeDatTiec(
+        //        r.MaNhanSu,
+        //        r.maDT,
+        //        r.MaKH,
+        //        r.ngayDT ?? DateTime.MinValue,
+        //        r.maS,
+        //        r.ghiChu,
+        //        r.ngayBatDau ?? DateTime.MinValue,
+        //        r.ngayKetThuc ?? DateTime.MinValue,
+        //        r.tongTien.HasValue ? (float)r.tongTien.Value : 0f,
+        //        r.giaTriDC.HasValue ? (float)r.giaTriDC.Value : 0f
+        //    )).ToList();
+
+        //    return danhSachThongKe;
+        //}
     }
 }

@@ -36,50 +36,55 @@
             this.btnTim = new System.Windows.Forms.Button();
             this.dgvTim = new System.Windows.Forms.DataGridView();
             this.btnIn = new System.Windows.Forms.Button();
+            this.rptThongKeTheoThang = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.rptThongKeTheoNam = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTim)).BeginInit();
             this.SuspendLayout();
             // 
             // rptThongKeTheoNgay
             // 
             this.rptThongKeTheoNgay.LocalReport.ReportEmbeddedResource = "GUI.rpt_ThongKeDatTiecTheoNgay.rdlc";
-            this.rptThongKeTheoNgay.Location = new System.Drawing.Point(87, 507);
+            this.rptThongKeTheoNgay.Location = new System.Drawing.Point(87, 587);
             this.rptThongKeTheoNgay.Name = "rptThongKeTheoNgay";
             this.rptThongKeTheoNgay.ServerReport.BearerToken = null;
-            this.rptThongKeTheoNgay.Size = new System.Drawing.Size(1216, 591);
+            this.rptThongKeTheoNgay.Size = new System.Drawing.Size(1216, 572);
             this.rptThongKeTheoNgay.TabIndex = 0;
             // 
             // radNgay
             // 
             this.radNgay.AutoSize = true;
             this.radNgay.Checked = true;
+            this.radNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radNgay.Location = new System.Drawing.Point(87, 153);
             this.radNgay.Name = "radNgay";
-            this.radNgay.Size = new System.Drawing.Size(126, 24);
+            this.radNgay.Size = new System.Drawing.Size(94, 33);
             this.radNgay.TabIndex = 1;
             this.radNgay.TabStop = true;
-            this.radNgay.Text = "radioButton1";
+            this.radNgay.Text = "Ngày";
             this.radNgay.UseVisualStyleBackColor = true;
             // 
             // radThang
             // 
             this.radThang.AutoSize = true;
+            this.radThang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radThang.Location = new System.Drawing.Point(283, 153);
             this.radThang.Name = "radThang";
-            this.radThang.Size = new System.Drawing.Size(126, 24);
+            this.radThang.Size = new System.Drawing.Size(97, 30);
             this.radThang.TabIndex = 2;
             this.radThang.TabStop = true;
-            this.radThang.Text = "radioButton2";
+            this.radThang.Text = "Tháng";
             this.radThang.UseVisualStyleBackColor = true;
             // 
             // radNam
             // 
             this.radNam.AutoSize = true;
+            this.radNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radNam.Location = new System.Drawing.Point(486, 153);
             this.radNam.Name = "radNam";
-            this.radNam.Size = new System.Drawing.Size(126, 24);
+            this.radNam.Size = new System.Drawing.Size(84, 30);
             this.radNam.TabIndex = 3;
             this.radNam.TabStop = true;
-            this.radNam.Text = "radioButton3";
+            this.radNam.Text = "Năm";
             this.radNam.UseVisualStyleBackColor = true;
             // 
             // dtpNgay
@@ -91,39 +96,62 @@
             // 
             // btnTim
             // 
+            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.Location = new System.Drawing.Point(635, 79);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(112, 46);
             this.btnTim.TabIndex = 5;
-            this.btnTim.Text = "button1";
+            this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
             this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // dgvTim
             // 
+            this.dgvTim.BackgroundColor = System.Drawing.Color.White;
             this.dgvTim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTim.Location = new System.Drawing.Point(87, 228);
             this.dgvTim.Name = "dgvTim";
             this.dgvTim.RowHeadersWidth = 62;
             this.dgvTim.RowTemplate.Height = 28;
-            this.dgvTim.Size = new System.Drawing.Size(1216, 150);
+            this.dgvTim.Size = new System.Drawing.Size(1216, 331);
             this.dgvTim.TabIndex = 6;
             // 
             // btnIn
             // 
+            this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIn.Location = new System.Drawing.Point(635, 153);
             this.btnIn.Name = "btnIn";
             this.btnIn.Size = new System.Drawing.Size(112, 52);
             this.btnIn.TabIndex = 7;
-            this.btnIn.Text = "button2";
+            this.btnIn.Text = "In";
             this.btnIn.UseVisualStyleBackColor = true;
             this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
+            // rptThongKeTheoThang
+            // 
+            this.rptThongKeTheoThang.Location = new System.Drawing.Point(87, 1189);
+            this.rptThongKeTheoThang.Name = "rptThongKeTheoThang";
+            this.rptThongKeTheoThang.ServerReport.BearerToken = null;
+            this.rptThongKeTheoThang.Size = new System.Drawing.Size(1216, 572);
+            this.rptThongKeTheoThang.TabIndex = 9;
+            // 
+            // rptThongKeTheoNam
+            // 
+            this.rptThongKeTheoNam.Location = new System.Drawing.Point(87, 1796);
+            this.rptThongKeTheoNam.Name = "rptThongKeTheoNam";
+            this.rptThongKeTheoNam.ServerReport.BearerToken = null;
+            this.rptThongKeTheoNam.Size = new System.Drawing.Size(1216, 572);
+            this.rptThongKeTheoNam.TabIndex = 11;
             // 
             // ThongKeDatTiec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1391, 759);
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1391, 928);
+            this.Controls.Add(this.rptThongKeTheoNam);
+            this.Controls.Add(this.rptThongKeTheoThang);
             this.Controls.Add(this.btnIn);
             this.Controls.Add(this.dgvTim);
             this.Controls.Add(this.btnTim);
@@ -151,5 +179,7 @@
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.DataGridView dgvTim;
         private System.Windows.Forms.Button btnIn;
+        private Microsoft.Reporting.WinForms.ReportViewer rptThongKeTheoThang;
+        private Microsoft.Reporting.WinForms.ReportViewer rptThongKeTheoNam;
     }
 }
