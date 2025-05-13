@@ -452,7 +452,7 @@ insert into SanhDatTiec (maS, tenS, giaSDT) values
 ('SANHE',N'Sảnh E',20000000);
 
 -----PHÒNG
-
+go
 insert into LoaiHinhLuuTru(maLH, tenLH, loaiHinh, slNguoi, giaTien, trangThai, ghiChu) values
 
 ----1ng: 1tr5, 2ng: 3tr, 3ng: 4tr5, 4ng: 6tr
@@ -883,7 +883,7 @@ insert into MonAn (maMA, maLMA, tenMA, giaTien, mieuTa) values
 ('MAT24', 'LMA06', N'Bánh Chuối Nướng', 4200000, N'Món tráng miệng dân dã với chuối chín, dừa và nước cốt dừa nướng vàng ươm.');
 
 -----COMBO MÓN ĂN
-
+go
 insert into ComboMonAn (maCB, tenCB, giaCB) values
 ('CB00001', 'Buffet Sáng', 250000),
 ('CB00002', 'Buffet Tối', 350000),
@@ -892,7 +892,7 @@ insert into ComboMonAn (maCB, tenCB, giaCB) values
 ('CB00005', 'Thực đơn tiệc hiện đại', 600000);
 
 -----CHI TIẾT COMBO
-
+go
 insert into ChiTietCombo (maCTCB, maCB, maMA) values
 
 -- Combo buffet sáng (CB00001)
@@ -1048,7 +1048,7 @@ insert into ChiTietCombo (maCTCB, maCB, maMA) values
 ('CTCB135', 'CB00005', 'MAT24');
 
 -----ĐẶT PHÒNG
-
+go
 insert into DatPhong (MaNhanSu, maDP, MaKH, ngayDatPhong) values
 
 ---ngày 05/05/2025
@@ -1276,7 +1276,7 @@ insert into DatPhong (MaNhanSu, maDP, MaKH, ngayDatPhong) values
 ('NV011','DP0805251200','KH0100','08/05/2025');
 
 -----CHI TIẾT ĐẶT PHÒNG
-select*from DatPhong where maDP = 'DP0505250001' 
+go
 insert into ChiTietDatPhong (maDP, maCTDP, maLH, ngayTraPhong) values
 ('DP0505250001', 'CTDP050525001', 'THG0001', '06/05/2025'),
 ('DP0505250001', 'CTDP050525002', 'THG0002', '07/05/2025'),
@@ -1384,9 +1384,8 @@ insert into ChiTietDatPhong (maDP, maCTDP, maLH, ngayTraPhong) values
 ('DP0505250049', 'CTDP050525105', 'THG0105', '06/05/2025'),
 ('DP0505250049', 'CTDP050525106', 'THG0106', '07/05/2025');
 
-SELECT * FROM ChiTietDatPhong
 -----SỬ DỤNG DỊCH VỤ
-
+go
 insert into SuDungDichVu (maSDDV, maDV, maCTDP, soLuong, tongTien) values
 ('SDDV001', 'DV017', 'CTDP050525001', 1, 350000),
 ('SDDV002', 'DV009', 'CTDP050525001', 1, 3000000),
@@ -1420,7 +1419,7 @@ insert into SuDungDichVu (maSDDV, maDV, maCTDP, soLuong, tongTien) values
 ('SDDV030', 'DV017', 'CTDP050525014', 1, 350000);
 
 -----ĐẶT TIỆC
-SELECT * FROM DatTiec WHERE maDT = 'DT0505250003';
+go
 insert into DatTiec (MaNhanSu, maDT, MaKH, ngayDT, maS, ghiChu, ngayBatDau, ngayKetThuc, tongTien, giaTriDC) values
 ('NV015', 'DT0505250001', 'KH0001', '05/05/2025', 'SANHA', Null, '05/05/2025', '06/05/2025', 14000000, 2800000),
 ('NV016', 'DT0505250002', 'KH0002', '05/05/2025', 'SANHA', Null, '07/05/2025', '08/05/2025', 18000000, 3500000),
@@ -1433,3 +1432,9 @@ insert into DatTiec (MaNhanSu, maDT, MaKH, ngayDT, maS, ghiChu, ngayBatDau, ngay
 ('NV023', 'DT0505250009', 'KH0009', '12/05/2025', 'SANHB', Null, '21/05/2025', '22/05/2025', 21000000, 3700000),
 ('NV024', 'DT0505250010', 'KH0010', '13/05/2025', 'SANHC', Null, '23/05/2025', '24/05/2025', 22000000, 3800000),
 ('NV025', 'DT0505250011', 'KH0011', '14/05/2025', 'SANHA', Null, '25/05/2025', '26/05/2025', 23000000, 3900000);
+
+-----TÀI KHOẢN
+go
+insert into TaiKhoan (taikhoan, matkhau, MaNhanSu) values
+('NV001','123','NV001'), ---quản lý nhân sự
+('NV011','456','NV011') ---quản lý lễ tân
