@@ -180,7 +180,7 @@
             this.groupBox2.Controls.Add(this.btnLamMoi);
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(486, 442);
+            this.groupBox2.Location = new System.Drawing.Point(483, 513);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -213,7 +213,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(958, 205);
+            this.groupBox3.Size = new System.Drawing.Size(958, 272);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kết quả tìm kiếm";
@@ -229,7 +229,7 @@
             this.dgvKetQuaTimKiem.Name = "dgvKetQuaTimKiem";
             this.dgvKetQuaTimKiem.RowHeadersWidth = 62;
             this.dgvKetQuaTimKiem.RowTemplate.Height = 28;
-            this.dgvKetQuaTimKiem.Size = new System.Drawing.Size(952, 173);
+            this.dgvKetQuaTimKiem.Size = new System.Drawing.Size(952, 240);
             this.dgvKetQuaTimKiem.TabIndex = 0;
             this.dgvKetQuaTimKiem.Click += new System.EventHandler(this.dgvKetQuaTimKiem_Click);
             // 

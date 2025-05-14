@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class DatTiec: Form
+    public partial class DatTiec : Form
     {
         public DatTiec()
         {
@@ -75,16 +75,6 @@ namespace GUI
             txtDatTiec.Text = BUS_DatTiec.Instance.TaoMaTuDong();
             BUS_Sanh.Instance.DSSanhCombobox(cboSanhDT);
 
-            if (cboSanhDT.Items.Count > 0)
-            {
-                string maS = cboSanhDT.SelectedValue.ToString();
-                float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
-                float tongTien = giaSDT;
-                float datCoc = tongTien * 0.2f;
-                txtTongTien.Text = tongTien.ToString("F0");
-                txtDatCoc.Text = datCoc.ToString("F0");
-            }
-
             BUS_DatTiec.Instance.DSDatTiec(dgvDSDatTiec);
 
             txtMaNS.Text = "NV025";
@@ -97,6 +87,22 @@ namespace GUI
             dtpNgayKetThuc.MinDate = DateTime.Today;
             dtpNgayKetThuc.MaxDate = DateTime.Today.AddMonths(4);
 
+            // TÍNH TIỀN DỰA TRÊN NGÀY BẮT ĐẦU - KẾT THÚC
+            if (cboSanhDT.Items.Count > 0)
+            {
+                string maS = cboSanhDT.SelectedValue.ToString();
+                float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
+
+                int soNgay = (dtpNgayKetThuc.Value.Date - dtpNgayBatDau.Value.Date).Days + 1;
+                if (soNgay <= 0) soNgay = 1;
+
+                float tongTien = giaSDT * soNgay;
+                float datCoc = tongTien * 0.2f;
+
+                txtTongTien.Text = tongTien.ToString("F0");
+                txtDatCoc.Text = datCoc.ToString("F0");
+            }
+
             AutoCompleteStringCollection cccdSuggestions = new AutoCompleteStringCollection();
             List<string> dsCCCD = BUS_KhachHang.Instance.LayTatCaCCCD();
             cccdSuggestions.AddRange(dsCCCD.ToArray());
@@ -106,6 +112,23 @@ namespace GUI
             txtCCCD.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
             btnSua.Enabled = false;
+        }
+
+        private void CapNhatTongTienVaDatCoc()
+        {
+            string maS = cboSanhDT.SelectedValue?.ToString();
+            if (string.IsNullOrEmpty(maS)) return;
+
+            float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
+
+            int soNgay = (dtpNgayKetThuc.Value.Date - dtpNgayBatDau.Value.Date).Days + 1;
+            if (soNgay <= 0) soNgay = 1;
+
+            float tongTien = giaSDT * soNgay;
+            float datCoc = tongTien * 0.2f;
+
+            txtTongTien.Text = tongTien.ToString("F0");
+            txtDatCoc.Text = datCoc.ToString("F0");
         }
 
         /// <summary>
@@ -183,6 +206,13 @@ namespace GUI
                 MessageBox.Show("Không được đặt phòng quá 7 ngày!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 dtpNgayKetThuc.Value = dtpNgayBatDau.Value.AddDays(7);
             }
+
+            CapNhatTongTienVaDatCoc();
+        }
+
+        private void dtpNgayBatDau_ValueChanged(object sender, EventArgs e)
+        {
+            CapNhatTongTienVaDatCoc();
         }
 
         private void dgvDSDatTiec_Click(object sender, EventArgs e)
@@ -477,5 +507,6 @@ namespace GUI
             }
             //có thể là này dùng sự kiện cellformatting của dgv
         }
+
     }
 }

@@ -447,6 +447,7 @@
             this.dtpNgayBatDau.Name = "dtpNgayBatDau";
             this.dtpNgayBatDau.Size = new System.Drawing.Size(303, 35);
             this.dtpNgayBatDau.TabIndex = 40;
+            this.dtpNgayBatDau.ValueChanged += new System.EventHandler(this.dtpNgayBatDau_ValueChanged);
             // 
             // lblNgayBatDau
             // 

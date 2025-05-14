@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "T:\\N13_PhatTrienUngDung.NET\\system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\thongkesudungdichvutheonam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\thongkesudungdichvutheonam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\rpt_thongkesudungdichvutheonam.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\rpt_thongkesudungdichvutheonam.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\thongkesudungdichvutheonam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\thongkesudungdichvutheonam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\rpt_thongkesudungdichvutheothang.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\rpt_thongkesudungdichvutheothang.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,32 +26,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ThongKeSuDungDichVuTheoNam.cs",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\ThongKeSuDungDichVuTheoNam.cs",
-              "RelativeDocumentMoniker": "GUI\\ThongKeSuDungDichVuTheoNam.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\ThongKeSuDungDichVuTheoNam.cs",
-              "RelativeToolTip": "GUI\\ThongKeSuDungDichVuTheoNam.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAtwBgAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DatTiec.cs",
+              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
+              "RelativeDocumentMoniker": "GUI\\DatTiec.cs",
+              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
+              "RelativeToolTip": "GUI\\DatTiec.cs",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAMwNEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T17:19:59.385Z",
+              "WhenOpened": "2025-05-14T17:25:05.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "DatTiec.cs [Design]",
+              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
+              "RelativeDocumentMoniker": "GUI\\DatTiec.cs",
+              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs [Design]",
+              "RelativeToolTip": "GUI\\DatTiec.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T17:25:01.895Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "SuDungDichVu.cs",
               "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SuDungDichVu.cs",
               "RelativeDocumentMoniker": "GUI\\SuDungDichVu.cs",
               "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SuDungDichVu.cs",
               "RelativeToolTip": "GUI\\SuDungDichVu.cs",
-              "ViewState": "AgIAACsBAAAAAAAAAAAWwD0BAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAUwFEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T17:19:41.744Z",
+              "WhenOpened": "2025-05-14T17:24:19.951Z",
               "EditorCaption": ""
             },
             {
@@ -71,43 +75,7 @@
               "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SuDungDichVu.cs [Design]",
               "RelativeToolTip": "GUI\\SuDungDichVu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T17:19:37.071Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ThongKeSuDungDichVuTheoNam.cs [Design]",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\ThongKeSuDungDichVuTheoNam.cs",
-              "RelativeDocumentMoniker": "GUI\\ThongKeSuDungDichVuTheoNam.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\ThongKeSuDungDichVuTheoNam.cs [Design]",
-              "RelativeToolTip": "GUI\\ThongKeSuDungDichVuTheoNam.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T17:18:49.25Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "rpt_ThongKeSuDungDichVuTheoNam.rdlc [Design]",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeSuDungDichVuTheoNam.rdlc",
-              "RelativeDocumentMoniker": "GUI\\rpt_ThongKeSuDungDichVuTheoNam.rdlc",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeSuDungDichVuTheoNam.rdlc [Design]",
-              "RelativeToolTip": "GUI\\rpt_ThongKeSuDungDichVuTheoNam.rdlc [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-05-14T17:12:15.932Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "rpt_ThongKeSuDungDichVuTheoThang.rdlc [Design]",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeSuDungDichVuTheoThang.rdlc",
-              "RelativeDocumentMoniker": "GUI\\rpt_ThongKeSuDungDichVuTheoThang.rdlc",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeSuDungDichVuTheoThang.rdlc [Design]",
-              "RelativeToolTip": "GUI\\rpt_ThongKeSuDungDichVuTheoThang.rdlc [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-05-14T17:08:10.926Z",
+              "WhenOpened": "2025-05-14T17:24:04.792Z",
               "EditorCaption": " [Design]"
             }
           ]
