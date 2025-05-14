@@ -66,6 +66,12 @@
             this.lblMaDT = new System.Windows.Forms.Label();
             this.txtMaNS = new System.Windows.Forms.TextBox();
             this.lblMaNS = new System.Windows.Forms.Label();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.btnIn = new System.Windows.Forms.Button();
+            this.dtpThoiGian = new System.Windows.Forms.DateTimePicker();
+            this.radNam = new System.Windows.Forms.RadioButton();
+            this.radThang = new System.Windows.Forms.RadioButton();
+            this.radNgay = new System.Windows.Forms.RadioButton();
             this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -263,7 +269,7 @@
             // 
             this.groupBox4.Controls.Add(this.dgvDSDatTiec);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(32, 751);
+            this.groupBox4.Location = new System.Drawing.Point(32, 842);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(1393, 430);
             this.groupBox4.TabIndex = 52;
@@ -281,6 +287,7 @@
             this.dgvDSDatTiec.RowTemplate.Height = 28;
             this.dgvDSDatTiec.Size = new System.Drawing.Size(1387, 396);
             this.dgvDSDatTiec.TabIndex = 0;
+            this.dgvDSDatTiec.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvDSDatTiec_CellFormatting);
             this.dgvDSDatTiec.Click += new System.EventHandler(this.dgvDSDatTiec_Click);
             // 
             // pnlTieuDe
@@ -317,7 +324,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(32, 143);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(693, 602);
+            this.groupBox1.Size = new System.Drawing.Size(693, 676);
             this.groupBox1.TabIndex = 49;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đặt tiệc";
@@ -327,7 +334,7 @@
             this.txtGhiChu.Location = new System.Drawing.Point(22, 512);
             this.txtGhiChu.Multiline = true;
             this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(646, 69);
+            this.txtGhiChu.Size = new System.Drawing.Size(646, 136);
             this.txtGhiChu.TabIndex = 57;
             // 
             // lblGhiChu
@@ -440,6 +447,7 @@
             this.dtpNgayBatDau.Name = "dtpNgayBatDau";
             this.dtpNgayBatDau.Size = new System.Drawing.Size(303, 35);
             this.dtpNgayBatDau.TabIndex = 40;
+            this.dtpNgayBatDau.ValueChanged += new System.EventHandler(this.dtpNgayBatDau_ValueChanged);
             // 
             // lblNgayBatDau
             // 
@@ -507,6 +515,86 @@
             this.lblMaNS.TabIndex = 0;
             this.lblMaNS.Text = "Mã nhân sự";
             // 
+            // btnTim
+            // 
+            this.btnTim.BackColor = System.Drawing.Color.Tan;
+            this.btnTim.FlatAppearance.BorderSize = 0;
+            this.btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTim.ForeColor = System.Drawing.Color.Black;
+            this.btnTim.Location = new System.Drawing.Point(1178, 681);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(116, 41);
+            this.btnTim.TabIndex = 55;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            // 
+            // btnIn
+            // 
+            this.btnIn.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnIn.FlatAppearance.BorderSize = 0;
+            this.btnIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.ForeColor = System.Drawing.Color.Black;
+            this.btnIn.Location = new System.Drawing.Point(1309, 681);
+            this.btnIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(116, 41);
+            this.btnIn.TabIndex = 56;
+            this.btnIn.Text = "In";
+            this.btnIn.UseVisualStyleBackColor = false;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
+            // dtpThoiGian
+            // 
+            this.dtpThoiGian.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpThoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpThoiGian.Location = new System.Drawing.Point(745, 687);
+            this.dtpThoiGian.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpThoiGian.Name = "dtpThoiGian";
+            this.dtpThoiGian.Size = new System.Drawing.Size(407, 35);
+            this.dtpThoiGian.TabIndex = 57;
+            // 
+            // radNam
+            // 
+            this.radNam.AutoSize = true;
+            this.radNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radNam.Location = new System.Drawing.Point(1068, 758);
+            this.radNam.Name = "radNam";
+            this.radNam.Size = new System.Drawing.Size(84, 30);
+            this.radNam.TabIndex = 60;
+            this.radNam.TabStop = true;
+            this.radNam.Text = "Năm";
+            this.radNam.UseVisualStyleBackColor = true;
+            // 
+            // radThang
+            // 
+            this.radThang.AutoSize = true;
+            this.radThang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radThang.Location = new System.Drawing.Point(904, 758);
+            this.radThang.Name = "radThang";
+            this.radThang.Size = new System.Drawing.Size(97, 30);
+            this.radThang.TabIndex = 59;
+            this.radThang.TabStop = true;
+            this.radThang.Text = "Tháng";
+            this.radThang.UseVisualStyleBackColor = true;
+            // 
+            // radNgay
+            // 
+            this.radNgay.AutoSize = true;
+            this.radNgay.Checked = true;
+            this.radNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radNgay.Location = new System.Drawing.Point(745, 756);
+            this.radNgay.Name = "radNgay";
+            this.radNgay.Size = new System.Drawing.Size(94, 33);
+            this.radNgay.TabIndex = 58;
+            this.radNgay.TabStop = true;
+            this.radNgay.Text = "Ngày";
+            this.radNgay.UseVisualStyleBackColor = true;
+            // 
             // DatTiec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -514,6 +602,12 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1474, 1106);
+            this.Controls.Add(this.radNam);
+            this.Controls.Add(this.radThang);
+            this.Controls.Add(this.radNgay);
+            this.Controls.Add(this.dtpThoiGian);
+            this.Controls.Add(this.btnIn);
+            this.Controls.Add(this.btnTim);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
@@ -533,6 +627,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -576,5 +671,11 @@
         private System.Windows.Forms.TextBox txtNgayDatTiec;
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Label lblGhiChu;
+        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btnIn;
+        private System.Windows.Forms.DateTimePicker dtpThoiGian;
+        private System.Windows.Forms.RadioButton radNam;
+        private System.Windows.Forms.RadioButton radThang;
+        private System.Windows.Forms.RadioButton radNgay;
     }
 }

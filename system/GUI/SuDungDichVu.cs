@@ -59,6 +59,11 @@ namespace GUI
             }
         }
 
+        /// <summary>
+        /// Tìm phòng.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnTim_Click(object sender, EventArgs e)
         {
             string tenLH = txtTimPhong.Text.Trim();
@@ -279,5 +284,44 @@ namespace GUI
                 e.Handled = true;
             }
         }
+
+
+        /// <summary>
+        /// Tìm sử dụng dịch vụ.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnTimSDDV_Click(object sender, EventArgs e)
+        {
+            if (radThang.Checked == true)
+            {
+                dgvDSSDDV_TK.DataSource = BUS_ThongKeSuDungDichVu.Instance.ThongKeDichVuTheoThang(dtpThoiGian.Value.Month, dtpThoiGian.Value.Year);
+            }
+            else if (radNam.Checked == true)
+            {
+                dgvDSSDDV_TK.DataSource = BUS_ThongKeSuDungDichVu.Instance.ThongKeDichVuTheoNam(dtpThoiGian.Value.Year);
+            }
+        }
+
+
+        /// <summary>
+        /// In sử dụng dịch vụ.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            if (radThang.Checked == true)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new ThongKeSuDungDichVuTheoThang(dtpThoiGian.Value));
+            }
+            else if (radNam.Checked == true)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new ThongKeSuDungDichVuTheoNam(dtpThoiGian.Value));
+            }
+        }
+
     }
 }

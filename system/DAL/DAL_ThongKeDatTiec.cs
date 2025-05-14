@@ -25,40 +25,74 @@ namespace DAL
 
         QLResortDataContext db = new QLResortDataContext();
 
+        /// <summary>
+        /// Thống kê đặt tiệc theo ngày.
+        /// </summary>
+        /// <param name="ngayDT"></param>
+        /// <returns></returns>
         public List<ET_ThongKeDatTiec> ThongKeDatTiecTheoNgay(DateTime ngayDT)
         {
-            var results = db.DSDatTiecTheoNgay(ngayDT);
+            var results = db.DSDatTiecTheoNgay(ngayDT);  //TÊN STORE NHA
             return results.Select(r => new ET_ThongKeDatTiec(
-             r.MaNhanSu,
-             r.maDT,
-             r.MaKH,
-             r.ngayDT,
-             r.maS,
-             r.ghiChu,
-             (DateTime)r.ngayBatDau,
-             (DateTime)r.ngayKetThuc,
-             (float)(r.tongTien),
-             (float)(r.giaTriDC))).ToList();
+                r.maDT,
+                r.MaKH,
+                r.TenKH,
+                r.maS,
+                (DateTime)r.ngayDT,
+                (DateTime)r.ngayBatDau,
+                (DateTime)r.ngayKetThuc,
+                Convert.ToSingle(r.tongTien),
+                Convert.ToSingle(r.giaTriDC),
+                r.ghiChu?.ToString() ?? "",
+                r.MaNhanSu
+            )).ToList();
         }
 
-        //public List<ET_ThongKeDatTiec> ThongKeDatTiecTheoThang(DateTime ngayDT)
-        //{
-        //    var results = db.DSDatTiecTheoThang(ngayDT);
+        /// <summary>
+        /// Thống kê đặt tiệc theo tháng.
+        /// </summary>
+        /// <param name="nam"></param>
+        /// <param name="thang"></param>
+        /// <returns></returns>
+        public List<ET_ThongKeDatTiec> ThongKeDatTiecTheoThang(int nam, int thang)
+        {
+            var results = db.DSDatTiecTheoThang(nam, thang); //TÊN STORE NHA
+            return results.Select(r => new ET_ThongKeDatTiec(
+                r.maDT,
+                r.MaKH,
+                r.TenKH,
+                r.maS,
+                (DateTime)r.ngayDT,
+                (DateTime)r.ngayBatDau,
+                (DateTime)r.ngayKetThuc,
+                Convert.ToSingle(r.tongTien),
+                Convert.ToSingle(r.giaTriDC),
+                r.ghiChu?.ToString() ?? "",
+                r.MaNhanSu
+            )).ToList();
+        }
 
-        //    var danhSachThongKe = results.Select(r => new ET_ThongKeDatTiec(
-        //        r.MaNhanSu,
-        //        r.maDT,
-        //        r.MaKH,
-        //        r.ngayDT ?? DateTime.MinValue,
-        //        r.maS,
-        //        r.ghiChu,
-        //        r.ngayBatDau ?? DateTime.MinValue,
-        //        r.ngayKetThuc ?? DateTime.MinValue,
-        //        r.tongTien.HasValue ? (float)r.tongTien.Value : 0f,
-        //        r.giaTriDC.HasValue ? (float)r.giaTriDC.Value : 0f
-        //    )).ToList();
-
-        //    return danhSachThongKe;
-        //}
+        /// <summary>
+        /// Thống kê đặt tiệc theo năm.
+        /// </summary>
+        /// <param name="nam"></param>
+        /// <returns></returns>
+        public List<ET_ThongKeDatTiec> ThongKeDatTiecTheoNam(int nam)
+        {
+            var results = db.DSDatTiecTheoNam(nam); //TÊN STORE NHA
+            return results.Select(r => new ET_ThongKeDatTiec(
+                r.maDT,
+                r.MaKH,
+                r.TenKH,
+                r.maS,
+                (DateTime)r.ngayDT,
+                (DateTime)r.ngayBatDau,
+                (DateTime)r.ngayKetThuc,
+                Convert.ToSingle(r.tongTien),
+                Convert.ToSingle(r.giaTriDC),
+                r.ghiChu?.ToString() ?? "",
+                r.MaNhanSu
+            )).ToList();
+        }
     }
 }

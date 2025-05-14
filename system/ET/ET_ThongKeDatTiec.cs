@@ -8,23 +8,27 @@ namespace ET
 {
     public class ET_ThongKeDatTiec
     {
-        public ET_ThongKeDatTiec(string maNhanSu, string maDT, string maKH, DateTime ngayDT, string maS, string ghiChu, DateTime ngayBatDau, DateTime ngayKetThuc, float tongTien, float giaTriDC)
+        public ET_ThongKeDatTiec(string maDT, string maKH, string tenKH, string maS,
+                             DateTime ngayDT, DateTime ngayBatDau, DateTime ngayKetThuc,
+                             float tongTien, float giaTriDC, string ghiChu, string maNhanSu)
         {
-            MaNhanSu = maNhanSu;
             this.maDT = maDT;
-            MaKH = maKH;
-            this.ngayDT = ngayDT;
+            this.MaKH = maKH;
+            this.TenKH = tenKH;
             this.maS = maS;
-            this.ghiChu = ghiChu;
+            this.ngayDT = ngayDT;
             this.ngayBatDau = ngayBatDau;
             this.ngayKetThuc = ngayKetThuc;
             this.tongTien = tongTien;
             this.giaTriDC = giaTriDC;
+            this.ghiChu = ghiChu;
+            this.MaNhanSu = maNhanSu;
         }
 
         public string MaNhanSu { get; set; }
         public string maDT { get; set; }
         public string MaKH { get; set; }
+        public string TenKH { get; set; }
         public DateTime ngayDT { get; set; }
         public string maS { get; set; }
         public string ghiChu { get; set; }
