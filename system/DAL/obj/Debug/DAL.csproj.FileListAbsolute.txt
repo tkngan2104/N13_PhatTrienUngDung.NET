@@ -53,17 +53,6 @@ D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInput
 D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
 D:\Tan\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
-T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll.config
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
-T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb
 N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
 N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
 N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
@@ -130,6 +119,10 @@ T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll.config
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\DAL.pdb
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\Microsoft.ReportViewer.Common.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\Microsoft.ReportViewer.Design.dll
@@ -137,6 +130,8 @@ T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\Microsoft.ReportViewer.Processi
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\Microsoft.SqlServer.Types.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\EnvDTE.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.pdb
+T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ET.dll.config
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -177,3 +172,8 @@ T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\pt\Microsoft.ReportViewer.WinFo
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 T:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb

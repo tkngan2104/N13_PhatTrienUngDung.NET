@@ -105,10 +105,10 @@
     <Compile Include="ComboMonAn.Designer.cs">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSetDSDatTiecTheoThang2.Designer.cs">
+    <Compile Include="DataSetThongKeDatTiecTheoNam.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+      <DependentUpon>DataSetThongKeDatTiecTheoNam.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSetThongKeDatTiecTheoNgay.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -219,11 +219,23 @@
     <Compile Include="ThanhToanDatTiec.Designer.cs">
       <DependentUpon>ThanhToanDatTiec.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongKeDatTiec.cs">
+    <Compile Include="ThongKeDatTiecTheoNam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongKeDatTiec.Designer.cs">
-      <DependentUpon>ThongKeDatTiec.cs</DependentUpon>
+    <Compile Include="ThongKeDatTiecTheoNam.Designer.cs">
+      <DependentUpon>ThongKeDatTiecTheoNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoNgay.Designer.cs">
+      <DependentUpon>ThongKeDatTiecTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoThang.Designer.cs">
+      <DependentUpon>ThongKeDatTiecTheoThang.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ChiTietDatTiec.resx">
       <DependentUpon>ChiTietDatTiec.cs</DependentUpon>
@@ -277,7 +289,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNam.rdlc" />
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNgay.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKeDatTiecTheoThang.rdlc" />
     <EmbeddedResource Include="SanhDatTiec.resx">
       <DependentUpon>SanhDatTiec.cs</DependentUpon>
     </EmbeddedResource>
@@ -293,19 +307,25 @@
     <EmbeddedResource Include="ThanhToanDatTiec.resx">
       <DependentUpon>ThanhToanDatTiec.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongKeDatTiec.resx">
-      <DependentUpon>ThongKeDatTiec.cs</DependentUpon>
+    <EmbeddedResource Include="ThongKeDatTiecTheoNam.resx">
+      <DependentUpon>ThongKeDatTiecTheoNam.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSetDSDatTiecTheoThang2.xsc">
-      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    <EmbeddedResource Include="ThongKeDatTiecTheoNgay.resx">
+      <DependentUpon>ThongKeDatTiecTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDatTiecTheoThang.resx">
+      <DependentUpon>ThongKeDatTiecTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetThongKeDatTiecTheoNam.xsc">
+      <DependentUpon>DataSetThongKeDatTiecTheoNam.xsd</DependentUpon>
     </None>
-    <None Include="DataSetDSDatTiecTheoThang2.xsd">
+    <None Include="DataSetThongKeDatTiecTheoNam.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetDSDatTiecTheoThang2.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSetThongKeDatTiecTheoNam.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DataSetDSDatTiecTheoThang2.xss">
-      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    <None Include="DataSetThongKeDatTiecTheoNam.xss">
+      <DependentUpon>DataSetThongKeDatTiecTheoNam.xsd</DependentUpon>
     </None>
     <None Include="DataSetThongKeDatTiecTheoNgay.xsc">
       <DependentUpon>DataSetThongKeDatTiecTheoNgay.xsd</DependentUpon>

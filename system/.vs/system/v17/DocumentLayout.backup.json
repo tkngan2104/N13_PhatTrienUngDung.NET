@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "T:\\N13_PhatTrienUngDung.NET\\system\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\rpt_thongkedattiectheothang.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\rpt_thongkedattiectheothang.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\rpt_thongkedattiectheongay.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\rpt_thongkedattiectheongay.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\rpt_thongkedattiectheonam.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\rpt_thongkedattiectheonam.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|t:\\n13_phattrienungdung.net\\system\\dal\\qlresort.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
-      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\qlresort.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|t:\\n13_phattrienungdung.net\\system\\dal\\dal_taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|t:\\n13_phattrienungdung.net\\system\\gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +34,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "rpt_ThongKeDatTiecTheoNam.rdlc [Design]",
+              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeDatTiecTheoNam.rdlc",
+              "RelativeDocumentMoniker": "GUI\\rpt_ThongKeDatTiecTheoNam.rdlc",
+              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeDatTiecTheoNam.rdlc [Design]",
+              "RelativeToolTip": "GUI\\rpt_ThongKeDatTiecTheoNam.rdlc [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2025-05-14T14:30:23.611Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "rpt_ThongKeDatTiecTheoNgay.rdlc [Design]",
               "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeDatTiecTheoNgay.rdlc",
               "RelativeDocumentMoniker": "GUI\\rpt_ThongKeDatTiecTheoNgay.rdlc",
               "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeDatTiecTheoNgay.rdlc [Design]",
               "RelativeToolTip": "GUI\\rpt_ThongKeDatTiecTheoNgay.rdlc [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-05-13T15:35:35.009Z",
+              "WhenOpened": "2025-05-14T14:29:29.444Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QLResort.dbml",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\DAL\\QLResort.dbml",
-              "RelativeDocumentMoniker": "DAL\\QLResort.dbml",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\DAL\\QLResort.dbml",
-              "RelativeToolTip": "DAL\\QLResort.dbml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2025-05-13T15:18:10.726Z",
+              "DocumentIndex": 0,
+              "Title": "rpt_ThongKeDatTiecTheoThang.rdlc [Design]",
+              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeDatTiecTheoThang.rdlc",
+              "RelativeDocumentMoniker": "GUI\\rpt_ThongKeDatTiecTheoThang.rdlc",
+              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\rpt_ThongKeDatTiecTheoThang.rdlc [Design]",
+              "RelativeToolTip": "GUI\\rpt_ThongKeDatTiecTheoThang.rdlc [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2025-05-14T14:26:47.74Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Menu.cs",
+              "RelativeDocumentMoniker": "GUI\\Menu.cs",
+              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Menu.cs",
+              "RelativeToolTip": "GUI\\Menu.cs",
+              "ViewState": "AgIAALsBAAAAAAAAAAAwwMcBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T14:23:34.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatTiec.cs",
+              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
+              "RelativeDocumentMoniker": "GUI\\DatTiec.cs",
+              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
+              "RelativeToolTip": "GUI\\DatTiec.cs",
+              "ViewState": "AgIAAMIBAAAAAAAAAAA6wNMBAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T14:21:52.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DAL_TaiKhoan.cs",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_TaiKhoan.cs",
-              "RelativeDocumentMoniker": "DAL\\DAL_TaiKhoan.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_TaiKhoan.cs",
-              "RelativeToolTip": "DAL\\DAL_TaiKhoan.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAUwCAAAAAMAAAAAAAAAA==",
+              "Title": "DatTiec.cs [Design]",
+              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
+              "RelativeDocumentMoniker": "GUI\\DatTiec.cs",
+              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs [Design]",
+              "RelativeToolTip": "GUI\\DatTiec.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T15:16:48.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Login.cs",
-              "RelativeDocumentMoniker": "GUI\\Login.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Login.cs",
-              "RelativeToolTip": "GUI\\Login.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAADsAAABzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T15:16:29.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Login.cs",
-              "RelativeDocumentMoniker": "GUI\\Login.cs",
-              "ToolTip": "T:\\N13_PhatTrienUngDung.NET\\system\\GUI\\Login.cs [Design]",
-              "RelativeToolTip": "GUI\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T15:16:27.948Z",
+              "WhenOpened": "2025-05-14T14:21:33.099Z",
               "EditorCaption": " [Design]"
             }
           ]

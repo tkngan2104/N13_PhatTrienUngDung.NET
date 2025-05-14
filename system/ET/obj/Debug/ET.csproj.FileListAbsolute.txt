@@ -33,13 +33,6 @@ D:\Tan\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.AssemblyReference.
 D:\Tan\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.CoreCompileInputs.cache
 D:\Tan\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.dll
 D:\Tan\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.pdb
-T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.dll.config
-T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.dll
-T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.pdb
-T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.AssemblyReference.cache
-T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.CoreCompileInputs.cache
-T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.dll
-T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.pdb
 N:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.dll.config
 N:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.dll
 N:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.pdb
@@ -103,6 +96,9 @@ T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.dll.config
+T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ET.pdb
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\Microsoft.ReportViewer.Common.dll
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\Microsoft.ReportViewer.Design.dll
@@ -150,4 +146,8 @@ T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\pt\Microsoft.ReportViewer.WinFor
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 T:\N13_PhatTrienUngDung.NET\system\ET\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.CoreCompileInputs.cache
 T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\ET\obj\Debug\ET.pdb

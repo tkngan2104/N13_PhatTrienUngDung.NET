@@ -451,17 +451,17 @@ namespace GUI
             }
         }
 
-        private ThongKeDatTiec tkdt;
+        //private ThongKeDatTiec tkdt;
         private void btnThongKeDatTiec_Click(object sender, EventArgs e)
         {
-            if (tkdt == null || ttdt.IsDisposed)
-            {
-                openChildForm(new ThongKeDatTiec());
-            }
-            else
-            {
-                ttdt.BringToFront();
-            }
+            //if (tkdt == null || ttdt.IsDisposed)
+            //{
+            //    openChildForm(new ThongKeDatTiec());
+            //}
+            //else
+            //{
+            //    ttdt.BringToFront();
+            //}
         }
     }
 }

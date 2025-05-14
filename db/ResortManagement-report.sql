@@ -1,8 +1,15 @@
 ﻿use DbQuanLyResort
 go
 set dateformat dmy
-go
 
+---EXEC sp_TimChiTietDatPhongTheoTenLH @tenLH = 'A101'
+---Drop PROCEDURE DSDatTiecTheoThang
+---EXEC DSDatTiecTheoNgay '2025-05-05';
+---EXEC DSDatTiecTheoThang 2025, 05;
+---EXEC DSDatTiecTheoNam 2025;
+
+-----Tìm loại hình lưu tru
+go
 CREATE PROCEDURE sp_TimKiemLoaiHinhLuuTru
     @tenLH NVARCHAR(5)
 AS
@@ -12,8 +19,8 @@ BEGIN
     WHERE tenLH = @tenLH;
 END;
 
+-----Tìm chi tiết đặt phòng theo tên loại hình.
 go
-
 CREATE PROCEDURE sp_TimChiTietDatPhongTheoTenLH
     @tenLH VARCHAR(50)
 AS
@@ -31,38 +38,33 @@ BEGIN
         LoaiHinhLuuTru lhlt ON ctdp.maLH = lhlt.maLH
     WHERE 
         lhlt.tenLH LIKE '%' + @tenLH + '%'
-END
+END;
 
-EXEC sp_TimChiTietDatPhongTheoTenLH @tenLH = 'A101'
-
-select * from DatTiec
-----Danh sách đặt tiệc theo ngày tháng năm.
+-----Tìm đặt tiệc theo ngày.
 go
 CREATE PROCEDURE DSDatTiecTheoNgay
     @SearchDate DATE
 AS
 BEGIN
     SELECT 
-        MaNhanSu,
-        maDT,
-        MaKH,
-        ngayDT,
-        maS,
-        ghiChu,
-        ngayBatDau,
-        ngayKetThuc,
-        tongTien,
-        giaTriDC
-    FROM 
-        DatTiec
-    WHERE 
-        ngayDT = @SearchDate
-    ORDER BY 
-        ngayDT;
+        DT.maDT,
+        KH.MaKH,
+        KH.TenKH,
+        DT.maS,
+        DT.ngayDT,
+        DT.ngayBatDau,
+        DT.ngayKetThuc,
+        DT.tongTien,
+        DT.giaTriDC,
+        DT.ghiChu,
+        DT.MaNhanSu
+    FROM DatTiec DT
+    JOIN KhachHang KH ON DT.MaKH = KH.MaKH
+    WHERE DT.ngayDT = @SearchDate
+    ORDER BY DT.ngayDT;
 END;
 
-EXEC DSDatTiecTheoNgay '2025-05-05';
-
+-----Tìm đặt tiệc theo tháng.
 go
 CREATE PROCEDURE DSDatTiecTheoThang
     @Year INT,
@@ -70,48 +72,43 @@ CREATE PROCEDURE DSDatTiecTheoThang
 AS
 BEGIN
     SELECT 
-        MaNhanSu,
-        maDT,
-        MaKH,
-        ngayDT,
-        maS,
-        ghiChu,
-        ngayBatDau,
-        ngayKetThuc,
-        tongTien,
-        giaTriDC
-    FROM 
-        DatTiec
-    WHERE 
-        YEAR(ngayDT) = @Year AND MONTH(ngayDT) = @Month
-    ORDER BY 
-        ngayDT;
+        DT.maDT,
+        KH.MaKH,
+        KH.TenKH,
+        DT.maS,
+        DT.ngayDT,
+        DT.ngayBatDau,
+        DT.ngayKetThuc,
+        DT.tongTien,
+        DT.giaTriDC,
+        DT.ghiChu,
+        DT.MaNhanSu
+    FROM DatTiec DT
+    JOIN KhachHang KH ON DT.MaKH = KH.MaKH
+    WHERE YEAR(DT.ngayDT) = @Year AND MONTH(DT.ngayDT) = @Month
+    ORDER BY DT.ngayDT;
 END;
 
-EXEC DSDatTiecTheoThang 2025, 05;
-
+-----Tìm đặt tiệc theo năm.
 go
 CREATE PROCEDURE DSDatTiecTheoNam
-    @Year INT
+    @SearchYear INT
 AS
 BEGIN
     SELECT 
-        MaNhanSu,
-        maDT,
-        MaKH,
-        ngayDT,
-        maS,
-        ghiChu,
-        ngayBatDau,
-        ngayKetThuc,
-        tongTien,
-        giaTriDC
-    FROM 
-        DatTiec
-    WHERE 
-        YEAR(ngayDT) = @Year
-    ORDER BY 
-        ngayDT;
+        DT.maDT,
+        KH.MaKH,
+        KH.TenKH,
+        DT.maS,
+        DT.ngayDT,
+        DT.ngayBatDau,
+        DT.ngayKetThuc,
+        DT.tongTien,
+        DT.giaTriDC,
+        DT.ghiChu,
+        DT.MaNhanSu
+    FROM DatTiec DT
+    JOIN KhachHang KH ON DT.MaKH = KH.MaKH
+    WHERE YEAR(DT.ngayDT) = @SearchYear
+    ORDER BY DT.ngayDT;
 END;
-
-EXEC DSDatTiecTheoNam 2025;
