@@ -1,4 +1,4 @@
-﻿﻿---tao database.
+﻿---tao database.
 create database DbQuanLyResort
 go
 use DbQuanLyResort
