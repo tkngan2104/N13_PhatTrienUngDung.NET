@@ -823,6 +823,8 @@ insert into MonAn (maMA, maLMA, tenMA, giaTien, mieuTa) values
 ('MAT15', 'LMA04', N'Bánh Pudding Hàn Quốc', 4200000, N'Bánh pudding mềm mịn với hương vị ngọt dịu.'),
 ('MAT16', 'LMA04', N'Bánh Gạo Mật Ong (Yaksik)', 5800000, N'Món tráng miệng truyền thống với gạo nếp, hạt dẻ, táo tàu và mật ong.'),
 
+
+
 -- Món Trung (LMA05)
 
 ---Khai vị
@@ -1045,3 +1047,4 @@ insert into ChiTietCombo (maCTCB, maCB, maMA) values
 ('CTCB133', 'CB00005', 'MAT16'),
 ('CTCB134', 'CB00005', 'MAT20'),
 ('CTCB135', 'CB00005', 'MAT24');
+SELECT * FROM MonAn WHERE MaLMA = '';
