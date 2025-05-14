@@ -98,7 +98,7 @@ namespace GUI
         private void loadComboBoxComboMonAn()
         {
             
-            IQueryable dt = bus_cbma.layDSCBMA();
+            IQueryable dt = bus_cbma.LayTatCaCombo();
             cboComboMA.DataSource = dt;
             cboComboMA.DisplayMember = "tenCB"; // Tên hiển thị
             cboComboMA.ValueMember = "maCB";    // Giá trị thực
@@ -140,7 +140,7 @@ namespace GUI
 
         private void LoadComboBoxDatTiec()
         {
-            var danhSachMa = datTiecBUS.layDSMDT();
+            var danhSachMa = datTiecBUS.layDSDT();
 
             cboMaDatTiec.DataSource = danhSachMa;
             cboMaDatTiec.DisplayMember = "maDT"; // nếu là string thì không cần

@@ -79,28 +79,22 @@ namespace GUI
 
         private void dgvKetQuaTimKiem_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Kiểm tra nếu người dùng click vào một hàng hợp lệ (không phải header)
             if (e.RowIndex >= 0)
             {
-                // Lấy mã đặt tiệc từ ô trong DGV (giả sử maDT ở cột đầu tiên)
                 string maDT = dgvKetQuaTimKiem.Rows[e.RowIndex].Cells["maDT"].Value.ToString();
 
-                // Gọi DAL để lấy thông tin đặt tiệc theo mã đặt tiệc
-                var danhSachDatTiec = bus.LayDTTheoMa(maDT);
+                // Lấy danh sách dịch vụ
+                var danhSachDichVu = bus.LayDTTheoMa(maDT);
+                dgvDSDV.DataSource = danhSachDichVu.ToList();
+                FormatDgvDSDV();
 
-                // Kiểm tra nếu có thông tin đặt tiệc
-                if (danhSachDatTiec.Any())
-                {
-                    // Hiển thị kết quả vào DGV dịch vụ đã sử dụng (dgvDSDV)
-                    dgvDSDV.DataSource = danhSachDatTiec.ToList();
-                    FormatDgvDSDV();
-                }
-                else
-                {
-                    MessageBox.Show("Không có thông tin đặt tiệc cho mã này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                //// Lấy danh sách món ăn
+                //var danhSachMonAn = bus.LayDanhSachMonAn(maDT);
+                //dgvMonAn.DataSource = danhSachMonAn.ToList();
+                //FormatDgvMonAn(); 
             }
         }
+
         private void FormatDgvDSDV()
         {
             dgvDSDV.Columns["tongTien"].DefaultCellStyle.Format = "#,##0";
@@ -126,7 +120,7 @@ namespace GUI
                 txtThanhTien.Text = string.Format("{0:#,##0} VNĐ", row.Cells["tongTien"].Value);
                 txtTrangThai.Text = row.Cells["trangThai"].Value.ToString();
 
-                // Tạo mã hoá đơn đặt tiệc tự động (giả sử có logic riêng)
+                // Tạo mã hoá đơn đặt tiệc tự động
                 txtMaHDDT.Text = bus.taoMTD();
             }
         }

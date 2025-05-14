@@ -61,7 +61,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_ChiTietComBo.cs" />
     <Compile Include="BUS_ChiTietDatPhong.cs" />
+    <Compile Include="BUS_ComBoMonAn.cs" />
     <Compile Include="BUS_DatPhong.cs" />
     <Compile Include="BUS_DatTiec.cs" />
     <Compile Include="BUS_ChiTietDatTiec.cs" />

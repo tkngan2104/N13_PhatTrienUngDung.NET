@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace ET
 {
-    public class ET_ComboMonAn
+    public class ET_ComBoMonAn
     {
-        private string maCB, tenCB;
+        private string _MaCB, _TenCB;
+        private float _GiaCB;
 
-        private float giaCB;
-
-        public ET_ComboMonAn(string maCB, string tenCB, float giaCB)
+        public ET_ComBoMonAn() { }
+        public ET_ComBoMonAn(string maCB, string tenCB, float giaCB)
         {
-            this.maCB = maCB;
-            this.tenCB = tenCB;
-            this.giaCB = giaCB;
+            _MaCB = maCB;
+            _TenCB = tenCB;
+            _GiaCB = giaCB;
         }
 
-        public string MaCB { get => maCB; set => maCB = value; }
-        public string TenCB { get => tenCB; set => tenCB = value; }
-        public float GiaCB { get => giaCB; set => giaCB = value; }
+        public string MaCB { get => _MaCB; set => _MaCB = value; }
+        public string TenCB { get => _TenCB; set => _TenCB = value; }
+        public float GiaCB { get => _GiaCB; set => _GiaCB = value; }
     }
 }

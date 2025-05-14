@@ -15,6 +15,8 @@ namespace GUI
     public partial class MonAn: Form
     {
         private BUS_MonAn bus = new BUS_MonAn();
+       
+
         public MonAn()
         {
             InitializeComponent();
@@ -57,11 +59,12 @@ namespace GUI
         private void MonAn_Load(object sender, EventArgs e)
         {
             LoadDSMA();
-
+            rdoKhaiVi.Checked = true;
             cboLoaiMA.DataSource = bus.LayDSLoaiMonAn();
             cboLoaiMA.DisplayMember = "tenLMA";
             cboLoaiMA.ValueMember = "maLMA";
-            txtMaMA.Text = bus.taoMaMA();
+            
+            txtMaMA.Text = bus.taoMaMA(LayLoaiMonAn());
             
         }
 
@@ -117,41 +120,49 @@ namespace GUI
                 return;
             }
             else
-            {
                 errorProvider4.SetError(cboLoaiMA, "");
-            }
+
             if (string.IsNullOrWhiteSpace(txtGiaTien.Text))
             {
-                errorProvider2.SetError(txtGiaTien, "Tên giá tiền không được để trống");
+                errorProvider2.SetError(txtGiaTien, "Giá tiền không được để trống");
                 return;
             }
             else
-                errorProvider1.SetError(txtGiaTien, "");
+                errorProvider2.SetError(txtGiaTien, "");
 
-            if (string.IsNullOrWhiteSpace(txtTenMA.Text))
+            if (string.IsNullOrWhiteSpace(txtMoTa.Text))
             {
                 errorProvider3.SetError(txtMoTa, "Mô tả không được để trống");
                 return;
             }
             else
-                errorProvider1.SetError(txtMoTa, "");
+                errorProvider3.SetError(txtMoTa, "");
+
             if (!float.TryParse(txtGiaTien.Text.Trim(), out float GiaTien))
             {
                 MessageBox.Show("Giá tiền không hợp lệ. Vui lòng nhập số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            string loaiMonAn = LayLoaiMonAn();
+            if (string.IsNullOrEmpty(loaiMonAn))
+            {
+                MessageBox.Show("Vui lòng chọn loại món ăn bằng radio button!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
-                GiaTien = float.Parse(txtGiaTien.Text.Trim());
                 ET_MonAn et = new ET_MonAn
                 {
-                    MaMA = bus.taoMaMA(),
-                    MaLMA = cboLoaiMA.SelectedValue.ToString(),
+                    MaMA = bus.taoMaMA(loaiMonAn),
+                    MaLMA = cboLoaiMA.SelectedValue.ToString(), // vẫn dùng combobox để lấy nhóm loại món
                     TenMA = txtTenMA.Text.Trim(),
                     GiaTien = GiaTien,
                     MieuTa = txtMoTa.Text.Trim()
                 };
-                if (bus.themMA(et) == true)
+
+                if (bus.themMA(et))
                 {
                     MessageBox.Show("Thêm thành công!");
                     LoadDSMA();
@@ -160,8 +171,21 @@ namespace GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi" + ex.Message);
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
+        }
+        private string LayLoaiMonAn()
+        {
+            if (rdoKhaiVi.Checked)
+                return "khai vị";
+            else if (rdoMonChinh.Checked)
+                return "món chính";
+            else if (rdoTrangMieng.Checked)
+                return "tráng miệng";
+            else if (rdoDoUong.Checked)
+                return "đồ uống";
+            else
+                return ""; // Chưa chọn gì
         }
         /// <summary>
         /// làm mới 
@@ -169,12 +193,24 @@ namespace GUI
         private void LamMoi()
         {
             txtMaMA.Clear();
-            cboLoaiMA.SelectedValue = -1;
+            cboLoaiMA.SelectedIndex = -1;
             txtTenMA.Clear();
             txtGiaTien.Clear();
             txtMoTa.Clear();
-            txtMaMA.Focus(); // Di chuyển con trỏ về đầu
-            txtMaMA.Text = bus.taoMaMA();
+
+            // Làm mới RadioButton nếu cần
+            rdoKhaiVi.Checked = false;
+            rdoMonChinh.Checked = false;
+            rdoTrangMieng.Checked = false;
+            rdoDoUong.Checked = false;
+
+            txtMaMA.Focus();
+
+            string loai = LayLoaiMonAn();
+            if (!string.IsNullOrEmpty(loai))
+            {
+                txtMaMA.Text = bus.taoMaMA(loai);
+            }
         }
 
         private void txtTenMA_Leave(object sender, EventArgs e)
@@ -324,6 +360,32 @@ namespace GUI
             {
                 MessageBox.Show("Da xay ra loi: " + ex.Message, "Loi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void rdoKhaiVi_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoKhaiVi.Checked)
+                txtMaMA.Text = bus.taoMaMA("khai vị");
+
+
+        }
+
+        private void rdoDoUong_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoDoUong.Checked)
+                txtMaMA.Text = bus.taoMaMA("đồ uống");
+        }
+
+        private void rdoMonChinh_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoMonChinh.Checked)
+                txtMaMA.Text = bus.taoMaMA("món chính");
+        }
+
+        private void rdoTrangMieng_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoTrangMieng.Checked)
+                txtMaMA.Text = bus.taoMaMA("Tráng miệng");
         }
     }
 }

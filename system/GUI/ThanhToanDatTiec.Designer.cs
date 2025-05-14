@@ -357,7 +357,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1308, 755);
+            this.ClientSize = new System.Drawing.Size(1308, 809);
             this.Controls.Add(this.pnlTieuDe);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
