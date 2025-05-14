@@ -53,18 +53,18 @@ namespace DAL
         {
             return "HDDT" + DateTime.Now.ToString("yyyyMMddHHmmss"); // VD: HDDT20250511153000
         }
-        public List<ET_ChiTietDatDichVu> LayDanhSachDichVuTheoMaDT(string maDT)
-        {
-            var result = from ctdv in db.ChiTietDatDichVus
-                         join dv in db.DichVus on ctdv.maDV equals dv.maDV
-                         where ctdv.maDT == maDT
-                         select new ET_ChiTietDatDichVu(
-                             dv.tenDV,
-                             ctdv.soLuong,
-                             (float)dv.giaTien
-                         );
-            return result.ToList();
-        }
+        //public List<ET_ChiTietDatDichVu> LayDanhSachDichVuTheoMaDT(string maDT)
+        //{
+        //    var result = from ctdv in db.ChiTietDatDichVus
+        //                 join dv in db.DichVus on ctdv.maDV equals dv.maDV
+        //                 where ctdv.maDT == maDT
+        //                 select new ET_ChiTietDatDichVu(
+        //                     dv.tenDV,
+        //                     ctdv.soLuong,
+        //                     (float)dv.giaTien
+        //                 );
+        //    return result.ToList();
+        //}
 
 
 

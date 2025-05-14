@@ -88,10 +88,10 @@ namespace GUI
                 dgvDSDV.DataSource = danhSachDichVu.ToList();
                 FormatDgvDSDV();
 
-                // Lấy danh sách món ăn
-                var danhSachMonAn = bus.LayDanhSachMonAn(maDT);
-                dgvMonAn.DataSource = danhSachMonAn.ToList();
-                FormatDgvMonAn(); 
+                //// Lấy danh sách món ăn
+                //var danhSachMonAn = bus.LayDanhSachMonAn(maDT);
+                //dgvMonAn.DataSource = danhSachMonAn.ToList();
+                //FormatDgvMonAn(); 
             }
         }
 

@@ -55,6 +55,10 @@
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.rdoMonChinh = new System.Windows.Forms.RadioButton();
+            this.rdoKhaiVi = new System.Windows.Forms.RadioButton();
+            this.rdoDoUong = new System.Windows.Forms.RadioButton();
+            this.rdoTrangMieng = new System.Windows.Forms.RadioButton();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSMA)).BeginInit();
@@ -74,9 +78,11 @@
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(34, 408);
+            this.groupBox2.Location = new System.Drawing.Point(23, 265);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1400, 123);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(933, 80);
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -88,9 +94,10 @@
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(1122, 48);
+            this.btnThoat.Location = new System.Drawing.Point(748, 31);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(216, 42);
+            this.btnThoat.Size = new System.Drawing.Size(144, 27);
             this.btnThoat.TabIndex = 26;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -102,9 +109,10 @@
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(856, 48);
+            this.btnLamMoi.Location = new System.Drawing.Point(571, 31);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(216, 42);
+            this.btnLamMoi.Size = new System.Drawing.Size(144, 27);
             this.btnLamMoi.TabIndex = 25;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
@@ -116,9 +124,10 @@
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(590, 48);
+            this.btnSua.Location = new System.Drawing.Point(393, 31);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(216, 42);
+            this.btnSua.Size = new System.Drawing.Size(144, 27);
             this.btnSua.TabIndex = 24;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
@@ -130,9 +139,10 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(324, 48);
+            this.btnXoa.Location = new System.Drawing.Point(216, 31);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(216, 42);
+            this.btnXoa.Size = new System.Drawing.Size(144, 27);
             this.btnXoa.TabIndex = 23;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -144,9 +154,10 @@
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(62, 48);
+            this.btnThem.Location = new System.Drawing.Point(41, 31);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(216, 42);
+            this.btnThem.Size = new System.Drawing.Size(144, 27);
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
@@ -156,9 +167,11 @@
             // 
             this.groupBox3.Controls.Add(this.dgvDSMA);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(34, 551);
+            this.groupBox3.Location = new System.Drawing.Point(23, 358);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1400, 466);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(933, 303);
             this.groupBox3.TabIndex = 37;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách món ăn";
@@ -169,20 +182,22 @@
             this.dgvDSMA.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSMA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSMA.Location = new System.Drawing.Point(3, 31);
+            this.dgvDSMA.Location = new System.Drawing.Point(2, 21);
+            this.dgvDSMA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvDSMA.Name = "dgvDSMA";
             this.dgvDSMA.RowHeadersWidth = 62;
             this.dgvDSMA.RowTemplate.Height = 28;
-            this.dgvDSMA.Size = new System.Drawing.Size(1394, 432);
+            this.dgvDSMA.Size = new System.Drawing.Size(929, 280);
             this.dgvDSMA.TabIndex = 0;
             this.dgvDSMA.Click += new System.EventHandler(this.dgvDSMA_Click);
             // 
             // txtMoTa
             // 
-            this.txtMoTa.Location = new System.Drawing.Point(1024, 82);
+            this.txtMoTa.Location = new System.Drawing.Point(683, 53);
+            this.txtMoTa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMoTa.Multiline = true;
             this.txtMoTa.Name = "txtMoTa";
-            this.txtMoTa.Size = new System.Drawing.Size(302, 147);
+            this.txtMoTa.Size = new System.Drawing.Size(203, 97);
             this.txtMoTa.TabIndex = 14;
             this.txtMoTa.Leave += new System.EventHandler(this.txtMoTa_Leave);
             // 
@@ -190,9 +205,10 @@
             // 
             this.lblMoTa.AutoSize = true;
             this.lblMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoTa.Location = new System.Drawing.Point(1020, 52);
+            this.lblMoTa.Location = new System.Drawing.Point(680, 34);
+            this.lblMoTa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMoTa.Name = "lblMoTa";
-            this.lblMoTa.Size = new System.Drawing.Size(66, 26);
+            this.lblMoTa.Size = new System.Drawing.Size(46, 18);
             this.lblMoTa.TabIndex = 13;
             this.lblMoTa.Text = "Mô tả";
             // 
@@ -200,17 +216,19 @@
             // 
             this.lblLoaiMA.AutoSize = true;
             this.lblLoaiMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoaiMA.Location = new System.Drawing.Point(538, 52);
+            this.lblLoaiMA.Location = new System.Drawing.Point(359, 34);
+            this.lblLoaiMA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLoaiMA.Name = "lblLoaiMA";
-            this.lblLoaiMA.Size = new System.Drawing.Size(132, 26);
+            this.lblLoaiMA.Size = new System.Drawing.Size(90, 18);
             this.lblLoaiMA.TabIndex = 11;
             this.lblLoaiMA.Text = "Loại món ăn";
             // 
             // txtGiaTien
             // 
-            this.txtGiaTien.Location = new System.Drawing.Point(543, 194);
+            this.txtGiaTien.Location = new System.Drawing.Point(362, 156);
+            this.txtGiaTien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGiaTien.Name = "txtGiaTien";
-            this.txtGiaTien.Size = new System.Drawing.Size(302, 35);
+            this.txtGiaTien.Size = new System.Drawing.Size(203, 26);
             this.txtGiaTien.TabIndex = 9;
             this.txtGiaTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaTien_KeyPress);
             this.txtGiaTien.Leave += new System.EventHandler(this.txtGiaTien_Leave);
@@ -219,9 +237,10 @@
             // 
             this.lblGiaTien.AutoSize = true;
             this.lblGiaTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGiaTien.Location = new System.Drawing.Point(538, 165);
+            this.lblGiaTien.Location = new System.Drawing.Point(359, 132);
+            this.lblGiaTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGiaTien.Name = "lblGiaTien";
-            this.lblGiaTien.Size = new System.Drawing.Size(87, 26);
+            this.lblGiaTien.Size = new System.Drawing.Size(58, 18);
             this.lblGiaTien.TabIndex = 8;
             this.lblGiaTien.Text = "Giá tiền";
             // 
@@ -229,33 +248,40 @@
             // 
             this.lblTenMA.AutoSize = true;
             this.lblTenMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenMA.Location = new System.Drawing.Point(66, 165);
+            this.lblTenMA.Location = new System.Drawing.Point(44, 132);
+            this.lblTenMA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTenMA.Name = "lblTenMA";
-            this.lblTenMA.Size = new System.Drawing.Size(127, 26);
+            this.lblTenMA.Size = new System.Drawing.Size(87, 18);
             this.lblTenMA.TabIndex = 2;
             this.lblTenMA.Text = "Tên món ăn";
             // 
             // txtMaMA
             // 
             this.txtMaMA.Enabled = false;
-            this.txtMaMA.Location = new System.Drawing.Point(70, 82);
+            this.txtMaMA.Location = new System.Drawing.Point(47, 53);
+            this.txtMaMA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMaMA.Name = "txtMaMA";
-            this.txtMaMA.Size = new System.Drawing.Size(302, 35);
+            this.txtMaMA.Size = new System.Drawing.Size(203, 26);
             this.txtMaMA.TabIndex = 1;
             // 
             // lblMaMA
             // 
             this.lblMaMA.AutoSize = true;
             this.lblMaMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaMA.Location = new System.Drawing.Point(66, 52);
+            this.lblMaMA.Location = new System.Drawing.Point(44, 34);
+            this.lblMaMA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMaMA.Name = "lblMaMA";
-            this.lblMaMA.Size = new System.Drawing.Size(121, 26);
+            this.lblMaMA.Size = new System.Drawing.Size(83, 18);
             this.lblMaMA.TabIndex = 0;
             this.lblMaMA.Text = "Mã món ăn";
             // 
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.rdoDoUong);
+            this.groupBox1.Controls.Add(this.rdoKhaiVi);
+            this.groupBox1.Controls.Add(this.rdoTrangMieng);
+            this.groupBox1.Controls.Add(this.rdoMonChinh);
             this.groupBox1.Controls.Add(this.btnLMA);
             this.groupBox1.Controls.Add(this.txtMoTa);
             this.groupBox1.Controls.Add(this.lblMoTa);
@@ -268,9 +294,11 @@
             this.groupBox1.Controls.Add(this.txtMaMA);
             this.groupBox1.Controls.Add(this.lblMaMA);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(34, 122);
+            this.groupBox1.Location = new System.Drawing.Point(23, 79);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1400, 269);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(933, 205);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin món ăn";
@@ -282,9 +310,10 @@
             this.btnLMA.FlatAppearance.BorderSize = 0;
             this.btnLMA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLMA.Location = new System.Drawing.Point(870, 80);
+            this.btnLMA.Location = new System.Drawing.Point(580, 52);
+            this.btnLMA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLMA.Name = "btnLMA";
-            this.btnLMA.Size = new System.Drawing.Size(38, 37);
+            this.btnLMA.Size = new System.Drawing.Size(25, 24);
             this.btnLMA.TabIndex = 26;
             this.btnLMA.Text = "...";
             this.btnLMA.UseVisualStyleBackColor = false;
@@ -294,16 +323,18 @@
             // 
             this.cboLoaiMA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLoaiMA.FormattingEnabled = true;
-            this.cboLoaiMA.Location = new System.Drawing.Point(543, 80);
+            this.cboLoaiMA.Location = new System.Drawing.Point(362, 52);
+            this.cboLoaiMA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboLoaiMA.Name = "cboLoaiMA";
-            this.cboLoaiMA.Size = new System.Drawing.Size(302, 37);
+            this.cboLoaiMA.Size = new System.Drawing.Size(203, 28);
             this.cboLoaiMA.TabIndex = 12;
             // 
             // txtTenMA
             // 
-            this.txtTenMA.Location = new System.Drawing.Point(70, 194);
+            this.txtTenMA.Location = new System.Drawing.Point(47, 156);
+            this.txtTenMA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenMA.Name = "txtTenMA";
-            this.txtTenMA.Size = new System.Drawing.Size(302, 35);
+            this.txtTenMA.Size = new System.Drawing.Size(203, 26);
             this.txtTenMA.TabIndex = 3;
             this.txtTenMA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenMA_KeyPress);
             this.txtTenMA.Leave += new System.EventHandler(this.txtTenMA_Leave);
@@ -312,9 +343,10 @@
             // 
             this.lblQLMonAn.AutoSize = true;
             this.lblQLMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQLMonAn.Location = new System.Drawing.Point(474, 23);
+            this.lblQLMonAn.Location = new System.Drawing.Point(316, 15);
+            this.lblQLMonAn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQLMonAn.Name = "lblQLMonAn";
-            this.lblQLMonAn.Size = new System.Drawing.Size(469, 58);
+            this.lblQLMonAn.Size = new System.Drawing.Size(325, 39);
             this.lblQLMonAn.TabIndex = 1;
             this.lblQLMonAn.Text = "QUẢN LÝ MÓN ĂN";
             // 
@@ -324,8 +356,9 @@
             this.pnlTieuDe.Controls.Add(this.lblQLMonAn);
             this.pnlTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTieuDe.Location = new System.Drawing.Point(0, 0);
+            this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlTieuDe.Name = "pnlTieuDe";
-            this.pnlTieuDe.Size = new System.Drawing.Size(1434, 100);
+            this.pnlTieuDe.Size = new System.Drawing.Size(956, 65);
             this.pnlTieuDe.TabIndex = 35;
             // 
             // errorProvider1
@@ -344,18 +377,67 @@
             // 
             this.errorProvider4.ContainerControl = this;
             // 
+            // rdoMonChinh
+            // 
+            this.rdoMonChinh.AutoSize = true;
+            this.rdoMonChinh.Location = new System.Drawing.Point(237, 96);
+            this.rdoMonChinh.Name = "rdoMonChinh";
+            this.rdoMonChinh.Size = new System.Drawing.Size(109, 24);
+            this.rdoMonChinh.TabIndex = 27;
+            this.rdoMonChinh.TabStop = true;
+            this.rdoMonChinh.Text = "Món chính";
+            this.rdoMonChinh.UseVisualStyleBackColor = true;
+            this.rdoMonChinh.CheckedChanged += new System.EventHandler(this.rdoMonChinh_CheckedChanged);
+            // 
+            // rdoKhaiVi
+            // 
+            this.rdoKhaiVi.AutoSize = true;
+            this.rdoKhaiVi.Location = new System.Drawing.Point(47, 96);
+            this.rdoKhaiVi.Name = "rdoKhaiVi";
+            this.rdoKhaiVi.Size = new System.Drawing.Size(79, 24);
+            this.rdoKhaiVi.TabIndex = 28;
+            this.rdoKhaiVi.TabStop = true;
+            this.rdoKhaiVi.Text = "Khai vị";
+            this.rdoKhaiVi.UseVisualStyleBackColor = true;
+            this.rdoKhaiVi.CheckedChanged += new System.EventHandler(this.rdoKhaiVi_CheckedChanged);
+            // 
+            // rdoDoUong
+            // 
+            this.rdoDoUong.AutoSize = true;
+            this.rdoDoUong.Location = new System.Drawing.Point(132, 96);
+            this.rdoDoUong.Name = "rdoDoUong";
+            this.rdoDoUong.Size = new System.Drawing.Size(95, 24);
+            this.rdoDoUong.TabIndex = 28;
+            this.rdoDoUong.TabStop = true;
+            this.rdoDoUong.Text = "Đồ uống";
+            this.rdoDoUong.UseVisualStyleBackColor = true;
+            this.rdoDoUong.CheckedChanged += new System.EventHandler(this.rdoDoUong_CheckedChanged);
+            // 
+            // rdoTrangMieng
+            // 
+            this.rdoTrangMieng.AutoSize = true;
+            this.rdoTrangMieng.Location = new System.Drawing.Point(352, 96);
+            this.rdoTrangMieng.Name = "rdoTrangMieng";
+            this.rdoTrangMieng.Size = new System.Drawing.Size(126, 24);
+            this.rdoTrangMieng.TabIndex = 28;
+            this.rdoTrangMieng.TabStop = true;
+            this.rdoTrangMieng.Text = "Tráng miệng";
+            this.rdoTrangMieng.UseVisualStyleBackColor = true;
+            this.rdoTrangMieng.CheckedChanged += new System.EventHandler(this.rdoTrangMieng_CheckedChanged);
+            // 
             // MonAn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(924, 512);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pnlTieuDe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MonAn";
             this.Text = "MonAn";
             this.Load += new System.EventHandler(this.MonAn_Load);
@@ -403,5 +485,9 @@
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.ErrorProvider errorProvider4;
+        private System.Windows.Forms.RadioButton rdoKhaiVi;
+        private System.Windows.Forms.RadioButton rdoDoUong;
+        private System.Windows.Forms.RadioButton rdoMonChinh;
+        private System.Windows.Forms.RadioButton rdoTrangMieng;
     }
 }

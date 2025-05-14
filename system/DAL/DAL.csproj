@@ -61,7 +61,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_ChiTietComBo.cs" />
     <Compile Include="DAL_ChiTietDatPhong.cs" />
+    <Compile Include="DAL_ComBoMonAn.cs" />
     <Compile Include="DAL_DatPhong.cs" />
     <Compile Include="DAL_DatTiec.cs" />
     <Compile Include="DAL_ChiTietDatTiec.cs" />

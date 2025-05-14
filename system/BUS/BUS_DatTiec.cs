@@ -35,7 +35,14 @@ namespace BUS
         {
             return dal_dt.TaoMaTuDong();
         }
-
+        /// <summary>
+        /// lấy danh sách đặt tiệc
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable layDSDT()
+        {
+            return dal_dt.DSDatTiec();
+        }
         /// <summary>
         /// Danh sách đặt tiệc.
         /// </summary>
