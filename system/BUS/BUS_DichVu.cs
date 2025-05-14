@@ -29,7 +29,7 @@ namespace BUS
 
         DAL_DichVu dal = new DAL_DichVu();
         // Lấy danh sách dịch vụ
-        public List<ET_DichVu> layDSSV()
+        public IQueryable layDSSV()
         {
             return dal.layDSDV();
         }

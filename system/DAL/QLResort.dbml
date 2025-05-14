@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DbQuanLyResort" Class="QLResortDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-4HPV2E5\LISM;Initial Catalog=DbQuanLyResort;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAM\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
+    <Type Name="TaiKhoan">
+      <Column Name="taikhoan" Member="taikhoan1" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="matkhau" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Association Name="NhanSu_TaiKhoan" Member="NhanSu" ThisKey="MaNhanSu" OtherKey="MaNhanSu" Type="NhanSu" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.ComboMonAn" Member="ComboMonAns">
     <Type Name="ComboMonAn">
       <Column Name="maCB" Type="System.String" DbType="VarChar(7) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -7,14 +15,6 @@
       <Column Name="giaCB" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Association Name="ComboMonAn_ChiTiecDatTiec" Member="ChiTiecDatTiecs" ThisKey="maCB" OtherKey="maCB" Type="ChiTiecDatTiec" />
       <Association Name="ComboMonAn_ChiTietCombo" Member="ChiTietCombos" ThisKey="maCB" OtherKey="maCB" Type="ChiTietCombo" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
-    <Type Name="TaiKhoan">
-      <Column Name="taikhoan" Member="taikhoan1" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="matkhau" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Association Name="NhanSu_TaiKhoan" Member="NhanSu" ThisKey="MaNhanSu" OtherKey="MaNhanSu" Type="NhanSu" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ChiTiecDatTiec" Member="ChiTiecDatTiecs">
@@ -220,73 +220,4 @@
       <Association Name="DichVu_SuDungDichVu" Member="DichVu" ThisKey="maDV" OtherKey="maDV" Type="DichVu" IsForeignKey="true" />
     </Type>
   </Table>
-  <Function Name="dbo.sp_TimChiTietDatPhongTheoTenLH" Method="sp_TimChiTietDatPhongTheoTenLH">
-    <Parameter Name="tenLH" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="sp_TimChiTietDatPhongTheoTenLHResult">
-      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
-      <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="tenLH" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="loaiHinh" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
-      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.sp_TimKiemLoaiHinhLuuTru" Method="sp_TimKiemLoaiHinhLuuTru">
-    <Parameter Name="tenLH" Type="System.String" DbType="NVarChar(5)" />
-    <ElementType Name="sp_TimKiemLoaiHinhLuuTruResult">
-      <Column Name="maLH" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="tenLH" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="loaiHinh" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
-      <Column Name="slNguoi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="giaTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="trangThai" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
-      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.DSDatTiecTheoThang" Method="DSDatTiecTheoThang">
-    <Parameter Name="Year" Parameter="year" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Month" Parameter="month" Type="System.Int32" DbType="Int" />
-    <ElementType Name="DSDatTiecTheoThangResult">
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Column Name="maDT" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="ngayDT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="maS" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="ngayBatDau" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="ngayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="tongTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="giaTriDC" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.DSDatTiecTheoNgay" Method="DSDatTiecTheoNgay">
-    <Parameter Name="SearchDate" Parameter="searchDate" Type="System.DateTime" DbType="Date" />
-    <ElementType Name="DSDatTiecTheoNgayResult">
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Column Name="maDT" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="ngayDT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="maS" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="ngayBatDau" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="ngayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="tongTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="giaTriDC" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.DSDatTiecTheoNam" Method="DSDatTiecTheoNam">
-    <Parameter Name="Year" Parameter="year" Type="System.Int32" DbType="Int" />
-    <ElementType Name="DSDatTiecTheoNamResult">
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Column Name="maDT" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="ngayDT" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="maS" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
-      <Column Name="ngayBatDau" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="ngayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="tongTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="giaTriDC" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
 </Database>

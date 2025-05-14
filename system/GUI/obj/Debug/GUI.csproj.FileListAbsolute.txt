@@ -325,3 +325,29 @@ N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServe
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChucVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatDichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatPhong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KhachHang.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Login.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Menu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.MonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.NhanSu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Phong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Setting.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb

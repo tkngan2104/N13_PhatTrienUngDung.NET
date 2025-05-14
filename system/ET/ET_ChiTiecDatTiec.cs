@@ -12,6 +12,10 @@ namespace ET
 
         private int soLuong;
 
+        public ET_ChiTiecDatTiec()
+        {
+
+        }
         public ET_ChiTiecDatTiec(string maCTDT, string maDT, string maCB, string maMA, int soLuong)
         {
             this.maCTDT = maCTDT;

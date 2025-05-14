@@ -126,3 +126,7 @@ N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\pt\Microsoft.ReportViewer.WinFo
 N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 N:\N13_PhatTrienUngDung.NET\system\DAL\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\DAL\obj\Debug\DAL.pdb

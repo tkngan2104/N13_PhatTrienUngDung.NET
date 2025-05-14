@@ -1,4 +1,4 @@
-﻿use DbQuanLyResort
+﻿﻿use DbQuanLyResort
 go
 set dateformat dmy
 go

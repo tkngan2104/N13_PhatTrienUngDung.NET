@@ -140,3 +140,7 @@ N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.WinFo
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
