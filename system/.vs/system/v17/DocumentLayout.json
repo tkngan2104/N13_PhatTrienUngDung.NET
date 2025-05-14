@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net\\system\\gui\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\gui\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net\\system\\gui\\thanhtoandattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\gui\\thanhtoandattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\thanhtoandattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,15 +27,15 @@
       "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_thanhtoandattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net\\system\\gui\\chitietdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\gui\\chitietdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\chitietdattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net\\system\\dal\\dal_dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\dal\\dal_dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net\\system\\bus\\bus_dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\bus\\bus_dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,15 +43,11 @@
       "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_thanhtoandattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_ComBoMonAn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BUS\\BUS_ComBoMonAn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net\\system\\bus\\bus_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\bus\\bus_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_sanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net\\system\\bus\\bus_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\bus\\bus_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -75,8 +71,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BUS\\DAL_ComBoMonAn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_ChiTietComBo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DAL\\DAL_ChiTietComBo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_ComBoMonAn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:BUS\\BUS_ComBoMonAn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_ChiTietComBo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:DAL\\DAL_ChiTietComBo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -108,7 +108,7 @@
               "RelativeDocumentMoniker": "GUI\\MonAn.cs",
               "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\GUI\\MonAn.cs",
               "RelativeToolTip": "GUI\\MonAn.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAA+wEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T16:56:37.476Z",
               "EditorCaption": ""
@@ -123,8 +123,7 @@
               "RelativeToolTip": "GUI\\ThanhToanDatTiec.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAF0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:56:26.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:56:26.993Z"
             },
             {
               "$type": "Document",
@@ -136,8 +135,7 @@
               "RelativeToolTip": "BUS\\BUS_DatTiec.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAcwCYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:53:44.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:53:44.752Z"
             },
             {
               "$type": "Document",
@@ -149,8 +147,7 @@
               "RelativeToolTip": "DAL\\DAL_DatTiec.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:53:17.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:53:17.65Z"
             },
             {
               "$type": "Document",
@@ -162,12 +159,11 @@
               "RelativeToolTip": "GUI\\ChiTietDatTiec.cs",
               "ViewState": "AgIAAI0AAAAAAAAAAAAAAJMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:51:44.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:51:44.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "BUS_Sanh.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_Sanh.cs",
               "RelativeDocumentMoniker": "BUS\\BUS_Sanh.cs",
@@ -175,12 +171,11 @@
               "RelativeToolTip": "BUS\\BUS_Sanh.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAAAGAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:51:34.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:51:34.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "BUS_KhachHang.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_KhachHang.cs",
               "RelativeDocumentMoniker": "BUS\\BUS_KhachHang.cs",
@@ -188,12 +183,11 @@
               "RelativeToolTip": "BUS\\BUS_KhachHang.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:49:47.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:49:47.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "DAL_DichVu.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_DichVu.cs",
               "RelativeDocumentMoniker": "DAL\\DAL_DichVu.cs",
@@ -205,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "BUS_DichVu.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_DichVu.cs",
               "RelativeDocumentMoniker": "BUS\\BUS_DichVu.cs",
@@ -217,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "BUS_ChucVu.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_ChucVu.cs",
               "RelativeDocumentMoniker": "BUS\\BUS_ChucVu.cs",
@@ -229,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "DAL_ComBoMonAn.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\BUS\\DAL_ComBoMonAn.cs",
               "RelativeDocumentMoniker": "BUS\\DAL_ComBoMonAn.cs",
@@ -237,8 +231,7 @@
               "RelativeToolTip": "BUS\\DAL_ComBoMonAn.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAtwDQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:45:26.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:45:26.022Z"
             },
             {
               "$type": "Document",
@@ -250,8 +243,7 @@
               "RelativeToolTip": "DAL\\DAL_MonAn.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAAhwIQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:42:04.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:42:04.177Z"
             },
             {
               "$type": "Document",
@@ -263,12 +255,11 @@
               "RelativeToolTip": "BUS\\BUS_MonAn.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAEwCQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:41:40.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:41:40.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "ComboMonAn.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\GUI\\ComboMonAn.cs",
               "RelativeDocumentMoniker": "GUI\\ComboMonAn.cs",
@@ -288,12 +279,11 @@
               "RelativeToolTip": "BUS\\BUS_ThanhToanDatTiec.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAAADQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:38:05.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:38:05.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "BUS_ComBoMonAn.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_ComBoMonAn.cs",
               "RelativeDocumentMoniker": "BUS\\BUS_ComBoMonAn.cs",
@@ -301,8 +291,7 @@
               "RelativeToolTip": "BUS\\BUS_ComBoMonAn.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:37:52.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:37:52.249Z"
             },
             {
               "$type": "Document",
@@ -314,8 +303,7 @@
               "RelativeToolTip": "DAL\\DAL_ThanhToanDatTiec.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAAAEIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:34:18.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:34:18.558Z"
             },
             {
               "$type": "Document",
@@ -327,8 +315,7 @@
               "RelativeToolTip": "DAL\\DAL_ChiTietComBo.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAkwDwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T16:33:21.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T16:33:21.347Z"
             }
           ]
         }
