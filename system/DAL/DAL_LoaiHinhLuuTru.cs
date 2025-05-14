@@ -200,5 +200,60 @@ namespace DAL
 
             db.SubmitChanges();
         }
+
+        /// <summary>
+        /// Tìm kiếm loại hình lưu trú.
+        /// </summary>
+        /// <param name="tenLH"></param>
+        /// <returns></returns>
+        public List<sp_TimKiemLoaiHinhLuuTruResult> TimKiemLoaiHinhLuuTru(string tenLH)
+        {
+            var result = db.sp_TimKiemLoaiHinhLuuTru(tenLH).ToList();
+            return result;
+        }
+
+        /// <summary>
+        /// Tìm kiếm loại hình lưu trú theo tên.
+        /// </summary>
+        /// <param name="tenCanTim"></param>
+        /// <returns></returns>
+        public List<ET_LoaiHinhLuuTru> TimTheoTen(string tenCanTim)
+        {
+            var ds = from lh in db.LoaiHinhLuuTrus
+                     where lh.tenLH.Contains(tenCanTim)
+                     select new ET_LoaiHinhLuuTru(
+                         lh.maLH,
+                         lh.tenLH,
+                         lh.loaiHinh,
+                         lh.trangThai,
+                         lh.ghiChu,
+                         lh.slNguoi,
+                         (float)lh.giaTien
+                     );
+            return ds.ToList();
+        }
+
+        /// <summary>
+        /// Lấy thông tin loại hình theo loại hình.
+        /// </summary>
+        /// <param name="loaiHinh"></param>
+        /// <returns></returns>
+        public List<ET_LoaiHinhLuuTru> LayLoaiHinhTrongTheoLoai(string loaiHinh)
+        {
+            var ds = from lh in db.LoaiHinhLuuTrus
+                     where lh.loaiHinh == loaiHinh && lh.trangThai == "Trống"
+                     select new ET_LoaiHinhLuuTru(
+                         lh.maLH,
+                         lh.tenLH,
+                         lh.loaiHinh,
+                         lh.trangThai,
+                         lh.ghiChu,
+                         lh.slNguoi,
+                         (float)lh.giaTien
+                     );
+
+            return ds.ToList();
+        }
+
     }
 }
