@@ -89,6 +89,7 @@ namespace GUI
             {
                 dtpNgaySinh.Value = DateTime.Today;
             }
+
             if (dgvDSNS.Rows[dong].Cells[3].Value.ToString() == "Nam")
             {
                 radNam.Checked = true;
@@ -118,6 +119,7 @@ namespace GUI
                 dtpNgayVaoLam.Value = DateTime.Today;
             }
             btnSua.Enabled = true;
+            btnThem.Enabled = false;
         }
 
         public bool KTraMa(string maP)
@@ -253,7 +255,11 @@ namespace GUI
             dtpNgayVaoLam.MinDate = new DateTime(1960, 1, 1);
             dtpNgayVaoLam.MaxDate = DateTime.Today;
             dtpNgayVaoLam.Value = DateTime.Today;
+
+            dgvDSNS.ClearSelection();
+
             btnSua.Enabled = false;
+            btnThem.Enabled = true;
         }
 
         /// <summary>
@@ -292,7 +298,7 @@ namespace GUI
             {
                 e.Handled = true;
             }
-            if (!char.IsControl(e.KeyChar) && txtSDT.Text.Length > 11)
+            if (!char.IsControl(e.KeyChar) && txtCCCD.Text.Length > 11)
             {
                 e.Handled = true;
             }

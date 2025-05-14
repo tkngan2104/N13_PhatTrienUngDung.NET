@@ -9,16 +9,29 @@ namespace DAL
 {
     public class DAL_KhachHang
     {
+        private static DAL_KhachHang instance;
+
+        public static DAL_KhachHang Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new DAL_KhachHang();
+                }
+                return instance;
+            }
+        }
+
         //kết nối dữ liệu db
         QLResortDataContext db = new QLResortDataContext();
 
         //Lấy danh sách khách hàng
         public IQueryable layDSKH()
         {
-            IQueryable kh = from el in db.KhachHangs
-                            select el;
-            return kh;
+            return db.KhachHangs.OrderByDescending(k => k.MaKH);
         }
+
 
         //Xoá khách hàng
         public bool xoaKhachHang(ET_KhachHang et)
@@ -136,5 +149,62 @@ namespace DAL
             db.SubmitChanges();
             return true;
         }
+
+        /// <summary>
+        /// Lấy danh sách CCCD.
+        /// </summary>
+        /// <returns></returns>
+        public List<string> LayTatCaCCCD()
+        {
+            return db.KhachHangs.Select(kh => kh.CCCD).ToList();
+        }
+
+        /// <summary>
+        /// Lấy thông tin khách hàng qua cccd.
+        /// </summary>
+        /// <returns></returns>
+        public ET_KhachHang LayKhachHangTheoCCCD(string cccd)
+        {
+            var kh = db.KhachHangs.FirstOrDefault(k => k.CCCD == cccd);
+            if (kh != null)
+            {
+                return new ET_KhachHang(
+                    kh.MaKH,
+                    kh.TenKH,
+                    kh.SoDT,
+                    kh.GioiTinh,
+                    kh.Diachi,
+                    kh.Email,
+                    kh.CCCD,
+                    kh.QuocTich,
+                    (DateTime)kh.NgaySinh
+                );
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Lấy khách hàng qua mã khách hàng.
+        /// </summary>
+        /// <param name="maKH"></param>
+        /// <returns></returns>
+        public ET_KhachHang LayKHTheoMa(string maKH)
+        {
+            if (string.IsNullOrWhiteSpace(maKH))
+                return null;
+
+            var kh = db.KhachHangs.FirstOrDefault(k => k.MaKH == maKH);
+            if (kh == null)
+                return null;
+
+            return new ET_KhachHang
+            {
+                MaKH = kh.MaKH,
+                TenKH = kh.TenKH,
+                Cccd = kh.CCCD,
+                SoDT = kh.SoDT
+            };
+        }
+
     }
 }

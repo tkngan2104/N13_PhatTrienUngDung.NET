@@ -51,6 +51,27 @@
     <StartupObject>GUI.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -83,6 +104,21 @@
     </Compile>
     <Compile Include="ComboMonAn.Designer.cs">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDSDatTiecTheoThang2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongKeDatTiecTheoNgay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongKeDatTiecTheoNgay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongKeDatTiecTheoThang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongKeDatTiecTheoThang.xsd</DependentUpon>
     </Compile>
     <Compile Include="DatDichVu.cs">
       <SubType>Form</SubType>
@@ -152,6 +188,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rpt_ThongKeDatTiecTheoNam.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ThongKeDatTiecTheoNam.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SanhDatTiec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +206,7 @@
     <Compile Include="Setting.Designer.cs">
       <DependentUpon>Setting.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="SuDungDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +224,12 @@
     </Compile>
     <Compile Include="ThanhToanDatTiec.Designer.cs">
       <DependentUpon>ThanhToanDatTiec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDatTiec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDatTiec.Designer.cs">
+      <DependentUpon>ThongKeDatTiec.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ChiTietDatTiec.resx">
       <DependentUpon>ChiTietDatTiec.cs</DependentUpon>
@@ -234,6 +283,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report_ThongKeTheoThang.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNam.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ThongKeDatTiecTheoNam.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNgay.rdlc" />
     <EmbeddedResource Include="SanhDatTiec.resx">
       <DependentUpon>SanhDatTiec.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +304,43 @@
     <EmbeddedResource Include="ThanhToanDatTiec.resx">
       <DependentUpon>ThanhToanDatTiec.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDatTiec.resx">
+      <DependentUpon>ThongKeDatTiec.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetDSDatTiecTheoThang2.xsc">
+      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDSDatTiecTheoThang2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDSDatTiecTheoThang2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetDSDatTiecTheoThang2.xss">
+      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoNgay.xsc">
+      <DependentUpon>DataSetThongKeDatTiecTheoNgay.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoNgay.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongKeDatTiecTheoNgay.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoNgay.xss">
+      <DependentUpon>DataSetThongKeDatTiecTheoNgay.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoThang.xsc">
+      <DependentUpon>DataSetThongKeDatTiecTheoThang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoThang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongKeDatTiecTheoThang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoThang.xss">
+      <DependentUpon>DataSetThongKeDatTiecTheoThang.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -305,12 +397,30 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{497fcc9a-3b46-4f42-a207-6cfb4e222d68}</Project>
       <Name>BUS</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{6279046D-20C2-4CEB-B775-CBDD7237AF9F}</Project>
+      <Project>{6279046d-20c2-4ceb-b775-cbdd7237af9f}</Project>
       <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\ET\ET.csproj">

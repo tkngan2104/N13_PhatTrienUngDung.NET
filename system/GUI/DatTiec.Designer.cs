@@ -44,21 +44,23 @@
             this.txtCCCD = new System.Windows.Forms.TextBox();
             this.lblDatTiec = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dgvDSDichVu = new System.Windows.Forms.DataGridView();
+            this.dgvDSDatTiec = new System.Windows.Forms.DataGridView();
             this.pnlTieuDe = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
+            this.lblGhiChu = new System.Windows.Forms.Label();
+            this.txtNgayDatTiec = new System.Windows.Forms.TextBox();
             this.btnSanhDT = new System.Windows.Forms.Button();
             this.txtDatCoc = new System.Windows.Forms.TextBox();
             this.lblDatCoc = new System.Windows.Forms.Label();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.lblTongTien = new System.Windows.Forms.Label();
             this.cboSanhDT = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayKetThuc = new System.Windows.Forms.DateTimePicker();
             this.lblSanhDT = new System.Windows.Forms.Label();
             this.dtpNgayBatDau = new System.Windows.Forms.DateTimePicker();
             this.lblNgayBatDau = new System.Windows.Forms.Label();
             this.lblNgayKetThuc = new System.Windows.Forms.Label();
-            this.dtpNgayDatTiec = new System.Windows.Forms.DateTimePicker();
             this.lblNgayDatTiec = new System.Windows.Forms.Label();
             this.txtDatTiec = new System.Windows.Forms.TextBox();
             this.lblMaDT = new System.Windows.Forms.Label();
@@ -67,7 +69,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSDichVu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSDatTiec)).BeginInit();
             this.pnlTieuDe.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +86,7 @@
             this.btnSua.TabIndex = 24;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // groupBox6
             // 
@@ -158,6 +161,7 @@
             this.btnLamMoi.TabIndex = 25;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnXoa
             // 
@@ -171,6 +175,7 @@
             this.btnXoa.TabIndex = 23;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -184,6 +189,7 @@
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // groupBox2
             // 
@@ -240,6 +246,8 @@
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(264, 35);
             this.txtCCCD.TabIndex = 5;
+            this.txtCCCD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCCCD_KeyDown);
+            this.txtCCCD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCCCD_KeyPress);
             // 
             // lblDatTiec
             // 
@@ -253,26 +261,27 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.dgvDSDichVu);
+            this.groupBox4.Controls.Add(this.dgvDSDatTiec);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(32, 656);
+            this.groupBox4.Location = new System.Drawing.Point(32, 751);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1393, 476);
+            this.groupBox4.Size = new System.Drawing.Size(1393, 430);
             this.groupBox4.TabIndex = 52;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Danh sách đặt tiệc";
             // 
-            // dgvDSDichVu
+            // dgvDSDatTiec
             // 
-            this.dgvDSDichVu.BackgroundColor = System.Drawing.Color.White;
-            this.dgvDSDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSDichVu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSDichVu.Location = new System.Drawing.Point(3, 31);
-            this.dgvDSDichVu.Name = "dgvDSDichVu";
-            this.dgvDSDichVu.RowHeadersWidth = 62;
-            this.dgvDSDichVu.RowTemplate.Height = 28;
-            this.dgvDSDichVu.Size = new System.Drawing.Size(1387, 442);
-            this.dgvDSDichVu.TabIndex = 0;
+            this.dgvDSDatTiec.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDSDatTiec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSDatTiec.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDSDatTiec.Location = new System.Drawing.Point(3, 31);
+            this.dgvDSDatTiec.Name = "dgvDSDatTiec";
+            this.dgvDSDatTiec.RowHeadersWidth = 62;
+            this.dgvDSDatTiec.RowTemplate.Height = 28;
+            this.dgvDSDatTiec.Size = new System.Drawing.Size(1387, 396);
+            this.dgvDSDatTiec.TabIndex = 0;
+            this.dgvDSDatTiec.Click += new System.EventHandler(this.dgvDSDatTiec_Click);
             // 
             // pnlTieuDe
             // 
@@ -286,18 +295,20 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtGhiChu);
+            this.groupBox1.Controls.Add(this.lblGhiChu);
+            this.groupBox1.Controls.Add(this.txtNgayDatTiec);
             this.groupBox1.Controls.Add(this.btnSanhDT);
             this.groupBox1.Controls.Add(this.txtDatCoc);
             this.groupBox1.Controls.Add(this.lblDatCoc);
             this.groupBox1.Controls.Add(this.txtTongTien);
             this.groupBox1.Controls.Add(this.lblTongTien);
             this.groupBox1.Controls.Add(this.cboSanhDT);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtpNgayKetThuc);
             this.groupBox1.Controls.Add(this.lblSanhDT);
             this.groupBox1.Controls.Add(this.dtpNgayBatDau);
             this.groupBox1.Controls.Add(this.lblNgayBatDau);
             this.groupBox1.Controls.Add(this.lblNgayKetThuc);
-            this.groupBox1.Controls.Add(this.dtpNgayDatTiec);
             this.groupBox1.Controls.Add(this.lblNgayDatTiec);
             this.groupBox1.Controls.Add(this.txtDatTiec);
             this.groupBox1.Controls.Add(this.lblMaDT);
@@ -306,10 +317,36 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(32, 143);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(693, 507);
+            this.groupBox1.Size = new System.Drawing.Size(693, 602);
             this.groupBox1.TabIndex = 49;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đặt tiệc";
+            // 
+            // txtGhiChu
+            // 
+            this.txtGhiChu.Location = new System.Drawing.Point(22, 512);
+            this.txtGhiChu.Multiline = true;
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(646, 69);
+            this.txtGhiChu.TabIndex = 57;
+            // 
+            // lblGhiChu
+            // 
+            this.lblGhiChu.AutoSize = true;
+            this.lblGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGhiChu.Location = new System.Drawing.Point(17, 481);
+            this.lblGhiChu.Name = "lblGhiChu";
+            this.lblGhiChu.Size = new System.Drawing.Size(87, 26);
+            this.lblGhiChu.TabIndex = 56;
+            this.lblGhiChu.Text = "Ghi chú";
+            // 
+            // txtNgayDatTiec
+            // 
+            this.txtNgayDatTiec.Enabled = false;
+            this.txtNgayDatTiec.Location = new System.Drawing.Point(22, 205);
+            this.txtNgayDatTiec.Name = "txtNgayDatTiec";
+            this.txtNgayDatTiec.Size = new System.Drawing.Size(303, 35);
+            this.txtNgayDatTiec.TabIndex = 55;
             // 
             // btnSanhDT
             // 
@@ -363,23 +400,25 @@
             // 
             // cboSanhDT
             // 
-            this.cboSanhDT.Enabled = false;
+            this.cboSanhDT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSanhDT.FormattingEnabled = true;
             this.cboSanhDT.Location = new System.Drawing.Point(365, 205);
             this.cboSanhDT.Name = "cboSanhDT";
             this.cboSanhDT.Size = new System.Drawing.Size(244, 37);
             this.cboSanhDT.TabIndex = 44;
+            this.cboSanhDT.SelectedIndexChanged += new System.EventHandler(this.cboSanhDT_SelectedIndexChanged);
             // 
-            // dateTimePicker1
+            // dtpNgayKetThuc
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(22, 411);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(303, 35);
-            this.dateTimePicker1.TabIndex = 43;
+            this.dtpNgayKetThuc.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayKetThuc.Location = new System.Drawing.Point(22, 411);
+            this.dtpNgayKetThuc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpNgayKetThuc.Name = "dtpNgayKetThuc";
+            this.dtpNgayKetThuc.Size = new System.Drawing.Size(303, 35);
+            this.dtpNgayKetThuc.TabIndex = 43;
+            this.dtpNgayKetThuc.ValueChanged += new System.EventHandler(this.dtpNgayKetThuc_ValueChanged);
             // 
             // lblSanhDT
             // 
@@ -421,17 +460,6 @@
             this.lblNgayKetThuc.Size = new System.Drawing.Size(145, 26);
             this.lblNgayKetThuc.TabIndex = 35;
             this.lblNgayKetThuc.Text = "Ngày kết thúc";
-            // 
-            // dtpNgayDatTiec
-            // 
-            this.dtpNgayDatTiec.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayDatTiec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayDatTiec.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayDatTiec.Location = new System.Drawing.Point(22, 205);
-            this.dtpNgayDatTiec.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dtpNgayDatTiec.Name = "dtpNgayDatTiec";
-            this.dtpNgayDatTiec.Size = new System.Drawing.Size(303, 35);
-            this.dtpNgayDatTiec.TabIndex = 32;
             // 
             // lblNgayDatTiec
             // 
@@ -494,11 +522,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DatTiec";
             this.Text = "DatTiec";
+            this.Load += new System.EventHandler(this.DatTiec_Load);
             this.groupBox6.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDSDichVu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSDatTiec)).EndInit();
             this.pnlTieuDe.ResumeLayout(false);
             this.pnlTieuDe.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -523,20 +552,19 @@
         private System.Windows.Forms.TextBox txtCCCD;
         private System.Windows.Forms.Label lblDatTiec;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView dgvDSDichVu;
+        private System.Windows.Forms.DataGridView dgvDSDatTiec;
         private System.Windows.Forms.Panel pnlTieuDe;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblSanhDT;
         private System.Windows.Forms.DateTimePicker dtpNgayBatDau;
         private System.Windows.Forms.Label lblNgayBatDau;
-        private System.Windows.Forms.DateTimePicker dtpNgayDatTiec;
         private System.Windows.Forms.Label lblNgayDatTiec;
         private System.Windows.Forms.TextBox txtDatTiec;
         private System.Windows.Forms.Label lblMaDT;
         private System.Windows.Forms.TextBox txtMaNS;
         private System.Windows.Forms.Label lblMaNS;
         private System.Windows.Forms.Label lblNgayKetThuc;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNgayKetThuc;
         private System.Windows.Forms.ComboBox cboSanhDT;
         private System.Windows.Forms.TextBox txtTongTien;
         private System.Windows.Forms.Label lblTongTien;
@@ -545,5 +573,8 @@
         private System.Windows.Forms.Button btnSanhDT;
         private System.Windows.Forms.Button btnDatTD;
         private System.Windows.Forms.Button btnDatDV;
+        private System.Windows.Forms.TextBox txtNgayDatTiec;
+        private System.Windows.Forms.TextBox txtGhiChu;
+        private System.Windows.Forms.Label lblGhiChu;
     }
 }

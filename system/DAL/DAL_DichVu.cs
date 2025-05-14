@@ -4,17 +4,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
     public class DAL_DichVu
     {
-        QLResortDataContext db= new QLResortDataContext();
-        public List<ET_DichVu> layDSDV()
+        //Khai báo biến tĩnh
+        private static DAL_DichVu instance;
+
+
+        public static DAL_DichVu Instance
         {
-            var dv = from el in db.DichVus
-                     select new ET_DichVu(el.maDV, el.tenDV, el.giaTien); // Chuyển đổi thành đối tượng ET_DichVu
-            return dv.ToList(); // Trả về danh sách
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new DAL_DichVu();
+                }
+                return instance;
+            }
+        }
+
+        QLResortDataContext db= new QLResortDataContext();
+        public IQueryable layDSDV()
+        {
+            return db.DichVus.OrderByDescending(k => k.maDV);
         }
         
 
@@ -72,6 +87,37 @@ namespace DAL
             db.DichVus.DeleteOnSubmit(xoa);
             db.SubmitChanges();
             return true;
+        }
+
+        /// <summary>
+        /// Lấy gợi ý dịch vụ.
+        /// </summary>
+        /// <returns></returns>
+        public List<string> LayTatCaTenDichVu()
+        {
+            return db.DichVus.Select(dv => dv.tenDV).ToList();
+        }
+
+        /// <summary>
+        /// Lấy giá dịch vụ theo tên.
+        /// </summary>
+        /// <param name="tenDV"></param>
+        /// <returns></returns>
+        public int LayGiaDichVuTheoTen(string tenDV)
+        {
+            var dv = db.DichVus.FirstOrDefault(d => d.tenDV == tenDV);
+            return dv?.giaTien ?? 0;
+        }
+
+        /// <summary>
+        /// Lấy mã dịch vụ theo tên.
+        /// </summary>
+        /// <param name="tenDV"></param>
+        /// <returns></returns>
+        public List<DichVu> LayMaDichVuTheoTen(string tenDV)
+        {
+            var dv = db.DichVus.Where(d => d.tenDV.Contains(tenDV)).ToList();  // Lọc theo tên dịch vụ
+            return dv;
         }
     }
 }

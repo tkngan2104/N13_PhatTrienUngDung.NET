@@ -15,9 +15,7 @@ namespace DAL
         //Lấy danh sách loại món ăn
         public IQueryable layDSLMA()
         {
-            IQueryable lma = from el in db.LoaiMonAns
-                             select el;
-            return lma;
+            return db.LoaiMonAns.OrderByDescending(k => k.maLMA);
         }
 
         //thêm loại món ăn vào danh sách
