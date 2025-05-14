@@ -74,6 +74,7 @@
     <Compile Include="BUS_SuDungDichVu.cs" />
     <Compile Include="BUS_TaiKhoan.cs" />
     <Compile Include="BUS_ThongKeDatTiec.cs" />
+    <Compile Include="BUS_ThongKeSuDungDichVu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>

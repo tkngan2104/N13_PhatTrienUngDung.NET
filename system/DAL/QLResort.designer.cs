@@ -305,6 +305,20 @@ namespace DAL
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), searchDate);
 			return ((ISingleResult<DSDatTiecTheoNgayResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ThongKeDichVu_TheoNam")]
+		public ISingleResult<sp_ThongKeDichVu_TheoNamResult> sp_ThongKeDichVu_TheoNam([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> nam)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nam);
+			return ((ISingleResult<sp_ThongKeDichVu_TheoNamResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ThongKeDichVu_TheoThang")]
+		public ISingleResult<sp_ThongKeDichVu_TheoThangResult> sp_ThongKeDichVu_TheoThang([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> thang, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> nam)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), thang, nam);
+			return ((ISingleResult<sp_ThongKeDichVu_TheoThangResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ComboMonAn")]
@@ -5852,6 +5866,130 @@ namespace DAL
 				if ((this._MaNhanSu != value))
 				{
 					this._MaNhanSu = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_ThongKeDichVu_TheoNamResult
+	{
+		
+		private string _tenDV;
+		
+		private System.Nullable<int> _TongSoLanSuDung;
+		
+		private System.Nullable<double> _TongTien;
+		
+		public sp_ThongKeDichVu_TheoNamResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tenDV", DbType="NVarChar(45) NOT NULL", CanBeNull=false)]
+		public string tenDV
+		{
+			get
+			{
+				return this._tenDV;
+			}
+			set
+			{
+				if ((this._tenDV != value))
+				{
+					this._tenDV = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongSoLanSuDung", DbType="Int")]
+		public System.Nullable<int> TongSoLanSuDung
+		{
+			get
+			{
+				return this._TongSoLanSuDung;
+			}
+			set
+			{
+				if ((this._TongSoLanSuDung != value))
+				{
+					this._TongSoLanSuDung = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongTien", DbType="Float")]
+		public System.Nullable<double> TongTien
+		{
+			get
+			{
+				return this._TongTien;
+			}
+			set
+			{
+				if ((this._TongTien != value))
+				{
+					this._TongTien = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_ThongKeDichVu_TheoThangResult
+	{
+		
+		private string _tenDV;
+		
+		private System.Nullable<int> _TongSoLanSuDung;
+		
+		private System.Nullable<double> _TongTien;
+		
+		public sp_ThongKeDichVu_TheoThangResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tenDV", DbType="NVarChar(45) NOT NULL", CanBeNull=false)]
+		public string tenDV
+		{
+			get
+			{
+				return this._tenDV;
+			}
+			set
+			{
+				if ((this._tenDV != value))
+				{
+					this._tenDV = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongSoLanSuDung", DbType="Int")]
+		public System.Nullable<int> TongSoLanSuDung
+		{
+			get
+			{
+				return this._TongSoLanSuDung;
+			}
+			set
+			{
+				if ((this._TongSoLanSuDung != value))
+				{
+					this._TongSoLanSuDung = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongTien", DbType="Float")]
+		public System.Nullable<double> TongTien
+		{
+			get
+			{
+				return this._TongTien;
+			}
+			set
+			{
+				if ((this._TongTien != value))
+				{
+					this._TongTien = value;
 				}
 			}
 		}

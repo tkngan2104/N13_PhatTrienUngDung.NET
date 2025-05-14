@@ -394,3 +394,5 @@ T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.ca
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.Up2Date
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoNam.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoThang.resources

@@ -1275,6 +1275,11 @@ insert into DatPhong (MaNhanSu, maDP, MaKH, ngayDatPhong) values
 ('NV011','DP0805250199','KH0199','08/05/2025'),
 ('NV011','DP0805251200','KH0100','08/05/2025');
 
+insert into DatPhong (MaNhanSu, maDP, MaKH, ngayDatPhong) values
+('NV011','DP1204250050','KH0100','12/04/2025');
+insert into ChiTietDatPhong (maDP, maCTDP, maLH, ngayTraPhong) values
+('DP1204250050', 'CTDP120425001', 'THG0001', '17/04/2025');
+
 -----CHI TIẾT ĐẶT PHÒNG
 go
 insert into ChiTietDatPhong (maDP, maCTDP, maLH, ngayTraPhong) values
@@ -1416,7 +1421,8 @@ insert into SuDungDichVu (maSDDV, maDV, maCTDP, soLuong, tongTien) values
 ('SDDV027', 'DV019', 'CTDP050525013', 1, 50000),
 ('SDDV028', 'DV017', 'CTDP050525013', 1, 350000),
 ('SDDV029', 'DV002', 'CTDP050525014', 1, 2000000),
-('SDDV030', 'DV017', 'CTDP050525014', 1, 350000);
+('SDDV030', 'DV017', 'CTDP050525014', 1, 350000),
+('SDDV031', 'DV018', 'CTDP050525014', 1, 350000);
 
 -----ĐẶT TIỆC
 go

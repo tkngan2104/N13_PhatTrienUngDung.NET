@@ -56,6 +56,13 @@
             this.btnTim = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvDSDichVu = new System.Windows.Forms.DataGridView();
+            this.dtpThoiGian = new System.Windows.Forms.DateTimePicker();
+            this.radNam = new System.Windows.Forms.RadioButton();
+            this.radThang = new System.Windows.Forms.RadioButton();
+            this.btnIn = new System.Windows.Forms.Button();
+            this.btnTimSDDV = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dgvDSSDDV_TK = new System.Windows.Forms.DataGridView();
             this.pnlTieuDe.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -64,6 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSL)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSDichVu)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSSDDV_TK)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTieuDe
@@ -74,7 +83,7 @@
             this.pnlTieuDe.Location = new System.Drawing.Point(0, 0);
             this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTieuDe.Name = "pnlTieuDe";
-            this.pnlTieuDe.Size = new System.Drawing.Size(1495, 100);
+            this.pnlTieuDe.Size = new System.Drawing.Size(1469, 100);
             this.pnlTieuDe.TabIndex = 30;
             // 
             // lblSDDichVu
@@ -93,10 +102,10 @@
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(681, 155);
+            this.btnThoat.Location = new System.Drawing.Point(485, 108);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(216, 41);
+            this.btnThoat.Size = new System.Drawing.Size(452, 41);
             this.btnThoat.TabIndex = 26;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -108,7 +117,7 @@
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(54, 155);
+            this.btnLamMoi.Location = new System.Drawing.Point(721, 45);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(216, 41);
@@ -123,7 +132,7 @@
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(681, 65);
+            this.btnSua.Location = new System.Drawing.Point(485, 45);
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(216, 41);
@@ -138,7 +147,7 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(364, 65);
+            this.btnXoa.Location = new System.Drawing.Point(250, 45);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(216, 41);
@@ -153,7 +162,7 @@
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(54, 65);
+            this.btnThem.Location = new System.Drawing.Point(17, 45);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(216, 41);
@@ -175,7 +184,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(953, 249);
+            this.groupBox2.Size = new System.Drawing.Size(953, 176);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -187,10 +196,10 @@
             this.btnTraPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTraPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraPhong.ForeColor = System.Drawing.Color.Black;
-            this.btnTraPhong.Location = new System.Drawing.Point(364, 155);
+            this.btnTraPhong.Location = new System.Drawing.Point(17, 108);
             this.btnTraPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTraPhong.Name = "btnTraPhong";
-            this.btnTraPhong.Size = new System.Drawing.Size(216, 41);
+            this.btnTraPhong.Size = new System.Drawing.Size(449, 41);
             this.btnTraPhong.TabIndex = 27;
             this.btnTraPhong.Text = "Trả phòng";
             this.btnTraPhong.UseVisualStyleBackColor = false;
@@ -434,6 +443,100 @@
             this.dgvDSDichVu.TabIndex = 0;
             this.dgvDSDichVu.Click += new System.EventHandler(this.dgvDSDichVu_Click);
             // 
+            // dtpThoiGian
+            // 
+            this.dtpThoiGian.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpThoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpThoiGian.Location = new System.Drawing.Point(486, 1143);
+            this.dtpThoiGian.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpThoiGian.Name = "dtpThoiGian";
+            this.dtpThoiGian.Size = new System.Drawing.Size(247, 35);
+            this.dtpThoiGian.TabIndex = 68;
+            // 
+            // radNam
+            // 
+            this.radNam.AutoSize = true;
+            this.radNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radNam.Location = new System.Drawing.Point(1000, 1148);
+            this.radNam.Name = "radNam";
+            this.radNam.Size = new System.Drawing.Size(84, 30);
+            this.radNam.TabIndex = 67;
+            this.radNam.Text = "Năm";
+            this.radNam.UseVisualStyleBackColor = true;
+            // 
+            // radThang
+            // 
+            this.radThang.AutoSize = true;
+            this.radThang.Checked = true;
+            this.radThang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radThang.Location = new System.Drawing.Point(806, 1148);
+            this.radThang.Name = "radThang";
+            this.radThang.Size = new System.Drawing.Size(97, 30);
+            this.radThang.TabIndex = 66;
+            this.radThang.TabStop = true;
+            this.radThang.Text = "Tháng";
+            this.radThang.UseVisualStyleBackColor = true;
+            // 
+            // btnIn
+            // 
+            this.btnIn.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnIn.FlatAppearance.BorderSize = 0;
+            this.btnIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.ForeColor = System.Drawing.Color.Black;
+            this.btnIn.Location = new System.Drawing.Point(1322, 1137);
+            this.btnIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(116, 41);
+            this.btnIn.TabIndex = 65;
+            this.btnIn.Text = "In";
+            this.btnIn.UseVisualStyleBackColor = false;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
+            // btnTimSDDV
+            // 
+            this.btnTimSDDV.BackColor = System.Drawing.Color.Tan;
+            this.btnTimSDDV.FlatAppearance.BorderSize = 0;
+            this.btnTimSDDV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimSDDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimSDDV.ForeColor = System.Drawing.Color.Black;
+            this.btnTimSDDV.Location = new System.Drawing.Point(1191, 1137);
+            this.btnTimSDDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimSDDV.Name = "btnTimSDDV";
+            this.btnTimSDDV.Size = new System.Drawing.Size(116, 41);
+            this.btnTimSDDV.TabIndex = 64;
+            this.btnTimSDDV.Text = "Tìm";
+            this.btnTimSDDV.UseVisualStyleBackColor = false;
+            this.btnTimSDDV.Click += new System.EventHandler(this.btnTimSDDV_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dgvDSSDDV_TK);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(37, 1205);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Size = new System.Drawing.Size(1407, 381);
+            this.groupBox5.TabIndex = 69;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Danh sách sử dụng dịch vụ";
+            // 
+            // dgvDSSDDV_TK
+            // 
+            this.dgvDSSDDV_TK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDSSDDV_TK.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDSSDDV_TK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDSSDDV_TK.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDSSDDV_TK.Location = new System.Drawing.Point(3, 30);
+            this.dgvDSSDDV_TK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvDSSDDV_TK.Name = "dgvDSSDDV_TK";
+            this.dgvDSSDDV_TK.RowHeadersWidth = 62;
+            this.dgvDSSDDV_TK.RowTemplate.Height = 28;
+            this.dgvDSSDDV_TK.Size = new System.Drawing.Size(1401, 349);
+            this.dgvDSSDDV_TK.TabIndex = 0;
+            // 
             // SuDungDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -441,6 +544,12 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1495, 1100);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.dtpThoiGian);
+            this.Controls.Add(this.radNam);
+            this.Controls.Add(this.radThang);
+            this.Controls.Add(this.btnIn);
+            this.Controls.Add(this.btnTimSDDV);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnTim);
             this.Controls.Add(this.lblTenPhong);
@@ -464,6 +573,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numSL)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSDichVu)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDSSDDV_TK)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -499,5 +610,12 @@
         private System.Windows.Forms.Button btnDichVu;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dgvDSDichVu;
+        private System.Windows.Forms.DateTimePicker dtpThoiGian;
+        private System.Windows.Forms.RadioButton radNam;
+        private System.Windows.Forms.RadioButton radThang;
+        private System.Windows.Forms.Button btnIn;
+        private System.Windows.Forms.Button btnTimSDDV;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.DataGridView dgvDSSDDV_TK;
     }
 }

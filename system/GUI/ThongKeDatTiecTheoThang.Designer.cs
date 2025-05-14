@@ -39,7 +39,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.btnExit.Location = new System.Drawing.Point(1288, 12);
+            this.btnExit.Location = new System.Drawing.Point(1293, 21);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(168, 44);
             this.btnExit.TabIndex = 8;
@@ -51,10 +51,10 @@
             // 
             this.rptThongKeTheoThang.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.rptThongKeTheoThang.LocalReport.ReportEmbeddedResource = "GUI.rpt_ThongKeDatTiecTheoThang.rdlc";
-            this.rptThongKeTheoThang.Location = new System.Drawing.Point(0, 69);
+            this.rptThongKeTheoThang.Location = new System.Drawing.Point(0, 93);
             this.rptThongKeTheoThang.Name = "rptThongKeTheoThang";
             this.rptThongKeTheoThang.ServerReport.BearerToken = null;
-            this.rptThongKeTheoThang.Size = new System.Drawing.Size(1451, 919);
+            this.rptThongKeTheoThang.Size = new System.Drawing.Size(1473, 951);
             this.rptThongKeTheoThang.TabIndex = 7;
             // 
             // ThongKeDatTiecTheoThang
@@ -62,7 +62,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1451, 988);
+            this.ClientSize = new System.Drawing.Size(1473, 1044);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.rptThongKeTheoThang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

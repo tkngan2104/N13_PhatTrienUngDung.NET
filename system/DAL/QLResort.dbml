@@ -292,4 +292,21 @@
       <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.sp_ThongKeDichVu_TheoNam" Method="sp_ThongKeDichVu_TheoNam">
+    <Parameter Name="nam" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_ThongKeDichVu_TheoNamResult">
+      <Column Name="tenDV" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="TongSoLanSuDung" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ThongKeDichVu_TheoThang" Method="sp_ThongKeDichVu_TheoThang">
+    <Parameter Name="thang" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nam" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_ThongKeDichVu_TheoThangResult">
+      <Column Name="tenDV" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="TongSoLanSuDung" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

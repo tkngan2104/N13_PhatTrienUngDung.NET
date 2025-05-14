@@ -112,3 +112,68 @@ BEGIN
     WHERE YEAR(DT.ngayDT) = @SearchYear
     ORDER BY DT.ngayDT;
 END;
+
+----Danh sách sử dụng dịch vụ theo tháng.
+
+go
+CREATE PROCEDURE sp_ThongKeDichVu_TheoThang
+    @thang INT,
+    @nam INT
+AS
+BEGIN
+    -- Danh sách dịch vụ theo tháng và năm
+    SELECT 
+        dv.tenDV,
+        SUM(sddv.soLuong) AS TongSoLanSuDung,
+        SUM(sddv.tongTien) AS TongTien
+    FROM SuDungDichVu sddv
+    JOIN ChiTietDatPhong ctdp ON sddv.maCTDP = ctdp.maCTDP
+    JOIN DichVu dv ON sddv.maDV = dv.maDV
+    WHERE MONTH(ctdp.ngayTraPhong) = @thang
+      AND YEAR(ctdp.ngayTraPhong) = @nam
+    GROUP BY dv.tenDV
+    ORDER BY TongSoLanSuDung DESC;
+
+    -- Tổng tiền tất cả dịch vụ trong tháng
+    SELECT 
+        'Tổng cộng' AS tenDV,
+        SUM(sddv.soLuong) AS TongSoLanSuDung,
+        SUM(sddv.tongTien) AS TongTien
+    FROM SuDungDichVu sddv
+    JOIN ChiTietDatPhong ctdp ON sddv.maCTDP = ctdp.maCTDP
+    WHERE MONTH(ctdp.ngayTraPhong) = @thang
+      AND YEAR(ctdp.ngayTraPhong) = @nam;
+END;
+
+---EXEC sp_ThongKeDichVu_TheoThang 05, 2025
+
+-----Danh sách sử dụng dịch vụ theo năm.
+
+go
+CREATE PROCEDURE sp_ThongKeDichVu_TheoNam
+    @nam INT
+AS
+BEGIN
+    -- Danh sách dịch vụ theo năm
+    SELECT 
+        dv.tenDV,
+        SUM(sddv.soLuong) AS TongSoLanSuDung,
+        SUM(sddv.tongTien) AS TongTien
+    FROM SuDungDichVu sddv
+    JOIN ChiTietDatPhong ctdp ON sddv.maCTDP = ctdp.maCTDP
+    JOIN DichVu dv ON sddv.maDV = dv.maDV
+    WHERE YEAR(ctdp.ngayTraPhong) = @nam
+    GROUP BY dv.tenDV
+    ORDER BY TongSoLanSuDung DESC;
+
+    -- Tổng tiền tất cả dịch vụ trong năm
+    SELECT 
+        'Tổng cộng' AS tenDV,
+        SUM(sddv.soLuong) AS TongSoLanSuDung,
+        SUM(sddv.tongTien) AS TongTien
+    FROM SuDungDichVu sddv
+    JOIN ChiTietDatPhong ctdp ON sddv.maCTDP = ctdp.maCTDP
+    WHERE YEAR(ctdp.ngayTraPhong) = @nam;
+END;
+
+---EXEC sp_ThongKeDichVu_TheoNam 2025
