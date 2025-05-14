@@ -44,12 +44,12 @@
             this.lblDatThucDon = new System.Windows.Forms.Label();
             this.txtMaNS = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboMA = new System.Windows.Forms.ComboBox();
+            this.cboMaDatTiec = new System.Windows.Forms.ComboBox();
             this.numSoLuong = new System.Windows.Forms.NumericUpDown();
             this.cboComboMA = new System.Windows.Forms.ComboBox();
             this.lblComboMA = new System.Windows.Forms.Label();
             this.lblMonAn = new System.Windows.Forms.Label();
-            this.cboMaDatTiec = new System.Windows.Forms.ComboBox();
-            this.cboMA = new System.Windows.Forms.ComboBox();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSThucDon)).BeginInit();
             this.groupBox6.SuspendLayout();
@@ -139,6 +139,7 @@
             this.btnDatTD.TabIndex = 29;
             this.btnDatTD.Text = "Đặt thực đơn";
             this.btnDatTD.UseVisualStyleBackColor = false;
+            this.btnDatTD.Click += new System.EventHandler(this.btnDatTD_Click);
             // 
             // btnThoat
             // 
@@ -277,11 +278,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đặt tiệc";
             // 
+            // cboMA
+            // 
+            this.cboMA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMA.FormattingEnabled = true;
+            this.cboMA.Location = new System.Drawing.Point(419, 87);
+            this.cboMA.Name = "cboMA";
+            this.cboMA.Size = new System.Drawing.Size(270, 33);
+            this.cboMA.TabIndex = 82;
+            // 
+            // cboMaDatTiec
+            // 
+            this.cboMaDatTiec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMaDatTiec.FormattingEnabled = true;
+            this.cboMaDatTiec.Location = new System.Drawing.Point(43, 161);
+            this.cboMaDatTiec.Name = "cboMaDatTiec";
+            this.cboMaDatTiec.Size = new System.Drawing.Size(270, 33);
+            this.cboMaDatTiec.TabIndex = 81;
+            this.cboMaDatTiec.SelectedIndexChanged += new System.EventHandler(this.cboMaDatTiec_SelectedIndexChanged);
+            // 
             // numSoLuong
             // 
             this.numSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numSoLuong.Location = new System.Drawing.Point(420, 247);
-            this.numSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.numSoLuong.Name = "numSoLuong";
             this.numSoLuong.Size = new System.Drawing.Size(269, 30);
             this.numSoLuong.TabIndex = 80;
@@ -316,25 +336,6 @@
             this.lblMonAn.Size = new System.Drawing.Size(94, 24);
             this.lblMonAn.TabIndex = 55;
             this.lblMonAn.Text = "Món ăn lẻ";
-            // 
-            // cboMaDatTiec
-            // 
-            this.cboMaDatTiec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMaDatTiec.FormattingEnabled = true;
-            this.cboMaDatTiec.Location = new System.Drawing.Point(43, 161);
-            this.cboMaDatTiec.Name = "cboMaDatTiec";
-            this.cboMaDatTiec.Size = new System.Drawing.Size(270, 33);
-            this.cboMaDatTiec.TabIndex = 81;
-            this.cboMaDatTiec.SelectedIndexChanged += new System.EventHandler(this.cboMaDatTiec_SelectedIndexChanged);
-            // 
-            // cboMA
-            // 
-            this.cboMA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMA.FormattingEnabled = true;
-            this.cboMA.Location = new System.Drawing.Point(419, 87);
-            this.cboMA.Name = "cboMA";
-            this.cboMA.Size = new System.Drawing.Size(270, 33);
-            this.cboMA.TabIndex = 82;
             // 
             // ChiTietDatTiec
             // 

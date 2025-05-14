@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAL
 {
@@ -14,18 +15,67 @@ namespace DAL
         {
             var query = from dt in db.DatTiecs
                         join kh in db.KhachHangs on dt.MaKH equals kh.MaKH
-                        where kh.SoDT.Trim() == soDienThoai.Trim() 
+                        join hd in db.HoaDonDatTiecs on dt.maDT equals hd.maDT into hdGroup
+                        from hd in hdGroup.DefaultIfEmpty()
+                        where kh.SoDT.Trim() == soDienThoai.Trim()
                         select new ET_HoaDonDatTiec(
-                            null, 
-                            null, 
-                            dt.maDT, 
-                            null, 
-                            dt.ngayDT, 
+                            dt.MaNhanSu,
+                            hd != null ? hd.maHDDT : null,
+                            dt.maDT,
+                            hd != null ? hd.trangThai : "Chưa thanh toán",
+                            dt.ngayDT,
                             (float)(dt.tongTien)
                         );
 
             return query;
         }
+
+        public bool thanhToan(ET_HoaDonDatTiec hd)
+        {
+            try
+            {
+                var hoaDonCu = db.HoaDonDatTiecs.FirstOrDefault(hdOld => hdOld.maDT == hd.MaDT);
+
+                if (hoaDonCu != null)
+                {
+                    hoaDonCu.trangThai = "Đã thanh toán";
+                    hoaDonCu.ngayLap = hd.NgayLap;
+                    hoaDonCu.tongTien = (float)hd.TongTien;
+                    hoaDonCu.MaNhanSu = hd.MaNS;
+                }
+                else
+                {
+                    // Tạo mã hóa đơn mới nếu chưa có
+                    if (string.IsNullOrEmpty(hd.MaHDDT))
+                    {
+                        hd.MaHDDT = TaoMaHDDT_TuDong();
+                    }
+
+                    var hoaDonMoi = new HoaDonDatTiec
+                    {
+                        maHDDT = hd.MaHDDT,
+                        MaNhanSu = hd.MaNS,
+                        maDT = hd.MaDT,
+                        trangThai = "Đã thanh toán",
+                        ngayLap = hd.NgayLap,
+                        tongTien = (float)hd.TongTien
+                    };
+
+                    db.HoaDonDatTiecs.InsertOnSubmit(hoaDonMoi);
+                }
+
+                db.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thanh toán: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+
+
 
 
         public IQueryable<ET_DatTiec> LayDatTiecTheoMaDT(string maDT)
@@ -51,20 +101,30 @@ namespace DAL
 
         public string TaoMaHDDT_TuDong()
         {
-            return "HDDT" + DateTime.Now.ToString("yyyyMMddHHmmss"); // VD: HDDT20250511153000
+            // Lấy mã HDDT lớn nhất hiện tại trong database
+            var maxMaHDDT = db.HoaDonDatTiecs
+                              .OrderByDescending(hd => hd.maHDDT)
+                              .Select(hd => hd.maHDDT)
+                              .FirstOrDefault();
+
+            if (string.IsNullOrEmpty(maxMaHDDT))
+            {
+                // Nếu chưa có mã nào thì tạo mã đầu tiên
+                return "HDDT00000001";
+            }
+
+            // Lấy phần số của mã (bỏ "HDDT")
+            string numberPart = maxMaHDDT.Substring(4);
+
+            // Chuyển sang int và cộng 1
+            int number = int.Parse(numberPart);
+            number += 1;
+
+            // Tạo lại mã mới với định dạng 8 số, ví dụ HDDT00000002
+            return "HDDT" + number.ToString("D8");
         }
-        //public List<ET_ChiTietDatDichVu> LayDanhSachDichVuTheoMaDT(string maDT)
-        //{
-        //    var result = from ctdv in db.ChiTietDatDichVus
-        //                 join dv in db.DichVus on ctdv.maDV equals dv.maDV
-        //                 where ctdv.maDT == maDT
-        //                 select new ET_ChiTietDatDichVu(
-        //                     dv.tenDV,
-        //                     ctdv.soLuong,
-        //                     (float)dv.giaTien
-        //                 );
-        //    return result.ToList();
-        //}
+
+
 
 
 

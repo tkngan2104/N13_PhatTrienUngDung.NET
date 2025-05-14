@@ -168,6 +168,7 @@
             this.btnThanhToan.TabIndex = 27;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // txtMaDT
             // 
@@ -349,7 +350,6 @@
             this.dgvDSDV.RowTemplate.Height = 28;
             this.dgvDSDV.Size = new System.Drawing.Size(1245, 327);
             this.dgvDSDV.TabIndex = 0;
-            this.dgvDSDV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSDV_CellClick);
             // 
             // ThanhToanDatTiec
             // 

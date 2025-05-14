@@ -1,4 +1,5 @@
 ﻿using BUS;
+using ET;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -81,14 +82,44 @@ namespace GUI
         {
             if (e.RowIndex >= 0)
             {
-                string maDT = dgvKetQuaTimKiem.Rows[e.RowIndex].Cells["maDT"].Value.ToString();
+                // Lấy dòng được chọn
+                DataGridViewRow row = dgvKetQuaTimKiem.Rows[e.RowIndex];
+
+                // Lấy mã đặt tiệc
+                string maDT = row.Cells["maDT"].Value.ToString();
+
+                // Hiển thị thông tin lên TextBox
+                txtMaDT.Text = maDT;
+
+                if (row.Cells["maNS"].Value != null)
+                    txtMaNS.Text = row.Cells["maNS"].Value.ToString();
+
+                if (row.Cells["maHDDT"].Value != null)
+                    txtMaHDDT.Text = row.Cells["maHDDT"].Value.ToString();
+
+                if (row.Cells["tongTien"].Value != null)
+                {
+                    float tongTien;
+                    if (float.TryParse(row.Cells["tongTien"].Value.ToString(), out tongTien))
+                    {
+                        txtThanhTien.Text = string.Format("{0:#,##0} VNĐ", tongTien);
+                    }
+                    else
+                    {
+                        txtThanhTien.Text = "0 VNĐ";
+                    }
+                }
+
+
+                if (row.Cells["trangThai"].Value != null)
+                    txtTrangThai.Text = row.Cells["trangThai"].Value.ToString();
 
                 // Lấy danh sách dịch vụ
                 var danhSachDichVu = bus.LayDTTheoMa(maDT);
                 dgvDSDV.DataSource = danhSachDichVu.ToList();
                 FormatDgvDSDV();
 
-                //// Lấy danh sách món ăn
+                //// Nếu muốn lấy danh sách món ăn thì bật đoạn này:
                 //var danhSachMonAn = bus.LayDanhSachMonAn(maDT);
                 //dgvMonAn.DataSource = danhSachMonAn.ToList();
                 //FormatDgvMonAn(); 
@@ -109,25 +140,71 @@ namespace GUI
             dgvKetQuaTimKiem.Columns["tongTien"].DefaultCellStyle.Format = "#,##0 VNĐ"; 
         }
 
-        private void dgvDSDV_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dgvKetQuaTimKiem.Rows[e.RowIndex];
-                int dong;
-                txtMaDT.Text = row.Cells["maDT"].Value.ToString();
-                txtMaNS.Text = row.Cells["maNS"].Value.ToString();
-                txtThanhTien.Text = string.Format("{0:#,##0} VNĐ", row.Cells["tongTien"].Value);
-                txtTrangThai.Text = row.Cells["trangThai"].Value.ToString();
-
-                // Tạo mã hoá đơn đặt tiệc tự động
-                txtMaHDDT.Text = bus.taoMTD();
-            }
-        }
 
         private void ThanhToanDatTiec_Load(object sender, EventArgs e)
         {
             txtMaHDDT.Text = bus.taoMTD();
         }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            // 1. Kiểm tra đầu vào
+            if (string.IsNullOrEmpty(txtMaDT.Text))
+            {
+                MessageBox.Show("Vui lòng chọn một đặt tiệc để thanh toán!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (txtTrangThai.Text.ToLower().Contains("đã"))
+            {
+                MessageBox.Show("Hóa đơn này đã được thanh toán trước đó!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            // 2. Tạo hóa đơn mới
+            var hoaDon = new ET_HoaDonDatTiec(
+                txtMaNS.Text,
+                txtMaHDDT.Text,
+                txtMaDT.Text,
+                "Đã thanh toán",  // gán trạng thái luôn
+                DateTime.Now,
+                ChuyenTienVeSo(txtThanhTien.Text)
+            );
+
+            // 3. Gọi hàm xử lý trong BUS
+            bool result = bus.ThanhToan(hoaDon);
+
+            // 4. Hiển thị kết quả
+            if (result)
+            {
+                MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Cập nhật lại danh sách hóa đơn
+                string sdt = txtTimKH.Text.Trim();
+                dgvKetQuaTimKiem.DataSource = bus.timSDT(sdt).ToList();
+                FormatKetQuaTimKiem();
+
+                // Reset trạng thái
+                txtTrangThai.Text = "Đã thanh toán";
+            }
+            else
+            {
+                MessageBox.Show("Thanh toán thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Hàm hỗ trợ chuyển "123,000 VNĐ" về 123000 (float)
+        private float ChuyenTienVeSo(string chuoiTien)
+        {
+            try
+            {
+                return float.Parse(chuoiTien.Replace(" VNĐ", "").Replace(",", "").Trim());
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
     }
 }
