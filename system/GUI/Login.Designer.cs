@@ -50,7 +50,7 @@
             this.pnlLogin.Location = new System.Drawing.Point(11, 66);
             this.pnlLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(363, 257);
+            this.pnlLogin.Size = new System.Drawing.Size(379, 271);
             this.pnlLogin.TabIndex = 5;
             // 
             // btnExit
@@ -60,7 +60,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.btnExit.Location = new System.Drawing.Point(25, 194);
+            this.btnExit.Location = new System.Drawing.Point(13, 209);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(149, 35);
@@ -76,7 +76,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.btnLogin.Location = new System.Drawing.Point(184, 194);
+            this.btnLogin.Location = new System.Drawing.Point(211, 209);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(149, 35);
@@ -90,19 +90,18 @@
             this.txtPass.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(28, 160);
+            this.txtPass.Location = new System.Drawing.Point(13, 147);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(347, 35);
             this.txtPass.TabIndex = 3;
-     
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.lblPassword.Location = new System.Drawing.Point(20, 95);
+            this.lblPassword.Location = new System.Drawing.Point(11, 110);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(106, 25);
             this.lblPassword.TabIndex = 2;
@@ -113,19 +112,18 @@
             this.txtUser.BackColor = System.Drawing.Color.AntiqueWhite;
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(28, 63);
+            this.txtUser.Location = new System.Drawing.Point(16, 57);
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(347, 35);
             this.txtUser.TabIndex = 1;
-   
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.lblUser.Location = new System.Drawing.Point(20, 18);
+            this.lblUser.Location = new System.Drawing.Point(11, 18);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(57, 25);
             this.lblUser.TabIndex = 0;

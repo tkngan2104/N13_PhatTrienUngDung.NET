@@ -96,6 +96,7 @@
             this.btnInHoaDon.TabIndex = 28;
             this.btnInHoaDon.Text = "In hóa đơn";
             this.btnInHoaDon.UseVisualStyleBackColor = false;
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
             // btnThoat
             // 

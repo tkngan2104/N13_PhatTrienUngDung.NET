@@ -14,7 +14,9 @@ namespace DAL
         // Load danh sách tất cả combo
         public IQueryable GetAllCombo()
         {
-            return db.ComboMonAns;
+            var comboMonAN = from cb in db.ComboMonAns
+                             select cb;
+            return comboMonAN;
         }
         // Lấy danh sách món ăn trong một combo
         public IQueryable LayMonAnTheoCombo(string maCB)

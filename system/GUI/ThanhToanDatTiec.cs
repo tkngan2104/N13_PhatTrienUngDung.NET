@@ -119,10 +119,13 @@ namespace GUI
                 dgvDSDV.DataSource = danhSachDichVu.ToList();
                 FormatDgvDSDV();
 
-                //// Nếu muốn lấy danh sách món ăn thì bật đoạn này:
-                //var danhSachMonAn = bus.LayDanhSachMonAn(maDT);
-                //dgvMonAn.DataSource = danhSachMonAn.ToList();
-                //FormatDgvMonAn(); 
+                if (row.Cells["maHDDT"].Value != null)
+                {
+                    selectedMaHDDT = row.Cells["maHDDT"].Value.ToString();
+                    txtMaHDDT.Text = selectedMaHDDT;
+                }
+
+
             }
         }
 
@@ -205,6 +208,14 @@ namespace GUI
                 return 0;
             }
         }
+        private string selectedMaHDDT = "";
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            frmXuatHoaDon frm = new frmXuatHoaDon(); // Không truyền mã hóa đơn
+            frm.ShowDialog();
+        }
+
+
 
     }
 }

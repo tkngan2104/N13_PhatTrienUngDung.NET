@@ -506,3 +506,7 @@ C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debu
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoThang.resources
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoNam.resources
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoThang.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.frmXuatHoaDon.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\rptHoaDonDatTiec.rpt
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\rptHoaDonDatTiec.cs

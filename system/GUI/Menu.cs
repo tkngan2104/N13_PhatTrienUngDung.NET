@@ -163,14 +163,14 @@ namespace GUI
             else
             {
                 //pnlBaoCaoThongKe.Height = 77;
-                pnlBaoCaoThongKe.Height = 10;
+                pnlBaoCaoThongKe.Height = 0;
             }
         }
 
         private void btnBaoCaoThongKe_Click(object sender, EventArgs e)
         {
-            showPnl = !showPnl;
-            toogglePnlBCTK();
+            //showPnl = !showPnl;
+            //toogglePnlBCTK();
         }
 
         /// <summary>
