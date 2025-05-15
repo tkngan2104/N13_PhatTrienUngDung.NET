@@ -78,12 +78,13 @@
             this.dgvDSThucDon.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSThucDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSThucDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSThucDon.Location = new System.Drawing.Point(3, 25);
+            this.dgvDSThucDon.Location = new System.Drawing.Point(3, 30);
             this.dgvDSThucDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDSThucDon.Name = "dgvDSThucDon";
+            this.dgvDSThucDon.ReadOnly = true;
             this.dgvDSThucDon.RowHeadersWidth = 62;
             this.dgvDSThucDon.RowTemplate.Height = 28;
-            this.dgvDSThucDon.Size = new System.Drawing.Size(1232, 354);
+            this.dgvDSThucDon.Size = new System.Drawing.Size(1232, 349);
             this.dgvDSThucDon.TabIndex = 0;
             this.dgvDSThucDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSThucDon_CellClick);
             // 
@@ -93,7 +94,7 @@
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.Location = new System.Drawing.Point(416, 222);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(86, 24);
+            this.lblSoLuong.Size = new System.Drawing.Size(98, 26);
             this.lblSoLuong.TabIndex = 45;
             this.lblSoLuong.Text = "Số lượng";
             // 
@@ -103,7 +104,7 @@
             this.lblMaDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaDT.Location = new System.Drawing.Point(39, 139);
             this.lblMaDT.Name = "lblMaDT";
-            this.lblMaDT.Size = new System.Drawing.Size(101, 24);
+            this.lblMaDT.Size = new System.Drawing.Size(118, 26);
             this.lblMaDT.TabIndex = 2;
             this.lblMaDT.Text = "Mã đặt tiệc";
             // 
@@ -222,7 +223,7 @@
             this.lblMaCTDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaCTDT.Location = new System.Drawing.Point(39, 60);
             this.lblMaCTDT.Name = "lblMaCTDT";
-            this.lblMaCTDT.Size = new System.Drawing.Size(147, 24);
+            this.lblMaCTDT.Size = new System.Drawing.Size(167, 26);
             this.lblMaCTDT.TabIndex = 0;
             this.lblMaCTDT.Text = "Mã đặt thực đơn";
             // 
@@ -243,7 +244,7 @@
             this.lblDatThucDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatThucDon.Location = new System.Drawing.Point(452, 16);
             this.lblDatThucDon.Name = "lblDatThucDon";
-            this.lblDatThucDon.Size = new System.Drawing.Size(347, 48);
+            this.lblDatThucDon.Size = new System.Drawing.Size(413, 58);
             this.lblDatThucDon.TabIndex = 1;
             this.lblDatThucDon.Text = "ĐẶT THỰC ĐƠN";
             // 
@@ -253,7 +254,7 @@
             this.txtMaNS.Location = new System.Drawing.Point(44, 83);
             this.txtMaNS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaNS.Name = "txtMaNS";
-            this.txtMaNS.Size = new System.Drawing.Size(270, 30);
+            this.txtMaNS.Size = new System.Drawing.Size(270, 35);
             this.txtMaNS.TabIndex = 1;
             // 
             // groupBox1
@@ -284,7 +285,7 @@
             this.cboMA.FormattingEnabled = true;
             this.cboMA.Location = new System.Drawing.Point(419, 87);
             this.cboMA.Name = "cboMA";
-            this.cboMA.Size = new System.Drawing.Size(270, 33);
+            this.cboMA.Size = new System.Drawing.Size(270, 37);
             this.cboMA.TabIndex = 82;
             // 
             // cboMaDatTiec
@@ -293,7 +294,7 @@
             this.cboMaDatTiec.FormattingEnabled = true;
             this.cboMaDatTiec.Location = new System.Drawing.Point(43, 161);
             this.cboMaDatTiec.Name = "cboMaDatTiec";
-            this.cboMaDatTiec.Size = new System.Drawing.Size(270, 33);
+            this.cboMaDatTiec.Size = new System.Drawing.Size(270, 37);
             this.cboMaDatTiec.TabIndex = 81;
             this.cboMaDatTiec.SelectedIndexChanged += new System.EventHandler(this.cboMaDatTiec_SelectedIndexChanged);
             // 
@@ -303,7 +304,7 @@
             this.numSoLuong.Location = new System.Drawing.Point(420, 247);
             this.numSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.numSoLuong.Name = "numSoLuong";
-            this.numSoLuong.Size = new System.Drawing.Size(269, 30);
+            this.numSoLuong.Size = new System.Drawing.Size(269, 35);
             this.numSoLuong.TabIndex = 80;
             // 
             // cboComboMA
@@ -313,7 +314,7 @@
             this.cboComboMA.Location = new System.Drawing.Point(420, 161);
             this.cboComboMA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboComboMA.Name = "cboComboMA";
-            this.cboComboMA.Size = new System.Drawing.Size(270, 33);
+            this.cboComboMA.Size = new System.Drawing.Size(270, 37);
             this.cboComboMA.TabIndex = 58;
             this.cboComboMA.SelectedIndexChanged += new System.EventHandler(this.cboComboMA_SelectedIndexChanged);
             // 
@@ -323,7 +324,7 @@
             this.lblComboMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblComboMA.Location = new System.Drawing.Point(416, 139);
             this.lblComboMA.Name = "lblComboMA";
-            this.lblComboMA.Size = new System.Drawing.Size(141, 24);
+            this.lblComboMA.Size = new System.Drawing.Size(162, 26);
             this.lblComboMA.TabIndex = 57;
             this.lblComboMA.Text = "Combo món ăn";
             // 
@@ -333,7 +334,7 @@
             this.lblMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMonAn.Location = new System.Drawing.Point(416, 60);
             this.lblMonAn.Name = "lblMonAn";
-            this.lblMonAn.Size = new System.Drawing.Size(94, 24);
+            this.lblMonAn.Size = new System.Drawing.Size(107, 26);
             this.lblMonAn.TabIndex = 55;
             this.lblMonAn.Text = "Món ăn lẻ";
             // 

@@ -78,7 +78,6 @@ namespace GUI
         public void LoadDSMA()
         {
             dgvDSMA.DataSource = bus.loadDSMA();
-
         }
         /// <summary>
         /// Hiển thị thông tin trên textbox
@@ -91,12 +90,36 @@ namespace GUI
                dgvDSMA.CurrentRow.Index < dgvDSMA.Rows.Count)
             {
                 int dong = dgvDSMA.CurrentRow.Index;
-                txtMaMA.Text = dgvDSMA.Rows[dong].Cells[0].Value.ToString();
+                txtMaMA.Text = dgvDSMA.Rows[dong].Cells[0].Value.ToString();               
                 string maLMA = dgvDSMA.Rows[dong].Cells[1].Value.ToString();
                 cboLoaiMA.SelectedValue = maLMA;
                 txtTenMA.Text = dgvDSMA.Rows[dong].Cells[2].Value.ToString();
                 txtGiaTien.Text = dgvDSMA.Rows[dong].Cells[3].Value.ToString();
                 txtMoTa.Text = dgvDSMA.Rows[dong].Cells[4].Value.ToString();
+                string loaiMonAn = bus.GetLoaiMonAnFromMaMA(txtMaMA.Text);
+                // Gán giá trị cho các radio button
+                switch (loaiMonAn.ToLower())
+                {
+                    case "khai vị":
+                        rdoKhaiVi.Checked = true;
+                        break;
+                    case "món chính":
+                        rdoMonChinh.Checked = true;
+                        break;
+                    case "tráng miệng":
+                        rdoTrangMieng.Checked = true;
+                        break;
+                    case "đồ uống":
+                        rdoDoUong.Checked = true;
+                        break;
+                    default:
+                        // Nếu không xác định được loại món ăn, bỏ chọn radio
+                        rdoKhaiVi.Checked = false;
+                        rdoMonChinh.Checked = false;
+                        rdoTrangMieng.Checked = false;
+                        rdoDoUong.Checked = false;
+                        break;
+                }
             }
         }
         /// <summary>
@@ -160,6 +183,7 @@ namespace GUI
                     TenMA = txtTenMA.Text.Trim(),
                     GiaTien = GiaTien,
                     MieuTa = txtMoTa.Text.Trim()
+
                 };
 
                 if (bus.themMA(et))
@@ -197,9 +221,13 @@ namespace GUI
             txtTenMA.Clear();
             txtGiaTien.Clear();
             txtMoTa.Clear();
-
+            // Đặt lại lựa chọn mặc định cho ComboBox
+            if (cboLoaiMA.Items.Count > 0)
+            {
+                cboLoaiMA.SelectedIndex = 0; // chọn mục đầu tiên
+            }
             // Làm mới RadioButton nếu cần
-            rdoKhaiVi.Checked = false;
+            rdoKhaiVi.Checked = true;
             rdoMonChinh.Checked = false;
             rdoTrangMieng.Checked = false;
             rdoDoUong.Checked = false;

@@ -64,7 +64,7 @@ namespace GUI
         }
         private void LoadComboMonAn()
         {
-
+            
             dgvCB.DataSource = bus.LayTatCaCombo();
         }
         private void ComboMonAn_Load(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace GUI
             txtTenMA.AutoCompleteSource = AutoCompleteSource.CustomSource;
             txtTenMA.AutoCompleteCustomSource = source;
 
-
+            
         }
 
         private void dgvCB_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -176,6 +176,7 @@ namespace GUI
                         .ToList();
                             dgvCTCB.DataSource = danhSachHienThi;
                             dgvCTCB.Columns["TenMA"].Visible = false;
+                            //bus.LayTatCaCombo();
                         }
                         else
                         {
@@ -190,40 +191,152 @@ namespace GUI
             }
         }
 
-      
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            lamMoi();
+        }
 
         private void lamMoi()
         {
             txtMaTD.Text = bus.TaoMaComboMoi(); // Gán mã mới vào textbox
             txtTenTD.Clear();
             txtTenMA.Clear();
-
+          
             danhSachTam.Clear(); // Xóa danh sách tạm
+            dgvCB.DataSource = null;
             dgvCTCB.DataSource = null; // Xóa lưới chi tiết
             LoadComboMonAn(); // Cập nhật lại danh sách combo
-
+            
         }
         private void txtTenMA_KeyDown(object sender, KeyEventArgs e)
         {
-            //string searchText = txtTenMA.Text.Trim(); // Lấy chữ cái nhập vào
-
-            //if (!string.IsNullOrEmpty(searchText))
-            //{
-            //    // Lấy danh sách món ăn có tên bắt đầu với ký tự người dùng nhập
-            //    var filteredMonAn = buss.LayMonAnTheoTen()
-            //        .Where(ma => ma.StartsWith(searchText, StringComparison.OrdinalIgnoreCase))
-            //        .ToList();
-
-            //    AutoCompleteStringCollection source = new AutoCompleteStringCollection();
-            //    source.AddRange(filteredMonAn.ToArray());
-
-            //    txtTenMA.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            //    txtTenMA.AutoCompleteSource = AutoCompleteSource.CustomSource;
-            //    txtTenMA.AutoCompleteCustomSource = source;
-            //}
+           
         }
 
-        private void btnSuaMA_Click_1(object sender, EventArgs e)
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtTenTD.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tên thực đơn và mã thực đơn.");
+                return;
+            }
+
+            if (danhSachTam.Count == 0)
+            {
+                MessageBox.Show("Danh sách món ăn trống. Vui lòng thêm món ăn trước.");
+                return;
+            }
+            var danhSachMonAn = buss.LayTatCaMonAn();
+
+            // Tính tổng giá (kiểu float)
+            float tongGia = danhSachTam
+                .Select(ct => danhSachMonAn.FirstOrDefault(m => m.MaMA == ct.MaMA)?.GiaTien ?? 0f)
+                .Sum();
+            try
+            {
+                // Tạo combo món ăn mới
+                ET_ComBoMonAn combo = new ET_ComBoMonAn
+                {
+                    MaCB = txtMaTD.Text,
+                    TenCB = txtTenTD.Text,
+                    GiaCB = tongGia
+                };
+
+                if (bus.themCBMA(combo)) // Thêm vào bảng ComboMonAn
+                {
+                    foreach (ET_ChiTietComBo ct in danhSachTam)
+                    {
+                        ct.MaCB = combo.MaCB; // Gán mã combo mới
+                        ct.MaCTCB = busCT.TaoMaChiTietComboTuDong(); // Sinh mã mới an toàn
+                        busCT.themCTCB(ct);
+                    }
+
+                    MessageBox.Show("Lưu combo thành công!");
+                    LoadComboMonAn(); // Tải lại dgvCB từ DB
+                    danhSachTam.Clear(); // Xóa danh sách tạm
+                    dgvCTCB.DataSource = null; // Xóa chi tiết trên lưới
+                    lamMoi();
+
+                }
+                else
+                {
+                    MessageBox.Show("Thêm combo thất bại.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+        private void btnXoaCB_Click(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Bạn có chắc muốn xóa?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            try
+            {
+                string ma = txtMaTD.Text.Trim();
+
+                // Xóa chi tiết trước
+                busCT.XoaChiTietTheoMaCB(ma);
+
+                // Sau đó mới xóa combo
+                if (bus.xoaComboMonAn(ma))
+                {
+                    MessageBox.Show("Xóa thành công");
+                    LoadComboMonAn();
+                    lamMoi();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+        private void btnXoaMA_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Xác nhận xóa món ăn khỏi chi tiết combo?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (d == DialogResult.Yes)
+            {
+                if (dgvCTCB.CurrentRow != null)
+                {
+                    string maCTCB = dgvCTCB.CurrentRow.Cells["MaCTCB"].Value.ToString(); // Lấy mã chi tiết combo
+
+                    // Xóa chi tiết combo từ danh sách tạm
+                    var xoaMA = danhSachTam.FirstOrDefault(ct => ct.MaCTCB == maCTCB);
+                    if (xoaMA != null)
+                    {
+                        danhSachTam.Remove(xoaMA);
+
+                        // Cập nhật lại dgvCTCB sau khi xóa
+                        var danhSachMonAn = buss.LayTatCaMonAn();
+                        var danhSachHienThi = danhSachTam
+                            .Select(ct => new
+                            {
+                                ct.MaCTCB,
+                                ct.MaCB,
+                                ct.MaMA,
+                                TenMA = danhSachMonAn.FirstOrDefault(m => m.MaMA == ct.MaMA)?.TenMA ?? ""
+                            })
+                            .ToList();
+                        dgvCTCB.DataSource = danhSachHienThi;
+                        dgvCTCB.Columns["TenMA"].Visible = false;
+
+                        MessageBox.Show("Xóa món ăn thành công!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn món ăn cần xóa!");
+                }
+            }
+        }
+
+        private void btnSuaMA_Click(object sender, EventArgs e)
         {
             try
             {
@@ -287,133 +400,7 @@ namespace GUI
             }
         }
 
-        private void btnXoaMA_Click_1(object sender, EventArgs e)
-        {
-            DialogResult d = MessageBox.Show("Xác nhận xóa món ăn khỏi chi tiết combo?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (d == DialogResult.Yes)
-            {
-                if (dgvCTCB.CurrentRow != null)
-                {
-                    string maCTCB = dgvCTCB.CurrentRow.Cells["MaCTCB"].Value.ToString(); // Lấy mã chi tiết combo
-
-                    // Xóa chi tiết combo từ danh sách tạm
-                    var xoaMA = danhSachTam.FirstOrDefault(ct => ct.MaCTCB == maCTCB);
-                    if (xoaMA != null)
-                    {
-                        danhSachTam.Remove(xoaMA);
-
-                        // Cập nhật lại dgvCTCB sau khi xóa
-                        var danhSachMonAn = buss.LayTatCaMonAn();
-                        var danhSachHienThi = danhSachTam
-                            .Select(ct => new
-                            {
-                                ct.MaCTCB,
-                                ct.MaCB,
-                                ct.MaMA,
-                                TenMA = danhSachMonAn.FirstOrDefault(m => m.MaMA == ct.MaMA)?.TenMA ?? ""
-                            })
-                            .ToList();
-                        dgvCTCB.DataSource = danhSachHienThi;
-                        dgvCTCB.Columns["TenMA"].Visible = false;
-
-                        MessageBox.Show("Xóa món ăn thành công!");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Vui lòng chọn món ăn cần xóa!");
-                }
-            }
-        }
-
-        private void btnXoaCB_Click_1(object sender, EventArgs e)
-        {
-            DialogResult a = MessageBox.Show("Bạn có chắc muốn xóa?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            try
-            {
-                string ma = txtMaTD.Text.Trim();
-
-                // Xóa chi tiết trước
-                busCT.XoaChiTietTheoMaCB(ma);
-
-                // Sau đó mới xóa combo
-                if (bus.xoaComboMonAn(ma))
-                {
-                    MessageBox.Show("Xóa thành công");
-                    LoadComboMonAn();
-                    lamMoi();
-                }
-                else
-                {
-                    MessageBox.Show("Xóa thất bại");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
-        }
-
-        private void btnLuu_Click_1(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtTenTD.Text))
-            {
-                MessageBox.Show("Vui lòng nhập tên thực đơn và mã thực đơn.");
-                return;
-            }
-
-            if (danhSachTam.Count == 0)
-            {
-                MessageBox.Show("Danh sách món ăn trống. Vui lòng thêm món ăn trước.");
-                return;
-            }
-            var danhSachMonAn = buss.LayTatCaMonAn();
-
-            // Tính tổng giá (kiểu float)
-            float tongGia = danhSachTam
-                .Select(ct => danhSachMonAn.FirstOrDefault(m => m.MaMA == ct.MaMA)?.GiaTien ?? 0f)
-                .Sum();
-            try
-            {
-                // Tạo combo món ăn mới
-                ET_ComBoMonAn combo = new ET_ComBoMonAn
-                {
-                    MaCB = txtMaTD.Text,
-                    TenCB = txtTenTD.Text,
-                    GiaCB = tongGia
-                };
-
-                if (bus.themCBMA(combo)) // Thêm vào bảng ComboMonAn
-                {
-                    foreach (ET_ChiTietComBo ct in danhSachTam)
-                    {
-                        ct.MaCB = combo.MaCB; // Gán mã combo mới
-                        ct.MaCTCB = busCT.TaoMaChiTietComboTuDong(); // Sinh mã mới an toàn
-                        busCT.themCTCB(ct);
-                    }
-
-                    MessageBox.Show("Lưu combo thành công!");
-                    LoadComboMonAn(); // Tải lại dgvCB từ DB
-                    danhSachTam.Clear(); // Xóa danh sách tạm
-                    dgvCTCB.DataSource = null; // Xóa chi tiết trên lưới
-                }
-                else
-                {
-                    MessageBox.Show("Thêm combo thất bại.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
-        }
-
-        private void btnLamMoi_Click_1(object sender, EventArgs e)
-        {
-            lamMoi();
-        }
-
-        private void txtTenTD_KeyPress_1(object sender, KeyPressEventArgs e)
+        private void txtTenTD_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Cho phép xóa (Backspace), phím Space, và chữ cái (a-z, A-Z)
             if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && e.KeyChar != ' ')
@@ -429,12 +416,14 @@ namespace GUI
             }
         }
 
-        private void txtTenTD_Leave_1(object sender, EventArgs e)
+        private void txtTenTD_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtTenTD.Text))
-                errorProvider1.SetError(txtTenTD, "Tên thực đơn không được để trống hoặc ký tự đặc biệt");
-            else
-                errorProvider1.SetError(txtTenTD, "");
+            
+                if (string.IsNullOrWhiteSpace(txtTenTD.Text))
+                    errorProvider1.SetError(txtTenTD, "Tên thực đơn không được để trống hoặc ký tự đặc biệt");
+                else
+                    errorProvider1.SetError(txtTenTD, "");
+            
         }
     }
 }

@@ -510,3 +510,6 @@ C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debu
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.frmXuatHoaDon.resources
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\rptHoaDonDatTiec.rpt
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\rptHoaDonDatTiec.cs
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\rtpKhachHnang.rpt
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\rtpKhachHnang.cs
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.frm_ReportKhachHang.resources

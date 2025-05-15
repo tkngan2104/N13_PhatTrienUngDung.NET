@@ -161,7 +161,7 @@ namespace DAL
                 if (countMaM < 10)
                 {
                     newMa = $"{maMonAn}0{countMaM}";
-                }
+                }               
                 else
                 {
                     newMa = $"{maMonAn}{countMaM}";
@@ -199,7 +199,7 @@ namespace DAL
 
         public List<string> LayMonAnTheoTen()
         {
-
+            
             return db.MonAns.Select(m => m.tenMA).ToList();
 
         }

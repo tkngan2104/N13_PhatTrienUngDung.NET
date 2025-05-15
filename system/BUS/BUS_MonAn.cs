@@ -53,7 +53,7 @@ namespace BUS
         }
         public List<ET_MonAn> LayTatCaMonAn()
         {
-            return dal.LayTatCaMonAn(); 
+            return dal.LayTatCaMonAn(); // Gọi hàm trong DAL bạn đã viết
         }
     }
 }

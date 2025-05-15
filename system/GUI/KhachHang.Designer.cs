@@ -76,7 +76,7 @@
             this.pnlTieuDe.Location = new System.Drawing.Point(0, 0);
             this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTieuDe.Name = "pnlTieuDe";
-            this.pnlTieuDe.Size = new System.Drawing.Size(1330, 80);
+            this.pnlTieuDe.Size = new System.Drawing.Size(1325, 80);
             this.pnlTieuDe.TabIndex = 0;
             // 
             // lblQLKhachHang
@@ -85,7 +85,7 @@
             this.lblQLKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQLKhachHang.Location = new System.Drawing.Point(391, 20);
             this.lblQLKhachHang.Name = "lblQLKhachHang";
-            this.lblQLKhachHang.Size = new System.Drawing.Size(510, 48);
+            this.lblQLKhachHang.Size = new System.Drawing.Size(605, 58);
             this.lblQLKhachHang.TabIndex = 1;
             this.lblQLKhachHang.Text = "QUẢN LÝ KHÁCH HÀNG";
             // 
@@ -125,7 +125,7 @@
             this.txtQuocTich.Location = new System.Drawing.Point(483, 66);
             this.txtQuocTich.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtQuocTich.Name = "txtQuocTich";
-            this.txtQuocTich.Size = new System.Drawing.Size(269, 30);
+            this.txtQuocTich.Size = new System.Drawing.Size(269, 35);
             this.txtQuocTich.TabIndex = 21;
             // 
             // radNu
@@ -135,7 +135,7 @@
             this.radNu.Location = new System.Drawing.Point(606, 246);
             this.radNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radNu.Name = "radNu";
-            this.radNu.Size = new System.Drawing.Size(56, 28);
+            this.radNu.Size = new System.Drawing.Size(65, 30);
             this.radNu.TabIndex = 20;
             this.radNu.Text = "Nữ";
             this.radNu.UseVisualStyleBackColor = true;
@@ -148,7 +148,7 @@
             this.radNam.Location = new System.Drawing.Point(483, 249);
             this.radNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radNam.Name = "radNam";
-            this.radNam.Size = new System.Drawing.Size(71, 28);
+            this.radNam.Size = new System.Drawing.Size(84, 30);
             this.radNam.TabIndex = 19;
             this.radNam.TabStop = true;
             this.radNam.Text = "Nam";
@@ -169,7 +169,7 @@
             this.lblDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiaChi.Location = new System.Drawing.Point(59, 304);
             this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(67, 24);
+            this.lblDiaChi.Size = new System.Drawing.Size(79, 26);
             this.lblDiaChi.TabIndex = 17;
             this.lblDiaChi.Text = "Địa chỉ";
             // 
@@ -178,7 +178,7 @@
             this.txtEmail.Location = new System.Drawing.Point(910, 155);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(269, 30);
+            this.txtEmail.Size = new System.Drawing.Size(269, 35);
             this.txtEmail.TabIndex = 16;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
@@ -188,7 +188,7 @@
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(907, 132);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(57, 24);
+            this.lblEmail.Size = new System.Drawing.Size(68, 26);
             this.lblEmail.TabIndex = 15;
             this.lblEmail.Text = "Email";
             // 
@@ -197,7 +197,7 @@
             this.txtSDT.Location = new System.Drawing.Point(910, 66);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(269, 30);
+            this.txtSDT.Size = new System.Drawing.Size(269, 35);
             this.txtSDT.TabIndex = 14;
             this.txtSDT.TextChanged += new System.EventHandler(this.txtSDT_TextChanged);
             // 
@@ -207,7 +207,7 @@
             this.lblSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDT.Location = new System.Drawing.Point(907, 42);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(121, 24);
+            this.lblSDT.Size = new System.Drawing.Size(139, 26);
             this.lblSDT.TabIndex = 13;
             this.lblSDT.Text = "Số điện thoại";
             // 
@@ -217,7 +217,7 @@
             this.lblQuocTich.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuocTich.Location = new System.Drawing.Point(478, 42);
             this.lblQuocTich.Name = "lblQuocTich";
-            this.lblQuocTich.Size = new System.Drawing.Size(91, 24);
+            this.lblQuocTich.Size = new System.Drawing.Size(104, 26);
             this.lblQuocTich.TabIndex = 11;
             this.lblQuocTich.Text = "Quốc tịch";
             // 
@@ -228,7 +228,7 @@
             this.dtpNgaySinh.Location = new System.Drawing.Point(483, 155);
             this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(269, 30);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(269, 35);
             this.dtpNgaySinh.TabIndex = 10;
             this.dtpNgaySinh.Value = new System.DateTime(2025, 3, 28, 16, 40, 28, 0);
             // 
@@ -237,7 +237,7 @@
             this.txtCCCD.Location = new System.Drawing.Point(62, 244);
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.Size = new System.Drawing.Size(269, 30);
+            this.txtCCCD.Size = new System.Drawing.Size(269, 35);
             this.txtCCCD.TabIndex = 9;
             this.txtCCCD.TextChanged += new System.EventHandler(this.txtCCCD_TextChanged);
             // 
@@ -247,7 +247,7 @@
             this.lblCCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCCCD.Location = new System.Drawing.Point(59, 220);
             this.lblCCCD.Name = "lblCCCD";
-            this.lblCCCD.Size = new System.Drawing.Size(176, 24);
+            this.lblCCCD.Size = new System.Drawing.Size(199, 26);
             this.lblCCCD.TabIndex = 8;
             this.lblCCCD.Text = "Căn cước công dân";
             // 
@@ -257,7 +257,7 @@
             this.lblNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgaySinh.Location = new System.Drawing.Point(478, 132);
             this.lblNgaySinh.Name = "lblNgaySinh";
-            this.lblNgaySinh.Size = new System.Drawing.Size(94, 24);
+            this.lblNgaySinh.Size = new System.Drawing.Size(109, 26);
             this.lblNgaySinh.TabIndex = 6;
             this.lblNgaySinh.Text = "Ngày sinh";
             // 
@@ -267,7 +267,7 @@
             this.lblGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGioiTinh.Location = new System.Drawing.Point(478, 220);
             this.lblGioiTinh.Name = "lblGioiTinh";
-            this.lblGioiTinh.Size = new System.Drawing.Size(78, 24);
+            this.lblGioiTinh.Size = new System.Drawing.Size(92, 26);
             this.lblGioiTinh.TabIndex = 4;
             this.lblGioiTinh.Text = "Giới tính";
             // 
@@ -276,7 +276,7 @@
             this.txtTenKH.Location = new System.Drawing.Point(62, 155);
             this.txtTenKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Size = new System.Drawing.Size(269, 30);
+            this.txtTenKH.Size = new System.Drawing.Size(269, 35);
             this.txtTenKH.TabIndex = 3;
             // 
             // lblTenKH
@@ -285,7 +285,7 @@
             this.lblTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenKH.Location = new System.Drawing.Point(59, 132);
             this.lblTenKH.Name = "lblTenKH";
-            this.lblTenKH.Size = new System.Drawing.Size(148, 24);
+            this.lblTenKH.Size = new System.Drawing.Size(166, 26);
             this.lblTenKH.TabIndex = 2;
             this.lblTenKH.Text = "Tên khách hàng";
             // 
@@ -295,7 +295,7 @@
             this.txtMaKH.Location = new System.Drawing.Point(62, 66);
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(269, 30);
+            this.txtMaKH.Size = new System.Drawing.Size(269, 35);
             this.txtMaKH.TabIndex = 1;
             // 
             // lblMaKH
@@ -304,7 +304,7 @@
             this.lblMaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaKH.Location = new System.Drawing.Point(59, 42);
             this.lblMaKH.Name = "lblMaKH";
-            this.lblMaKH.Size = new System.Drawing.Size(140, 24);
+            this.lblMaKH.Size = new System.Drawing.Size(160, 26);
             this.lblMaKH.TabIndex = 0;
             this.lblMaKH.Text = "Mã khách hàng";
             // 
@@ -328,12 +328,13 @@
             this.dgvDSKH.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSKH.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSKH.Location = new System.Drawing.Point(3, 25);
+            this.dgvDSKH.Location = new System.Drawing.Point(3, 30);
             this.dgvDSKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDSKH.Name = "dgvDSKH";
+            this.dgvDSKH.ReadOnly = true;
             this.dgvDSKH.RowHeadersWidth = 62;
             this.dgvDSKH.RowTemplate.Height = 28;
-            this.dgvDSKH.Size = new System.Drawing.Size(1238, 311);
+            this.dgvDSKH.Size = new System.Drawing.Size(1238, 306);
             this.dgvDSKH.TabIndex = 0;
             this.dgvDSKH.Click += new System.EventHandler(this.dgvDSKH_Click);
             // 

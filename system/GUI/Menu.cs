@@ -463,5 +463,17 @@ namespace GUI
             //    ttdt.BringToFront();
             //}
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dp == null || dp.IsDisposed)
+            {
+                openChildForm(new frm_ReportKhachHang());
+            }
+            else
+            {
+                dp.BringToFront();
+            }
+        }
     }
 }
