@@ -85,6 +85,7 @@
             this.dgvDSDatPhong.Size = new System.Drawing.Size(1413, 408);
             this.dgvDSDatPhong.TabIndex = 0;
             this.dgvDSDatPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSDatPhong_CellContentClick);
+            this.dgvDSDatPhong.Click += new System.EventHandler(this.dgvDSDatPhong_Click);
             // 
             // lblNgayDatPhong
             // 
@@ -122,7 +123,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(32, 145);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(693, 436);
+            this.groupBox1.Size = new System.Drawing.Size(693, 437);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin dịch vụ";

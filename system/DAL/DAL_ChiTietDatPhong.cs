@@ -116,6 +116,22 @@ namespace DAL
             return chitiet;
         }
 
+        public IQueryable DSChiTietDatPhongTheoMa(string maDP)
+        {
+            IQueryable chitiet = from ctdp in db.ChiTietDatPhongs
+                                 join lh in db.LoaiHinhLuuTrus on ctdp.maLH equals lh.maLH
+                                 join dp in db.DatPhongs on ctdp.maDP equals dp.maDP
+                                 where ctdp.maDP == maDP
+                                 select new
+                                 {
+                                     MaDP = ctdp.maDP,
+                                     MaCTDP = ctdp.maCTDP,
+                                     MaLH = ctdp.maLH,
+                                     NgayTraPhong = ctdp.ngayTraPhong
+                                 };
+            return chitiet;
+        }
+
         /// <summary>
         /// Thêm chi tiết đặt phòng.
         /// </summary>

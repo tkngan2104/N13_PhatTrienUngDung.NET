@@ -272,7 +272,6 @@ N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.WinFo
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiec.resources
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportSource.dll
 N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.Shared.dll
@@ -396,3 +395,8 @@ T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoNam.resources
 T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoThang.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNam.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNgay.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoThang.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoNam.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoThang.resources

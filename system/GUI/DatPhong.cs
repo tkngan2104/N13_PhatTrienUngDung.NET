@@ -249,5 +249,20 @@ namespace GUI
         {
 
         }
+
+        private void dgvDSDatPhong_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string madp = dgvDSDatPhong.CurrentRow.Cells[1].Value.ToString();
+                //BUS_ChiTietDatPhong.Instance.DSChiTietDatPhong(dgvDSPhong);
+                BUS_ChiTietDatPhong.Instance.DSChiTietDatPhongTheoMa(dgvDSPhong, madp);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
