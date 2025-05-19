@@ -2,7 +2,6 @@
 using ET;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +25,11 @@ namespace BUS
                 }
                 return instance;
             }
+        }
+
+        public void DSChiTietDatPhongTheoMa(DataGridView dgvDSCTDP, string maDP)
+        {
+            dgvDSCTDP.DataSource = DAL_ChiTietDatPhong.Instance.LayDSChiTietTheoMaDP(maDP);
         }
 
         /// <summary>
@@ -134,6 +138,11 @@ namespace BUS
         public void CapNhatTrangThaiPhong(string maLH, string trangThai)
         {
             DAL_ChiTietDatPhong.Instance.CapNhatTrangThaiPhong(maLH, trangThai);
+        }
+
+        public List<string> LayTatCaMaCTDP()
+        {
+            return DAL_ChiTietDatPhong.Instance.LayTatCaMaCTDP();
         }
     }
 }

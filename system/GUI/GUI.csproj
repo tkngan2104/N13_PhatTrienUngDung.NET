@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -108,12 +108,6 @@
     <Compile Include="ComboMonAn.Designer.cs">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="DataSetThongKeDatTiecTheoNam.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -163,12 +157,6 @@
     <Compile Include="DichVu.Designer.cs">
       <DependentUpon>DichVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmXuatHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmXuatHoaDon.Designer.cs">
-      <DependentUpon>frmXuatHoaDon.cs</DependentUpon>
-    </Compile>
     <Compile Include="KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,13 +201,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rptHoaDonDatTiec.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptHoaDonDatTiec.rpt</DependentUpon>
-      <SubType>Component</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
     <Compile Include="SanhDatTiec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -290,10 +271,6 @@
     <EmbeddedResource Include="ComboMonAn.resx">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="DatDichVu.resx">
       <DependentUpon>DatDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,9 +282,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmXuatHoaDon.resx">
-      <DependentUpon>frmXuatHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
@@ -340,11 +314,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="rptHoaDonDatTiec.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptHoaDonDatTiec.cs</LastGenOutput>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNam.rdlc" />
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNgay.rdlc" />
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoThang.rdlc" />

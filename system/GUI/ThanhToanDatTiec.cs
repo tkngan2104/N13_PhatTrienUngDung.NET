@@ -211,8 +211,8 @@ namespace GUI
         private string selectedMaHDDT = "";
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
-            frmXuatHoaDon frm = new frmXuatHoaDon(); // Không truyền mã hóa đơn
-            frm.ShowDialog();
+            //frmXuatHoaDon frm = new frmXuatHoaDon(); // Không truyền mã hóa đơn
+            //frm.ShowDialog();
         }
 
 
