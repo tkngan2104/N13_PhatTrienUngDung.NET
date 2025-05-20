@@ -73,7 +73,7 @@ namespace DAL
                            select new ET_DatPhong(
                                dp.MaNhanSu,
                                dp.maDP,
-                               kh.TenKH,
+                               kh.MaKH,
                                dp.ngayDatPhong
                            );
 

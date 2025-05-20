@@ -78,6 +78,7 @@
     <Compile Include="DAL_Sanh.cs" />
     <Compile Include="DAL_SuDungDichVu.cs" />
     <Compile Include="DAL_TaiKhoan.cs" />
+    <Compile Include="DAL_ThongKeDatPhong.cs" />
     <Compile Include="DAL_ThongKeDatTiec.cs" />
     <Compile Include="DAL_ThanhToanDatTiec.cs" />
     <Compile Include="DAL_ThongKeSuDungDichVu.cs" />

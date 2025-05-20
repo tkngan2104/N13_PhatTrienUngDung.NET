@@ -567,3 +567,6 @@ D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.W
 D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoNgay.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoNam.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoThang.resources

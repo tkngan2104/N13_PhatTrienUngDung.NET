@@ -35,6 +35,7 @@ namespace DAL
                                  where ctdp.maDP == maDP
                                  select new
                                  {
+                                     loaiHinh = lh.loaiHinh,
                                      MaDP = ctdp.maDP,
                                      MaCTDP = ctdp.maCTDP,
                                      MaLH = ctdp.maLH,

@@ -7,6 +7,7 @@ set dateformat dmy
 ---EXEC DSDatTiecTheoNgay '2025-05-05';
 ---EXEC DSDatTiecTheoThang 2025, 05;
 ---EXEC DSDatTiecTheoNam 2025;
+EXEC DSDatPhongTheoNgay '2025-05-05';
 
 -----Tìm loại hình lưu tru
 go
@@ -39,6 +40,91 @@ BEGIN
     WHERE 
         lhlt.tenLH LIKE '%' + @tenLH + '%'
 END;
+-----DSHoaDonDatPhong
+--CREATE PROCEDURE DSHoaDonDatPhong
+--AS
+--BEGIN
+--	SELECT
+--		hd.maHDDP,
+--		hd.MaNhanSu,
+--		hd.ngayLap,
+--		hd.tongTien,
+--		hd.trangThai,
+--		ctdp.maCTDP,
+--		sddv.maSDDV,
+--		sddv.soLuong
+--	FROM HoaDonDatPhong hd 
+--	JOIN ChiTietDatPhong ctdp on hd.maCTDP = ctdp.maCTDP
+--	JOIN SuDungDichVu sddv on hd.maSDDV = sddv.maSDDV
+	
+-----Tìm đặt phòng theo ngày.
+go
+CREATE PROCEDURE DSDatPhongTheoNgay
+    @SearchDate DATE
+AS
+BEGIN
+    SELECT 
+        DP.maDP,
+		CTDP.maCTDP,
+        KH.MaKH,
+        KH.TenKH,
+        DP.MaNhanSu,
+        DP.ngayDatPhong,
+        CTDP.ngayTraPhong,
+        CTDP.maLH
+    FROM ChiTietDatPhong CTDP
+    JOIN DatPhong DP ON CTDP.maDP = DP.maDP 
+    JOIN KhachHang KH ON DP.MaKH = KH.MaKH
+    WHERE DP.ngayDatPhong = @SearchDate
+    ORDER BY DP.ngayDatPhong;
+END;
+
+-----Tìm đặt phòng theo tháng.
+go
+CREATE PROCEDURE DSDatPhongTheoThang
+    @Year INT,
+    @Month INT
+AS
+BEGIN
+    SELECT 
+        DP.maDP,
+	CTDP.maCTDP,
+        KH.MaKH,
+        KH.TenKH,
+        DP.MaNhanSu,
+        DP.ngayDatPhong,
+        CTDP.ngayTraPhong,
+        CTDP.maLH
+    FROM ChiTietDatPhong CTDP
+    JOIN DatPhong DP ON CTDP.maDP = DP.maDP 
+    JOIN KhachHang KH ON DP.MaKH = KH.MaKH
+    WHERE YEAR(DP.ngayDatPhong) = @Year AND MONTH(DP.ngayDatPhong) = @Month
+    ORDER BY DP.ngayDatPhong;
+END;
+
+-----Tìm đặt phòng theo năm.
+go
+CREATE PROCEDURE DSDatPhongTheoNam
+    @SearchYear INT
+AS
+BEGIN
+    SELECT 
+        DP.maDP,
+	CTDP.maCTDP,
+        KH.MaKH,
+        KH.TenKH,
+        DP.MaNhanSu,
+        DP.ngayDatPhong,
+        CTDP.ngayTraPhong,
+        CTDP.maLH
+    FROM ChiTietDatPhong CTDP
+    JOIN DatPhong DP ON CTDP.maDP = DP.maDP 
+    JOIN KhachHang KH ON DP.MaKH = KH.MaKH
+    WHERE YEAR(DP.ngayDatPhong) = @SearchYear
+    ORDER BY DP.ngayDatPhong;
+END;
+
+
 
 -----Tìm đặt tiệc theo ngày.
 go

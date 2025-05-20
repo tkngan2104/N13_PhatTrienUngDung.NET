@@ -451,8 +451,10 @@ insert into SanhDatTiec (maS, tenS, giaSDT) values
 ('SANHD',N'Sảnh D',15000000),
 ('SANHE',N'Sảnh E',20000000);
 
+
 -----PHÒNG
 go
+
 insert into LoaiHinhLuuTru(maLH, tenLH, loaiHinh, slNguoi, giaTien, trangThai, ghiChu) values
 
 ----1ng: 1tr5, 2ng: 3tr, 3ng: 4tr5, 4ng: 6tr

@@ -78,6 +78,7 @@
     <Compile Include="BUS_Sanh.cs" />
     <Compile Include="BUS_SuDungDichVu.cs" />
     <Compile Include="BUS_TaiKhoan.cs" />
+    <Compile Include="BUS_ThongKeDatPhong.cs" />
     <Compile Include="BUS_ThongKeDatTiec.cs" />
     <Compile Include="BUS_ThanhToanDatTiec.cs" />
     <Compile Include="BUS_ThongKeSuDungDichVu.cs" />

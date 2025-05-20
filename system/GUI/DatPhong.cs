@@ -58,11 +58,11 @@ namespace GUI
             BUS_LoaiHinhLuuTru.Instance.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
             BUS_ChiTietDatPhong.Instance.HienThiPhongTrong(cboMaPhong, cboLoaiHinh.SelectedValue.ToString());
 
-            dtpNgayDatPhong.MinDate = DateTime.Today;
+            dtpNgayDatPhong.MinDate = DateTime.MinValue;
             DateTime maxDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(4).AddDays(-1);
             dtpNgayDatPhong.MaxDate = maxDate;
 
-            dtpNgayTraPhong.MinDate = DateTime.Today;
+            dtpNgayTraPhong.MinDate = DateTime.MinValue;
             dtpNgayTraPhong.MaxDate = DateTime.Today.AddMonths(4);
 
             AutoCompleteStringCollection cccdSuggestions = new AutoCompleteStringCollection();
@@ -114,11 +114,11 @@ namespace GUI
                 MessageBox.Show("Ngày trả phòng không được nhỏ hơn ngày đặt phòng!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 dtpNgayTraPhong.Value = dtpNgayDatPhong.Value;
             }
-            else if (chenhLech.TotalDays > 7)
-            {
-                MessageBox.Show("Không được đặt phòng quá 7 ngày!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                dtpNgayTraPhong.Value = dtpNgayDatPhong.Value.AddDays(7);
-            }
+            //else if (chenhLech.TotalDays > 7)
+            //{
+            //    MessageBox.Show("Không được đặt phòng quá 7 ngày!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    dtpNgayTraPhong.Value = dtpNgayDatPhong.Value.AddDays(7);
+            //}
         }
 
         private void cboLoaiHinh_SelectedIndexChanged(object sender, EventArgs e)
@@ -238,7 +238,29 @@ namespace GUI
         }
         private void dgvDSPhong_Click(object sender, EventArgs e)
         {
-            
+           int dong  = dgvDSPhong.CurrentCell.RowIndex;
+            try
+            {
+                string maCTDP = dgvDSPhong.Rows[dong].Cells[1].Value.ToString();
+                //string maLH = dgvDSPhong.Rows[dong].Cells[2].Value.ToString();
+                string ngayTP = dgvDSPhong.Rows[dong].Cells[3].Value?.ToString();
+                txtMaCTDP.Text = maCTDP;
+               
+                cboLoaiHinh.Text = dgvDSPhong.Rows[dong].Cells[4].Value.ToString();
+                //cboMaPhong
+                MessageBox.Show(dgvDSPhong.Rows[dong].Cells[2].Value.ToString());
+                // Gán ngày đặt phòng nếu có
+                if (DateTime.TryParse(ngayTP, out DateTime dtTP))
+                    dtpNgayTraPhong.Value = dtTP;
+
+               
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
         private void lamMoi()
         {
@@ -271,31 +293,39 @@ namespace GUI
       
         private void dgvDSDichVu_Click(object sender, EventArgs e)
         {
+            DataGridViewRow row = dgvDSDichVu.CurrentRow;
             try
             {
+                string maNS = row.Cells[0].Value.ToString();
+                string maKH = row.Cells[2].Value.ToString();
                 string madp = dgvDSDichVu.CurrentRow.Cells[1].Value.ToString();
                 BUS_ChiTietDatPhong.Instance.DSChiTietDatPhongTheoMa(dgvDSPhong, madp);
+                string ngayDP = row.Cells[3].Value?.ToString();
+                txtMaNS.Text = maNS;
+                txtDatPhong.Text = madp;
+
+                // Gán ngày đặt phòng nếu có
+                if (DateTime.TryParse(ngayDP, out DateTime dtDP))
+                    dtpNgayDatPhong.Value = dtDP;
+
+                var kh = BUS_KhachHang.Instance.LayKHTheoMa(maKH);
+                if (kh != null)
+                {
+                    txtMaKH.Text = kh.MaKH;
+                    txtTenKH.Text = kh.TenKH;
+                    txtCCCD.Text = kh.Cccd;
+                    txtSDTKH.Text = kh.SoDT;
+                }
+
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
             }
-            
-            //var kh = BUS_KhachHang.Instance.LayKHTheoMa(txtDatPhong.Text);
-            //if (kh != null)
-            //{
-            //    txtTenKH.Text = kh.TenKH;
-            //    txtCCCD.Text = kh.Cccd;
-            //    txtTenKH.Text = kh.TenKH;
-            //    txtSDTKH.Text = kh.SoDT;
-            //}
-            //// Chỉ lúc click dgv mới load ngày đặt/trả từ dữ liệu
-            //if (DateTime.TryParse(dgvDSDichVu.Rows[dong].Cells["ngayDP"].Value?.ToString(), out DateTime ngayDat))
-            //    dtpNgayDatPhong.Value = ngayDat;
 
-            //if (DateTime.TryParse(dgvDSPhong.Rows[dong].Cells["ngayTraPhong"].Value?.ToString(), out DateTime ngayTra))
-            //    dtpNgayTraPhong.Value = ngayTra;
+           
+            
         }
         
 
@@ -359,6 +389,46 @@ namespace GUI
                     }
                 }
             
+        }
+
+        private void dgvDSPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            if (radNgay.Checked == true)
+            {
+                dgvDSDichVu.DataSource = BUS_ThongKeDatPhong.Instance.ThongKeDatPhongTheoNgay(dtpThoiGian.Value);
+            }
+            else if (radThang.Checked == true)
+            {
+                dgvDSDichVu.DataSource = BUS_ThongKeDatPhong.Instance.ThongKeDatPhongTheoThang(dtpThoiGian.Value.Year, dtpThoiGian.Value.Month);
+            }
+            else if (radNam.Checked == true)
+            {
+                dgvDSDichVu.DataSource = BUS_ThongKeDatPhong.Instance.ThongKeDatPhongTheoNam(dtpThoiGian.Value.Year);
+            }
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            if (radNgay.Checked == true)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new ThongKeDatPhongTheoNgay(dtpThoiGian.Value));
+            }
+            else if (radThang.Checked == true)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new ThongKeDatPhongTheoThang(dtpThoiGian.Value));
+            }
+            else if (radNam.Checked == true)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new ThongKeDatPhongTheoNam(dtpThoiGian.Value));
+            }
         }
     }
 }
