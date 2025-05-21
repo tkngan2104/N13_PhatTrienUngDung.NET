@@ -66,24 +66,7 @@ namespace DAL
             return a;
         }
 
-        //public List<object> DSHDDP(string maCTDP)
-        //{
-        //    var result = (from dp in db.HoaDonDatPhongs
-        //                  join ctdp in db.ChiTietDatPhongs on dp.maCTDP equals ctdp.maCTDP
-        //                  join dvv in db.SuDungDichVus on dp.maCTDP equals dvv.maCTDP
-        //                  join dvu in db.DichVus on dvv.maDV equals dvu.maDV
-        //                  where dp.maCTDP == maCTDP
-        //                  select new
-        //                  {
-        //                      maHDDP = dp.maHDDP,
-        //                      tenDV = dvu.tenDV,
-        //                      maCTDP = dp.maCTDP,
-        //                      soLuong = dvv.soLuong,
-        //                      tongTien = dp.tongTien
-        //                  }).ToList<object>();
-
-        //    return result;
-        //}
+        
         public float LayGiaPhongTheoMaCTDP(string maCTDP)
         {
             using (QLResortDataContext db = new QLResortDataContext())

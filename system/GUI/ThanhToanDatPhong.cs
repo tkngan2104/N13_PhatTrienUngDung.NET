@@ -70,7 +70,8 @@ namespace GUI
 
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
-       
+            Menu formMenu = (Menu)this.ParentForm;
+            formMenu.openChildForm(new InHoaDonDatPhong());
         }
 
         private void dgvKetQuaTimKiem_Click(object sender, EventArgs e)
@@ -113,10 +114,7 @@ namespace GUI
            
             txtChiTietDP.Text = dgvDSDichVu.Rows[dong].Cells[2].Value?.ToString() ?? "";
            
-            txtThanhTien.Text = dgvDSDichVu.Rows[dong].Cells[4].Value?.ToString() ?? "";
-
-            
-
+            txtThanhTien.Text = dgvDSDichVu.Rows[dong].Cells[4].Value?.ToString() ?? "";            
         }
 
         private void dgvKetQuaTimKiem_CellClick(object sender, DataGridViewCellEventArgs e)

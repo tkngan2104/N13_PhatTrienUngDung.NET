@@ -570,3 +570,4 @@ D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportView
 D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoNgay.resources
 D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoNam.resources
 D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoThang.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.InHoaDonDatPhong.resources

@@ -40,23 +40,23 @@ BEGIN
     WHERE 
         lhlt.tenLH LIKE '%' + @tenLH + '%'
 END;
------DSHoaDonDatPhong
---CREATE PROCEDURE DSHoaDonDatPhong
---AS
---BEGIN
---	SELECT
---		hd.maHDDP,
---		hd.MaNhanSu,
---		hd.ngayLap,
---		hd.tongTien,
---		hd.trangThai,
---		ctdp.maCTDP,
---		sddv.maSDDV,
---		sddv.soLuong
---	FROM HoaDonDatPhong hd 
---	JOIN ChiTietDatPhong ctdp on hd.maCTDP = ctdp.maCTDP
---	JOIN SuDungDichVu sddv on hd.maSDDV = sddv.maSDDV
-	
+---DSHoaDonDatPhong
+CREATE PROCEDURE DSHoaDonDatPhong
+AS
+BEGIN
+	SELECT
+		hd.maHDDP,
+		hd.MaNhanSu,
+		hd.ngayLap,
+		hd.	,
+		hd.trangThai,
+		ctdp.maCTDP,
+		sddv.maSDDV,
+		sddv.soLuong
+	FROM HoaDonDatPhong hd 
+	JOIN ChiTietDatPhong ctdp on hd.maCTDP = ctdp.maCTDP
+	JOIN SuDungDichVu sddv on hd.maSDDV = sddv.maSDDV
+END;
 -----Tìm đặt phòng theo ngày.
 go
 CREATE PROCEDURE DSDatPhongTheoNgay

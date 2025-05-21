@@ -340,6 +340,13 @@ namespace DAL
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), searchDate);
 			return ((ISingleResult<DSDatPhongTheoNgayResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DSHoaDonDatPhong")]
+		public ISingleResult<DSHoaDonDatPhongResult> DSHoaDonDatPhong()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<DSHoaDonDatPhongResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ComboMonAn")]
@@ -6467,6 +6474,158 @@ namespace DAL
 				if ((this._maLH != value))
 				{
 					this._maLH = value;
+				}
+			}
+		}
+	}
+	
+	public partial class DSHoaDonDatPhongResult
+	{
+		
+		private string _maHDDP;
+		
+		private string _MaNhanSu;
+		
+		private System.DateTime _ngayLap;
+		
+		private double _tongTien;
+		
+		private string _trangThai;
+		
+		private string _maCTDP;
+		
+		private string _maSDDV;
+		
+		private int _soLuong;
+		
+		public DSHoaDonDatPhongResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maHDDP", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string maHDDP
+		{
+			get
+			{
+				return this._maHDDP;
+			}
+			set
+			{
+				if ((this._maHDDP != value))
+				{
+					this._maHDDP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNhanSu", DbType="VarChar(8)")]
+		public string MaNhanSu
+		{
+			get
+			{
+				return this._MaNhanSu;
+			}
+			set
+			{
+				if ((this._MaNhanSu != value))
+				{
+					this._MaNhanSu = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayLap", DbType="Date NOT NULL")]
+		public System.DateTime ngayLap
+		{
+			get
+			{
+				return this._ngayLap;
+			}
+			set
+			{
+				if ((this._ngayLap != value))
+				{
+					this._ngayLap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tongTien", DbType="Float NOT NULL")]
+		public double tongTien
+		{
+			get
+			{
+				return this._tongTien;
+			}
+			set
+			{
+				if ((this._tongTien != value))
+				{
+					this._tongTien = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_trangThai", DbType="NVarChar(150) NOT NULL", CanBeNull=false)]
+		public string trangThai
+		{
+			get
+			{
+				return this._trangThai;
+			}
+			set
+			{
+				if ((this._trangThai != value))
+				{
+					this._trangThai = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maCTDP", DbType="VarChar(13) NOT NULL", CanBeNull=false)]
+		public string maCTDP
+		{
+			get
+			{
+				return this._maCTDP;
+			}
+			set
+			{
+				if ((this._maCTDP != value))
+				{
+					this._maCTDP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maSDDV", DbType="VarChar(8) NOT NULL", CanBeNull=false)]
+		public string maSDDV
+		{
+			get
+			{
+				return this._maSDDV;
+			}
+			set
+			{
+				if ((this._maSDDV != value))
+				{
+					this._maSDDV = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_soLuong", DbType="Int NOT NULL")]
+		public int soLuong
+		{
+			get
+			{
+				return this._soLuong;
+			}
+			set
+			{
+				if ((this._soLuong != value))
+				{
+					this._soLuong = value;
 				}
 			}
 		}
