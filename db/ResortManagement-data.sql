@@ -451,8 +451,10 @@ insert into SanhDatTiec (maS, tenS, giaSDT) values
 ('SANHD',N'Sảnh D',15000000),
 ('SANHE',N'Sảnh E',20000000);
 
+
 -----PHÒNG
 go
+
 insert into LoaiHinhLuuTru(maLH, tenLH, loaiHinh, slNguoi, giaTien, trangThai, ghiChu) values
 
 ----1ng: 1tr5, 2ng: 3tr, 3ng: 4tr5, 4ng: 6tr
@@ -1438,6 +1440,42 @@ insert into DatTiec (MaNhanSu, maDT, MaKH, ngayDT, maS, ghiChu, ngayBatDau, ngay
 ('NV023', 'DT0505250009', 'KH0009', '12/05/2025', 'SANHB', Null, '21/05/2025', '22/05/2025', 21000000, 3700000),
 ('NV024', 'DT0505250010', 'KH0010', '13/05/2025', 'SANHC', Null, '23/05/2025', '24/05/2025', 22000000, 3800000),
 ('NV025', 'DT0505250011', 'KH0011', '14/05/2025', 'SANHA', Null, '25/05/2025', '26/05/2025', 23000000, 3900000);
+
+---Hóa đơn đặt phòng
+go
+INSERT INTO HoaDonDatPhong(MaNhanSu,maHDDP, maCTDP, maSDDV , ngayLap , tongTien, trangThai) VALUES 
+('NV001', 'HDDP001', 'CTDP050525001', 'SDDV001', '01/05/2025', 3500000, N'Đã thanh toán'),
+('NV002', 'HDDP002', 'CTDP050525002', 'SDDV002', '02/05/2025', 2750000, N'Đã thanh toán'),
+('NV003', 'HDDP003', 'CTDP050525003', 'SDDV003', '03/05/2025', 4300000, N'Đã thanh toán'),
+('NV004', 'HDDP004', 'CTDP050525004', 'SDDV004', '04/05/2025', 2600000, N'Đã thanh toán'),
+('NV005', 'HDDP005', 'CTDP050525005', 'SDDV005', '05/05/2025', 5450000, N'Đã thanh toán'),
+('NV006', 'HDDP006', 'CTDP050525006', 'SDDV006', '06/05/2025', 4200000, N'Đã thanh toán'),
+('NV007', 'HDDP007', 'CTDP050525007', 'SDDV007', '07/05/2025', 3350000, N'Đã thanh toán'),
+('NV008', 'HDDP008', 'CTDP050525008', 'SDDV008', '08/05/2025', 5550000, N'Đã thanh toán'),
+('NV009', 'HDDP009', 'CTDP050525009', 'SDDV009', '09/05/2025', 3600000, N'Đã thanh toán'),
+('NV010', 'HDDP010', 'CTDP050525010', 'SDDV010', '10/05/2025', 5700000, N'Đã thanh toán'),
+
+('NV011', 'HDDP011', 'CTDP050525011', 'SDDV011', '11/05/2025', 3800000, N'Đã thanh toán'),
+('NV012', 'HDDP012', 'CTDP050525012', 'SDDV012', '12/05/2025', 5100000, N'Đã thanh toán'),
+('NV013', 'HDDP013', 'CTDP050525013', 'SDDV013', '13/05/2025', 6900000, N'Đã thanh toán'),
+('NV014', 'HDDP014', 'CTDP050525014', 'SDDV014', '14/05/2025', 4400000, N'Đã thanh toán'),
+('NV015', 'HDDP015', 'CTDP050525015', 'SDDV015', '15/05/2025', 3300000, N'Đã thanh toán'),
+('NV016', 'HDDP016', 'CTDP050525016', 'SDDV016', '16/05/2025', 5250000, N'Chưa thanh toán'),
+('NV017', 'HDDP017', 'CTDP050525017', 'SDDV017', '17/05/2025', 5350000, N'Chưa thanh toán'),
+('NV018', 'HDDP018', 'CTDP050525018', 'SDDV018', '18/05/2025', 4450000, N'Chưa thanh toán'),
+('NV019', 'HDDP019', 'CTDP050525019', 'SDDV019', '19/05/2025', 3650000, N'Chưa thanh toán'),
+('NV020', 'HDDP020', 'CTDP050525020', 'SDDV020', '20/05/2025', 5750000, N'Chưa thanh toán'),
+
+('NV021', 'HDDP021', 'CTDP050525021', 'SDDV021', '21/05/2025', 5850000, N'Chưa thanh toán'),
+('NV022', 'HDDP022', 'CTDP050525022', 'SDDV022', '22/05/2025', 9650000, N'Chưa thanh toán'),
+('NV023', 'HDDP023', 'CTDP050525023', 'SDDV023', '23/05/2025', 5550000, N'Chưa thanh toán'),
+('NV024', 'HDDP024', 'CTDP050525024', 'SDDV024', '24/05/2025', 6650000, N'Chưa thanh toán'),
+('NV025', 'HDDP025', 'CTDP050525025', 'SDDV025', '25/05/2025', 4750000, N'Chưa thanh toán'),
+('NV026', 'HDDP026', 'CTDP050525026', 'SDDV026', '26/05/2025', 3850000, N'Chưa thanh toán'),
+('NV027', 'HDDP027', 'CTDP050525027', 'SDDV027', '27/05/2025', 5950000, N'Chưa thanh toán'),
+('NV028', 'HDDP028', 'CTDP050525028', 'SDDV028', '28/05/2025', 4650000, N'Chưa thanh toán'),
+('NV029', 'HDDP029', 'CTDP050525029', 'SDDV029', '29/05/2025', 6550000, N'Chưa thanh toán'),
+('NV030', 'HDDP030', 'CTDP050525030', 'SDDV030', '30/05/2025', 7450000, N'Chưa thanh toán');
 
 -----TÀI KHOẢN
 go

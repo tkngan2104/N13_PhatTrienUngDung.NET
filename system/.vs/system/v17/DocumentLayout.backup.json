@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|c:\\users\\litterature forest\\desktop\\n13_phattrienungdung.net\\system\\dal\\qlresort.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\qlresort.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\GUI\\rtp_ThongKeDanhSachKhachHang_TheoNgay.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GUI\\rtp_ThongKeDanhSachKhachHang_TheoNgay.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
@@ -63,6 +67,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "QLResort.dbml",
+              "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\DAL\\QLResort.dbml",
+              "RelativeDocumentMoniker": "DAL\\QLResort.dbml",
+              "ToolTip": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\DAL\\QLResort.dbml*",
+              "RelativeToolTip": "DAL\\QLResort.dbml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2025-05-23T17:55:34.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "rtp_ThongKeDanhSachKhachHang_TheoNgay.rdlc [Design]",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\GUI\\rtp_ThongKeDanhSachKhachHang_TheoNgay.rdlc",
               "RelativeDocumentMoniker": "GUI\\rtp_ThongKeDanhSachKhachHang_TheoNgay.rdlc",
@@ -74,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\GUI\\Login.cs",
               "RelativeDocumentMoniker": "GUI\\Login.cs",
@@ -85,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoaiMonAn.cs",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\GUI\\LoaiMonAn.cs",
               "RelativeDocumentMoniker": "GUI\\LoaiMonAn.cs",
@@ -97,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LoaiMonAn.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Litterature Forest\\Desktop\\N13_PhatTrienUngDung.NET\\system\\GUI\\LoaiMonAn.cs",
               "RelativeDocumentMoniker": "GUI\\LoaiMonAn.cs",

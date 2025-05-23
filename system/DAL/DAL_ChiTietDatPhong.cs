@@ -27,6 +27,23 @@ namespace DAL
         }
 
         private QLResortDataContext db = new QLResortDataContext();
+        public IQueryable LayDSChiTietTheoMaDP(string maDP)
+        {
+            IQueryable chitiet = from ctdp in db.ChiTietDatPhongs
+                                 join lh in db.LoaiHinhLuuTrus on ctdp.maLH equals lh.maLH
+                                 join dp in db.DatPhongs on ctdp.maDP equals dp.maDP
+                                 where ctdp.maDP == maDP
+                                 select new
+                                 {
+                                     loaiHinh = lh.loaiHinh,
+                                     MaDP = ctdp.maDP,
+                                     MaCTDP = ctdp.maCTDP,
+                                     MaLH = ctdp.maLH,
+                                     NgayTraPhong = ctdp.ngayTraPhong
+                                 };
+            return chitiet;
+        }
+
 
         /// <summary>
         /// Tìm kiếm loại hình trong chi tiết đặt phòng.
@@ -91,12 +108,12 @@ namespace DAL
         public IQueryable HienThiPhongTrong(string maLH)
         {
             IQueryable loaihinh1 = from gb in db.LoaiHinhLuuTrus
-                                    where gb.loaiHinh == maLH && gb.trangThai == "Trống"
-                                    select gb;
+                                   where gb.loaiHinh == maLH && gb.trangThai == "Trống"
+                                   select gb;
             return loaihinh1;
         }
 
-       
+
 
         /// <summary>
         /// Hiển thị chi tiết thêm phòng.
@@ -125,6 +142,7 @@ namespace DAL
         {
             try
             {
+                //Tạo một đối tượng mới.
                 ChiTietDatPhong ct = new ChiTietDatPhong
                 {
                     maDP = etCT.MaDP,
@@ -132,10 +150,12 @@ namespace DAL
                     maLH = etCT.MaLH,
                     ngayTraPhong = etCT.NgayTraPhong
                 };
+                //Thêm loại hàng vào cơ sở dữ liệu
                 db.ChiTietDatPhongs.InsertOnSubmit(ct);
             }
             finally
             {
+                // Lưu các thay đổi vào cơ sở dữ liệu
                 db.SubmitChanges();
             }
             // Trả về true để báo hiệu việc thêm mới thành công
@@ -155,7 +175,7 @@ namespace DAL
                 var phongCanCapNhat = context.ChiTietDatPhongs
                     .Where(p => p.ngayTraPhong.HasValue && p.ngayTraPhong.Value.Date == ngayHienTai)
                     .ToList();
-                
+
                 // Cập nhật trạng thái
                 foreach (var phong in phongCanCapNhat)
                 {
@@ -187,6 +207,17 @@ namespace DAL
                 phong.trangThai = trangThai;
                 db.SubmitChanges();
             }
+        }
+        
+
+
+        /// <summary>
+        /// Lấy gợi ý dịch vụ.
+        /// </summary>
+        /// <returns></returns>
+        public List<string> LayTatCaMaCTDP()
+        {
+            return db.ChiTietDatPhongs.Select(ctdp => ctdp.maCTDP).ToList();
         }
     }
 }

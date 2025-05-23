@@ -508,5 +508,24 @@ namespace GUI
             //có thể là này dùng sự kiện cellformatting của dgv
         }
 
+        private void radThang_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radNgay_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpThoiGian_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radNam_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -72,6 +72,7 @@
     <Compile Include="ET_DichVu.cs" />
     <Compile Include="ET_HoaDonDatPhong.cs" />
     <Compile Include="ET_HoaDonDatTiec.cs" />
+    <Compile Include="ET_InHoaDonThanhToanDatPhong.cs" />
     <Compile Include="ET_KhachHang.cs" />
     <Compile Include="ET_ChucVu.cs" />
     <Compile Include="ET_LoaiHinhLuuTru.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="ET_Sanh.cs" />
     <Compile Include="ET_SuDungDichVu.cs" />
     <Compile Include="ET_TaiKhoan.cs" />
+    <Compile Include="ET_ThongKeDatPhong.cs" />
     <Compile Include="ET_ThongKeDatTiec.cs" />
     <Compile Include="ET_ThongKeSuDungDichVu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
