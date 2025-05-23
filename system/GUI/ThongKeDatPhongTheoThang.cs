@@ -54,5 +54,10 @@ namespace GUI
                 MessageBox.Show("Failed to load report: " + ex.Message);
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

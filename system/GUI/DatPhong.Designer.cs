@@ -32,7 +32,7 @@
             this.lblNgayDatPhong = new System.Windows.Forms.Label();
             this.txtDatPhong = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cboMaPhong = new System.Windows.Forms.ComboBox();
+            this.cboTenLH = new System.Windows.Forms.ComboBox();
             this.cboLoaiHinh = new System.Windows.Forms.ComboBox();
             this.lblLoaiPhong = new System.Windows.Forms.Label();
             this.txtMaCTDP = new System.Windows.Forms.TextBox();
@@ -116,7 +116,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cboMaPhong);
+            this.groupBox1.Controls.Add(this.cboTenLH);
             this.groupBox1.Controls.Add(this.cboLoaiHinh);
             this.groupBox1.Controls.Add(this.lblLoaiPhong);
             this.groupBox1.Controls.Add(this.txtMaCTDP);
@@ -139,15 +139,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin dịch vụ";
             // 
-            // cboMaPhong
+            // cboTenLH
             // 
-            this.cboMaPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMaPhong.FormattingEnabled = true;
-            this.cboMaPhong.Location = new System.Drawing.Point(15, 156);
-            this.cboMaPhong.Margin = new System.Windows.Forms.Padding(2);
-            this.cboMaPhong.Name = "cboMaPhong";
-            this.cboMaPhong.Size = new System.Drawing.Size(203, 28);
-            this.cboMaPhong.TabIndex = 46;
+            this.cboTenLH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTenLH.FormattingEnabled = true;
+            this.cboTenLH.Location = new System.Drawing.Point(15, 156);
+            this.cboTenLH.Margin = new System.Windows.Forms.Padding(2);
+            this.cboTenLH.Name = "cboTenLH";
+            this.cboTenLH.Size = new System.Drawing.Size(203, 28);
+            this.cboTenLH.TabIndex = 46;
             // 
             // cboLoaiHinh
             // 
@@ -662,7 +662,7 @@
         private System.Windows.Forms.Button btnSuaPhong;
         private System.Windows.Forms.Button btnSDDV;
         private System.Windows.Forms.TextBox txtMaKH;
-        private System.Windows.Forms.ComboBox cboMaPhong;
+        private System.Windows.Forms.ComboBox cboTenLH;
         private System.Windows.Forms.ComboBox cboLoaiHinh;
         private System.Windows.Forms.Label lblLoaiPhong;
         private System.Windows.Forms.RadioButton radNam;

@@ -31,18 +31,35 @@ namespace GUI
         /// <param name="e"></param>
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            float tongTienDichVu = 0;
-            foreach (DataGridViewRow row in dgvDSDichVu.Rows)
-            {
-                if (row.Cells["tongTien"].Value != null)
-                {
-                    tongTienDichVu += float.Parse(row.Cells["tongTien"].Value.ToString());
-                }
-            }
+            int dong = dgvKetQuaTimKiem.CurrentCell.RowIndex;
 
-            float tienPhong = BUS_HoaDonDatPhong.Instance.LayGiaPhong(txtChiTietDP.Text);
-            float tongTien = tienPhong + tongTienDichVu;
-            txtThanhTien.Text = tongTien.ToString();
+            string trangThai = dgvKetQuaTimKiem.Rows[dong].Cells["trangThai"].Value?.ToString();
+
+            if (trangThai != null && trangThai.Trim() == "Đã thanh toán")
+            {
+                MessageBox.Show("Hóa đơn này đã được thanh toán!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            try 
+            {
+                float tongTienDichVu = 0;
+                foreach (DataGridViewRow row in dgvDSDichVu.Rows)
+                {
+                    if (row.Cells["tongTien"].Value != null)
+                    {
+                        tongTienDichVu += float.Parse(row.Cells["tongTien"].Value.ToString());
+                    }
+                }
+                float tienPhong = BUS_HoaDonDatPhong.Instance.LayGiaPhong(txtChiTietDP.Text);
+                float tongTien = tienPhong + tongTienDichVu;
+                txtThanhTien.Text = tongTien.ToString();
+                MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xử lý thanh toán: " + ex.Message);
+            }
+            
         }
 
         /// <summary>
@@ -61,11 +78,32 @@ namespace GUI
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            string tenLH = txtTimPhong.Text.Trim();
-            var ds = BUS_ChiTietDatPhong.Instance.TimTheoTenLoaiHinh(tenLH);
-            dgvKetQuaTimKiem.DataSource = ds;
-            dgvKetQuaTimKiem.Columns[4].Visible = false;
-            dgvKetQuaTimKiem.Columns[5].Visible = false;
+            string sdt = txtTimKH.Text.Trim();
+
+            if (string.IsNullOrEmpty(sdt))
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại khách hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                var danhSach = bus.timSDT(sdt).ToList();
+
+                if (danhSach.Any())
+                {
+                    dgvKetQuaTimKiem.DataSource = danhSach;
+                    //FormatKetQuaTimKiem();  // 👉 Gọi hàm định dạng cột
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy hoá đơn cho số điện thoại này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tìm kiếm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnInHoaDon_Click(object sender, EventArgs e)
@@ -77,12 +115,13 @@ namespace GUI
         private void dgvKetQuaTimKiem_Click(object sender, EventArgs e)
         {
             int dong = dgvKetQuaTimKiem.CurrentCell.RowIndex;
-            txtChiTietDP.Text = dgvKetQuaTimKiem.Rows[dong].Cells[1].Value?.ToString() ?? "";
+            txtChiTietDP.Text = dgvKetQuaTimKiem.Rows[dong].Cells[2].Value?.ToString() ?? "";
 
             try
             {
-                string maCTDP = dgvKetQuaTimKiem.Rows[dong].Cells[1].Value?.ToString() ?? "";
-                BUS_HoaDonDatPhong.Instance.DSHDDP(dgvDSDichVu,maCTDP);
+                string maCTDP = dgvKetQuaTimKiem.Rows[dong].Cells[2].Value?.ToString() ?? "";
+                dgvDSDichVu.DataSource = BUS_HoaDonDatPhong.Instance.LayDSDichVuTheoMaCTDP(maCTDP);
+                txtThanhTien.Text = dgvKetQuaTimKiem.Rows[dong].Cells[6].Value?.ToString() ?? "";
                 string maNS = BUS_HoaDonDatPhong.Instance.LayMaNhanSuTheoCTDP(maCTDP);
                 txtMaNS.Text = maNS ?? "";
 

@@ -7,7 +7,7 @@ set dateformat dmy
 ---EXEC DSDatTiecTheoNgay '2025-05-05';
 ---EXEC DSDatTiecTheoThang 2025, 05;
 ---EXEC DSDatTiecTheoNam 2025;
-EXEC DSDatPhongTheoNgay '2025-05-05';
+---EXEC DSDatPhongTheoNgay '2025-05-05';
 
 -----Tìm loại hình lưu tru
 go
@@ -48,7 +48,7 @@ BEGIN
 		hd.maHDDP,
 		hd.MaNhanSu,
 		hd.ngayLap,
-		hd.	,
+		hd.tongTien,
 		hd.trangThai,
 		ctdp.maCTDP,
 		sddv.maSDDV,

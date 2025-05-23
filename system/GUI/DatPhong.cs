@@ -56,7 +56,7 @@ namespace GUI
             txtDatPhong.Text = BUS_DatPhong.Instance.TaoMaTuDong();
             txtMaCTDP.Text = BUS_ChiTietDatPhong.Instance.TaoMaTuDong();
             BUS_LoaiHinhLuuTru.Instance.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
-            BUS_ChiTietDatPhong.Instance.HienThiPhongTrong(cboMaPhong, cboLoaiHinh.SelectedValue.ToString());
+            BUS_ChiTietDatPhong.Instance.HienThiPhongTrong(cboTenLH, cboLoaiHinh.SelectedValue.ToString());
 
             dtpNgayDatPhong.MinDate = DateTime.MinValue;
             DateTime maxDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(4).AddDays(-1);
@@ -124,9 +124,11 @@ namespace GUI
         private void cboLoaiHinh_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboLoaiHinh.SelectedItem == null)
+            {
                 return;
+            }
 
-            BUS_ChiTietDatPhong.Instance.HienThiPhongTrong(cboMaPhong, cboLoaiHinh.SelectedValue.ToString());
+            BUS_ChiTietDatPhong.Instance.HienThiPhongTrong(cboTenLH, cboLoaiHinh.SelectedValue.ToString());
         }
         /// <summary>
         /// Đặt phòng.
@@ -142,7 +144,7 @@ namespace GUI
                 {
                     string maDP = txtDatPhong.Text;
                     string maKH = txtMaKH.Text;
-                    string maLH = cboMaPhong.SelectedValue.ToString();
+                    string maLH = cboTenLH.SelectedValue.ToString();
                     string maNS = txtMaNS.Text;
                     DateTime ngayTP = dtpNgayTraPhong.Value;
 
@@ -195,7 +197,7 @@ namespace GUI
                     // Hiển thị mã vừa tạo lên textbox
                     txtMaCTDP.Text = maCTDP;
 
-                    string maPhong = cboMaPhong.SelectedValue.ToString();
+                    string maPhong = cboTenLH.SelectedValue.ToString();
                     DateTime ngayTP = dtpNgayTraPhong.Value;
 
                     var phongTonTai = danhSachPhongTam.FirstOrDefault(p => p.MaLH == maPhong);
@@ -243,12 +245,13 @@ namespace GUI
             {
                 string maCTDP = dgvDSPhong.Rows[dong].Cells[1].Value.ToString();
                 //string maLH = dgvDSPhong.Rows[dong].Cells[2].Value.ToString();
+                //cboLoaiHinh.SelectedValue = maLH;
+                //cboTenLH.SelectedValue = maLH;
                 string ngayTP = dgvDSPhong.Rows[dong].Cells[3].Value?.ToString();
                 txtMaCTDP.Text = maCTDP;
                
-                cboLoaiHinh.Text = dgvDSPhong.Rows[dong].Cells[4].Value.ToString();
-                //cboMaPhong
-                MessageBox.Show(dgvDSPhong.Rows[dong].Cells[2].Value.ToString());
+                ////cboMaPhong
+                //MessageBox.Show(dgvDSPhong.Rows[dong].Cells[2].Value.ToString());
                 // Gán ngày đặt phòng nếu có
                 if (DateTime.TryParse(ngayTP, out DateTime dtTP))
                     dtpNgayTraPhong.Value = dtTP;
@@ -273,11 +276,11 @@ namespace GUI
             txtCCCD.Clear();
             txtTenKH.Clear();
             txtSDTKH.Clear();
-            cboMaPhong.SelectedIndex = -1;
+            cboTenLH.SelectedIndex = -1;
             dtpNgayTraPhong.Value = DateTime.Now;
-            if (cboMaPhong.Items.Count > 0)
+            if (cboTenLH.Items.Count > 0)
             {
-                cboMaPhong.SelectedIndex = 0; // chọn mục đầu tiên
+                cboTenLH.SelectedIndex = 0; // chọn mục đầu tiên
             }
             // Làm mới danh sách phòng (nếu cần thiết)
             danhSachPhongTam.Clear();
@@ -362,7 +365,7 @@ namespace GUI
                     if (KtraBoTrong())
                     {
                         string maCTDP = txtMaCTDP.Text;
-                        string maPhong = cboMaPhong.SelectedValue?.ToString();
+                        string maPhong = cboTenLH.SelectedValue?.ToString();
                         DateTime ngayTP = dtpNgayTraPhong.Value;
 
                         var phongCanSua = danhSachPhongTam.FirstOrDefault(p => p.MaCTDP == maCTDP);

@@ -51,22 +51,58 @@ namespace DAL
             return newMa;
         }
 
-        public IQueryable DSHDDP(string sddv)
+        public IQueryable<ET_HoaDonDatPhong> TimKiemTheoSDTKhach(string soDienThoai)
         {
-            IQueryable a = from dv in db.SuDungDichVus
-                           join ctdp in db.ChiTietDatPhongs
-                           on dv.maCTDP equals ctdp.maCTDP
-                           join dvv in db.DichVus
-                           on dv.maDV equals dvv.maDV
-                           join dp in db.HoaDonDatPhongs
-                           on dv.maSDDV equals dp.maSDDV
-                           where dv.maCTDP == sddv
+            var query = from dp in db.DatPhongs
+                        join kh in db.KhachHangs on dp.MaKH equals kh.MaKH
+                        join ctdp in db.ChiTietDatPhongs on dp.maDP equals ctdp.maDP
+                        join hd in db.HoaDonDatPhongs on ctdp.maCTDP equals hd.maCTDP into hdGroup
+                        from hd in hdGroup.DefaultIfEmpty()
+                        where kh.SoDT.Trim() == soDienThoai.Trim()
+                        select new ET_HoaDonDatPhong
+                        {
+                            MaNS = dp.MaNhanSu,
+                            MaHDDP = hd != null ? hd.maHDDP : null,
+                            MaCTDP = ctdp.maCTDP,
+                            MaSDDV = hd != null ? hd.maSDDV : null,
+                            TrangThai = hd != null ? hd.trangThai : "Chưa thanh toán",
+                            NgayLap = hd != null ? (DateTime)hd.ngayLap : dp.ngayDatPhong, // fallback ngày đặt phòng nếu chưa có hóa đơn
+                            TongTien = hd != null ? (float)hd.tongTien : 0f
+                        };
 
-                           select new { dp.maHDDP, dvv.tenDV, dv.maCTDP, dv.soLuong, dv.tongTien };
-            return a;
+            return query;
+        }
+        //public IQueryable DSHDDP(string sddv)
+        //{
+        //    IQueryable a = from dv in db.SuDungDichVus
+        //                   join ctdp in db.ChiTietDatPhongs
+        //                   on dv.maCTDP equals ctdp.maCTDP
+        //                   join dvv in db.DichVus
+        //                   on dv.maDV equals dvv.maDV
+        //                   join dp in db.HoaDonDatPhongs
+        //                   on dv.maSDDV equals dp.maSDDV
+        //                   where dv.maCTDP == sddv
+
+        //                   select new { dp.maHDDP, dvv.tenDV, dv.maCTDP, dv.soLuong, dv.tongTien };
+        //    return a;
+        //}
+
+        public List<ET_SuDungDichVu> LayDSDichVuTheoMaCTDP(string maCTDP)
+        {
+            var query = from sddv in db.SuDungDichVus
+                        where sddv.maCTDP == maCTDP
+                        select new ET_SuDungDichVu(
+                            sddv.maSDDV,
+                            sddv.maDV,
+                            sddv.maCTDP,
+                            (int)sddv.soLuong,
+                            (float)sddv.tongTien
+                        );
+
+            return query.ToList();
         }
 
-        
+
         public float LayGiaPhongTheoMaCTDP(string maCTDP)
         {
             using (QLResortDataContext db = new QLResortDataContext())

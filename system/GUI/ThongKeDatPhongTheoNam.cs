@@ -53,5 +53,10 @@ namespace GUI
             }
             this.rpt_ThongKePhongTHeoNam.RefreshReport();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

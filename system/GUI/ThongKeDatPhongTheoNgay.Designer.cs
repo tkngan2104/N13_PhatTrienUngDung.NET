@@ -56,6 +56,7 @@
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // ThongKeDatPhongTheoNgay
             // 

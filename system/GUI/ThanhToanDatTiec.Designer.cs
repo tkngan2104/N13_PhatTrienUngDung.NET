@@ -67,7 +67,7 @@
             this.pnlTieuDe.Controls.Add(this.lblTTDatPhong);
             this.pnlTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTieuDe.Location = new System.Drawing.Point(0, 0);
-            this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(2);
             this.pnlTieuDe.Name = "pnlTieuDe";
             this.pnlTieuDe.Size = new System.Drawing.Size(964, 65);
             this.pnlTieuDe.TabIndex = 46;
@@ -91,7 +91,7 @@
             this.btnInHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInHoaDon.ForeColor = System.Drawing.Color.Black;
             this.btnInHoaDon.Location = new System.Drawing.Point(453, 56);
-            this.btnInHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.btnInHoaDon.Name = "btnInHoaDon";
             this.btnInHoaDon.Size = new System.Drawing.Size(144, 28);
             this.btnInHoaDon.TabIndex = 28;
@@ -106,7 +106,7 @@
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Location = new System.Drawing.Point(248, 56);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(144, 28);
             this.btnThoat.TabIndex = 26;
@@ -118,7 +118,7 @@
             // 
             this.txtThanhTien.Enabled = false;
             this.txtThanhTien.Location = new System.Drawing.Point(38, 246);
-            this.txtThanhTien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtThanhTien.Margin = new System.Windows.Forms.Padding(2);
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.Size = new System.Drawing.Size(204, 26);
             this.txtThanhTien.TabIndex = 9;
@@ -138,7 +138,7 @@
             // 
             this.txtMaHDDT.Enabled = false;
             this.txtMaHDDT.Location = new System.Drawing.Point(38, 119);
-            this.txtMaHDDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaHDDT.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaHDDT.Name = "txtMaHDDT";
             this.txtMaHDDT.Size = new System.Drawing.Size(204, 26);
             this.txtMaHDDT.TabIndex = 3;
@@ -150,9 +150,9 @@
             this.groupBox2.Controls.Add(this.btnThoat);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(323, 313);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(634, 126);
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
@@ -165,7 +165,7 @@
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.White;
             this.btnThanhToan.Location = new System.Drawing.Point(37, 56);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(144, 28);
             this.btnThanhToan.TabIndex = 27;
@@ -177,7 +177,7 @@
             // 
             this.txtMaDT.Enabled = false;
             this.txtMaDT.Location = new System.Drawing.Point(38, 183);
-            this.txtMaDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaDT.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaDT.Name = "txtMaDT";
             this.txtMaDT.Size = new System.Drawing.Size(204, 26);
             this.txtMaDT.TabIndex = 5;
@@ -198,9 +198,9 @@
             this.groupBox3.Controls.Add(this.dgvKetQuaTimKiem);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(321, 141);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(639, 158);
             this.groupBox3.TabIndex = 48;
             this.groupBox3.TabStop = false;
@@ -214,7 +214,7 @@
             this.dgvKetQuaTimKiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKetQuaTimKiem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKetQuaTimKiem.Location = new System.Drawing.Point(2, 21);
-            this.dgvKetQuaTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvKetQuaTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.dgvKetQuaTimKiem.Name = "dgvKetQuaTimKiem";
             this.dgvKetQuaTimKiem.RowHeadersWidth = 62;
             this.dgvKetQuaTimKiem.RowTemplate.Height = 28;
@@ -237,7 +237,7 @@
             // 
             this.txtMaNS.Enabled = false;
             this.txtMaNS.Location = new System.Drawing.Point(38, 57);
-            this.txtMaNS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaNS.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaNS.Name = "txtMaNS";
             this.txtMaNS.Size = new System.Drawing.Size(204, 26);
             this.txtMaNS.TabIndex = 1;
@@ -250,7 +250,7 @@
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.ForeColor = System.Drawing.Color.Black;
             this.btnTim.Location = new System.Drawing.Point(880, 106);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(2);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(77, 28);
             this.btnTim.TabIndex = 52;
@@ -272,7 +272,7 @@
             // txtTimKH
             // 
             this.txtTimKH.Location = new System.Drawing.Point(666, 106);
-            this.txtTimKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTimKH.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimKH.Multiline = true;
             this.txtTimKH.Name = "txtTimKH";
             this.txtTimKH.Size = new System.Drawing.Size(206, 28);
@@ -292,9 +292,9 @@
             this.groupBox1.Controls.Add(this.lblMaNS);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(20, 93);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(281, 346);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
@@ -304,7 +304,7 @@
             // 
             this.txtTrangThai.Enabled = false;
             this.txtTrangThai.Location = new System.Drawing.Point(38, 308);
-            this.txtTrangThai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTrangThai.Margin = new System.Windows.Forms.Padding(2);
             this.txtTrangThai.Name = "txtTrangThai";
             this.txtTrangThai.Size = new System.Drawing.Size(204, 26);
             this.txtTrangThai.TabIndex = 11;
@@ -336,9 +336,9 @@
             this.groupBox4.Controls.Add(this.dgvDSDV);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(20, 458);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(938, 288);
             this.groupBox4.TabIndex = 53;
             this.groupBox4.TabStop = false;
@@ -352,7 +352,7 @@
             this.dgvDSDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSDV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDSDV.Location = new System.Drawing.Point(2, 21);
-            this.dgvDSDV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDSDV.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDSDV.Name = "dgvDSDV";
             this.dgvDSDV.RowHeadersWidth = 62;
             this.dgvDSDV.RowTemplate.Height = 28;
@@ -375,7 +375,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ThanhToanDatTiec";
             this.Text = "ThanhToanDatTiec";
             this.Load += new System.EventHandler(this.ThanhToanDatTiec_Load);

@@ -54,5 +54,10 @@ namespace GUI
             Data = data;
             // Bạn có thể thao tác với dữ liệu ở đây, ví dụ hiển thị lên một control nào đó
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

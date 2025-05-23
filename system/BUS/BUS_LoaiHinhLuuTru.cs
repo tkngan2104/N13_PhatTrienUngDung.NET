@@ -33,6 +33,7 @@ namespace BUS
         /// <param name="cbo"></param>
         public void DSLoaiHinhLuuTruCombobox(ComboBox cbo)
         {
+            
             cbo.DataSource = DAL_LoaiHinhLuuTru.Instance.DSLoaiHinhLuuTruCombobox(cbo);
             cbo.DisplayMember = "loaiHinh";
             cbo.ValueMember = "loaiHinh";

@@ -30,8 +30,8 @@
         {
             this.dgvDSDichVu = new System.Windows.Forms.DataGridView();
             this.btnTim = new System.Windows.Forms.Button();
-            this.lblTenPhong = new System.Windows.Forms.Label();
-            this.txtTimPhong = new System.Windows.Forms.TextBox();
+            this.lblSoDienThoai = new System.Windows.Forms.Label();
+            this.txtTimKH = new System.Windows.Forms.TextBox();
             this.txtThanhTien = new System.Windows.Forms.TextBox();
             this.lblThanhTien = new System.Windows.Forms.Label();
             this.txtHDDP = new System.Windows.Forms.TextBox();
@@ -90,25 +90,25 @@
             this.btnTim.UseVisualStyleBackColor = false;
             this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
-            // lblTenPhong
+            // lblSoDienThoai
             // 
-            this.lblTenPhong.AutoSize = true;
-            this.lblTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenPhong.Location = new System.Drawing.Point(592, 110);
-            this.lblTenPhong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTenPhong.Name = "lblTenPhong";
-            this.lblTenPhong.Size = new System.Drawing.Size(55, 20);
-            this.lblTenPhong.TabIndex = 43;
-            this.lblTenPhong.Text = "Phòng";
+            this.lblSoDienThoai.AutoSize = true;
+            this.lblSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoDienThoai.Location = new System.Drawing.Point(525, 109);
+            this.lblSoDienThoai.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSoDienThoai.Name = "lblSoDienThoai";
+            this.lblSoDienThoai.Size = new System.Drawing.Size(106, 20);
+            this.lblSoDienThoai.TabIndex = 43;
+            this.lblSoDienThoai.Text = "Số điện thoại:";
             // 
-            // txtTimPhong
+            // txtTimKH
             // 
-            this.txtTimPhong.Location = new System.Drawing.Point(666, 106);
-            this.txtTimPhong.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTimPhong.Multiline = true;
-            this.txtTimPhong.Name = "txtTimPhong";
-            this.txtTimPhong.Size = new System.Drawing.Size(206, 29);
-            this.txtTimPhong.TabIndex = 42;
+            this.txtTimKH.Location = new System.Drawing.Point(666, 106);
+            this.txtTimKH.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTimKH.Multiline = true;
+            this.txtTimKH.Name = "txtTimKH";
+            this.txtTimKH.Size = new System.Drawing.Size(206, 29);
+            this.txtTimKH.TabIndex = 42;
             // 
             // txtThanhTien
             // 
@@ -343,8 +343,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1015, 512);
             this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.lblTenPhong);
-            this.Controls.Add(this.txtTimPhong);
+            this.Controls.Add(this.lblSoDienThoai);
+            this.Controls.Add(this.txtTimKH);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -373,8 +373,8 @@
 
         private System.Windows.Forms.DataGridView dgvDSDichVu;
         private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.Label lblTenPhong;
-        private System.Windows.Forms.TextBox txtTimPhong;
+        private System.Windows.Forms.Label lblSoDienThoai;
+        private System.Windows.Forms.TextBox txtTimKH;
         private System.Windows.Forms.TextBox txtThanhTien;
         private System.Windows.Forms.Label lblThanhTien;
         private System.Windows.Forms.TextBox txtHDDP;
