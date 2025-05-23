@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace GUI
 {
@@ -47,12 +48,6 @@ namespace GUI
         /// <param name="e"></param>
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtTenLMA.Text))
-            {
-                MessageBox.Show("Vui lòng nhập tên loại món ăn"); 
-                return;
-            }
-
             DialogResult result = MessageBox.Show("Bạn có chắc muốn thêm loại món ăn mới?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No)
                 return;
@@ -189,6 +184,40 @@ namespace GUI
                 txtMaLMA.Text = dgvDSLMA.Rows[i].Cells[0].Value?.ToString();
                 txtTenLMA.Text = dgvDSLMA.Rows[i].Cells[1].Value?.ToString();
             }
+        }
+
+
+        //Kiểm tra tên loại món ăn
+        private void txtTenLMA_TextChanged(object sender, EventArgs e)
+        {
+            // 1. Giữ con trỏ hiện tại
+            int caret = txtTenLMA.SelectionStart;
+
+            string raw = txtTenLMA.Text;
+
+            // 2. Tự động TRIM bên trái
+            string cleaned = raw.TrimStart();
+
+            // 3. Loại ký tự không phải chữ Unicode hay space
+            cleaned = Regex.Replace(cleaned, @"[^ \p{L}]", "");
+
+            // 4. Ép mọi chuỗi “2 space liền” thành 1 space
+            while (cleaned.Contains("  "))
+                cleaned = cleaned.Replace("  ", " ");
+
+            // 5. Nếu chuỗi thay đổi ⇒ gán lại textbox & khôi phục caret
+            if (cleaned != raw)
+            {
+                txtTenLMA.Text = cleaned;
+                txtTenLMA.SelectionStart = caret > 0 ? Math.Max(caret - 1, 0) : 0;
+            }
+
+            // 6. Cảnh báo khi còn lỗi (ký tự lạ hoặc “  ”)
+            bool hasError = Regex.IsMatch(txtTenLMA.Text, @"[^ \p{L}]") || txtTenLMA.Text.Contains("  ");
+            errorProvider1.SetError(
+                txtTenLMA,
+                hasError ? "Tên chỉ chứa chữ, không để 2 khoảng trắng liên tiếp!" : ""
+            );
         }
     }
 }

@@ -78,8 +78,9 @@
             this.txtGiaTien.Location = new System.Drawing.Point(55, 263);
             this.txtGiaTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGiaTien.Name = "txtGiaTien";
-            this.txtGiaTien.Size = new System.Drawing.Size(269, 35);
+            this.txtGiaTien.Size = new System.Drawing.Size(269, 30);
             this.txtGiaTien.TabIndex = 5;
+            this.txtGiaTien.TextChanged += new System.EventHandler(this.txtGiaTien_TextChanged);
             this.txtGiaTien.Leave += new System.EventHandler(this.txtGiaTien_Leave);
             // 
             // lblGiaTien
@@ -89,7 +90,7 @@
             this.lblGiaTien.Location = new System.Drawing.Point(51, 240);
             this.lblGiaTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGiaTien.Name = "lblGiaTien";
-            this.lblGiaTien.Size = new System.Drawing.Size(87, 26);
+            this.lblGiaTien.Size = new System.Drawing.Size(73, 24);
             this.lblGiaTien.TabIndex = 4;
             this.lblGiaTien.Text = "Giá tiền";
             // 
@@ -98,9 +99,9 @@
             this.txtTenDV.Location = new System.Drawing.Point(55, 172);
             this.txtTenDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenDV.Name = "txtTenDV";
-            this.txtTenDV.Size = new System.Drawing.Size(269, 35);
+            this.txtTenDV.Size = new System.Drawing.Size(269, 30);
             this.txtTenDV.TabIndex = 3;
-            this.txtTenDV.Leave += new System.EventHandler(this.txtTenDV_Leave);
+            this.txtTenDV.TextChanged += new System.EventHandler(this.txtTenDV_TextChanged);
             // 
             // lblTenDV
             // 
@@ -109,7 +110,7 @@
             this.lblTenDV.Location = new System.Drawing.Point(51, 149);
             this.lblTenDV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTenDV.Name = "lblTenDV";
-            this.lblTenDV.Size = new System.Drawing.Size(123, 26);
+            this.lblTenDV.Size = new System.Drawing.Size(110, 24);
             this.lblTenDV.TabIndex = 2;
             this.lblTenDV.Text = "Tên dịch vụ";
             // 
@@ -119,7 +120,7 @@
             this.txtMaDV.Location = new System.Drawing.Point(55, 82);
             this.txtMaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaDV.Name = "txtMaDV";
-            this.txtMaDV.Size = new System.Drawing.Size(269, 35);
+            this.txtMaDV.Size = new System.Drawing.Size(269, 30);
             this.txtMaDV.TabIndex = 1;
             // 
             // lblMaDV
@@ -129,7 +130,7 @@
             this.lblMaDV.Location = new System.Drawing.Point(51, 59);
             this.lblMaDV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMaDV.Name = "lblMaDV";
-            this.lblMaDV.Size = new System.Drawing.Size(117, 26);
+            this.lblMaDV.Size = new System.Drawing.Size(102, 24);
             this.lblMaDV.TabIndex = 0;
             this.lblMaDV.Text = "Mã dịch vụ";
             // 
@@ -140,7 +141,7 @@
             this.lblQLDichVu.Location = new System.Drawing.Point(447, 17);
             this.lblQLDichVu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQLDichVu.Name = "lblQLDichVu";
-            this.lblQLDichVu.Size = new System.Drawing.Size(475, 58);
+            this.lblQLDichVu.Size = new System.Drawing.Size(400, 48);
             this.lblQLDichVu.TabIndex = 1;
             this.lblQLDichVu.Text = "QUẢN LÝ DỊCH VỤ";
             // 
@@ -151,13 +152,13 @@
             this.dgvDSDV.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSDV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSDV.Location = new System.Drawing.Point(3, 30);
+            this.dgvDSDV.Location = new System.Drawing.Point(3, 25);
             this.dgvDSDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDSDV.Name = "dgvDSDV";
             this.dgvDSDV.ReadOnly = true;
             this.dgvDSDV.RowHeadersWidth = 62;
             this.dgvDSDV.RowTemplate.Height = 28;
-            this.dgvDSDV.Size = new System.Drawing.Size(846, 300);
+            this.dgvDSDV.Size = new System.Drawing.Size(846, 305);
             this.dgvDSDV.TabIndex = 0;
             this.dgvDSDV.Click += new System.EventHandler(this.dgvDSDV_Click);
             // 

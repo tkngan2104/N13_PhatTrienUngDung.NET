@@ -74,8 +74,9 @@
             this.txtTenLMA.Location = new System.Drawing.Point(55, 182);
             this.txtTenLMA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenLMA.Name = "txtTenLMA";
-            this.txtTenLMA.Size = new System.Drawing.Size(269, 35);
+            this.txtTenLMA.Size = new System.Drawing.Size(269, 30);
             this.txtTenLMA.TabIndex = 3;
+            this.txtTenLMA.TextChanged += new System.EventHandler(this.txtTenLMA_TextChanged);
             this.txtTenLMA.Leave += new System.EventHandler(this.txtTenLMA_Leave);
             // 
             // lblTenLMA
@@ -84,7 +85,7 @@
             this.lblTenLMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenLMA.Location = new System.Drawing.Point(51, 159);
             this.lblTenLMA.Name = "lblTenLMA";
-            this.lblTenLMA.Size = new System.Drawing.Size(167, 26);
+            this.lblTenLMA.Size = new System.Drawing.Size(147, 24);
             this.lblTenLMA.TabIndex = 2;
             this.lblTenLMA.Text = "Tên loại món ăn";
             // 
@@ -94,7 +95,7 @@
             this.txtMaLMA.Location = new System.Drawing.Point(55, 92);
             this.txtMaLMA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaLMA.Name = "txtMaLMA";
-            this.txtMaLMA.Size = new System.Drawing.Size(269, 35);
+            this.txtMaLMA.Size = new System.Drawing.Size(269, 30);
             this.txtMaLMA.TabIndex = 1;
             this.txtMaLMA.Leave += new System.EventHandler(this.txtMaLMA_Leave);
             // 
@@ -104,7 +105,7 @@
             this.lblMaLMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaLMA.Location = new System.Drawing.Point(51, 69);
             this.lblMaLMA.Name = "lblMaLMA";
-            this.lblMaLMA.Size = new System.Drawing.Size(161, 26);
+            this.lblMaLMA.Size = new System.Drawing.Size(139, 24);
             this.lblMaLMA.TabIndex = 0;
             this.lblMaLMA.Text = "Mã loại món ăn";
             // 
@@ -114,7 +115,7 @@
             this.lblQLoaiMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQLoaiMonAn.Location = new System.Drawing.Point(393, 15);
             this.lblQLoaiMonAn.Name = "lblQLoaiMonAn";
-            this.lblQLoaiMonAn.Size = new System.Drawing.Size(601, 58);
+            this.lblQLoaiMonAn.Size = new System.Drawing.Size(507, 48);
             this.lblQLoaiMonAn.TabIndex = 1;
             this.lblQLoaiMonAn.Text = "QUẢN LÝ LOẠI MÓN ĂN";
             // 
@@ -125,13 +126,13 @@
             this.dgvDSLMA.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSLMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSLMA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSLMA.Location = new System.Drawing.Point(3, 30);
+            this.dgvDSLMA.Location = new System.Drawing.Point(3, 25);
             this.dgvDSLMA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDSLMA.Name = "dgvDSLMA";
             this.dgvDSLMA.ReadOnly = true;
             this.dgvDSLMA.RowHeadersWidth = 62;
             this.dgvDSLMA.RowTemplate.Height = 28;
-            this.dgvDSLMA.Size = new System.Drawing.Size(846, 239);
+            this.dgvDSLMA.Size = new System.Drawing.Size(846, 244);
             this.dgvDSLMA.TabIndex = 0;
             this.dgvDSLMA.Click += new System.EventHandler(this.dgvDSLMA_Click);
             // 

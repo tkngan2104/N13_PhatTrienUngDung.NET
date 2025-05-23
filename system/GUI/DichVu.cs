@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -60,6 +61,7 @@ namespace GUI
         /// <param name="e"></param>
         private void btnThem_Click(object sender, EventArgs e)
         {
+            
             if (string.IsNullOrWhiteSpace(txtTenDV.Text) || string.IsNullOrWhiteSpace(txtGiaTien.Text))
             {
                 MessageBox.Show("Vui lòng nhập dịch vụ cần thêm!");
@@ -196,35 +198,57 @@ namespace GUI
             LamMoi();
         }
 
+        //tên dịch vụ
+        private static readonly Regex _rgTenDichVu = new Regex(@"^(?!.*\s{2})[a-zA-Z0-9ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]*$", RegexOptions.Compiled);
+
+
+
         /// <summary>
-        /// kiểm tra rỗng
+        /// btn giá tiền
         /// </summary>
-        /// <param name="txt"></param>
-        /// <param name="tenTruong"></param>
-        private void KiemTraRong(TextBox txt, string tenTruong)
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtGiaTien_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txt.Text))
+            
+            this.Focus();
+        }
+
+        
+        private void txtTenDV_TextChanged(object sender, EventArgs e)
+        {
+            string text = txtTenDV.Text;
+
+            if (string.IsNullOrWhiteSpace(text))
             {
-                errorProvider1.SetError(txt, $"{tenTruong} không được để trống");
+                errorProvider1.SetError(txtTenDV, "Tên dịch vụ không được để trống");
+            }
+            else if (!_rgTenDichVu.IsMatch(text))
+            {
+                errorProvider1.SetError(txtTenDV, "Tên dịch vụ chỉ gồm chữ, số và không được có 2 khoảng trắng liền kề");
             }
             else
             {
-                errorProvider1.SetError(txt, ""); // Xóa lỗi nếu hợp lệ
+                errorProvider1.SetError(txtTenDV, "");
             }
+
         }
 
 
 
-        private void txtTenDV_Leave(object sender, EventArgs e)
-        {
-            KiemTraRong(txtTenDV, "Tên dịch vụ");
-            this.Focus();
-        }
+        //Giá tiền
+        private static readonly Regex _rgGiaTien = new Regex(@"^\d+$");
 
-        private void txtGiaTien_Leave(object sender, EventArgs e)
+        private void txtGiaTien_TextChanged(object sender, EventArgs e)
         {
-            KiemTraRong(txtGiaTien, "Giá tiền");
-            this.Focus();
+            if (!_rgGiaTien.IsMatch(txtGiaTien.Text))
+            {
+                errorProvider1.SetError(txtGiaTien, "Giá tiền chỉ được nhập số, không khoảng trắng hay ký tự khác");
+            }
+            else
+            {
+                errorProvider1.SetError(txtGiaTien, "");
+            }
         }
     }
 }
