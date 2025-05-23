@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS", "BUS\BUS.csproj", "{497FCC9A-3B46-4F42-A207-6CFB4E222D68}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QuanLyResort", "QuanLyResort\QuanLyResort.vdproj", "{91FFEF90-2BD7-EC07-957B-FFF9E0947D8B}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupQLResort", "SetupQLResort\SetupQLResort.vdproj", "{4C8F9970-B0C4-FA0C-5841-960A9CF26C89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,8 +35,8 @@ Global
 		{497FCC9A-3B46-4F42-A207-6CFB4E222D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{497FCC9A-3B46-4F42-A207-6CFB4E222D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{497FCC9A-3B46-4F42-A207-6CFB4E222D68}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91FFEF90-2BD7-EC07-957B-FFF9E0947D8B}.Debug|Any CPU.ActiveCfg = Debug
-		{91FFEF90-2BD7-EC07-957B-FFF9E0947D8B}.Release|Any CPU.ActiveCfg = Release
+		{4C8F9970-B0C4-FA0C-5841-960A9CF26C89}.Debug|Any CPU.ActiveCfg = Debug
+		{4C8F9970-B0C4-FA0C-5841-960A9CF26C89}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
