@@ -213,20 +213,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rptHoaDonDatTiec.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptHoaDonDatTiec.rpt</DependentUpon>
-      <SubType>Component</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="rtpKhachHnang.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rtpKhachHnang.rpt</DependentUpon>
-      <SubType>Component</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Compile>
     <Compile Include="SanhDatTiec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -346,21 +332,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="rptHoaDonDatTiec.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptHoaDonDatTiec.cs</LastGenOutput>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNam.rdlc" />
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNgay.rdlc" />
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoThang.rdlc" />
     <EmbeddedResource Include="rpt_ThongKeSuDungDichVuTheoNam.rdlc" />
     <EmbeddedResource Include="rpt_ThongKeSuDungDichVuTheoThang.rdlc" />
-    <EmbeddedResource Include="rtpKhachHnang.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rtpKhachHnang.cs</LastGenOutput>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="SanhDatTiec.resx">
       <DependentUpon>SanhDatTiec.cs</DependentUpon>
     </EmbeddedResource>
