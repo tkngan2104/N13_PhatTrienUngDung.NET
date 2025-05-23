@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connection_DAL.cs" />
     <Compile Include="DAL_ChiTietDatPhong.cs" />
     <Compile Include="DAL_DatPhong.cs" />
     <Compile Include="DAL_DatTiec.cs" />

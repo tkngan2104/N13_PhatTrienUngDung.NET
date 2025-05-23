@@ -73,6 +73,7 @@
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.ServiceProcess" />
@@ -130,12 +131,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetThongKeSDDVTheoThang.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DatDichVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DatDichVu.Designer.cs">
-      <DependentUpon>DatDichVu.cs</DependentUpon>
-    </Compile>
     <Compile Include="DatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +148,12 @@
     </Compile>
     <Compile Include="DichVu.Designer.cs">
       <DependentUpon>DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KetNoiData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KetNoiData.Designer.cs">
+      <DependentUpon>KetNoiData.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang.cs">
       <SubType>Form</SubType>
@@ -268,9 +269,6 @@
     <EmbeddedResource Include="ComboMonAn.resx">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DatDichVu.resx">
-      <DependentUpon>DatDichVu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DatPhong.resx">
       <DependentUpon>DatPhong.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KetNoiData.resx">
+      <DependentUpon>KetNoiData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>

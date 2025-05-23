@@ -26,7 +26,7 @@ namespace DAL
             }
         }
 
-        QLResortDataContext db= new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
         public List<ET_DichVu> layDSDV()
         {
             var dv = from el in db.DichVus

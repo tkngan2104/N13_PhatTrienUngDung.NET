@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="connect.cs" />
     <Compile Include="CurrentUser.cs" />
     <Compile Include="ET_ChiTiecDatTiec.cs" />
     <Compile Include="ET_ChiTietCombo.cs" />

@@ -24,7 +24,7 @@ namespace DAL
             }
         }
 
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         public IQueryable loadDSCV()
         {

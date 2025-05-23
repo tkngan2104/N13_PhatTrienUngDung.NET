@@ -341,6 +341,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ThanhToanDatTiec";
             this.Text = "ThanhToanDatTiec";
+            this.Load += new System.EventHandler(this.ThanhToanDatTiec_Load);
             this.pnlTieuDe.ResumeLayout(false);
             this.pnlTieuDe.PerformLayout();
             this.groupBox2.ResumeLayout(false);

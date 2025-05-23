@@ -30,5 +30,10 @@ namespace GUI
                 this.Close();
             }
         }
+
+        private void ThanhToanDatTiec_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

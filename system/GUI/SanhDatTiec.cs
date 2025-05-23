@@ -19,6 +19,8 @@ namespace GUI
             InitializeComponent();
         }
 
+        private BUS_Sanh s = new BUS_Sanh();
+
         /// <summary>
         /// Btn thoát.
         /// </summary>
@@ -36,8 +38,8 @@ namespace GUI
         private void SanhDatTiec_Load(object sender, EventArgs e)
         {
             btnSua.Enabled = false;
-            BUS_Sanh.Instance.DSSanh(dgvDSSanhDT);
-            txtMaSanh.Text = BUS_Sanh.Instance.TaoMaTuDong();
+            s.DSSanh(dgvDSSanhDT);
+            txtMaSanh.Text = s.TaoMaTuDong();
         }
 
         private void dgvDSSanhDT_Click(object sender, EventArgs e)
@@ -81,8 +83,8 @@ namespace GUI
             {
                 if (KtraBoTrong() == true)
                 {
-                    BUS_Sanh.Instance.ThemSanh(new ET_Sanh(txtMaSanh.Text, txtTenSanh.Text, float.Parse(txtGiaTien.Text)));
-                    BUS_Sanh.Instance.DSSanh(dgvDSSanhDT);
+                    s.ThemSanh(new ET_Sanh(txtMaSanh.Text, txtTenSanh.Text, float.Parse(txtGiaTien.Text)));
+                    s.DSSanh(dgvDSSanhDT);
                 }
                 else
                 {
@@ -103,8 +105,8 @@ namespace GUI
                 DialogResult ret = MessageBox.Show("Hãy chắc chắn rằng bạn muốn xóa dữ liệu vừa chọn !", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (ret == DialogResult.Yes)
                 {
-                    BUS_Sanh.Instance.XoaSanh(dgvDSSanhDT);
-                    BUS_Sanh.Instance.DSSanh(dgvDSSanhDT);
+                    s.XoaSanh(dgvDSSanhDT);
+                    s.DSSanh(dgvDSSanhDT);
                 }
             }
             else
@@ -124,8 +126,8 @@ namespace GUI
                     {
                         if (KTraMa(txtMaSanh.Text) == true)
                         {
-                            BUS_Sanh.Instance.SuaSanh(new ET_Sanh(txtMaSanh.Text, txtTenSanh.Text, float.Parse(txtGiaTien.Text)));
-                            BUS_Sanh.Instance.DSSanh(dgvDSSanhDT);
+                            s.SuaSanh(new ET_Sanh(txtMaSanh.Text, txtTenSanh.Text, float.Parse(txtGiaTien.Text)));
+                            s.DSSanh(dgvDSSanhDT);
                         }
                         else
                         {
@@ -152,7 +154,7 @@ namespace GUI
         /// <param name="e"></param>
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            txtMaSanh.Text = BUS_Sanh.Instance.TaoMaTuDong();
+            txtMaSanh.Text = s.TaoMaTuDong();
             txtTenSanh.Clear();
             txtGiaTien.Clear();
             dgvDSSanhDT.ClearSelection();

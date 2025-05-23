@@ -667,7 +667,6 @@
         private System.Windows.Forms.Label lblDatCoc;
         private System.Windows.Forms.Button btnSanhDT;
         private System.Windows.Forms.Button btnDatTD;
-        private System.Windows.Forms.Button btnDatDV;
         private System.Windows.Forms.TextBox txtNgayDatTiec;
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Label lblGhiChu;
@@ -677,5 +676,6 @@
         private System.Windows.Forms.RadioButton radNam;
         private System.Windows.Forms.RadioButton radThang;
         private System.Windows.Forms.RadioButton radNgay;
+        private System.Windows.Forms.Button btnDatDV;
     }
 }

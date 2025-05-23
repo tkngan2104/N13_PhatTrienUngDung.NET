@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "N:\\N13_PhatTrienUngDung.NET\\system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|n:\\n13_phattrienungdung.net\\system\\dal\\dal_chitietdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6279046D-20C2-4CEB-B775-CBDD7237AF9F}|DAL\\DAL.csproj|solutionrelative:dal\\dal_chitietdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\ketnoidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\ketnoidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|n:\\n13_phattrienungdung.net\\system\\bus\\bus_chitietdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{497FCC9A-3B46-4F42-A207-6CFB4E222D68}|BUS\\BUS.csproj|solutionrelative:bus\\bus_chitietdatphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\sudungdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|N:\\N13_PhatTrienUngDung.NET\\system\\gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\dattiec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|n:\\n13_phattrienungdung.net\\system\\gui\\ketnoidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B7E9AFC-1695-4A74-909B-F9A5CC26B13C}|GUI\\GUI.csproj|solutionrelative:gui\\ketnoidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,94 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\App.config",
+              "RelativeDocumentMoniker": "GUI\\App.config",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\App.config",
+              "RelativeToolTip": "GUI\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-23T14:35:55.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DAL_ChiTietDatPhong.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_ChiTietDatPhong.cs",
-              "RelativeDocumentMoniker": "DAL\\DAL_ChiTietDatPhong.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\DAL\\DAL_ChiTietDatPhong.cs",
-              "RelativeToolTip": "DAL\\DAL_ChiTietDatPhong.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAmwIIAAAAjAAAAAAAAAA==",
+              "Title": "KetNoiData.cs",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\KetNoiData.cs",
+              "RelativeDocumentMoniker": "GUI\\KetNoiData.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\KetNoiData.cs",
+              "RelativeToolTip": "GUI\\KetNoiData.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAMwE8AAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:46:56.575Z",
+              "WhenOpened": "2025-05-23T14:34:46.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BUS_ChiTietDatPhong.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_ChiTietDatPhong.cs",
-              "RelativeDocumentMoniker": "BUS\\BUS_ChiTietDatPhong.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\BUS\\BUS_ChiTietDatPhong.cs",
-              "RelativeToolTip": "BUS\\BUS_ChiTietDatPhong.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAWwGoAAABMAAAAAAAAAA==",
+              "Title": "KetNoiData.cs [Design]",
+              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\KetNoiData.cs",
+              "RelativeDocumentMoniker": "GUI\\KetNoiData.cs",
+              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\KetNoiData.cs [Design]",
+              "RelativeToolTip": "GUI\\KetNoiData.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:44:35.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SuDungDichVu.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SuDungDichVu.cs",
-              "RelativeDocumentMoniker": "GUI\\SuDungDichVu.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SuDungDichVu.cs",
-              "RelativeToolTip": "GUI\\SuDungDichVu.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAMwFMAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:38:57.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SuDungDichVu.cs [Design]",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SuDungDichVu.cs",
-              "RelativeDocumentMoniker": "GUI\\SuDungDichVu.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\SuDungDichVu.cs [Design]",
-              "RelativeToolTip": "GUI\\SuDungDichVu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:38:41.707Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatPhong.cs",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatPhong.cs",
-              "RelativeDocumentMoniker": "GUI\\DatPhong.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatPhong.cs",
-              "RelativeToolTip": "GUI\\DatPhong.cs",
-              "ViewState": "AgIAAPIAAAAAAAAAAAAUwAEBAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:33:05.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DatPhong.cs [Design]",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatPhong.cs",
-              "RelativeDocumentMoniker": "GUI\\DatPhong.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatPhong.cs [Design]",
-              "RelativeToolTip": "GUI\\DatPhong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:33:04.072Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DatTiec.cs [Design]",
-              "DocumentMoniker": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs",
-              "RelativeDocumentMoniker": "GUI\\DatTiec.cs",
-              "ToolTip": "N:\\N13_PhatTrienUngDung.NET\\system\\GUI\\DatTiec.cs [Design]",
-              "RelativeToolTip": "GUI\\DatTiec.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T17:25:01.895Z",
+              "WhenOpened": "2025-05-23T14:34:41.251Z",
               "EditorCaption": " [Design]"
             }
           ]

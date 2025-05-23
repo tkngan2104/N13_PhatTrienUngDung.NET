@@ -24,7 +24,7 @@ namespace DAL
         }
 
         //kết nối dữ liệu db
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         //Lấy danh sách khách hàng
         public IQueryable layDSKH()

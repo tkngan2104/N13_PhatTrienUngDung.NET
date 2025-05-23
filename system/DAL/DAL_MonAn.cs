@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DAL_MonAn
     {
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         public DataTable LayDSLoaiMonAn()
         {

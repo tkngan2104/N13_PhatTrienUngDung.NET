@@ -26,7 +26,7 @@ namespace DAL
             }
         }
 
-        private QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         /// <summary>
         /// Tìm kiếm loại hình trong chi tiết đặt phòng.

@@ -199,7 +199,6 @@ N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.ca
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChucVu.resources
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ComboMonAn.resources
-N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatDichVu.resources
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatPhong.resources
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatTiec.resources
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DichVu.resources
@@ -400,3 +399,4 @@ N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNgay.reso
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoThang.resources
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoNam.resources
 N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoThang.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KetNoiData.resources

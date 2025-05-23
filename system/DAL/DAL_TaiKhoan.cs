@@ -20,7 +20,7 @@ namespace DAL
                 return instance;
             }
         }
-        private QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
         //Check thông tin đăng nhập
         public bool KiemTraNhanVienCoThongTinKhong(string tenTK)
         {

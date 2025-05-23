@@ -20,6 +20,8 @@ namespace GUI
             InitializeComponent();
         }
 
+        private BUS_DichVu dv = new BUS_DichVu();
+
         /// <summary>
         /// Btn thoát.
         /// </summary>

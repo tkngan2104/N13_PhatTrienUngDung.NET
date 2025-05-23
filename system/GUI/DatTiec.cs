@@ -20,6 +20,11 @@ namespace GUI
             InitializeComponent();
         }
 
+        private BUS_DatTiec dt = new BUS_DatTiec();
+        private BUS_Sanh s = new BUS_Sanh();
+        private BUS_KhachHang kh = new BUS_KhachHang();
+        private BUS_ThongKeDatTiec tkdt = new BUS_ThongKeDatTiec();
+
         /// <summary>
         /// Btn thoát.
         /// </summary>
@@ -51,12 +56,12 @@ namespace GUI
 
         private void btnDatDV_Click(object sender, EventArgs e)
         {
-            DialogResult a = MessageBox.Show("Xác nhận đặt dịch vụ cho buổi tiệc ?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (a == DialogResult.Yes)
-            {
-                Menu formMenu = (Menu)this.ParentForm;
-                formMenu.openChildForm(new DatDichVu());
-            }
+            //DialogResult a = MessageBox.Show("Xác nhận đặt dịch vụ cho buổi tiệc ?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //if (a == DialogResult.Yes)
+            //{
+            //    Menu formMenu = (Menu)this.ParentForm;
+            //    formMenu.openChildForm(new DatDichVu());
+            //}
         }
 
         /// <summary>
@@ -72,10 +77,10 @@ namespace GUI
 
         private void DatTiec_Load(object sender, EventArgs e)
         {
-            txtDatTiec.Text = BUS_DatTiec.Instance.TaoMaTuDong();
-            BUS_Sanh.Instance.DSSanhCombobox(cboSanhDT);
+            txtDatTiec.Text = dt.TaoMaTuDong();
+            s.DSSanhCombobox(cboSanhDT);
 
-            BUS_DatTiec.Instance.DSDatTiec(dgvDSDatTiec);
+            dt.DSDatTiec(dgvDSDatTiec);
 
             txtMaNS.Text = "NV025";
             txtNgayDatTiec.Text = DateTime.Today.ToString("dd/MM/yyyy");
@@ -91,7 +96,7 @@ namespace GUI
             if (cboSanhDT.Items.Count > 0)
             {
                 string maS = cboSanhDT.SelectedValue.ToString();
-                float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
+                float giaSDT = s.LayGiaSTheoMa(maS);
 
                 int soNgay = (dtpNgayKetThuc.Value.Date - dtpNgayBatDau.Value.Date).Days + 1;
                 if (soNgay <= 0) soNgay = 1;
@@ -104,7 +109,7 @@ namespace GUI
             }
 
             AutoCompleteStringCollection cccdSuggestions = new AutoCompleteStringCollection();
-            List<string> dsCCCD = BUS_KhachHang.Instance.LayTatCaCCCD();
+            List<string> dsCCCD = kh.LayTatCaCCCD();
             cccdSuggestions.AddRange(dsCCCD.ToArray());
 
             txtCCCD.AutoCompleteCustomSource = cccdSuggestions;
@@ -119,7 +124,7 @@ namespace GUI
             string maS = cboSanhDT.SelectedValue?.ToString();
             if (string.IsNullOrEmpty(maS)) return;
 
-            float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
+            float giaSDT = s.LayGiaSTheoMa(maS);
 
             int soNgay = (dtpNgayKetThuc.Value.Date - dtpNgayBatDau.Value.Date).Days + 1;
             if (soNgay <= 0) soNgay = 1;
@@ -140,12 +145,12 @@ namespace GUI
         {
             if (e.KeyCode == Keys.Enter)
             {
-                ET_KhachHang kh = BUS_KhachHang.Instance.LayKhachHangTheoCCCD(txtCCCD.Text.Trim());
+                ET_KhachHang kh2 = kh.LayKhachHangTheoCCCD(txtCCCD.Text.Trim());
                 if (kh != null)
                 {
-                    txtMaKH.Text = kh.MaKH;
-                    txtTenKH.Text = kh.TenKH;
-                    txtSDTKH.Text = kh.SoDT;
+                    txtMaKH.Text = kh2.MaKH;
+                    txtTenKH.Text = kh2.TenKH;
+                    txtSDTKH.Text = kh2.SoDT;
                 }
                 else
                 {
@@ -177,7 +182,7 @@ namespace GUI
             {
                 string maS = cboSanhDT.SelectedValue.ToString();
 
-                float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
+                float giaSDT = s.LayGiaSTheoMa(maS);
 
                 float tongTien = giaSDT;
                 float datCoc = tongTien * 0.2f;
@@ -226,12 +231,12 @@ namespace GUI
             txtMaKH.Text = dgvDSDatTiec.Rows[dong].Cells["MaKH"].Value?.ToString() ?? "";
 
             string maKH = txtMaKH.Text;
-            var kh = BUS_KhachHang.Instance.LayKHTheoMa(maKH);
-            if (kh != null)
+            var kh2 = kh.LayKHTheoMa(maKH);
+            if (kh2 != null)
             {
-                txtCCCD.Text = kh.Cccd;
-                txtSDTKH.Text = kh.SoDT;
-                txtTenKH.Text = kh.TenKH;
+                txtCCCD.Text = kh2.Cccd;
+                txtSDTKH.Text = kh2.SoDT;
+                txtTenKH.Text = kh2.TenKH;
             }
 
             string maS = dgvDSDatTiec.Rows[dong].Cells["maS"].Value?.ToString() ?? "";
@@ -318,8 +323,8 @@ namespace GUI
                             float.Parse(txtDatCoc.Text)
                         );
 
-                        BUS_DatTiec.Instance.ThemDatTiec(et);
-                        BUS_DatTiec.Instance.DSDatTiec(dgvDSDatTiec);
+                        dt.ThemDatTiec(et);
+                        dt.DSDatTiec(dgvDSDatTiec);
                     }
                     else
                     {
@@ -345,8 +350,8 @@ namespace GUI
                 DialogResult d = MessageBox.Show("Xóa đặt tiệc đã chọn?", "THÔNG BÁO", MessageBoxButtons.YesNo);
                 if (d == DialogResult.Yes)
                 {
-                    BUS_DatTiec.Instance.XoaDatTiec(dgvDSDatTiec);
-                    BUS_DatTiec.Instance.DSDatTiec(dgvDSDatTiec);
+                    dt.XoaDatTiec(dgvDSDatTiec);
+                    dt.DSDatTiec(dgvDSDatTiec);
                 }
             }
         }
@@ -375,8 +380,8 @@ namespace GUI
                         float.Parse(txtTongTien.Text),
                         float.Parse(txtDatCoc.Text)
                     );
-                    BUS_DatTiec.Instance.SuaDatTiec(et);
-                    BUS_DatTiec.Instance.DSDatTiec(dgvDSDatTiec);
+                    dt.SuaDatTiec(et);
+                    dt.DSDatTiec(dgvDSDatTiec);
                 }
             }
         }
@@ -396,20 +401,20 @@ namespace GUI
             dtpNgayBatDau.Value = DateTime.Today;
             dtpNgayKetThuc.Value = DateTime.Today;
 
-            txtDatTiec.Text = BUS_DatTiec.Instance.TaoMaTuDong();
-            BUS_Sanh.Instance.DSSanhCombobox(cboSanhDT);
+            txtDatTiec.Text = dt.TaoMaTuDong();
+            s.DSSanhCombobox(cboSanhDT);
 
             if (cboSanhDT.Items.Count > 0)
             {
                 string maS = cboSanhDT.SelectedValue.ToString();
-                float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
+                float giaSDT = s.LayGiaSTheoMa(maS);
                 float tongTien = giaSDT;
                 float datCoc = tongTien * 0.2f;
                 txtTongTien.Text = tongTien.ToString("F0");
                 txtDatCoc.Text = datCoc.ToString("F0");
             }
 
-            BUS_DatTiec.Instance.DSDatTiec(dgvDSDatTiec);
+            dt.DSDatTiec(dgvDSDatTiec);
 
             txtMaNS.Text = "NV025";
             txtNgayDatTiec.Text = DateTime.Today.ToString("dd/MM/yyyy");
@@ -422,7 +427,7 @@ namespace GUI
             dtpNgayKetThuc.MaxDate = DateTime.Today.AddMonths(4);
 
             AutoCompleteStringCollection cccdSuggestions = new AutoCompleteStringCollection();
-            List<string> dsCCCD = BUS_KhachHang.Instance.LayTatCaCCCD();
+            List<string> dsCCCD = kh.LayTatCaCCCD();
             cccdSuggestions.AddRange(dsCCCD.ToArray());
 
             txtCCCD.AutoCompleteCustomSource = cccdSuggestions;
@@ -442,15 +447,15 @@ namespace GUI
         {
             if (radNgay.Checked == true)
             {
-                dgvDSDatTiec.DataSource = BUS_ThongKeDatTiec.Instance.ThongKeDatTiecTheoNgay(dtpThoiGian.Value);
+                dgvDSDatTiec.DataSource = tkdt.ThongKeDatTiecTheoNgay(dtpThoiGian.Value);
             }
             else if (radThang.Checked == true)
             {
-                dgvDSDatTiec.DataSource = BUS_ThongKeDatTiec.Instance.ThongKeDatTiecTheoThang(dtpThoiGian.Value.Year, dtpThoiGian.Value.Month);
+                dgvDSDatTiec.DataSource = tkdt.ThongKeDatTiecTheoThang(dtpThoiGian.Value.Year, dtpThoiGian.Value.Month);
             }
             else if (radNam.Checked == true)
             {
-                dgvDSDatTiec.DataSource = BUS_ThongKeDatTiec.Instance.ThongKeDatTiecTheoNam(dtpThoiGian.Value.Year);
+                dgvDSDatTiec.DataSource = tkdt.ThongKeDatTiecTheoNam(dtpThoiGian.Value.Year);
             }
         }
 
