@@ -38,6 +38,7 @@
             this.btnThongTinKhachHang = new System.Windows.Forms.Button();
             this.btnDuLieuResort = new System.Windows.Forms.Button();
             this.pnlBaoCaoThongKe = new System.Windows.Forms.Panel();
+            this.btnThongKeDatTiec = new System.Windows.Forms.Button();
             this.btnBaoCaoThongKe = new System.Windows.Forms.Button();
             this.pnlThanhToanDichVu = new System.Windows.Forms.Panel();
             this.btnTTDatPhong = new System.Windows.Forms.Button();
@@ -59,7 +60,7 @@
             this.picExit = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlManHinh = new System.Windows.Forms.Panel();
-            this.btnThongKeDatTiec = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlDuLieuResort.SuspendLayout();
             this.pnlBaoCaoThongKe.SuspendLayout();
@@ -87,10 +88,10 @@
             this.pnlMenu.Controls.Add(this.btnDichVu);
             this.pnlMenu.Controls.Add(this.pnlLogo);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 55);
+            this.pnlMenu.Location = new System.Drawing.Point(0, 44);
             this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(428, 1045);
+            this.pnlMenu.Size = new System.Drawing.Size(380, 836);
             this.pnlMenu.TabIndex = 1;
             // 
             // pnlDuLieuResort
@@ -102,10 +103,10 @@
             this.pnlDuLieuResort.Controls.Add(this.btnThongTinNhanSu);
             this.pnlDuLieuResort.Controls.Add(this.btnThongTinKhachHang);
             this.pnlDuLieuResort.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDuLieuResort.Location = new System.Drawing.Point(0, 1187);
+            this.pnlDuLieuResort.Location = new System.Drawing.Point(0, 951);
             this.pnlDuLieuResort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlDuLieuResort.Name = "pnlDuLieuResort";
-            this.pnlDuLieuResort.Size = new System.Drawing.Size(402, 416);
+            this.pnlDuLieuResort.Size = new System.Drawing.Size(354, 333);
             this.pnlDuLieuResort.TabIndex = 9;
             // 
             // btnThucDon
@@ -114,10 +115,10 @@
             this.btnThucDon.FlatAppearance.BorderSize = 0;
             this.btnThucDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThucDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThucDon.Location = new System.Drawing.Point(0, 232);
+            this.btnThucDon.Location = new System.Drawing.Point(0, 184);
             this.btnThucDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThucDon.Name = "btnThucDon";
-            this.btnThucDon.Size = new System.Drawing.Size(402, 58);
+            this.btnThucDon.Size = new System.Drawing.Size(354, 46);
             this.btnThucDon.TabIndex = 14;
             this.btnThucDon.Text = "Thực đơn nhà hàng";
             this.btnThucDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -130,10 +131,10 @@
             this.btnMonAn.FlatAppearance.BorderSize = 0;
             this.btnMonAn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMonAn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMonAn.Location = new System.Drawing.Point(0, 174);
+            this.btnMonAn.Location = new System.Drawing.Point(0, 138);
             this.btnMonAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMonAn.Name = "btnMonAn";
-            this.btnMonAn.Size = new System.Drawing.Size(402, 58);
+            this.btnMonAn.Size = new System.Drawing.Size(354, 46);
             this.btnMonAn.TabIndex = 13;
             this.btnMonAn.Text = "Món ăn";
             this.btnMonAn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,10 +147,10 @@
             this.btnPhong.FlatAppearance.BorderSize = 0;
             this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhong.Location = new System.Drawing.Point(0, 116);
+            this.btnPhong.Location = new System.Drawing.Point(0, 92);
             this.btnPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhong.Name = "btnPhong";
-            this.btnPhong.Size = new System.Drawing.Size(402, 58);
+            this.btnPhong.Size = new System.Drawing.Size(354, 46);
             this.btnPhong.TabIndex = 10;
             this.btnPhong.Text = "Loại hình lưu trú";
             this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,10 +163,10 @@
             this.btnThongTinNhanSu.FlatAppearance.BorderSize = 0;
             this.btnThongTinNhanSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThongTinNhanSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongTinNhanSu.Location = new System.Drawing.Point(0, 58);
+            this.btnThongTinNhanSu.Location = new System.Drawing.Point(0, 46);
             this.btnThongTinNhanSu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThongTinNhanSu.Name = "btnThongTinNhanSu";
-            this.btnThongTinNhanSu.Size = new System.Drawing.Size(402, 58);
+            this.btnThongTinNhanSu.Size = new System.Drawing.Size(354, 46);
             this.btnThongTinNhanSu.TabIndex = 9;
             this.btnThongTinNhanSu.Text = "Thông tin nhân sự";
             this.btnThongTinNhanSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,7 +182,7 @@
             this.btnThongTinKhachHang.Location = new System.Drawing.Point(0, 0);
             this.btnThongTinKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThongTinKhachHang.Name = "btnThongTinKhachHang";
-            this.btnThongTinKhachHang.Size = new System.Drawing.Size(402, 58);
+            this.btnThongTinKhachHang.Size = new System.Drawing.Size(354, 46);
             this.btnThongTinKhachHang.TabIndex = 8;
             this.btnThongTinKhachHang.Text = "Thông tin khách hàng";
             this.btnThongTinKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,10 +198,10 @@
             this.btnDuLieuResort.ForeColor = System.Drawing.Color.Black;
             this.btnDuLieuResort.Image = global::GUI.Properties.Resources.down_arrow;
             this.btnDuLieuResort.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDuLieuResort.Location = new System.Drawing.Point(0, 1126);
+            this.btnDuLieuResort.Location = new System.Drawing.Point(0, 902);
             this.btnDuLieuResort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDuLieuResort.Name = "btnDuLieuResort";
-            this.btnDuLieuResort.Size = new System.Drawing.Size(402, 61);
+            this.btnDuLieuResort.Size = new System.Drawing.Size(354, 49);
             this.btnDuLieuResort.TabIndex = 8;
             this.btnDuLieuResort.Text = "Dữ Liệu Resort";
             this.btnDuLieuResort.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -210,13 +211,30 @@
             // pnlBaoCaoThongKe
             // 
             this.pnlBaoCaoThongKe.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.pnlBaoCaoThongKe.Controls.Add(this.button1);
             this.pnlBaoCaoThongKe.Controls.Add(this.btnThongKeDatTiec);
             this.pnlBaoCaoThongKe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlBaoCaoThongKe.Location = new System.Drawing.Point(0, 794);
+            this.pnlBaoCaoThongKe.Location = new System.Drawing.Point(0, 636);
             this.pnlBaoCaoThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlBaoCaoThongKe.Name = "pnlBaoCaoThongKe";
-            this.pnlBaoCaoThongKe.Size = new System.Drawing.Size(402, 332);
+            this.pnlBaoCaoThongKe.Size = new System.Drawing.Size(354, 266);
             this.pnlBaoCaoThongKe.TabIndex = 7;
+            // 
+            // btnThongKeDatTiec
+            // 
+            this.btnThongKeDatTiec.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongKeDatTiec.FlatAppearance.BorderSize = 0;
+            this.btnThongKeDatTiec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKeDatTiec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKeDatTiec.Location = new System.Drawing.Point(0, 0);
+            this.btnThongKeDatTiec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThongKeDatTiec.Name = "btnThongKeDatTiec";
+            this.btnThongKeDatTiec.Size = new System.Drawing.Size(354, 46);
+            this.btnThongKeDatTiec.TabIndex = 10;
+            this.btnThongKeDatTiec.Text = "Thống kê đặt tiệc";
+            this.btnThongKeDatTiec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKeDatTiec.UseVisualStyleBackColor = true;
+            this.btnThongKeDatTiec.Click += new System.EventHandler(this.btnThongKeDatTiec_Click);
             // 
             // btnBaoCaoThongKe
             // 
@@ -227,10 +245,10 @@
             this.btnBaoCaoThongKe.ForeColor = System.Drawing.Color.Black;
             this.btnBaoCaoThongKe.Image = global::GUI.Properties.Resources.down_arrow;
             this.btnBaoCaoThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBaoCaoThongKe.Location = new System.Drawing.Point(0, 733);
+            this.btnBaoCaoThongKe.Location = new System.Drawing.Point(0, 587);
             this.btnBaoCaoThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBaoCaoThongKe.Name = "btnBaoCaoThongKe";
-            this.btnBaoCaoThongKe.Size = new System.Drawing.Size(402, 61);
+            this.btnBaoCaoThongKe.Size = new System.Drawing.Size(354, 49);
             this.btnBaoCaoThongKe.TabIndex = 6;
             this.btnBaoCaoThongKe.Text = "Báo Cáo Thống Kê";
             this.btnBaoCaoThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,10 +261,10 @@
             this.pnlThanhToanDichVu.Controls.Add(this.btnTTDatPhong);
             this.pnlThanhToanDichVu.Controls.Add(this.btnTTDatTiec);
             this.pnlThanhToanDichVu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlThanhToanDichVu.Location = new System.Drawing.Point(0, 601);
+            this.pnlThanhToanDichVu.Location = new System.Drawing.Point(0, 481);
             this.pnlThanhToanDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlThanhToanDichVu.Name = "pnlThanhToanDichVu";
-            this.pnlThanhToanDichVu.Size = new System.Drawing.Size(402, 132);
+            this.pnlThanhToanDichVu.Size = new System.Drawing.Size(354, 106);
             this.pnlThanhToanDichVu.TabIndex = 5;
             // 
             // btnTTDatPhong
@@ -255,10 +273,10 @@
             this.btnTTDatPhong.FlatAppearance.BorderSize = 0;
             this.btnTTDatPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTTDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTTDatPhong.Location = new System.Drawing.Point(0, 58);
+            this.btnTTDatPhong.Location = new System.Drawing.Point(0, 46);
             this.btnTTDatPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTTDatPhong.Name = "btnTTDatPhong";
-            this.btnTTDatPhong.Size = new System.Drawing.Size(402, 58);
+            this.btnTTDatPhong.Size = new System.Drawing.Size(354, 46);
             this.btnTTDatPhong.TabIndex = 9;
             this.btnTTDatPhong.Text = "Thanh toán đặt phòng";
             this.btnTTDatPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -274,7 +292,7 @@
             this.btnTTDatTiec.Location = new System.Drawing.Point(0, 0);
             this.btnTTDatTiec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTTDatTiec.Name = "btnTTDatTiec";
-            this.btnTTDatTiec.Size = new System.Drawing.Size(402, 58);
+            this.btnTTDatTiec.Size = new System.Drawing.Size(354, 46);
             this.btnTTDatTiec.TabIndex = 8;
             this.btnTTDatTiec.Text = "Thanh toán đặt tiệc";
             this.btnTTDatTiec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,10 +308,10 @@
             this.btnThanhToanDichVu.ForeColor = System.Drawing.Color.Black;
             this.btnThanhToanDichVu.Image = global::GUI.Properties.Resources.down_arrow;
             this.btnThanhToanDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThanhToanDichVu.Location = new System.Drawing.Point(0, 540);
+            this.btnThanhToanDichVu.Location = new System.Drawing.Point(0, 432);
             this.btnThanhToanDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThanhToanDichVu.Name = "btnThanhToanDichVu";
-            this.btnThanhToanDichVu.Size = new System.Drawing.Size(402, 61);
+            this.btnThanhToanDichVu.Size = new System.Drawing.Size(354, 49);
             this.btnThanhToanDichVu.TabIndex = 4;
             this.btnThanhToanDichVu.Text = "Thanh Toán Dịch Vụ";
             this.btnThanhToanDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -307,10 +325,10 @@
             this.pnlDVResort.Controls.Add(this.btnDatPhong);
             this.pnlDVResort.Controls.Add(this.btnDatTiec);
             this.pnlDVResort.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDVResort.Location = new System.Drawing.Point(0, 350);
+            this.pnlDVResort.Location = new System.Drawing.Point(0, 280);
             this.pnlDVResort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlDVResort.Name = "pnlDVResort";
-            this.pnlDVResort.Size = new System.Drawing.Size(402, 190);
+            this.pnlDVResort.Size = new System.Drawing.Size(354, 152);
             this.pnlDVResort.TabIndex = 3;
             // 
             // btnSDDichVu
@@ -319,10 +337,10 @@
             this.btnSDDichVu.FlatAppearance.BorderSize = 0;
             this.btnSDDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSDDichVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSDDichVu.Location = new System.Drawing.Point(0, 116);
+            this.btnSDDichVu.Location = new System.Drawing.Point(0, 92);
             this.btnSDDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSDDichVu.Name = "btnSDDichVu";
-            this.btnSDDichVu.Size = new System.Drawing.Size(402, 58);
+            this.btnSDDichVu.Size = new System.Drawing.Size(354, 46);
             this.btnSDDichVu.TabIndex = 5;
             this.btnSDDichVu.Text = "Sử dụng dịch vụ";
             this.btnSDDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,10 +353,10 @@
             this.btnDatPhong.FlatAppearance.BorderSize = 0;
             this.btnDatPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatPhong.Location = new System.Drawing.Point(0, 58);
+            this.btnDatPhong.Location = new System.Drawing.Point(0, 46);
             this.btnDatPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDatPhong.Name = "btnDatPhong";
-            this.btnDatPhong.Size = new System.Drawing.Size(402, 58);
+            this.btnDatPhong.Size = new System.Drawing.Size(354, 46);
             this.btnDatPhong.TabIndex = 4;
             this.btnDatPhong.Text = "Đặt phòng";
             this.btnDatPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -354,7 +372,7 @@
             this.btnDatTiec.Location = new System.Drawing.Point(0, 0);
             this.btnDatTiec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDatTiec.Name = "btnDatTiec";
-            this.btnDatTiec.Size = new System.Drawing.Size(402, 58);
+            this.btnDatTiec.Size = new System.Drawing.Size(354, 46);
             this.btnDatTiec.TabIndex = 3;
             this.btnDatTiec.Text = "Đặt tiệc";
             this.btnDatTiec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -370,10 +388,10 @@
             this.btnDichVu.ForeColor = System.Drawing.Color.Black;
             this.btnDichVu.Image = global::GUI.Properties.Resources.down_arrow;
             this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDichVu.Location = new System.Drawing.Point(0, 289);
+            this.btnDichVu.Location = new System.Drawing.Point(0, 231);
             this.btnDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDichVu.Name = "btnDichVu";
-            this.btnDichVu.Size = new System.Drawing.Size(402, 61);
+            this.btnDichVu.Size = new System.Drawing.Size(354, 49);
             this.btnDichVu.TabIndex = 3;
             this.btnDichVu.Text = "Dịch Vụ";
             this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -391,14 +409,14 @@
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(402, 289);
+            this.pnlLogo.Size = new System.Drawing.Size(354, 231);
             this.pnlLogo.TabIndex = 0;
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(184, 256);
+            this.lblDate.Location = new System.Drawing.Point(164, 205);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(63, 29);
             this.lblDate.TabIndex = 6;
@@ -407,10 +425,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(74, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(66, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(248, 248);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 198);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -419,7 +437,7 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(3, 256);
+            this.lblTime.Location = new System.Drawing.Point(3, 205);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(69, 29);
             this.lblTime.TabIndex = 4;
@@ -429,7 +447,7 @@
             // 
             this.lblDauKetNoi.AutoSize = true;
             this.lblDauKetNoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDauKetNoi.Location = new System.Drawing.Point(148, 256);
+            this.lblDauKetNoi.Location = new System.Drawing.Point(132, 205);
             this.lblDauKetNoi.Name = "lblDauKetNoi";
             this.lblDauKetNoi.Size = new System.Drawing.Size(21, 29);
             this.lblDauKetNoi.TabIndex = 5;
@@ -445,16 +463,16 @@
             this.pnlThanhDieuHuong.Location = new System.Drawing.Point(0, 0);
             this.pnlThanhDieuHuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlThanhDieuHuong.Name = "pnlThanhDieuHuong";
-            this.pnlThanhDieuHuong.Size = new System.Drawing.Size(1917, 55);
+            this.pnlThanhDieuHuong.Size = new System.Drawing.Size(1704, 44);
             this.pnlThanhDieuHuong.TabIndex = 0;
             // 
             // picLogout
             // 
             this.picLogout.Image = global::GUI.Properties.Resources.logout2;
-            this.picLogout.Location = new System.Drawing.Point(1815, 12);
+            this.picLogout.Location = new System.Drawing.Point(1613, 10);
             this.picLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picLogout.Name = "picLogout";
-            this.picLogout.Size = new System.Drawing.Size(29, 29);
+            this.picLogout.Size = new System.Drawing.Size(26, 23);
             this.picLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogout.TabIndex = 16;
             this.picLogout.TabStop = false;
@@ -463,10 +481,10 @@
             // picSetting
             // 
             this.picSetting.Image = global::GUI.Properties.Resources.system;
-            this.picSetting.Location = new System.Drawing.Point(1754, 12);
+            this.picSetting.Location = new System.Drawing.Point(1559, 10);
             this.picSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picSetting.Name = "picSetting";
-            this.picSetting.Size = new System.Drawing.Size(29, 29);
+            this.picSetting.Size = new System.Drawing.Size(26, 23);
             this.picSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSetting.TabIndex = 15;
             this.picSetting.TabStop = false;
@@ -475,10 +493,10 @@
             // picExit
             // 
             this.picExit.Image = global::GUI.Properties.Resources.logout;
-            this.picExit.Location = new System.Drawing.Point(1876, 12);
+            this.picExit.Location = new System.Drawing.Point(1668, 10);
             this.picExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picExit.Name = "picExit";
-            this.picExit.Size = new System.Drawing.Size(29, 29);
+            this.picExit.Size = new System.Drawing.Size(26, 23);
             this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picExit.TabIndex = 14;
             this.picExit.TabStop = false;
@@ -491,34 +509,34 @@
             // pnlManHinh
             // 
             this.pnlManHinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlManHinh.Location = new System.Drawing.Point(428, 55);
+            this.pnlManHinh.Location = new System.Drawing.Point(380, 44);
             this.pnlManHinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlManHinh.Name = "pnlManHinh";
-            this.pnlManHinh.Size = new System.Drawing.Size(1489, 1045);
+            this.pnlManHinh.Size = new System.Drawing.Size(1324, 836);
             this.pnlManHinh.TabIndex = 6;
             // 
-            // btnThongKeDatTiec
+            // button1
             // 
-            this.btnThongKeDatTiec.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongKeDatTiec.FlatAppearance.BorderSize = 0;
-            this.btnThongKeDatTiec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKeDatTiec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKeDatTiec.Location = new System.Drawing.Point(0, 0);
-            this.btnThongKeDatTiec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThongKeDatTiec.Name = "btnThongKeDatTiec";
-            this.btnThongKeDatTiec.Size = new System.Drawing.Size(402, 58);
-            this.btnThongKeDatTiec.TabIndex = 10;
-            this.btnThongKeDatTiec.Text = "Thống kê đặt tiệc";
-            this.btnThongKeDatTiec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKeDatTiec.UseVisualStyleBackColor = true;
-            this.btnThongKeDatTiec.Click += new System.EventHandler(this.btnThongKeDatTiec_Click);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 46);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(354, 46);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Thống kê khách hàng";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1917, 1100);
+            this.ClientSize = new System.Drawing.Size(1704, 880);
             this.Controls.Add(this.pnlManHinh);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlThanhDieuHuong);
@@ -576,6 +594,7 @@
         private System.Windows.Forms.Panel pnlManHinh;
         private System.Windows.Forms.Button btnThucDon;
         private System.Windows.Forms.Button btnThongKeDatTiec;
+        private System.Windows.Forms.Button button1;
     }
 }
 

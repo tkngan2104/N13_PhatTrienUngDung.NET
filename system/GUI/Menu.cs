@@ -163,14 +163,14 @@ namespace GUI
             else
             {
                 //pnlBaoCaoThongKe.Height = 77;
-                pnlBaoCaoThongKe.Height = 10;
+                pnlBaoCaoThongKe.Height = 0;
             }
         }
 
         private void btnBaoCaoThongKe_Click(object sender, EventArgs e)
         {
-            showPnl = !showPnl;
-            toogglePnlBCTK();
+            //showPnl = !showPnl;
+            //toogglePnlBCTK();
         }
 
         /// <summary>
@@ -451,16 +451,28 @@ namespace GUI
             }
         }
 
-        private ThongKeDatTiec tkdt;
+        //private ThongKeDatTiec tkdt;
         private void btnThongKeDatTiec_Click(object sender, EventArgs e)
         {
-            if (tkdt == null || ttdt.IsDisposed)
+            //if (tkdt == null || ttdt.IsDisposed)
+            //{
+            //    openChildForm(new ThongKeDatTiec());
+            //}
+            //else
+            //{
+            //    ttdt.BringToFront();
+            //}
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (dp == null || dp.IsDisposed)
             {
-                openChildForm(new ThongKeDatTiec());
+                openChildForm(new frm_ReportKhachHang());
             }
             else
             {
-                ttdt.BringToFront();
+                dp.BringToFront();
             }
         }
     }

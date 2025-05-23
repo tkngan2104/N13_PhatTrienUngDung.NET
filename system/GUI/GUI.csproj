@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -54,6 +54,7 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -76,6 +77,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -105,10 +108,15 @@
     <Compile Include="ComboMonAn.Designer.cs">
       <DependentUpon>ComboMonAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSetDSDatTiecTheoThang2.Designer.cs">
+    <Compile Include="DataSetInHoaDonThanhToanDP.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+      <DependentUpon>DataSetInHoaDonThanhToanDP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongKeDatTiecTheoNam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongKeDatTiecTheoNam.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSetThongKeDatTiecTheoNgay.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -119,6 +127,31 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetThongKeDatTiecTheoThang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongKeSDDVTheoNam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongKeSDDVTheoNam.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongKeSDDVTheoThang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongKeSDDVTheoThang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongTinPhongTheoNam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongTinPhongTheoNam.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongTinPhongTheoThang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongTinPhongTheoThang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetThongTinTheoNgay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetThongTinTheoNgay.xsd</DependentUpon>
     </Compile>
     <Compile Include="DatDichVu.cs">
       <SubType>Form</SubType>
@@ -143,6 +176,18 @@
     </Compile>
     <Compile Include="DichVu.Designer.cs">
       <DependentUpon>DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InHoaDonDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHoaDonDatPhong.Designer.cs">
+      <DependentUpon>InHoaDonDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ReportKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ReportKhachHang.Designer.cs">
+      <DependentUpon>frm_ReportKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang.cs">
       <SubType>Form</SubType>
@@ -188,12 +233,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rpt_ThongKeDatTiecTheoNam.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rpt_ThongKeDatTiecTheoNam.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="SanhDatTiec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,11 +264,53 @@
     <Compile Include="ThanhToanDatTiec.Designer.cs">
       <DependentUpon>ThanhToanDatTiec.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongKeDatTiec.cs">
+    <Compile Include="ThongKeDatPhongTheoNam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongKeDatTiec.Designer.cs">
-      <DependentUpon>ThongKeDatTiec.cs</DependentUpon>
+    <Compile Include="ThongKeDatPhongTheoNam.Designer.cs">
+      <DependentUpon>ThongKeDatPhongTheoNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDatPhongTheoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDatPhongTheoNgay.Designer.cs">
+      <DependentUpon>ThongKeDatPhongTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDatPhongTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDatPhongTheoThang.Designer.cs">
+      <DependentUpon>ThongKeDatPhongTheoThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoNam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoNam.Designer.cs">
+      <DependentUpon>ThongKeDatTiecTheoNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoNgay.Designer.cs">
+      <DependentUpon>ThongKeDatTiecTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDatTiecTheoThang.Designer.cs">
+      <DependentUpon>ThongKeDatTiecTheoThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeSuDungDichVuTheoNam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeSuDungDichVuTheoNam.Designer.cs">
+      <DependentUpon>ThongKeSuDungDichVuTheoNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeSuDungDichVuTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeSuDungDichVuTheoThang.Designer.cs">
+      <DependentUpon>ThongKeSuDungDichVuTheoThang.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ChiTietDatTiec.resx">
       <DependentUpon>ChiTietDatTiec.cs</DependentUpon>
@@ -252,6 +333,13 @@
     <EmbeddedResource Include="DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InHoaDonDatPhong.resx">
+      <DependentUpon>InHoaDonDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ReportKhachHang.resx">
+      <DependentUpon>frm_ReportKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InHoaDonThanhToanDP.rdlc" />
     <EmbeddedResource Include="KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,12 +371,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="report_ThongKeTheoThang.rdlc" />
-    <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNam.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rpt_ThongKeDatTiecTheoNam.cs</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThongKeDatPhongTheoNam.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNam.rdlc" />
     <EmbeddedResource Include="rpt_ThongKeDatTiecTheoNgay.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKeDatTiecTheoThang.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKeSuDungDichVuTheoNam.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKeSuDungDichVuTheoThang.rdlc" />
+    <EmbeddedResource Include="rpt_ThongTinDatPhongTheoNgay.rdlc" />
+    <EmbeddedResource Include="rpt_ThongTinDatPhongTheoThang.rdlc" />
     <EmbeddedResource Include="SanhDatTiec.resx">
       <DependentUpon>SanhDatTiec.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,19 +394,51 @@
     <EmbeddedResource Include="ThanhToanDatTiec.resx">
       <DependentUpon>ThanhToanDatTiec.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongKeDatTiec.resx">
-      <DependentUpon>ThongKeDatTiec.cs</DependentUpon>
+    <EmbeddedResource Include="ThongKeDatPhongTheoNam.resx">
+      <DependentUpon>ThongKeDatPhongTheoNam.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSetDSDatTiecTheoThang2.xsc">
-      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    <EmbeddedResource Include="ThongKeDatPhongTheoNgay.resx">
+      <DependentUpon>ThongKeDatPhongTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDatPhongTheoThang.resx">
+      <DependentUpon>ThongKeDatPhongTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDatTiecTheoNam.resx">
+      <DependentUpon>ThongKeDatTiecTheoNam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDatTiecTheoNgay.resx">
+      <DependentUpon>ThongKeDatTiecTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDatTiecTheoThang.resx">
+      <DependentUpon>ThongKeDatTiecTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeSuDungDichVuTheoNam.resx">
+      <DependentUpon>ThongKeSuDungDichVuTheoNam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeSuDungDichVuTheoThang.resx">
+      <DependentUpon>ThongKeSuDungDichVuTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetInHoaDonThanhToanDP.xsc">
+      <DependentUpon>DataSetInHoaDonThanhToanDP.xsd</DependentUpon>
     </None>
-    <None Include="DataSetDSDatTiecTheoThang2.xsd">
+    <None Include="DataSetInHoaDonThanhToanDP.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetDSDatTiecTheoThang2.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSetInHoaDonThanhToanDP.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DataSetDSDatTiecTheoThang2.xss">
-      <DependentUpon>DataSetDSDatTiecTheoThang2.xsd</DependentUpon>
+    <None Include="DataSetInHoaDonThanhToanDP.xss">
+      <DependentUpon>DataSetInHoaDonThanhToanDP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoNam.xsc">
+      <DependentUpon>DataSetThongKeDatTiecTheoNam.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoNam.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongKeDatTiecTheoNam.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongKeDatTiecTheoNam.xss">
+      <DependentUpon>DataSetThongKeDatTiecTheoNam.xsd</DependentUpon>
     </None>
     <None Include="DataSetThongKeDatTiecTheoNgay.xsc">
       <DependentUpon>DataSetThongKeDatTiecTheoNgay.xsd</DependentUpon>
@@ -339,6 +461,61 @@
     </None>
     <None Include="DataSetThongKeDatTiecTheoThang.xss">
       <DependentUpon>DataSetThongKeDatTiecTheoThang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeSDDVTheoNam.xsc">
+      <DependentUpon>DataSetThongKeSDDVTheoNam.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeSDDVTheoNam.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongKeSDDVTheoNam.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongKeSDDVTheoNam.xss">
+      <DependentUpon>DataSetThongKeSDDVTheoNam.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeSDDVTheoThang.xsc">
+      <DependentUpon>DataSetThongKeSDDVTheoThang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongKeSDDVTheoThang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongKeSDDVTheoThang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongKeSDDVTheoThang.xss">
+      <DependentUpon>DataSetThongKeSDDVTheoThang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongTinPhongTheoNam.xsc">
+      <DependentUpon>DataSetThongTinPhongTheoNam.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongTinPhongTheoNam.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongTinPhongTheoNam.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongTinPhongTheoNam.xss">
+      <DependentUpon>DataSetThongTinPhongTheoNam.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongTinPhongTheoThang.xsc">
+      <DependentUpon>DataSetThongTinPhongTheoThang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongTinPhongTheoThang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongTinPhongTheoThang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongTinPhongTheoThang.xss">
+      <DependentUpon>DataSetThongTinPhongTheoThang.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongTinTheoNgay.xsc">
+      <DependentUpon>DataSetThongTinTheoNgay.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetThongTinTheoNgay.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetThongTinTheoNgay.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetThongTinTheoNgay.xss">
+      <DependentUpon>DataSetThongTinTheoNgay.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -397,20 +574,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BUS\BUS.csproj">
-      <Project>{497fcc9a-3b46-4f42-a207-6cfb4e222d68}</Project>
-      <Name>BUS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{6279046D-20C2-4CEB-B775-CBDD7237AF9F}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ET\ET.csproj">
-      <Project>{3b1407c3-0eb1-4d12-ac0c-7b60f6e0a011}</Project>
-      <Name>ET</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -427,6 +590,20 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{497fcc9a-3b46-4f42-a207-6cfb4e222d68}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{6279046d-20c2-4ceb-b775-cbdd7237af9f}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ET\ET.csproj">
+      <Project>{3b1407c3-0eb1-4d12-ac0c-7b60f6e0a011}</Project>
+      <Name>ET</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,8 +1,16 @@
 ﻿use DbQuanLyResort
 go
 set dateformat dmy
-go
 
+---EXEC sp_TimChiTietDatPhongTheoTenLH @tenLH = 'A101'
+---Drop PROCEDURE DSDatTiecTheoThang
+---EXEC DSDatTiecTheoNgay '2025-05-05';
+---EXEC DSDatTiecTheoThang 2025, 05;
+---EXEC DSDatTiecTheoNam 2025;
+---EXEC DSDatPhongTheoNgay '2025-05-05';
+
+-----Tìm loại hình lưu tru
+go
 CREATE PROCEDURE sp_TimKiemLoaiHinhLuuTru
     @tenLH NVARCHAR(5)
 AS
@@ -12,8 +20,8 @@ BEGIN
     WHERE tenLH = @tenLH;
 END;
 
+-----Tìm chi tiết đặt phòng theo tên loại hình.
 go
-
 CREATE PROCEDURE sp_TimChiTietDatPhongTheoTenLH
     @tenLH VARCHAR(50)
 AS
@@ -31,38 +39,118 @@ BEGIN
         LoaiHinhLuuTru lhlt ON ctdp.maLH = lhlt.maLH
     WHERE 
         lhlt.tenLH LIKE '%' + @tenLH + '%'
-END
+END;
+---DSHoaDonDatPhong
+CREATE PROCEDURE DSHoaDonDatPhong
+AS
+BEGIN
+	SELECT
+		hd.maHDDP,
+		hd.MaNhanSu,
+		hd.ngayLap,
+		hd.tongTien,
+		hd.trangThai,
+		ctdp.maCTDP,
+		sddv.maSDDV,
+		sddv.soLuong
+	FROM HoaDonDatPhong hd 
+	JOIN ChiTietDatPhong ctdp on hd.maCTDP = ctdp.maCTDP
+	JOIN SuDungDichVu sddv on hd.maSDDV = sddv.maSDDV
+END;
+-----Tìm đặt phòng theo ngày.
+go
+CREATE PROCEDURE DSDatPhongTheoNgay
+    @SearchDate DATE
+AS
+BEGIN
+    SELECT 
+        DP.maDP,
+		CTDP.maCTDP,
+        KH.MaKH,
+        KH.TenKH,
+        DP.MaNhanSu,
+        DP.ngayDatPhong,
+        CTDP.ngayTraPhong,
+        CTDP.maLH
+    FROM ChiTietDatPhong CTDP
+    JOIN DatPhong DP ON CTDP.maDP = DP.maDP 
+    JOIN KhachHang KH ON DP.MaKH = KH.MaKH
+    WHERE DP.ngayDatPhong = @SearchDate
+    ORDER BY DP.ngayDatPhong;
+END;
 
-EXEC sp_TimChiTietDatPhongTheoTenLH @tenLH = 'A101'
+-----Tìm đặt phòng theo tháng.
+go
+CREATE PROCEDURE DSDatPhongTheoThang
+    @Year INT,
+    @Month INT
+AS
+BEGIN
+    SELECT 
+        DP.maDP,
+	CTDP.maCTDP,
+        KH.MaKH,
+        KH.TenKH,
+        DP.MaNhanSu,
+        DP.ngayDatPhong,
+        CTDP.ngayTraPhong,
+        CTDP.maLH
+    FROM ChiTietDatPhong CTDP
+    JOIN DatPhong DP ON CTDP.maDP = DP.maDP 
+    JOIN KhachHang KH ON DP.MaKH = KH.MaKH
+    WHERE YEAR(DP.ngayDatPhong) = @Year AND MONTH(DP.ngayDatPhong) = @Month
+    ORDER BY DP.ngayDatPhong;
+END;
 
-select * from DatTiec
-----Danh sách đặt tiệc theo ngày tháng năm.
+-----Tìm đặt phòng theo năm.
+go
+CREATE PROCEDURE DSDatPhongTheoNam
+    @SearchYear INT
+AS
+BEGIN
+    SELECT 
+        DP.maDP,
+	CTDP.maCTDP,
+        KH.MaKH,
+        KH.TenKH,
+        DP.MaNhanSu,
+        DP.ngayDatPhong,
+        CTDP.ngayTraPhong,
+        CTDP.maLH
+    FROM ChiTietDatPhong CTDP
+    JOIN DatPhong DP ON CTDP.maDP = DP.maDP 
+    JOIN KhachHang KH ON DP.MaKH = KH.MaKH
+    WHERE YEAR(DP.ngayDatPhong) = @SearchYear
+    ORDER BY DP.ngayDatPhong;
+END;
+
+
+
+-----Tìm đặt tiệc theo ngày.
 go
 CREATE PROCEDURE DSDatTiecTheoNgay
     @SearchDate DATE
 AS
 BEGIN
     SELECT 
-        MaNhanSu,
-        maDT,
-        MaKH,
-        ngayDT,
-        maS,
-        ghiChu,
-        ngayBatDau,
-        ngayKetThuc,
-        tongTien,
-        giaTriDC
-    FROM 
-        DatTiec
-    WHERE 
-        ngayDT = @SearchDate
-    ORDER BY 
-        ngayDT;
+        DT.maDT,
+        KH.MaKH,
+        KH.TenKH,
+        DT.maS,
+        DT.ngayDT,
+        DT.ngayBatDau,
+        DT.ngayKetThuc,
+        DT.tongTien,
+        DT.giaTriDC,
+        DT.ghiChu,
+        DT.MaNhanSu
+    FROM DatTiec DT
+    JOIN KhachHang KH ON DT.MaKH = KH.MaKH
+    WHERE DT.ngayDT = @SearchDate
+    ORDER BY DT.ngayDT;
 END;
 
-EXEC DSDatTiecTheoNgay '2025-05-05';
-
+-----Tìm đặt tiệc theo tháng.
 go
 CREATE PROCEDURE DSDatTiecTheoThang
     @Year INT,
@@ -70,48 +158,108 @@ CREATE PROCEDURE DSDatTiecTheoThang
 AS
 BEGIN
     SELECT 
-        MaNhanSu,
-        maDT,
-        MaKH,
-        ngayDT,
-        maS,
-        ghiChu,
-        ngayBatDau,
-        ngayKetThuc,
-        tongTien,
-        giaTriDC
-    FROM 
-        DatTiec
-    WHERE 
-        YEAR(ngayDT) = @Year AND MONTH(ngayDT) = @Month
-    ORDER BY 
-        ngayDT;
+        DT.maDT,
+        KH.MaKH,
+        KH.TenKH,
+        DT.maS,
+        DT.ngayDT,
+        DT.ngayBatDau,
+        DT.ngayKetThuc,
+        DT.tongTien,
+        DT.giaTriDC,
+        DT.ghiChu,
+        DT.MaNhanSu
+    FROM DatTiec DT
+    JOIN KhachHang KH ON DT.MaKH = KH.MaKH
+    WHERE YEAR(DT.ngayDT) = @Year AND MONTH(DT.ngayDT) = @Month
+    ORDER BY DT.ngayDT;
 END;
 
-EXEC DSDatTiecTheoThang 2025, 05;
-
+-----Tìm đặt tiệc theo năm.
 go
 CREATE PROCEDURE DSDatTiecTheoNam
-    @Year INT
+    @SearchYear INT
 AS
 BEGIN
     SELECT 
-        MaNhanSu,
-        maDT,
-        MaKH,
-        ngayDT,
-        maS,
-        ghiChu,
-        ngayBatDau,
-        ngayKetThuc,
-        tongTien,
-        giaTriDC
-    FROM 
-        DatTiec
-    WHERE 
-        YEAR(ngayDT) = @Year
-    ORDER BY 
-        ngayDT;
+        DT.maDT,
+        KH.MaKH,
+        KH.TenKH,
+        DT.maS,
+        DT.ngayDT,
+        DT.ngayBatDau,
+        DT.ngayKetThuc,
+        DT.tongTien,
+        DT.giaTriDC,
+        DT.ghiChu,
+        DT.MaNhanSu
+    FROM DatTiec DT
+    JOIN KhachHang KH ON DT.MaKH = KH.MaKH
+    WHERE YEAR(DT.ngayDT) = @SearchYear
+    ORDER BY DT.ngayDT;
 END;
 
-EXEC DSDatTiecTheoNam 2025;
+----Danh sách sử dụng dịch vụ theo tháng.
+
+go
+CREATE PROCEDURE sp_ThongKeDichVu_TheoThang
+    @thang INT,
+    @nam INT
+AS
+BEGIN
+    -- Danh sách dịch vụ theo tháng và năm
+    SELECT 
+        dv.tenDV,
+        SUM(sddv.soLuong) AS TongSoLanSuDung,
+        SUM(sddv.tongTien) AS TongTien
+    FROM SuDungDichVu sddv
+    JOIN ChiTietDatPhong ctdp ON sddv.maCTDP = ctdp.maCTDP
+    JOIN DichVu dv ON sddv.maDV = dv.maDV
+    WHERE MONTH(ctdp.ngayTraPhong) = @thang
+      AND YEAR(ctdp.ngayTraPhong) = @nam
+    GROUP BY dv.tenDV
+    ORDER BY TongSoLanSuDung DESC;
+
+    -- Tổng tiền tất cả dịch vụ trong tháng
+    SELECT 
+        'Tổng cộng' AS tenDV,
+        SUM(sddv.soLuong) AS TongSoLanSuDung,
+        SUM(sddv.tongTien) AS TongTien
+    FROM SuDungDichVu sddv
+    JOIN ChiTietDatPhong ctdp ON sddv.maCTDP = ctdp.maCTDP
+    WHERE MONTH(ctdp.ngayTraPhong) = @thang
+      AND YEAR(ctdp.ngayTraPhong) = @nam;
+END;
+
+---EXEC sp_ThongKeDichVu_TheoThang 05, 2025
+
+-----Danh sách sử dụng dịch vụ theo năm.
+
+go
+CREATE PROCEDURE sp_ThongKeDichVu_TheoNam
+    @nam INT
+AS
+BEGIN
+    -- Danh sách dịch vụ theo năm
+    SELECT 
+        dv.tenDV,
+        SUM(sddv.soLuong) AS TongSoLanSuDung,
+        SUM(sddv.tongTien) AS TongTien
+    FROM SuDungDichVu sddv
+    JOIN ChiTietDatPhong ctdp ON sddv.maCTDP = ctdp.maCTDP
+    JOIN DichVu dv ON sddv.maDV = dv.maDV
+    WHERE YEAR(ctdp.ngayTraPhong) = @nam
+    GROUP BY dv.tenDV
+    ORDER BY TongSoLanSuDung DESC;
+
+    -- Tổng tiền tất cả dịch vụ trong năm
+    SELECT 
+        'Tổng cộng' AS tenDV,
+        SUM(sddv.soLuong) AS TongSoLanSuDung,
+        SUM(sddv.tongTien) AS TongTien
+    FROM SuDungDichVu sddv
+    JOIN ChiTietDatPhong ctdp ON sddv.maCTDP = ctdp.maCTDP
+    WHERE YEAR(ctdp.ngayTraPhong) = @nam;
+END;
+
+---EXEC sp_ThongKeDichVu_TheoNam 2025

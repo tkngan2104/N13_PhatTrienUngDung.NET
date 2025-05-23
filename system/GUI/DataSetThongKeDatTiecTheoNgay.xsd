@@ -22,16 +22,17 @@
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="MaNhanSu" DataSetColumn="MaNhanSu" />
               <Mapping SourceColumn="maDT" DataSetColumn="maDT" />
               <Mapping SourceColumn="MaKH" DataSetColumn="MaKH" />
-              <Mapping SourceColumn="ngayDT" DataSetColumn="ngayDT" />
+              <Mapping SourceColumn="TenKH" DataSetColumn="TenKH" />
               <Mapping SourceColumn="maS" DataSetColumn="maS" />
-              <Mapping SourceColumn="ghiChu" DataSetColumn="ghiChu" />
+              <Mapping SourceColumn="ngayDT" DataSetColumn="ngayDT" />
               <Mapping SourceColumn="ngayBatDau" DataSetColumn="ngayBatDau" />
               <Mapping SourceColumn="ngayKetThuc" DataSetColumn="ngayKetThuc" />
               <Mapping SourceColumn="tongTien" DataSetColumn="tongTien" />
               <Mapping SourceColumn="giaTriDC" DataSetColumn="giaTriDC" />
+              <Mapping SourceColumn="ghiChu" DataSetColumn="ghiChu" />
+              <Mapping SourceColumn="MaNhanSu" DataSetColumn="MaNhanSu" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -46,13 +47,6 @@
         <xs:element name="DSDatTiecTheoNgay" msprop:Generator_RowEvHandlerName="DSDatTiecTheoNgayRowChangeEventHandler" msprop:Generator_RowDeletedName="DSDatTiecTheoNgayRowDeleted" msprop:Generator_RowDeletingName="DSDatTiecTheoNgayRowDeleting" msprop:Generator_RowEvArgName="DSDatTiecTheoNgayRowChangeEvent" msprop:Generator_TablePropName="DSDatTiecTheoNgay" msprop:Generator_RowChangedName="DSDatTiecTheoNgayRowChanged" msprop:Generator_RowChangingName="DSDatTiecTheoNgayRowChanging" msprop:Generator_TableClassName="DSDatTiecTheoNgayDataTable" msprop:Generator_RowClassName="DSDatTiecTheoNgayRow" msprop:Generator_TableVarName="tableDSDatTiecTheoNgay" msprop:Generator_UserTableName="DSDatTiecTheoNgay">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="MaNhanSu" msprop:Generator_ColumnPropNameInRow="MaNhanSu" msprop:Generator_ColumnPropNameInTable="MaNhanSuColumn" msprop:Generator_ColumnVarNameInTable="columnMaNhanSu" msprop:Generator_UserColumnName="MaNhanSu" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="8" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
               <xs:element name="maDT" msprop:Generator_ColumnPropNameInRow="maDT" msprop:Generator_ColumnPropNameInTable="maDTColumn" msprop:Generator_ColumnVarNameInTable="columnmaDT" msprop:Generator_UserColumnName="maDT">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -67,7 +61,13 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ngayDT" msprop:Generator_ColumnPropNameInRow="ngayDT" msprop:Generator_ColumnPropNameInTable="ngayDTColumn" msprop:Generator_ColumnVarNameInTable="columnngayDT" msprop:Generator_UserColumnName="ngayDT" type="xs:dateTime" />
+              <xs:element name="TenKH" msprop:Generator_ColumnPropNameInRow="TenKH" msprop:Generator_ColumnPropNameInTable="TenKHColumn" msprop:Generator_ColumnVarNameInTable="columnTenKH" msprop:Generator_UserColumnName="TenKH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="maS" msprop:Generator_ColumnPropNameInRow="maS" msprop:Generator_ColumnPropNameInTable="maSColumn" msprop:Generator_ColumnVarNameInTable="columnmaS" msprop:Generator_UserColumnName="maS">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -75,6 +75,11 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="ngayDT" msprop:Generator_ColumnPropNameInRow="ngayDT" msprop:Generator_ColumnPropNameInTable="ngayDTColumn" msprop:Generator_ColumnVarNameInTable="columnngayDT" msprop:Generator_UserColumnName="ngayDT" type="xs:dateTime" />
+              <xs:element name="ngayBatDau" msprop:Generator_ColumnPropNameInRow="ngayBatDau" msprop:Generator_ColumnPropNameInTable="ngayBatDauColumn" msprop:Generator_ColumnVarNameInTable="columnngayBatDau" msprop:Generator_UserColumnName="ngayBatDau" type="xs:dateTime" />
+              <xs:element name="ngayKetThuc" msprop:Generator_ColumnPropNameInRow="ngayKetThuc" msprop:Generator_ColumnPropNameInTable="ngayKetThucColumn" msprop:Generator_ColumnVarNameInTable="columnngayKetThuc" msprop:Generator_UserColumnName="ngayKetThuc" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="tongTien" msprop:Generator_ColumnPropNameInRow="tongTien" msprop:Generator_ColumnPropNameInTable="tongTienColumn" msprop:Generator_ColumnVarNameInTable="columntongTien" msprop:Generator_UserColumnName="tongTien" type="xs:double" />
+              <xs:element name="giaTriDC" msprop:Generator_ColumnPropNameInRow="giaTriDC" msprop:Generator_ColumnPropNameInTable="giaTriDCColumn" msprop:Generator_ColumnVarNameInTable="columngiaTriDC" msprop:Generator_UserColumnName="giaTriDC" type="xs:double" />
               <xs:element name="ghiChu" msprop:Generator_ColumnPropNameInRow="ghiChu" msprop:Generator_ColumnPropNameInTable="ghiChuColumn" msprop:Generator_ColumnVarNameInTable="columnghiChu" msprop:Generator_UserColumnName="ghiChu" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -82,10 +87,13 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ngayBatDau" msprop:Generator_ColumnPropNameInRow="ngayBatDau" msprop:Generator_ColumnPropNameInTable="ngayBatDauColumn" msprop:Generator_ColumnVarNameInTable="columnngayBatDau" msprop:Generator_UserColumnName="ngayBatDau" type="xs:dateTime" />
-              <xs:element name="ngayKetThuc" msprop:Generator_ColumnPropNameInRow="ngayKetThuc" msprop:Generator_ColumnPropNameInTable="ngayKetThucColumn" msprop:Generator_ColumnVarNameInTable="columnngayKetThuc" msprop:Generator_UserColumnName="ngayKetThuc" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="tongTien" msprop:Generator_ColumnPropNameInRow="tongTien" msprop:Generator_ColumnPropNameInTable="tongTienColumn" msprop:Generator_ColumnVarNameInTable="columntongTien" msprop:Generator_UserColumnName="tongTien" type="xs:double" />
-              <xs:element name="giaTriDC" msprop:Generator_ColumnPropNameInRow="giaTriDC" msprop:Generator_ColumnPropNameInTable="giaTriDCColumn" msprop:Generator_ColumnVarNameInTable="columngiaTriDC" msprop:Generator_UserColumnName="giaTriDC" type="xs:double" />
+              <xs:element name="MaNhanSu" msprop:Generator_ColumnPropNameInRow="MaNhanSu" msprop:Generator_ColumnPropNameInTable="MaNhanSuColumn" msprop:Generator_ColumnVarNameInTable="columnMaNhanSu" msprop:Generator_UserColumnName="MaNhanSu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -94,6 +102,7 @@
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:DSDatTiecTheoNgay" />
       <xs:field xpath="mstns:maDT" />
+      <xs:field xpath="mstns:MaKH" />
     </xs:unique>
   </xs:element>
 </xs:schema>

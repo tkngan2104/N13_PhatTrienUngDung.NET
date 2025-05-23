@@ -1,6 +1,6 @@
 ﻿use DbQuanLyResort
 go
-set dateformat dmy
+set dateformat dmy;
 go
 
 -----SELECT
@@ -451,7 +451,9 @@ insert into SanhDatTiec (maS, tenS, giaSDT) values
 ('SANHD',N'Sảnh D',15000000),
 ('SANHE',N'Sảnh E',20000000);
 
+
 -----PHÒNG
+go
 
 insert into LoaiHinhLuuTru(maLH, tenLH, loaiHinh, slNguoi, giaTien, trangThai, ghiChu) values
 
@@ -883,7 +885,7 @@ insert into MonAn (maMA, maLMA, tenMA, giaTien, mieuTa) values
 ('MAT24', 'LMA06', N'Bánh Chuối Nướng', 4200000, N'Món tráng miệng dân dã với chuối chín, dừa và nước cốt dừa nướng vàng ươm.');
 
 -----COMBO MÓN ĂN
-
+go
 insert into ComboMonAn (maCB, tenCB, giaCB) values
 ('CB00001', 'Buffet Sáng', 250000),
 ('CB00002', 'Buffet Tối', 350000),
@@ -892,7 +894,7 @@ insert into ComboMonAn (maCB, tenCB, giaCB) values
 ('CB00005', 'Thực đơn tiệc hiện đại', 600000);
 
 -----CHI TIẾT COMBO
-
+go
 insert into ChiTietCombo (maCTCB, maCB, maMA) values
 
 -- Combo buffet sáng (CB00001)
@@ -1048,7 +1050,7 @@ insert into ChiTietCombo (maCTCB, maCB, maMA) values
 ('CTCB135', 'CB00005', 'MAT24');
 
 -----ĐẶT PHÒNG
-
+go
 insert into DatPhong (MaNhanSu, maDP, MaKH, ngayDatPhong) values
 
 ---ngày 05/05/2025
@@ -1275,8 +1277,13 @@ insert into DatPhong (MaNhanSu, maDP, MaKH, ngayDatPhong) values
 ('NV011','DP0805250199','KH0199','08/05/2025'),
 ('NV011','DP0805251200','KH0100','08/05/2025');
 
+insert into DatPhong (MaNhanSu, maDP, MaKH, ngayDatPhong) values
+('NV011','DP1204250050','KH0100','12/04/2025');
+insert into ChiTietDatPhong (maDP, maCTDP, maLH, ngayTraPhong) values
+('DP1204250050', 'CTDP120425001', 'THG0001', '17/04/2025');
+
 -----CHI TIẾT ĐẶT PHÒNG
-select*from DatPhong where maDP = 'DP0505250001' 
+go
 insert into ChiTietDatPhong (maDP, maCTDP, maLH, ngayTraPhong) values
 ('DP0505250001', 'CTDP050525001', 'THG0001', '06/05/2025'),
 ('DP0505250001', 'CTDP050525002', 'THG0002', '07/05/2025'),
@@ -1384,9 +1391,8 @@ insert into ChiTietDatPhong (maDP, maCTDP, maLH, ngayTraPhong) values
 ('DP0505250049', 'CTDP050525105', 'THG0105', '06/05/2025'),
 ('DP0505250049', 'CTDP050525106', 'THG0106', '07/05/2025');
 
-SELECT * FROM ChiTietDatPhong
 -----SỬ DỤNG DỊCH VỤ
-
+go
 insert into SuDungDichVu (maSDDV, maDV, maCTDP, soLuong, tongTien) values
 ('SDDV001', 'DV017', 'CTDP050525001', 1, 350000),
 ('SDDV002', 'DV009', 'CTDP050525001', 1, 3000000),
@@ -1417,10 +1423,11 @@ insert into SuDungDichVu (maSDDV, maDV, maCTDP, soLuong, tongTien) values
 ('SDDV027', 'DV019', 'CTDP050525013', 1, 50000),
 ('SDDV028', 'DV017', 'CTDP050525013', 1, 350000),
 ('SDDV029', 'DV002', 'CTDP050525014', 1, 2000000),
-('SDDV030', 'DV017', 'CTDP050525014', 1, 350000);
+('SDDV030', 'DV017', 'CTDP050525014', 1, 350000),
+('SDDV031', 'DV018', 'CTDP050525014', 1, 350000);
 
 -----ĐẶT TIỆC
-SELECT * FROM DatTiec WHERE maDT = 'DT0505250003';
+go
 insert into DatTiec (MaNhanSu, maDT, MaKH, ngayDT, maS, ghiChu, ngayBatDau, ngayKetThuc, tongTien, giaTriDC) values
 ('NV015', 'DT0505250001', 'KH0001', '05/05/2025', 'SANHA', Null, '05/05/2025', '06/05/2025', 14000000, 2800000),
 ('NV016', 'DT0505250002', 'KH0002', '05/05/2025', 'SANHA', Null, '07/05/2025', '08/05/2025', 18000000, 3500000),
@@ -1433,3 +1440,45 @@ insert into DatTiec (MaNhanSu, maDT, MaKH, ngayDT, maS, ghiChu, ngayBatDau, ngay
 ('NV023', 'DT0505250009', 'KH0009', '12/05/2025', 'SANHB', Null, '21/05/2025', '22/05/2025', 21000000, 3700000),
 ('NV024', 'DT0505250010', 'KH0010', '13/05/2025', 'SANHC', Null, '23/05/2025', '24/05/2025', 22000000, 3800000),
 ('NV025', 'DT0505250011', 'KH0011', '14/05/2025', 'SANHA', Null, '25/05/2025', '26/05/2025', 23000000, 3900000);
+
+---Hóa đơn đặt phòng
+go
+INSERT INTO HoaDonDatPhong(MaNhanSu,maHDDP, maCTDP, maSDDV , ngayLap , tongTien, trangThai) VALUES 
+('NV001', 'HDDP001', 'CTDP050525001', 'SDDV001', '01/05/2025', 3500000, N'Đã thanh toán'),
+('NV002', 'HDDP002', 'CTDP050525002', 'SDDV002', '02/05/2025', 2750000, N'Đã thanh toán'),
+('NV003', 'HDDP003', 'CTDP050525003', 'SDDV003', '03/05/2025', 4300000, N'Đã thanh toán'),
+('NV004', 'HDDP004', 'CTDP050525004', 'SDDV004', '04/05/2025', 2600000, N'Đã thanh toán'),
+('NV005', 'HDDP005', 'CTDP050525005', 'SDDV005', '05/05/2025', 5450000, N'Đã thanh toán'),
+('NV006', 'HDDP006', 'CTDP050525006', 'SDDV006', '06/05/2025', 4200000, N'Đã thanh toán'),
+('NV007', 'HDDP007', 'CTDP050525007', 'SDDV007', '07/05/2025', 3350000, N'Đã thanh toán'),
+('NV008', 'HDDP008', 'CTDP050525008', 'SDDV008', '08/05/2025', 5550000, N'Đã thanh toán'),
+('NV009', 'HDDP009', 'CTDP050525009', 'SDDV009', '09/05/2025', 3600000, N'Đã thanh toán'),
+('NV010', 'HDDP010', 'CTDP050525010', 'SDDV010', '10/05/2025', 5700000, N'Đã thanh toán'),
+
+('NV011', 'HDDP011', 'CTDP050525011', 'SDDV011', '11/05/2025', 3800000, N'Đã thanh toán'),
+('NV012', 'HDDP012', 'CTDP050525012', 'SDDV012', '12/05/2025', 5100000, N'Đã thanh toán'),
+('NV013', 'HDDP013', 'CTDP050525013', 'SDDV013', '13/05/2025', 6900000, N'Đã thanh toán'),
+('NV014', 'HDDP014', 'CTDP050525014', 'SDDV014', '14/05/2025', 4400000, N'Đã thanh toán'),
+('NV015', 'HDDP015', 'CTDP050525015', 'SDDV015', '15/05/2025', 3300000, N'Đã thanh toán'),
+('NV016', 'HDDP016', 'CTDP050525016', 'SDDV016', '16/05/2025', 5250000, N'Chưa thanh toán'),
+('NV017', 'HDDP017', 'CTDP050525017', 'SDDV017', '17/05/2025', 5350000, N'Chưa thanh toán'),
+('NV018', 'HDDP018', 'CTDP050525018', 'SDDV018', '18/05/2025', 4450000, N'Chưa thanh toán'),
+('NV019', 'HDDP019', 'CTDP050525019', 'SDDV019', '19/05/2025', 3650000, N'Chưa thanh toán'),
+('NV020', 'HDDP020', 'CTDP050525020', 'SDDV020', '20/05/2025', 5750000, N'Chưa thanh toán'),
+
+('NV021', 'HDDP021', 'CTDP050525021', 'SDDV021', '21/05/2025', 5850000, N'Chưa thanh toán'),
+('NV022', 'HDDP022', 'CTDP050525022', 'SDDV022', '22/05/2025', 9650000, N'Chưa thanh toán'),
+('NV023', 'HDDP023', 'CTDP050525023', 'SDDV023', '23/05/2025', 5550000, N'Chưa thanh toán'),
+('NV024', 'HDDP024', 'CTDP050525024', 'SDDV024', '24/05/2025', 6650000, N'Chưa thanh toán'),
+('NV025', 'HDDP025', 'CTDP050525025', 'SDDV025', '25/05/2025', 4750000, N'Chưa thanh toán'),
+('NV026', 'HDDP026', 'CTDP050525026', 'SDDV026', '26/05/2025', 3850000, N'Chưa thanh toán'),
+('NV027', 'HDDP027', 'CTDP050525027', 'SDDV027', '27/05/2025', 5950000, N'Chưa thanh toán'),
+('NV028', 'HDDP028', 'CTDP050525028', 'SDDV028', '28/05/2025', 4650000, N'Chưa thanh toán'),
+('NV029', 'HDDP029', 'CTDP050525029', 'SDDV029', '29/05/2025', 6550000, N'Chưa thanh toán'),
+('NV030', 'HDDP030', 'CTDP050525030', 'SDDV030', '30/05/2025', 7450000, N'Chưa thanh toán');
+
+-----TÀI KHOẢN
+go
+insert into TaiKhoan (taikhoan, matkhau, MaNhanSu) values
+('NV001','123','NV001'), ---quản lý nhân sự
+('NV011','456','NV011') ---quản lý lễ tân

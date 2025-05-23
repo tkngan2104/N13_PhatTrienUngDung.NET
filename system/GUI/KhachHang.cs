@@ -31,6 +31,10 @@ namespace GUI
         private void KhachHang_Load(object sender, EventArgs e)
         {
             layDSKH();
+            txtMaKH.Text = bus.taoMaKH();
+
+            dtpNgaySinh.MaxDate = DateTime.Today.AddDays(-1);
+            dtpNgaySinh.Value = dtpNgaySinh.MaxDate;
         }
         //Lấy danh sách khách hàng
         public void layDSKH()
@@ -239,17 +243,29 @@ namespace GUI
         /// <param name="e"></param>
         private void txtSDT_TextChanged(object sender, EventArgs e)
         {
-            string sdt = txtSDT.Text.Trim();
-            if (!string.IsNullOrEmpty(sdt) && (sdt.Length > 15 || !sdt.All(char.IsDigit)))
+            // Lọc ký tự không phải số
+            string raw = txtSDT.Text;
+            string digitsOnly = new string(raw.Where(char.IsDigit).ToArray());
+
+            // Cắt bớt nếu > 12 chữ số  (C# 7.3: dùng Substring)
+            if (digitsOnly.Length > 12)
+                digitsOnly = digitsOnly.Substring(0, 12);
+
+            // Cập nhật textbox nếu có thay đổi
+            if (digitsOnly != raw)
             {
-                errorProvider1.SetError(txtSDT, "Số điện thoại không hợp lệ. Tối đa 15 chữ số.");
-                
+                int pos = txtSDT.SelectionStart;
+                txtSDT.Text = digitsOnly;
+                txtSDT.SelectionStart = Math.Min(pos, digitsOnly.Length);
             }
+
+            // Hiển thị lỗi (nếu cần)
+            if (string.IsNullOrEmpty(digitsOnly))
+                errorProvider1.SetError(txtSDT, "Vui lòng nhập số điện thoại.");
+            else if (!_rgSDT.IsMatch(digitsOnly))
+                errorProvider1.SetError(txtSDT, "Số điện thoại tối đa 12 chữ số.");
             else
-            {
                 errorProvider1.SetError(txtSDT, "");
-            }
-            this.Focus();
         }
 
         /// <summary>
@@ -328,33 +344,35 @@ namespace GUI
 
             string maKH = txtMaKH.Text.Trim();
             string email = txtEmail.Text.Trim();
-            string sdt = txtSDT.Text.Trim();
             string cccd = txtCCCD.Text.Trim();
 
+            
             // Tên KH
-            if (string.IsNullOrWhiteSpace(txtTenKH.Text))
+            string ten = txtTenKH.Text.Trim();
+            if (string.IsNullOrWhiteSpace(ten))
             {
                 errorProvider1.SetError(txtTenKH, "Vui lòng nhập tên khách hàng.");
                 isValid = false;
             }
+            else if (!_rgTen.IsMatch(ten))
+            {
+                errorProvider1.SetError(txtTenKH, "Tên không chứa số/ký tự đặc biệt và không có 2 khoảng trắng liền.");
+                isValid = false;
+            }
 
-            // Số điện thoại
+            //sdt
+            string sdt = txtSDT.Text.Trim();
             if (string.IsNullOrWhiteSpace(sdt))
             {
                 errorProvider1.SetError(txtSDT, "Vui lòng nhập số điện thoại.");
                 isValid = false;
             }
-            else if (sdt.Length > 15 || !sdt.All(char.IsDigit))
+            else if (!_rgSDT.IsMatch(sdt))
             {
-                errorProvider1.SetError(txtSDT, "Số điện thoại không hợp lệ.");
+                errorProvider1.SetError(txtSDT, "Số điện thoại chỉ chứa số và tối đa 12 ký tự.");
                 isValid = false;
             }
-            else if (isThem ? db.KhachHangs.Any(kh => kh.SoDT == sdt)
-                            : db.KhachHangs.Any(kh => kh.SoDT == sdt && kh.MaKH != maKH))
-            {
-                errorProvider1.SetError(txtSDT, "Số điện thoại đã tồn tại.");
-                isValid = false;
-            }
+
 
             // Email
             if (string.IsNullOrWhiteSpace(email))
@@ -393,20 +411,97 @@ namespace GUI
             }
 
             // Địa chỉ
-            if (string.IsNullOrWhiteSpace(txtDiaChi.Text))
+            string diaChi = txtDiaChi.Text.Trim();
+            if (string.IsNullOrWhiteSpace(diaChi))
             {
                 errorProvider1.SetError(txtDiaChi, "Vui lòng nhập địa chỉ.");
                 isValid = false;
             }
+            else if (!_rgDiaChi.IsMatch(diaChi))
+            {
+                errorProvider1.SetError(txtDiaChi, "Địa chỉ không hợp lệ (chỉ chữ, số, / - , . ; phải có cả chữ lẫn số).");
+                isValid = false;
+            }
+
 
             // Quốc tịch
-            if (string.IsNullOrWhiteSpace(txtQuocTich.Text))
+            string quocTich = txtQuocTich.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(quocTich))
             {
                 errorProvider1.SetError(txtQuocTich, "Vui lòng nhập quốc tịch.");
                 isValid = false;
             }
+            else if (!_rgQuocTich.IsMatch(quocTich))
+            {
+                errorProvider1.SetError(txtQuocTich, "Quốc tịch không chứa số/ký tự đặc biệt và không có 2 khoảng trắng liền.");
+                isValid = false;
+            }
+
 
             return isValid;
+
+
+        }
+
+        private void txtTenKH_TextChanged(object sender, EventArgs e)
+        {
+            
+            // Ép chỉ còn 1 space liên tiếp
+            int pos = txtTenKH.SelectionStart;
+            txtTenKH.Text = Regex.Replace(txtTenKH.Text, @"\s{2,}", " ");
+            txtTenKH.SelectionStart = pos; // giữ caret
+
+            if (!_rgTen.IsMatch(txtTenKH.Text.Trim()))
+                errorProvider1.SetError(txtTenKH, "Tên chỉ gồm ký tự chữ, không số/ký tự đặc biệt.");
+            else
+                errorProvider1.SetError(txtTenKH, "");
+        }
+        // Cho phép: chữ cái (có dấu), khoảng trắng đơn lẻ.
+        private static readonly Regex _rgTen =
+            new Regex(@"^(?!.*\s{2})(?!.*\d)(?!.*[^A-Za-zÀ-ỹà-ỹ\s]).+$", RegexOptions.Compiled);
+
+        // Chữ cái có dấu + space, cấm 2 space liên tiếp, cấm số & ký tự đặc biệt
+        private static readonly Regex _rgQuocTich =
+            new Regex(@"^(?!.*\s{2})(?!.*\d)(?!.*[^A-Za-zÀ-ỹà-ỹ\s]).+$", RegexOptions.Compiled);
+
+        //sdt
+        private static readonly Regex _rgSDT =
+            new Regex(@"^\d{1,12}$", RegexOptions.Compiled);
+
+        //địa chỉ
+        private static readonly Regex _rgDiaChi =
+        new Regex(@"^(?!.*\s{2})[A-Za-zÀ-ỹà-ỹ0-9\s\-\/\.,]+$", RegexOptions.Compiled);
+
+        //Quốc tịch bắt lỗi nhập
+        private void txtQuocTich_TextChanged(object sender, EventArgs e)
+        {
+            // Ép chỉ còn 1 space liên tiếp
+            int pos = txtQuocTich.SelectionStart;
+            txtQuocTich.Text = Regex.Replace(txtQuocTich.Text, @"\s{2,}", " ");
+            txtQuocTich.SelectionStart = pos;
+
+            if (!_rgQuocTich.IsMatch(txtQuocTich.Text.Trim()))
+                errorProvider1.SetError(txtQuocTich, "Quốc tịch chỉ gồm chữ, không số/ký tự đặc biệt.");
+            else
+                errorProvider1.SetError(txtQuocTich, "");
+        }
+
+        /// <summary>
+        /// Địa chỉ bắt lỗi
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtDiaChi_TextChanged(object sender, EventArgs e)
+        {
+            int pos = txtDiaChi.SelectionStart;
+            txtDiaChi.Text = Regex.Replace(txtDiaChi.Text, @"\s{2,}", " ");
+            txtDiaChi.SelectionStart = pos;
+
+            if (_rgDiaChi.IsMatch(txtDiaChi.Text.Trim()))
+                errorProvider1.SetError(txtDiaChi, "");
+            else
+                errorProvider1.SetError(txtDiaChi, "Địa chỉ chỉ được chứa chữ, số, / - , . và không có 2 khoảng trắng liên tiếp.");
         }
     }
 }

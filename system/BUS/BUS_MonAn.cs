@@ -32,9 +32,28 @@ namespace BUS
         {
             return dal.suaMA(et);
         }
-        public string taoMaMA()
+        public string taoMaMA(string maMA)
         {
-            return dal.taoMaTuDong();
+            return dal.TaoMaTuDong(maMA);
+        }
+        public string GetLoaiMonAnFromMaMA(string maMA)
+        {
+            return dal.GetLoaiMonAnFromMaMA(maMA);
+        }
+
+        public List<string> LayMonAnTheoTen()
+        {
+            return dal.LayMonAnTheoTen();
+        }
+
+        public ET_MonAn LayTatCaMonAn(string ten)
+        {
+            var monAn = dal.LayTatCaMonAn().FirstOrDefault(m => m.TenMA == ten);
+            return monAn;
+        }
+        public List<ET_MonAn> LayTatCaMonAn()
+        {
+            return dal.LayTatCaMonAn(); // Gọi hàm trong DAL bạn đã viết
         }
     }
 }

@@ -63,19 +63,6 @@ D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInput
 D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
 D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll.config
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
-T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll.config
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
-T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
@@ -140,3 +127,185 @@ N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.WinFo
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 N:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\EnvDTE.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\stdole.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\EnvDTE.xml
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\BUS.pdb
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.Common.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.Design.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.SqlServer.Types.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\EnvDTE.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.pdb
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\DAL.dll.config
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.pdb
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ET.dll.config
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.dll
+T:\N13_PhatTrienUngDung.NET\system\BUS\obj\Debug\BUS.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\EnvDTE.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\stdole.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\BUS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll

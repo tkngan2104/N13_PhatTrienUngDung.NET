@@ -13,7 +13,7 @@ namespace ET
         private DateTime ngayLap;
 
         private float tongTien;
-
+        public ET_HoaDonDatPhong() { }
         public ET_HoaDonDatPhong(string maNS, string maHDDP, string maCTDP, string maSDDV, string trangThai, DateTime ngayLap, float tongTien)
         {
             this.maNS = maNS;

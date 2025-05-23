@@ -1,5 +1,6 @@
 ﻿using BUS;
 using ET;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class DatTiec: Form
+    public partial class DatTiec : Form
     {
         public DatTiec()
         {
@@ -74,16 +75,6 @@ namespace GUI
             txtDatTiec.Text = BUS_DatTiec.Instance.TaoMaTuDong();
             BUS_Sanh.Instance.DSSanhCombobox(cboSanhDT);
 
-            if (cboSanhDT.Items.Count > 0)
-            {
-                string maS = cboSanhDT.SelectedValue.ToString();
-                float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
-                float tongTien = giaSDT;
-                float datCoc = tongTien * 0.2f;
-                txtTongTien.Text = tongTien.ToString("F0");
-                txtDatCoc.Text = datCoc.ToString("F0");
-            }
-
             BUS_DatTiec.Instance.DSDatTiec(dgvDSDatTiec);
 
             txtMaNS.Text = "NV025";
@@ -96,6 +87,22 @@ namespace GUI
             dtpNgayKetThuc.MinDate = DateTime.Today;
             dtpNgayKetThuc.MaxDate = DateTime.Today.AddMonths(4);
 
+            // TÍNH TIỀN DỰA TRÊN NGÀY BẮT ĐẦU - KẾT THÚC
+            if (cboSanhDT.Items.Count > 0)
+            {
+                string maS = cboSanhDT.SelectedValue.ToString();
+                float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
+
+                int soNgay = (dtpNgayKetThuc.Value.Date - dtpNgayBatDau.Value.Date).Days + 1;
+                if (soNgay <= 0) soNgay = 1;
+
+                float tongTien = giaSDT * soNgay;
+                float datCoc = tongTien * 0.2f;
+
+                txtTongTien.Text = tongTien.ToString("F0");
+                txtDatCoc.Text = datCoc.ToString("F0");
+            }
+
             AutoCompleteStringCollection cccdSuggestions = new AutoCompleteStringCollection();
             List<string> dsCCCD = BUS_KhachHang.Instance.LayTatCaCCCD();
             cccdSuggestions.AddRange(dsCCCD.ToArray());
@@ -105,6 +112,23 @@ namespace GUI
             txtCCCD.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
             btnSua.Enabled = false;
+        }
+
+        private void CapNhatTongTienVaDatCoc()
+        {
+            string maS = cboSanhDT.SelectedValue?.ToString();
+            if (string.IsNullOrEmpty(maS)) return;
+
+            float giaSDT = BUS_Sanh.Instance.LayGiaSTheoMa(maS);
+
+            int soNgay = (dtpNgayKetThuc.Value.Date - dtpNgayBatDau.Value.Date).Days + 1;
+            if (soNgay <= 0) soNgay = 1;
+
+            float tongTien = giaSDT * soNgay;
+            float datCoc = tongTien * 0.2f;
+
+            txtTongTien.Text = tongTien.ToString("F0");
+            txtDatCoc.Text = datCoc.ToString("F0");
         }
 
         /// <summary>
@@ -182,20 +206,26 @@ namespace GUI
                 MessageBox.Show("Không được đặt phòng quá 7 ngày!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 dtpNgayKetThuc.Value = dtpNgayBatDau.Value.AddDays(7);
             }
+
+            CapNhatTongTienVaDatCoc();
+        }
+
+        private void dtpNgayBatDau_ValueChanged(object sender, EventArgs e)
+        {
+            CapNhatTongTienVaDatCoc();
         }
 
         private void dgvDSDatTiec_Click(object sender, EventArgs e)
         {
+            if (dgvDSDatTiec.CurrentRow == null || dgvDSDatTiec.CurrentRow.IsNewRow)
+                return;
+
             int dong = dgvDSDatTiec.CurrentCell.RowIndex;
 
-            txtDatTiec.Text = dgvDSDatTiec.Rows[dong].Cells[0].Value?.ToString() ?? "";
+            txtDatTiec.Text = dgvDSDatTiec.Rows[dong].Cells["maDT"].Value?.ToString() ?? "";
+            txtMaKH.Text = dgvDSDatTiec.Rows[dong].Cells["MaKH"].Value?.ToString() ?? "";
 
-            txtMaKH.Text = dgvDSDatTiec.Rows[dong].Cells[1].Value?.ToString() ?? "";
-
-            // Nếu bạn không có sẵn CCCD, SDT, MaKH trong lệnh select, thì phải truy vấn lại từ BUS_KhachHang
-            txtTenKH.Text = dgvDSDatTiec.Rows[dong].Cells[2].Value?.ToString() ?? "";
             string maKH = txtMaKH.Text;
-
             var kh = BUS_KhachHang.Instance.LayKHTheoMa(maKH);
             if (kh != null)
             {
@@ -204,31 +234,40 @@ namespace GUI
                 txtTenKH.Text = kh.TenKH;
             }
 
-            string maS = dgvDSDatTiec.Rows[dong].Cells[3].Value?.ToString() ?? "";
+            string maS = dgvDSDatTiec.Rows[dong].Cells["maS"].Value?.ToString() ?? "";
             cboSanhDT.SelectedValue = maS;
 
             DateTime ngayDatTiec;
-            if (DateTime.TryParse(dgvDSDatTiec.Rows[dong].Cells[4].Value?.ToString(), out ngayDatTiec))
+            if (DateTime.TryParse(dgvDSDatTiec.Rows[dong].Cells["ngayDT"].Value?.ToString(), out ngayDatTiec))
             {
                 txtNgayDatTiec.Text = ngayDatTiec.ToString("dd/MM/yyyy");
             }
 
             DateTime ngayBD;
-            if (DateTime.TryParse(dgvDSDatTiec.Rows[dong].Cells[5].Value?.ToString(), out ngayBD))
+            if (DateTime.TryParse(dgvDSDatTiec.Rows[dong].Cells["ngayBatDau"].Value?.ToString(), out ngayBD))
             {
                 dtpNgayBatDau.Value = ngayBD;
             }
 
             DateTime ngayKT;
-            if (DateTime.TryParse(dgvDSDatTiec.Rows[dong].Cells[6].Value?.ToString(), out ngayKT))
+            if (DateTime.TryParse(dgvDSDatTiec.Rows[dong].Cells["ngayKetThuc"].Value?.ToString(), out ngayKT))
             {
                 dtpNgayKetThuc.Value = ngayKT;
             }
 
-            txtTongTien.Text = dgvDSDatTiec.Rows[dong].Cells[7].Value?.ToString() ?? "";
-            txtDatCoc.Text = dgvDSDatTiec.Rows[dong].Cells[8].Value?.ToString() ?? "";
-            txtGhiChu.Text = dgvDSDatTiec.Rows[dong].Cells[9].Value?.ToString() ?? "";
-            txtMaNS.Text = dgvDSDatTiec.Rows[dong].Cells[10].Value?.ToString() ?? "";
+            float tongTien;
+            if (float.TryParse(dgvDSDatTiec.Rows[dong].Cells["tongTien"].Value?.ToString(), out tongTien))
+            {
+                txtTongTien.Text = tongTien.ToString("F0");
+            }
+            else
+            {
+                txtTongTien.Text = "0";
+            }
+            txtDatCoc.Text = dgvDSDatTiec.Rows[dong].Cells["giaTriDC"].Value?.ToString() ?? "";
+            txtGhiChu.Text = dgvDSDatTiec.Rows[dong].Cells["ghiChu"].Value?.ToString() ?? "";
+
+            txtMaNS.Text = dgvDSDatTiec.Rows[dong].Cells["MaNhanSu"].Value?.ToString() ?? "";
 
             btnSua.Enabled = true;
             btnThem.Enabled = false;
@@ -392,6 +431,101 @@ namespace GUI
 
             btnSua.Enabled = false;
             btnThem.Enabled = true;
+        }
+
+        /// <summary>
+        /// Tìm đặt tiệc theo ngày.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            if (radNgay.Checked == true)
+            {
+                dgvDSDatTiec.DataSource = BUS_ThongKeDatTiec.Instance.ThongKeDatTiecTheoNgay(dtpThoiGian.Value);
+            }
+            else if (radThang.Checked == true)
+            {
+                dgvDSDatTiec.DataSource = BUS_ThongKeDatTiec.Instance.ThongKeDatTiecTheoThang(dtpThoiGian.Value.Year, dtpThoiGian.Value.Month);
+            }
+            else if (radNam.Checked == true)
+            {
+                dgvDSDatTiec.DataSource = BUS_ThongKeDatTiec.Instance.ThongKeDatTiecTheoNam(dtpThoiGian.Value.Year);
+            }
+        }
+
+        /// <summary>
+        /// In report tìm kiếm.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            if (radNgay.Checked == true)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new ThongKeDatTiecTheoNgay(dtpThoiGian.Value));
+            }
+            else if (radThang.Checked == true)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new ThongKeDatTiecTheoThang(dtpThoiGian.Value));
+            }
+            else if (radNam.Checked == true)
+            {
+                Menu formMenu = (Menu)this.ParentForm;
+                formMenu.openChildForm(new ThongKeDatTiecTheoNam(dtpThoiGian.Value));
+            }
+        }
+
+        private void dgvDSDatTiec_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvDSDatTiec.Columns.Contains("tongTien") && e.ColumnIndex == dgvDSDatTiec.Columns["tongTien"].Index)
+            {
+                // Kiểm tra giá trị null hoặc rỗng
+                if (e.Value == null || string.IsNullOrWhiteSpace(e.Value.ToString()))
+                {
+                    e.Value = "0"; // Gán giá trị mặc định
+                    e.FormattingApplied = true;
+                    //dgvTongHop.Columns[2].Visible = false;
+                }
+                else
+                {
+                    //dgvTongHop.Columns[2].Visible = false;
+                    // Thử parse giá trị thành decimal
+                    if (decimal.TryParse(e.Value.ToString(), System.Globalization.NumberStyles.Any, null, out decimal tongTien))
+                    {
+                        e.Value = tongTien.ToString("F0"); // Định dạng không có phần thập phân
+                        e.FormattingApplied = true;
+
+                    }
+                    else
+                    {
+                        e.FormattingApplied = false; // Không định dạng được
+                    }
+                }
+            }
+            //có thể là này dùng sự kiện cellformatting của dgv
+        }
+
+        private void radThang_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radNgay_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpThoiGian_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radNam_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

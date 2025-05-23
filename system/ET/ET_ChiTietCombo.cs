@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace ET
 {
-    public class ET_ChiTietCombo
+    public class ET_ChiTietComBo
     {
-        private string maCTCB, maCB, maNA;
-
-        public ET_ChiTietCombo(string maCTCB, string maCB, string maNA)
+        private string _MaCTCB, _MaCB, _MaMA;
+        public ET_ChiTietComBo() { }
+        public ET_ChiTietComBo(string maCTCB, string maCB, string maMA)
         {
-            this.maCTCB = maCTCB;
-            this.maCB = maCB;
-            this.maNA = maNA;
+            _MaCTCB = maCTCB;
+            _MaCB = maCB;
+            _MaMA = maMA;
         }
 
-        public string MaCTCB { get => maCTCB; set => maCTCB = value; }
-        public string MaCB { get => maCB; set => maCB = value; }
-        public string MaNA { get => maNA; set => maNA = value; }
+        public string MaCTCB { get => _MaCTCB; set => _MaCTCB = value; }
+        public string MaCB { get => _MaCB; set => _MaCB = value; }
+        public string MaMA { get => _MaMA; set => _MaMA = value; }
     }
 }

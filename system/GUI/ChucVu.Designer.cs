@@ -60,21 +60,21 @@
             this.groupBox1.Controls.Add(this.txtMaCV);
             this.groupBox1.Controls.Add(this.lblMaCV);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(20, 82);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(27, 101);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(281, 220);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(375, 271);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chức vụ";
             // 
             // txtTenCV
             // 
-            this.txtTenCV.Location = new System.Drawing.Point(41, 148);
-            this.txtTenCV.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenCV.Location = new System.Drawing.Point(55, 182);
+            this.txtTenCV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenCV.Name = "txtTenCV";
-            this.txtTenCV.Size = new System.Drawing.Size(203, 26);
+            this.txtTenCV.Size = new System.Drawing.Size(269, 35);
             this.txtTenCV.TabIndex = 3;
             this.txtTenCV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenCV_KeyPress);
             this.txtTenCV.Leave += new System.EventHandler(this.txtTenCV_Leave);
@@ -83,20 +83,19 @@
             // 
             this.lblTenCV.AutoSize = true;
             this.lblTenCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenCV.Location = new System.Drawing.Point(38, 129);
-            this.lblTenCV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTenCV.Location = new System.Drawing.Point(51, 159);
             this.lblTenCV.Name = "lblTenCV";
-            this.lblTenCV.Size = new System.Drawing.Size(88, 18);
+            this.lblTenCV.Size = new System.Drawing.Size(129, 26);
             this.lblTenCV.TabIndex = 2;
             this.lblTenCV.Text = "Tên chức vụ";
             // 
             // txtMaCV
             // 
             this.txtMaCV.Enabled = false;
-            this.txtMaCV.Location = new System.Drawing.Point(41, 75);
-            this.txtMaCV.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaCV.Location = new System.Drawing.Point(55, 92);
+            this.txtMaCV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaCV.Name = "txtMaCV";
-            this.txtMaCV.Size = new System.Drawing.Size(203, 26);
+            this.txtMaCV.Size = new System.Drawing.Size(269, 35);
             this.txtMaCV.TabIndex = 1;
             this.txtMaCV.Leave += new System.EventHandler(this.txtMaCV_Leave);
             // 
@@ -104,10 +103,9 @@
             // 
             this.lblMaCV.AutoSize = true;
             this.lblMaCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaCV.Location = new System.Drawing.Point(38, 56);
-            this.lblMaCV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMaCV.Location = new System.Drawing.Point(51, 69);
             this.lblMaCV.Name = "lblMaCV";
-            this.lblMaCV.Size = new System.Drawing.Size(84, 18);
+            this.lblMaCV.Size = new System.Drawing.Size(123, 26);
             this.lblMaCV.TabIndex = 0;
             this.lblMaCV.Text = "Mã chức vụ";
             // 
@@ -115,10 +113,9 @@
             // 
             this.lblQLChucVu.AutoSize = true;
             this.lblQLChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQLChucVu.Location = new System.Drawing.Point(323, 14);
-            this.lblQLChucVu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblQLChucVu.Location = new System.Drawing.Point(431, 17);
             this.lblQLChucVu.Name = "lblQLChucVu";
-            this.lblQLChucVu.Size = new System.Drawing.Size(347, 39);
+            this.lblQLChucVu.Size = new System.Drawing.Size(497, 58);
             this.lblQLChucVu.TabIndex = 1;
             this.lblQLChucVu.Text = "QUẢN LÝ CHỨC VỤ";
             // 
@@ -129,12 +126,13 @@
             this.dgvDSCV.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSCV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSCV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSCV.Location = new System.Drawing.Point(2, 21);
-            this.dgvDSCV.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvDSCV.Location = new System.Drawing.Point(3, 30);
+            this.dgvDSCV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDSCV.Name = "dgvDSCV";
+            this.dgvDSCV.ReadOnly = true;
             this.dgvDSCV.RowHeadersWidth = 62;
             this.dgvDSCV.RowTemplate.Height = 28;
-            this.dgvDSCV.Size = new System.Drawing.Size(635, 197);
+            this.dgvDSCV.Size = new System.Drawing.Size(846, 239);
             this.dgvDSCV.TabIndex = 0;
             this.dgvDSCV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSCV_CellContentClick);
             this.dgvDSCV.Click += new System.EventHandler(this.dgvDSCV_Click);
@@ -147,11 +145,11 @@
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(20, 322);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(27, 396);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(940, 80);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(1253, 98);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
@@ -162,10 +160,10 @@
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(748, 31);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThoat.Location = new System.Drawing.Point(997, 38);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(144, 27);
+            this.btnThoat.Size = new System.Drawing.Size(192, 33);
             this.btnThoat.TabIndex = 26;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -177,10 +175,10 @@
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(571, 31);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLamMoi.Location = new System.Drawing.Point(761, 38);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(144, 27);
+            this.btnLamMoi.Size = new System.Drawing.Size(192, 33);
             this.btnLamMoi.TabIndex = 25;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
@@ -192,10 +190,10 @@
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(393, 31);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSua.Location = new System.Drawing.Point(524, 38);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(144, 27);
+            this.btnSua.Size = new System.Drawing.Size(192, 33);
             this.btnSua.TabIndex = 24;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
@@ -207,10 +205,10 @@
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(216, 31);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Location = new System.Drawing.Point(288, 38);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(144, 27);
+            this.btnXoa.Size = new System.Drawing.Size(192, 33);
             this.btnXoa.TabIndex = 23;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -222,10 +220,10 @@
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(41, 31);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThem.Location = new System.Drawing.Point(55, 38);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(144, 27);
+            this.btnThem.Size = new System.Drawing.Size(192, 33);
             this.btnThem.TabIndex = 22;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
@@ -235,11 +233,11 @@
             // 
             this.groupBox3.Controls.Add(this.dgvDSCV);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(321, 82);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Location = new System.Drawing.Point(428, 101);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(639, 220);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(852, 271);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách chức vụ";
@@ -250,9 +248,9 @@
             this.pnlTieuDe.Controls.Add(this.lblQLChucVu);
             this.pnlTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTieuDe.Location = new System.Drawing.Point(0, 0);
-            this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTieuDe.Name = "pnlTieuDe";
-            this.pnlTieuDe.Size = new System.Drawing.Size(867, 65);
+            this.pnlTieuDe.Size = new System.Drawing.Size(1156, 80);
             this.pnlTieuDe.TabIndex = 22;
             // 
             // errorProvider1
@@ -261,16 +259,16 @@
             // 
             // ChucVu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(867, 436);
+            this.ClientSize = new System.Drawing.Size(1156, 537);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pnlTieuDe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ChucVu";
             this.Text = "ChucVu";
             this.Load += new System.EventHandler(this.ChucVu_Load);

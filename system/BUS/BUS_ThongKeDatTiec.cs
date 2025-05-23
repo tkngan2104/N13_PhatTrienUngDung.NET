@@ -26,9 +26,35 @@ namespace BUS
             }
         }
 
+        /// <summary>
+        /// Thống kê đặt tiệc theo ngày.
+        /// </summary>
+        /// <param name="tuNgay"></param>
+        /// <returns></returns>
         public List<ET_ThongKeDatTiec> ThongKeDatTiecTheoNgay(DateTime tuNgay)
         {
             return dal_dt.ThongKeDatTiecTheoNgay(tuNgay);
+        }
+
+        /// <summary>
+        /// Thống kê đặt tiệc theo tháng.
+        /// </summary>
+        /// <param name="nam"></param>
+        /// <param name="thang"></param>
+        /// <returns></returns>
+        public List<ET_ThongKeDatTiec> ThongKeDatTiecTheoThang(int nam, int thang)
+        {
+            return dal_dt.ThongKeDatTiecTheoThang(nam, thang);
+        }
+
+        /// <summary>
+        /// Thống kê đặt tiệc theo năm.
+        /// </summary>
+        /// <param name="nam"></param>
+        /// <returns></returns>
+        public List<ET_ThongKeDatTiec> ThongKeDatTiecTheoNam(int nam)
+        {
+            return dal_dt.ThongKeDatTiecTheoNam(nam);
         }
     }
 }
