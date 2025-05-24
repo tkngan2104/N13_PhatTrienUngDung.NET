@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DbQuanLyResort" Class="QLResortDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=LAM\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-4HPV2E5\LISM;Initial Catalog=DbQuanLyResort;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString3" Provider="System.Data.SqlClient" />
   <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
     <Type Name="TaiKhoan">
       <Column Name="taikhoan" Member="taikhoan1" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -289,18 +289,6 @@
       <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.sp_TimKiemLoaiHinhLuuTru" Method="sp_TimKiemLoaiHinhLuuTru">
-    <Parameter Name="tenLH" Type="System.String" DbType="NVarChar(5)" />
-    <ElementType Name="sp_TimKiemLoaiHinhLuuTruResult">
-      <Column Name="maLH" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="tenLH" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="loaiHinh" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
-      <Column Name="slNguoi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="giaTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="trangThai" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
-      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.sp_ThongKeDichVu_TheoNam" Method="sp_ThongKeDichVu_TheoNam">
     <Parameter Name="nam" Type="System.Int32" DbType="Int" />
     <ElementType Name="sp_ThongKeDichVu_TheoNamResult">
@@ -359,6 +347,18 @@
       <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
       <Column Name="maSDDV" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
       <Column Name="soLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_TimKiemLoaiHinhLuuTru" Method="sp_TimKiemLoaiHinhLuuTru">
+    <Parameter Name="tenLH" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="sp_TimKiemLoaiHinhLuuTruResult">
+      <Column Name="maLH" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="tenLH" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="loaiHinh" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="slNguoi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="giaTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="trangThai" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
+      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

@@ -9,7 +9,7 @@ namespace DAL
 {
     public class DAL_ChiTietComBo
     {
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         //public List<ChiTietCombo> TimTheoTenMonAn(string tenMA)
         //{

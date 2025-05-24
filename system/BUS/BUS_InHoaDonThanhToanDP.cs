@@ -26,7 +26,7 @@ namespace BUS
         }
         public List<ET_InHoaDonThanhToanDatPhong> LayDanhSachHoaDonDP()
         {
-            return DAL_InHoaDonThanhToanDatPhong.Instance.InHoaDonThanhToanDP();
+            return dal_dp.InHoaDonThanhToanDP();
         }
     }
 }

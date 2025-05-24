@@ -34,7 +34,7 @@ namespace BUS
         public void DSLoaiHinhLuuTruCombobox(ComboBox cbo)
         {
             
-            cbo.DataSource = DAL_LoaiHinhLuuTru.Instance.DSLoaiHinhLuuTruCombobox(cbo);
+            cbo.DataSource = dal_p.DSLoaiHinhLuuTruCombobox(cbo);
             cbo.DisplayMember = "loaiHinh";
             cbo.ValueMember = "loaiHinh";
         }
@@ -45,7 +45,7 @@ namespace BUS
         /// <param name="cbo"></param>
         public void DSTrangThaiCombobox(ComboBox cbo)
         {
-            cbo.DataSource = DAL_LoaiHinhLuuTru.Instance.DSTrangThaiCombobox(cbo);
+            cbo.DataSource = dal_p.DSTrangThaiCombobox(cbo);
             cbo.DisplayMember = "trangThai";
             cbo.ValueMember = "trangThai";
         }
@@ -149,7 +149,7 @@ namespace BUS
         /// <returns></returns>
         public List<ET_LoaiHinhLuuTru> LayLoaiHinhTrongTheoLoai(string loaiHinh)
         {
-            return DAL_LoaiHinhLuuTru.Instance.LayLoaiHinhTrongTheoLoai(loaiHinh);
+            return dal_p.LayLoaiHinhTrongTheoLoai(loaiHinh);
         }
 
     }

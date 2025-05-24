@@ -13,7 +13,7 @@ namespace BUS
     {
         //Khai báo biến tĩnh.
         private static BUS_DichVu instance;
-        private DAL_DichVu dal_dv = new DAL_DichVu();
+        //private DAL_DichVu dal_dv = new DAL_DichVu();
 
         public static BUS_DichVu Instance
         {
@@ -65,7 +65,7 @@ namespace BUS
         /// <returns></returns>
         public List<string> LayTatCaTenDichVu()
         {
-            return DAL_DichVu.Instance.LayTatCaTenDichVu();
+            return dal.LayTatCaTenDichVu();
         }
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace BUS
         /// <returns></returns>
         public List<DichVu> LayMaDichVuTheoTen(string tenDV)
         {
-            return DAL_DichVu.Instance.LayMaDichVuTheoTen(tenDV);
+            return dal.LayMaDichVuTheoTen(tenDV);
         }
     }
 }

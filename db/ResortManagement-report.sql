@@ -12,7 +12,7 @@ set dateformat dmy
 -----Tìm loại hình lưu tru
 go
 CREATE PROCEDURE sp_TimKiemLoaiHinhLuuTru
-    @tenLH NVARCHAR(5)
+    @tenLH NVARCHAR(100)
 AS
 BEGIN
     SELECT *

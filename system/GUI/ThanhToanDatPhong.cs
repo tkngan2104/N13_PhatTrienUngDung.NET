@@ -50,7 +50,7 @@ namespace GUI
                         tongTienDichVu += float.Parse(row.Cells["tongTien"].Value.ToString());
                     }
                 }
-                float tienPhong = BUS_HoaDonDatPhong.Instance.LayGiaPhong(txtChiTietDP.Text);
+                float tienPhong = bus.LayGiaPhong(txtChiTietDP.Text);
                 float tongTien = tienPhong + tongTienDichVu;
                 txtThanhTien.Text = tongTien.ToString();
                 MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -120,9 +120,9 @@ namespace GUI
             try
             {
                 string maCTDP = dgvKetQuaTimKiem.Rows[dong].Cells[2].Value?.ToString() ?? "";
-                dgvDSDichVu.DataSource = BUS_HoaDonDatPhong.Instance.LayDSDichVuTheoMaCTDP(maCTDP);
+                dgvDSDichVu.DataSource = bus.LayDSDichVuTheoMaCTDP(maCTDP);
                 txtThanhTien.Text = dgvKetQuaTimKiem.Rows[dong].Cells[6].Value?.ToString() ?? "";
-                string maNS = BUS_HoaDonDatPhong.Instance.LayMaNhanSuTheoCTDP(maCTDP);
+                string maNS = bus.LayMaNhanSuTheoCTDP(maCTDP);
                 txtMaNS.Text = maNS ?? "";
 
             }
@@ -134,8 +134,13 @@ namespace GUI
 
         private void ThanhToanDatPhong_Load(object sender, EventArgs e)
         {
-            txtHDDP.Text = BUS_HoaDonDatPhong.Instance.TaoMaTuDong();
-
+            txtHDDP.Text = bus.TaoMaTuDong();
+            if(dgvKetQuaTimKiem.CurrentRow != null && !dgvKetQuaTimKiem.Rows[dgvKetQuaTimKiem.CurrentRow.Index].IsNewRow)
+            {
+                int dong = dgvKetQuaTimKiem.CurrentCell.RowIndex;
+                string maCTDP = dgvKetQuaTimKiem.Rows[dong].Cells[2].Value?.ToString() ?? "";
+                dgvDSDichVu.DataSource = bus.LayDSDichVuTheoMaCTDP(maCTDP);
+            }
         }
 
         public bool KTraMa(string maP)

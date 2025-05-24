@@ -27,26 +27,26 @@ namespace BUS
             }
         }
 
-        DAL_ChucVu dal = new DAL_ChucVu();
+        //DAL_ChucVu dal = new DAL_ChucVu();
         public IQueryable loadDSCV()
         {
-            return dal.loadDSCV();
+            return dal_nv.loadDSCV();
         }
         public bool themCV(ET_ChucVu et)
         {
-            return dal.themCV(et);
+            return dal_nv.themCV(et);
         }
         public bool xoaCV(string ma)
         {
-            return dal.xoaCV(ma);
+            return dal_nv.xoaCV(ma);
         }
         public bool SuaCV(ET_ChucVu et)
         {
-            return dal.suaCV(et);
+            return dal_nv.suaCV(et);
         }
         public string taoMaCV()
         {
-            return dal.taoMaTuDong();
+            return dal_nv.taoMaTuDong();
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace BUS
         /// <param name="cbo"></param>
         public void DSChucVuCombobox(ComboBox cbo)
         {
-            cbo.DataSource = DAL_ChucVu.Instance.DSChucVuCombobox(cbo);
+            cbo.DataSource = dal_nv.DSChucVuCombobox(cbo);
             cbo.DisplayMember = "TenChucVu";
             cbo.ValueMember = "MaChucVu";
         }

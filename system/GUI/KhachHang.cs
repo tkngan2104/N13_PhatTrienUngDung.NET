@@ -17,7 +17,7 @@ namespace GUI
     public partial class KhachHang: Form
     {
         BUS_KhachHang bus = new BUS_KhachHang();
-        QLResortDataContext db = new QLResortDataContext();
+        
         ET_KhachHang et = new ET_KhachHang();
         public KhachHang()
         {
@@ -319,7 +319,7 @@ namespace GUI
             txtQuocTich.Clear();
 
             // Reset ngày sinh về hôm nay (hoặc giá trị mặc định)
-            dtpNgaySinh.Value = DateTime.Today;
+            dtpNgaySinh.Value = DateTime.Now;
 
             // Reset giới tính
             radNam.Checked = true;
@@ -340,7 +340,7 @@ namespace GUI
         {
             bool isValid = true;
             errorProvider1.Clear();
-            QLResortDataContext db = new QLResortDataContext();
+            QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
             string maKH = txtMaKH.Text.Trim();
             string email = txtEmail.Text.Trim();

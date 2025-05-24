@@ -103,6 +103,8 @@ namespace GUI
                 txtTenMA.Text = dgvCTCB.Rows[dong].Cells["TenMA"].Value.ToString();
 
             }
+
+            
         }
 
         private void ComboMonAn_Click(object sender, EventArgs e)
@@ -119,6 +121,7 @@ namespace GUI
                 txtMaTD.Text = dgvCB.Rows[dong].Cells[0].Value.ToString();
                 txtTenTD.Text = dgvCB.Rows[dong].Cells[1].Value.ToString();
             }
+            txtTenTD.Enabled = false;
         }
 
         public bool KtraBoTrong()
@@ -194,6 +197,7 @@ namespace GUI
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             lamMoi();
+            txtTenTD.Enabled = false;
         }
 
         private void lamMoi()

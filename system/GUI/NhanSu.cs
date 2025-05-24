@@ -168,15 +168,18 @@ namespace GUI
             DialogResult d = MessageBox.Show("Xác nhận thêm dữ liệu đã nhập ?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (d == DialogResult.Yes)
             {
-                if (KtraBoTrong() == true)
+                if(HamKiemTraTuoi() == true)
                 {
-                    nv.ThemNhanVien(new ET_NhanVien(txtMaNS.Text, txtTenNS.Text, layGioiTinh(), txtSDT.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cboChucVu.SelectedValue.ToString(), dtpNgaySinh.Value, dtpNgayVaoLam.Value));
-                    nv.DSNhanVien(dgvDSNS);
-                }
-                else
-                {
-                    MessageBox.Show("Không được để trống bất kỳ trường dữ liệu nào !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                    if (KtraBoTrong() == true)
+                    {
+                        nv.ThemNhanVien(new ET_NhanVien(txtMaNS.Text, txtTenNS.Text, layGioiTinh(), txtSDT.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cboChucVu.SelectedValue.ToString(), dtpNgaySinh.Value, dtpNgayVaoLam.Value));
+                        nv.DSNhanVien(dgvDSNS);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không được để trống bất kỳ trường dữ liệu nào !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }               
             }
         }
 
@@ -246,7 +249,7 @@ namespace GUI
         /// <param name="e"></param>
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            txtMaNS.Text = s.TaoMaTuDong();
+            txtMaNS.Text = nv.TaoMaTuDong();
             txtTenNS.Clear();
             txtCCCD.Clear();
             txtDiaChi.Clear();
@@ -419,6 +422,31 @@ namespace GUI
                 MessageBox.Show("Nhân sự phải đủ ít nhất 18 tuổi!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 dtpNgaySinh.Focus();
             }
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+        public bool HamKiemTraTuoi()
+        {
+            DateTime ngaySinh = dtpNgaySinh.Value;
+            int tuoi = DateTime.Today.Year - ngaySinh.Year;
+
+            if (ngaySinh > DateTime.Today.AddYears(-tuoi))
+                tuoi--;
+
+            if (tuoi < 18)
+            {
+                MessageBox.Show("Nhân sự phải đủ ít nhất 18 tuổi!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpNgaySinh.Focus();
+                return false;
+            }
+            return true;
+        }
+        private void dtpNgaySinh_Validating(object sender, CancelEventArgs e)
+        {
+            
         }
     }
 }

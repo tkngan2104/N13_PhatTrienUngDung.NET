@@ -184,7 +184,7 @@ namespace DAL
         /// </summary>
         public void CapNhatTrangThaiPhongTheoNgay()
         {
-            using (var context = new QLResortDataContext())
+            using (var context = new QLResortDataContext(Connection_DAL.ConnectionString))
             {
                 DateTime ngayHienTai = DateTime.Now.Date;
 

@@ -90,7 +90,7 @@ namespace DAL
     #endregion
 		
 		public QLResortDataContext() : 
-				base(global::DAL.Properties.Settings.Default.DbQuanLyResortConnectionString1, mappingSource)
+				base(global::DAL.Properties.Settings.Default.DbQuanLyResortConnectionString3, mappingSource)
 		{
 			OnCreated();
 		}
@@ -306,13 +306,6 @@ namespace DAL
 			return ((ISingleResult<sp_TimChiTietDatPhongTheoTenLHResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_TimKiemLoaiHinhLuuTru")]
-		public ISingleResult<sp_TimKiemLoaiHinhLuuTruResult> sp_TimKiemLoaiHinhLuuTru([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(5)")] string tenLH)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), tenLH);
-			return ((ISingleResult<sp_TimKiemLoaiHinhLuuTruResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ThongKeDichVu_TheoNam")]
 		public ISingleResult<sp_ThongKeDichVu_TheoNamResult> sp_ThongKeDichVu_TheoNam([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> nam)
 		{
@@ -346,6 +339,13 @@ namespace DAL
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<DSHoaDonDatPhongResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_TimKiemLoaiHinhLuuTru")]
+		public ISingleResult<sp_TimKiemLoaiHinhLuuTruResult> sp_TimKiemLoaiHinhLuuTru([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string tenLH)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), tenLH);
+			return ((ISingleResult<sp_TimKiemLoaiHinhLuuTruResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -5827,140 +5827,6 @@ namespace DAL
 		}
 	}
 	
-	public partial class sp_TimKiemLoaiHinhLuuTruResult
-	{
-		
-		private string _maLH;
-		
-		private string _tenLH;
-		
-		private string _loaiHinh;
-		
-		private int _slNguoi;
-		
-		private double _giaTien;
-		
-		private string _trangThai;
-		
-		private string _ghiChu;
-		
-		public sp_TimKiemLoaiHinhLuuTruResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maLH", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
-		public string maLH
-		{
-			get
-			{
-				return this._maLH;
-			}
-			set
-			{
-				if ((this._maLH != value))
-				{
-					this._maLH = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tenLH", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
-		public string tenLH
-		{
-			get
-			{
-				return this._tenLH;
-			}
-			set
-			{
-				if ((this._tenLH != value))
-				{
-					this._tenLH = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_loaiHinh", DbType="NVarChar(45) NOT NULL", CanBeNull=false)]
-		public string loaiHinh
-		{
-			get
-			{
-				return this._loaiHinh;
-			}
-			set
-			{
-				if ((this._loaiHinh != value))
-				{
-					this._loaiHinh = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_slNguoi", DbType="Int NOT NULL")]
-		public int slNguoi
-		{
-			get
-			{
-				return this._slNguoi;
-			}
-			set
-			{
-				if ((this._slNguoi != value))
-				{
-					this._slNguoi = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_giaTien", DbType="Float NOT NULL")]
-		public double giaTien
-		{
-			get
-			{
-				return this._giaTien;
-			}
-			set
-			{
-				if ((this._giaTien != value))
-				{
-					this._giaTien = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_trangThai", DbType="NVarChar(45) NOT NULL", CanBeNull=false)]
-		public string trangThai
-		{
-			get
-			{
-				return this._trangThai;
-			}
-			set
-			{
-				if ((this._trangThai != value))
-				{
-					this._trangThai = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ghiChu", DbType="NVarChar(120)")]
-		public string ghiChu
-		{
-			get
-			{
-				return this._ghiChu;
-			}
-			set
-			{
-				if ((this._ghiChu != value))
-				{
-					this._ghiChu = value;
-				}
-			}
-		}
-	}
-	
 	public partial class sp_ThongKeDichVu_TheoNamResult
 	{
 		
@@ -6626,6 +6492,140 @@ namespace DAL
 				if ((this._soLuong != value))
 				{
 					this._soLuong = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_TimKiemLoaiHinhLuuTruResult
+	{
+		
+		private string _maLH;
+		
+		private string _tenLH;
+		
+		private string _loaiHinh;
+		
+		private int _slNguoi;
+		
+		private double _giaTien;
+		
+		private string _trangThai;
+		
+		private string _ghiChu;
+		
+		public sp_TimKiemLoaiHinhLuuTruResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maLH", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		public string maLH
+		{
+			get
+			{
+				return this._maLH;
+			}
+			set
+			{
+				if ((this._maLH != value))
+				{
+					this._maLH = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tenLH", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+		public string tenLH
+		{
+			get
+			{
+				return this._tenLH;
+			}
+			set
+			{
+				if ((this._tenLH != value))
+				{
+					this._tenLH = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_loaiHinh", DbType="NVarChar(45) NOT NULL", CanBeNull=false)]
+		public string loaiHinh
+		{
+			get
+			{
+				return this._loaiHinh;
+			}
+			set
+			{
+				if ((this._loaiHinh != value))
+				{
+					this._loaiHinh = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_slNguoi", DbType="Int NOT NULL")]
+		public int slNguoi
+		{
+			get
+			{
+				return this._slNguoi;
+			}
+			set
+			{
+				if ((this._slNguoi != value))
+				{
+					this._slNguoi = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_giaTien", DbType="Float NOT NULL")]
+		public double giaTien
+		{
+			get
+			{
+				return this._giaTien;
+			}
+			set
+			{
+				if ((this._giaTien != value))
+				{
+					this._giaTien = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_trangThai", DbType="NVarChar(45) NOT NULL", CanBeNull=false)]
+		public string trangThai
+		{
+			get
+			{
+				return this._trangThai;
+			}
+			set
+			{
+				if ((this._trangThai != value))
+				{
+					this._trangThai = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ghiChu", DbType="NVarChar(120)")]
+		public string ghiChu
+		{
+			get
+			{
+				return this._ghiChu;
+			}
+			set
+			{
+				if ((this._ghiChu != value))
+				{
+					this._ghiChu = value;
 				}
 			}
 		}

@@ -27,7 +27,6 @@ namespace BUS
 
         private readonly DAL_KhachHang dal = new DAL_KhachHang();
 
-        QLResortDataContext db = new QLResortDataContext();
 
         //Lấy danh sách khách hàng
         public IQueryable layDSKH()
@@ -68,7 +67,7 @@ namespace BUS
         /// <returns></returns>
         public List<string> LayTatCaCCCD()
         {
-            return DAL_KhachHang.Instance.LayTatCaCCCD();
+            return dal.LayTatCaCCCD();
         }
 
         /// <summary>
@@ -78,7 +77,7 @@ namespace BUS
         /// <returns></returns>
         public ET_KhachHang LayKhachHangTheoCCCD(string cccd)
         {
-            return DAL_KhachHang.Instance.LayKhachHangTheoCCCD(cccd);
+            return dal.LayKhachHangTheoCCCD(cccd);
         }
 
         /// <summary>
@@ -88,7 +87,7 @@ namespace BUS
         /// <returns></returns>
         public ET_KhachHang LayKHTheoMa(string maKH)
         {
-            return DAL_KhachHang.Instance.LayKHTheoMa(maKH);
+            return dal.LayKHTheoMa(maKH);
         }
     }
 }

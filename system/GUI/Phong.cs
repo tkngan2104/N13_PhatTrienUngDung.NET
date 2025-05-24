@@ -66,7 +66,7 @@ namespace GUI
             txtGiaTien.Text = dgvDSLHLT.Rows[dong].Cells[4].Value?.ToString() ?? "";
             cboTrangThai.Text = dgvDSLHLT.Rows[dong].Cells[5].Value?.ToString() ?? "";
             txtGhiChu.Text = dgvDSLHLT.Rows[dong].Cells[6].Value?.ToString() ?? "";
-
+            cboLoaiHinh.Enabled = false;
             btnSua.Enabled = true;
             btnThem.Enabled = false;
         }
@@ -203,7 +203,7 @@ namespace GUI
             txtSLNguoi.Clear();
             txtGhiChu.Clear();
             txtGiaTien.Clear();
-
+            cboLoaiHinh.Enabled = true;
             dgvDSLHLT.ClearSelection();
 
             btnSua.Enabled = false;

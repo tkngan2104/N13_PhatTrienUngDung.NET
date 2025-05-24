@@ -887,11 +887,11 @@ insert into MonAn (maMA, maLMA, tenMA, giaTien, mieuTa) values
 -----COMBO MÓN ĂN
 go
 insert into ComboMonAn (maCB, tenCB, giaCB) values
-('CB00001', 'Buffet Sáng', 250000),
-('CB00002', 'Buffet Tối', 350000),
-('CB00003', 'Thực đơn gọi món tại phòng', 300000),
-('CB00004', 'Thực đơn tiệc truyền thống', 500000),
-('CB00005', 'Thực đơn tiệc hiện đại', 600000);
+('CB00001', N'Buffet Sáng', 250000),
+('CB00002', N'Buffet Tối', 350000),
+('CB00003', N'Thực đơn gọi món tại phòng', 300000),
+('CB00004', N'Thực đơn tiệc truyền thống', 500000),
+('CB00005', N'Thực đơn tiệc hiện đại', 600000);
 
 -----CHI TIẾT COMBO
 go

@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DAL_ComBoMonAn
     {
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
         // Load danh sách tất cả combo
         public IQueryable GetAllCombo()
         {

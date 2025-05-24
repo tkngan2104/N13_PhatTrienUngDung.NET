@@ -17,6 +17,10 @@ namespace GUI
     {
         private List<ET_ChiTietDatPhong> danhSachPhongTam = new List<ET_ChiTietDatPhong>();
         private BindingSource bindingSourcePhong = new BindingSource();
+        private readonly BUS_DatPhong dp = new BUS_DatPhong();
+        private readonly BUS_LoaiHinhLuuTru lhlt = new BUS_LoaiHinhLuuTru();
+        private readonly BUS_ChiTietDatPhong ctdp = new BUS_ChiTietDatPhong();
+        private readonly BUS_KhachHang kh = new BUS_KhachHang();
 
         public DatPhong()
         {
@@ -49,12 +53,12 @@ namespace GUI
 
         private void DatPhong_Load(object sender, EventArgs e)
         {
-            BUS_DatPhong.Instance.DSDatPhong(dgvDSDatPhong);
+            dp.DSDatPhong(dgvDSDatPhong);
             txtMaNS.Text = "NV025";
-            txtDatPhong.Text = BUS_DatPhong.Instance.TaoMaTuDong();
-            txtMaCTDP.Text = BUS_ChiTietDatPhong.Instance.TaoMaTuDong();
-            BUS_LoaiHinhLuuTru.Instance.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
-            BUS_ChiTietDatPhong.Instance.HienThiPhongTrong(cboMaPhong, cboLoaiHinh.SelectedValue.ToString());
+            txtDatPhong.Text = dp.TaoMaTuDong();
+            txtMaCTDP.Text = ctdp.TaoMaTuDong();
+            lhlt.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
+            ctdp.HienThiPhongTrong(cboMaPhong, cboLoaiHinh.SelectedValue.ToString());
 
             dtpNgayDatPhong.MinDate = DateTime.Today;
             DateTime maxDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(4).AddDays(-1);
@@ -64,7 +68,7 @@ namespace GUI
             dtpNgayTraPhong.MaxDate = DateTime.Today.AddMonths(4);
 
             AutoCompleteStringCollection cccdSuggestions = new AutoCompleteStringCollection();
-            List<string> dsCCCD = BUS_KhachHang.Instance.LayTatCaCCCD();
+            List<string> dsCCCD = kh.LayTatCaCCCD();
             cccdSuggestions.AddRange(dsCCCD.ToArray());
 
             txtCCCD.AutoCompleteCustomSource = cccdSuggestions;
@@ -77,7 +81,7 @@ namespace GUI
             dgvDSPhong.DataSource = bindingSourcePhong;
             dgvDSPhong.AutoGenerateColumns = true;
 
-            BUS_ChiTietDatPhong.Instance.CapNhatTrangThaiPhongTheoNgay();
+            ctdp.CapNhatTrangThaiPhongTheoNgay();
         }
 
         /// <summary>
@@ -89,12 +93,12 @@ namespace GUI
         {
             if (e.KeyCode == Keys.Enter)
             {
-                ET_KhachHang kh = BUS_KhachHang.Instance.LayKhachHangTheoCCCD(txtCCCD.Text.Trim());
-                if (kh != null)
+                ET_KhachHang kh2 = kh.LayKhachHangTheoCCCD(txtCCCD.Text.Trim());
+                if (kh2 != null)
                 {
-                    txtMaKH.Text = kh.MaKH;
-                    txtTenKH.Text = kh.TenKH;
-                    txtSDTKH.Text = kh.SoDT;
+                    txtMaKH.Text = kh2.MaKH;
+                    txtTenKH.Text = kh2.TenKH;
+                    txtSDTKH.Text = kh2.SoDT;
                 }
                 else
                 {
@@ -129,7 +133,7 @@ namespace GUI
             if (cboLoaiHinh.SelectedItem == null)
                 return;
 
-            BUS_ChiTietDatPhong.Instance.HienThiPhongTrong(cboMaPhong, cboLoaiHinh.SelectedValue.ToString());
+            ctdp.HienThiPhongTrong(cboMaPhong, cboLoaiHinh.SelectedValue.ToString());
         }
 
         /// <summary>
@@ -152,18 +156,18 @@ namespace GUI
 
                     // Lưu thông tin đặt phòng chung trước
                     ET_DatPhong datPhong = new ET_DatPhong(maNS,maDP, maKH, ngayTP);
-                    BUS_DatPhong.Instance.ThemDatPhong(datPhong);
+                    dp.ThemDatPhong(datPhong);
 
                     // Sau đó thêm từng chi tiết phòng
                     foreach (var phong in danhSachPhongTam)
                     {
-                        BUS_ChiTietDatPhong.Instance.ThemCTDP(phong);
+                        ctdp.ThemCTDP(phong);
                     }
 
                     MessageBox.Show("Đặt phòng thành công!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     danhSachPhongTam.Clear();
                     bindingSourcePhong.ResetBindings(false);
-                    BUS_DatPhong.Instance.DSDatPhong(dgvDSDatPhong);
+                    dp.DSDatPhong(dgvDSDatPhong);
 
                 }
                 catch (Exception ex)
@@ -195,7 +199,7 @@ namespace GUI
                 if (KtraBoTrong())
                 {
                     string maDP = txtDatPhong.Text;
-                    string maCTDP = BUS_ChiTietDatPhong.Instance.TaoMaTam(danhSachPhongTam);  // Tạo mã mới và lưu vào maCTDP
+                    string maCTDP = ctdp.TaoMaTam(danhSachPhongTam);  // Tạo mã mới và lưu vào maCTDP
 
                     // Hiển thị mã vừa tạo lên textbox
                     txtMaCTDP.Text = maCTDP;
@@ -217,7 +221,7 @@ namespace GUI
 
                         danhSachPhongTam.Add(phongMoi);
 
-                        BUS_ChiTietDatPhong.Instance.CapNhatTrangThaiPhong(maPhong, "Đã đặt");
+                        ctdp.CapNhatTrangThaiPhong(maPhong, "Đã đặt");
 
                         bindingSourcePhong.ResetBindings(false);
                         
@@ -252,16 +256,96 @@ namespace GUI
 
         private void dgvDSDatPhong_Click(object sender, EventArgs e)
         {
+            DataGridViewRow row = dgvDSDatPhong.CurrentRow;
             try
             {
+                string maNS = row.Cells[0].Value.ToString();
+                string maKH = row.Cells[2].Value.ToString();
                 string madp = dgvDSDatPhong.CurrentRow.Cells[1].Value.ToString();
-                //BUS_ChiTietDatPhong.Instance.DSChiTietDatPhong(dgvDSPhong);
                 BUS_ChiTietDatPhong.Instance.DSChiTietDatPhongTheoMa(dgvDSPhong, madp);
+                string ngayDP = row.Cells[3].Value?.ToString();
+                txtMaNS.Text = maNS;
+                txtDatPhong.Text = madp;
+
+                // Gán ngày đặt phòng nếu có
+                if (DateTime.TryParse(ngayDP, out DateTime dtDP))
+                    dtpNgayDatPhong.Value = dtDP;
+
+                var kh = BUS_KhachHang.Instance.LayKHTheoMa(maKH);
+                if (kh != null)
+                {
+                    txtMaKH.Text = kh.MaKH;
+                    txtTenKH.Text = kh.TenKH;
+                    txtCCCD.Text = kh.Cccd;
+                    txtSDTKH.Text = kh.SoDT;
+                }
+
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void btnXoaPhong_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Xác nhận xóa phòng khỏi danh sách?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (d == DialogResult.Yes)
+            {
+                string maCTDP = txtMaCTDP.Text;  // Lấy mã chi tiết đặt phòng từ textbox
+
+                var phongCanXoa = danhSachPhongTam.FirstOrDefault(p => p.MaCTDP == maCTDP);
+                if (phongCanXoa != null)
+                {
+                    danhSachPhongTam.Remove(phongCanXoa);  // Xóa phòng khỏi danh sách
+
+                    // Cập nhật trạng thái phòng về trạng thái ban đầu (Chưa đặt)
+                    BUS_ChiTietDatPhong.Instance.CapNhatTrangThaiPhong(phongCanXoa.MaLH, "Chưa đặt");
+
+                    bindingSourcePhong.ResetBindings(false);
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy phòng cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void btnSuaPhong_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Xác nhận sửa lại phòng?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (d == DialogResult.Yes)
+            {
+                if (KtraBoTrong())
+                {
+                    string maCTDP = txtMaCTDP.Text;
+                    string maPhong = cboMaPhong.SelectedValue?.ToString();
+                    DateTime ngayTP = dtpNgayTraPhong.Value;
+
+                    var phongCanSua = danhSachPhongTam.FirstOrDefault(p => p.MaCTDP == maCTDP);
+                    if (phongCanSua != null)
+                    {
+                        // Cập nhật lại thông tin
+                        BUS_ChiTietDatPhong.Instance.CapNhatTrangThaiPhong(phongCanSua.MaLH, "Chưa đặt"); // trả lại phòng cũ
+
+                        phongCanSua.MaLH = maPhong;
+                        phongCanSua.NgayTraPhong = ngayTP;
+
+                        BUS_ChiTietDatPhong.Instance.CapNhatTrangThaiPhong(maPhong, "Đã đặt");
+
+                        bindingSourcePhong.ResetBindings(false);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Vui lòng chọn phòng cần sửa từ danh sách!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
     }

@@ -24,7 +24,7 @@ namespace DAL
             }
         }
 
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         /// <summary>
         /// Mã sử dụng dịch vụ tự động.
@@ -105,7 +105,7 @@ namespace DAL
 
         public float LayGiaPhongTheoMaCTDP(string maCTDP)
         {
-            using (QLResortDataContext db = new QLResortDataContext())
+            using (QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString))
             {
                 var hoaDon = db.HoaDonDatPhongs.FirstOrDefault(h => h.maCTDP == maCTDP);
                 if (hoaDon != null)

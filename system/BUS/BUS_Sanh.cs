@@ -94,7 +94,7 @@ namespace BUS
         /// <param name="cbo"></param>
         public void DSSanhCombobox(ComboBox cbo)
         {
-            cbo.DataSource = DAL_Sanh.Instance.DSSanhCombobox(cbo);
+            cbo.DataSource = dal_s.DSSanhCombobox(cbo);
             cbo.DisplayMember = "tenS";
             cbo.ValueMember = "maS";
         }
@@ -106,7 +106,7 @@ namespace BUS
         /// <returns></returns>
         public float LayGiaSTheoMa(string maS)
         {
-            return DAL_Sanh.Instance.LayGiaSTheoMa(maS);
+            return dal_s.LayGiaSTheoMa(maS);
         }
     }
 }

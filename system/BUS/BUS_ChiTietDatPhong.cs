@@ -29,7 +29,7 @@ namespace BUS
 
         public void DSChiTietDatPhongTheoMa(DataGridView dgvDSCTDP, string maDP)
         {
-            dgvDSCTDP.DataSource = DAL_ChiTietDatPhong.Instance.LayDSChiTietTheoMaDP(maDP);
+            dgvDSCTDP.DataSource = dal_p.LayDSChiTietTheoMaDP(maDP);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace BUS
         /// <param name="cbo"></param>
         public void HienThiPhongTrong(ComboBox cbo, string loaihinh)
         {
-            cbo.DataSource = DAL_ChiTietDatPhong.Instance.HienThiPhongTrong(loaihinh);
+            cbo.DataSource = dal_p.HienThiPhongTrong(loaihinh);
             cbo.DisplayMember = "tenLH";
             cbo.ValueMember = "maLH";
         }
@@ -103,13 +103,13 @@ namespace BUS
         /// <param name="v"></param>
         public void DSChiTietDatPhong(DataGridView dgvDSCTDP)
         {
-            dgvDSCTDP.DataSource = DAL_ChiTietDatPhong.Instance.DSChiTietDatPhong();
+            dgvDSCTDP.DataSource = dal_p.DSChiTietDatPhong();
         }
 
-        public void DSChiTietDatPhongTheoMa(DataGridView dgvDSCTDP, string maDP)
-        {
-            dgvDSCTDP.DataSource = DAL_ChiTietDatPhong.Instance.DSChiTietDatPhongTheoMa(maDP);
-        }
+        //public void DSChiTietDatPhongTheoMa(DataGridView dgvDSCTDP, string maDP)
+        //{
+        //    dgvDSCTDP.DataSource = DAL_ChiTietDatPhong.Instance.DSChiTietDatPhongTheoMa(maDP);
+        //}
 
         /// <summary>
         /// Thêm chi tiết đặt phòng.
@@ -117,7 +117,7 @@ namespace BUS
         /// <param name="etCT"></param>
         public void ThemCTDP(ET_ChiTietDatPhong etCT)
         {
-            if (DAL_ChiTietDatPhong.Instance.ThemCTDP(etCT) == true)
+            if (dal_p.ThemCTDP(etCT) == true)
             {
                 MessageBox.Show("Hoàn tất thêm dữ liệu !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -132,7 +132,7 @@ namespace BUS
         /// </summary>
         public void CapNhatTrangThaiPhongTheoNgay()
         {
-            DAL_ChiTietDatPhong.Instance.CapNhatTrangThaiPhongTheoNgay();
+            dal_p.CapNhatTrangThaiPhongTheoNgay();
         }
 
         /// <summary>
@@ -142,12 +142,12 @@ namespace BUS
         /// <param name="trangThai"></param>
         public void CapNhatTrangThaiPhong(string maLH, string trangThai)
         {
-            DAL_ChiTietDatPhong.Instance.CapNhatTrangThaiPhong(maLH, trangThai);
+            dal_p.CapNhatTrangThaiPhong(maLH, trangThai);
         }
 
         public List<string> LayTatCaMaCTDP()
         {
-            return DAL_ChiTietDatPhong.Instance.LayTatCaMaCTDP();
+            return dal_p.LayTatCaMaCTDP();
         }
 
        

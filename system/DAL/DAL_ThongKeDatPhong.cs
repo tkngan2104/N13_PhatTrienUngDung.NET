@@ -22,7 +22,7 @@ namespace DAL
                 return instance;
             }
         }
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
         /// <summary>
         /// Thống kê đặt phòng theo ngày.
         /// </summary>

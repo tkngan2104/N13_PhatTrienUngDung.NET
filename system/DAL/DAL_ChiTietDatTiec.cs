@@ -9,7 +9,7 @@ namespace DAL
 {
     public class DAL_ChiTietDatTiec
     {
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
         public IQueryable layDSCTDT()
         {
             var result = from ct in db.ChiTiecDatTiecs

@@ -27,32 +27,32 @@ namespace BUS
         // Tạo mã tự động
         public string TaoMaTuDong()
         {
-            return DAL_HoaDonDatPhong.Instance.TaoMaTuDong();
+            return dal.TaoMaTuDong();
         }
 
         //public void DSHDDP(DataGridView dgvDSHDDP, string hddp)
         //{
-        //    dgvDSHDDP.DataSource = DAL_HoaDonDatPhong.Instance.DSHDDP(hddp);
+        //    dgvDSHDDP.DataSource = dal.DSHDDP(hddp);
         //}
 
         public IQueryable<ET_HoaDonDatPhong> timSDT(string sdt)
         {
-           return DAL_HoaDonDatPhong.Instance.TimKiemTheoSDTKhach(sdt);
+           return dal.TimKiemTheoSDTKhach(sdt);
         }
 
         public List<ET_SuDungDichVu> LayDSDichVuTheoMaCTDP(string maCTDP)
         {
-            return DAL_HoaDonDatPhong.Instance.LayDSDichVuTheoMaCTDP(maCTDP);
+            return dal.LayDSDichVuTheoMaCTDP(maCTDP);
         }
 
 
         public float LayGiaPhong(string maCTDP)
         {
-            return DAL_HoaDonDatPhong.Instance.LayGiaPhongTheoMaCTDP(maCTDP);
+            return dal.LayGiaPhongTheoMaCTDP(maCTDP);
         }
         public string LayMaNhanSuTheoCTDP(string maCTDP)
         {
-            return DAL_HoaDonDatPhong.Instance.LayMaNhanSuTheoCTDP(maCTDP);
+            return dal.LayMaNhanSuTheoCTDP(maCTDP);
         }
     }
 }

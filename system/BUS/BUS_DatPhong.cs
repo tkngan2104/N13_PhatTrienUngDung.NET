@@ -55,7 +55,7 @@ namespace BUS
         {
             try
             {
-                return DAL_DatPhong.Instance.ThemDatPhong(etDP);
+                return dal_dp.ThemDatPhong(etDP);
             }
             catch (Exception ex)
             {

@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DAL_ThanhToanDatTiec
     {
-        QLResortDataContext db =new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
         public IQueryable<ET_HoaDonDatTiec> TimKiemTheoSDTKhach(string soDienThoai)
         {
             var query = from dt in db.DatTiecs

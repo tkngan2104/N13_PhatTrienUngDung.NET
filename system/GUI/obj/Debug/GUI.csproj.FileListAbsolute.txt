@@ -517,3 +517,10 @@ C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debu
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.Up2Date
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.Windows.Forms.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatDichVu.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.InHoaDonDatPhong.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.frm_ReportKhachHang.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoNam.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoNgay.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoThang.resources

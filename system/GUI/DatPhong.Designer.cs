@@ -448,6 +448,7 @@
             this.btnSuaPhong.TabIndex = 24;
             this.btnSuaPhong.Text = "Sửa phòng";
             this.btnSuaPhong.UseVisualStyleBackColor = false;
+            this.btnSuaPhong.Click += new System.EventHandler(this.btnSuaPhong_Click);
             // 
             // btnXoaPhong
             // 
@@ -461,6 +462,7 @@
             this.btnXoaPhong.TabIndex = 23;
             this.btnXoaPhong.Text = "Xóa phòng";
             this.btnXoaPhong.UseVisualStyleBackColor = false;
+            this.btnXoaPhong.Click += new System.EventHandler(this.btnXoaPhong_Click);
             // 
             // DatPhong
             // 

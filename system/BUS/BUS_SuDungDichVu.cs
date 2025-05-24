@@ -42,7 +42,7 @@ namespace BUS
         /// <param name="dgvDSSDDV"></param>
         public void DSSDDV(DataGridView dgvDSSDDV, string sddv)
         {
-            dgvDSSDDV.DataSource = DAL_SuDungDichVu.Instance.DSSDDV(sddv);
+            dgvDSSDDV.DataSource = dal_sddv.DSSDDV(sddv);
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace BUS
         /// <param name="etSDDV"></param>
         public void ThemSDDV(ET_SuDungDichVu etSDDV)
         {
-            if (DAL_SuDungDichVu.Instance.ThemSDDV(etSDDV))
+            if (dal_sddv.ThemSDDV(etSDDV))
             {
                 MessageBox.Show("Hoàn tất thêm dữ liệu !", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

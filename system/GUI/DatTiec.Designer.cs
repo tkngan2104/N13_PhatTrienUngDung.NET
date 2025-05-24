@@ -30,7 +30,6 @@
         {
             this.btnSua = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.btnDatDV = new System.Windows.Forms.Button();
             this.btnDatTD = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
@@ -96,7 +95,6 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.btnDatDV);
             this.groupBox6.Controls.Add(this.btnDatTD);
             this.groupBox6.Controls.Add(this.btnThoat);
             this.groupBox6.Controls.Add(this.btnSua);
@@ -111,21 +109,6 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Chức năng";
             // 
-            // btnDatDV
-            // 
-            this.btnDatDV.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnDatDV.FlatAppearance.BorderSize = 0;
-            this.btnDatDV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDatDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatDV.ForeColor = System.Drawing.Color.Black;
-            this.btnDatDV.Location = new System.Drawing.Point(465, 109);
-            this.btnDatDV.Name = "btnDatDV";
-            this.btnDatDV.Size = new System.Drawing.Size(191, 42);
-            this.btnDatDV.TabIndex = 30;
-            this.btnDatDV.Text = "Đặt dịch vụ";
-            this.btnDatDV.UseVisualStyleBackColor = false;
-            this.btnDatDV.Click += new System.EventHandler(this.btnDatDV_Click);
-            // 
             // btnDatTD
             // 
             this.btnDatTD.BackColor = System.Drawing.Color.SkyBlue;
@@ -135,7 +118,7 @@
             this.btnDatTD.ForeColor = System.Drawing.Color.Black;
             this.btnDatTD.Location = new System.Drawing.Point(246, 109);
             this.btnDatTD.Name = "btnDatTD";
-            this.btnDatTD.Size = new System.Drawing.Size(191, 42);
+            this.btnDatTD.Size = new System.Drawing.Size(410, 42);
             this.btnDatTD.TabIndex = 29;
             this.btnDatTD.Text = "Đặt thực đơn";
             this.btnDatTD.UseVisualStyleBackColor = false;
@@ -667,7 +650,6 @@
         private System.Windows.Forms.Label lblDatCoc;
         private System.Windows.Forms.Button btnSanhDT;
         private System.Windows.Forms.Button btnDatTD;
-        private System.Windows.Forms.Button btnDatDV;
         private System.Windows.Forms.TextBox txtNgayDatTiec;
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Label lblGhiChu;

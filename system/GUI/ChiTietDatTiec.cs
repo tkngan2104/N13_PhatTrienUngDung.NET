@@ -106,7 +106,35 @@ namespace GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                // Create an object to hold the data
+                ET_ChiTiecDatTiec et = new ET_ChiTiecDatTiec
+                {
+                    MaCTDT = bus.taoMaCTDT(), // Assuming this function generates a unique ID
+                    MaDT = cboMaDatTiec.SelectedValue.ToString(),
+                    MaCB = cboComboMA.SelectedValue.ToString(),
+                    MaMA = cboMA.SelectedValue?.ToString(),
+                    SoLuong = (int)numSoLuong.Value
+                };
+
+                // Call the BUS function to add this detail
+                bool result = bus.themChiTietDatTiec(et);
+
+                if (result)
+                {
+                    MessageBox.Show("Thêm chi tiết đặt tiệc thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    layDSCTDT(); // Refresh the DataGridView
+                }
+                else
+                {
+                    MessageBox.Show("Thêm chi tiết đặt tiệc thất bại. Vui lòng thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
@@ -121,10 +149,10 @@ namespace GUI
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            txtMaNS.Clear();
-            cboMaDatTiec.SelectedIndex=-1;
-            cboComboMA.SelectedIndex = -1;
-            cboMA.SelectedIndex = -1;
+            //txtMaNS.Clear();
+            //cboMaDatTiec.SelectedIndex=-1;
+            //cboComboMA.SelectedIndex = -1;
+            //cboMA.SelectedIndex = -1;
             numSoLuong.Value = 0;
             txtMaNS.Text = bus.taoMaCTDT();
         }

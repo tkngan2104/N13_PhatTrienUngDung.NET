@@ -169,7 +169,7 @@ namespace DAL
         /// <returns></returns>
         public bool KiemTraEmailTonTai(string emailMoi, string emailCuu)
         {
-            using (var context = new QLResortDataContext())
+            using (var context = new QLResortDataContext(Connection_DAL.ConnectionString))
             {
                 if (emailMoi != emailCuu)
                 {
@@ -186,7 +186,7 @@ namespace DAL
         /// <returns></returns>
         public bool KiemTraCCCDTonTai(string cccd)
         {
-            using (var context = new QLResortDataContext())
+            using (var context = new QLResortDataContext(Connection_DAL.ConnectionString))
             {
                 return context.NhanSus.Any(ns => ns.CCCD == cccd);
             }
@@ -199,7 +199,7 @@ namespace DAL
         /// <returns></returns>
         public bool KiemTraSDTTonTai(string sdt)
         {
-            using (var context = new QLResortDataContext())
+            using (var context = new QLResortDataContext(Connection_DAL.ConnectionString))
             {
                 return context.NhanSus.Any(ns => ns.SDT == sdt);
             }
