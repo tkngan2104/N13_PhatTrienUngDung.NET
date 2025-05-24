@@ -10,7 +10,7 @@ namespace DAL
     
     public class DAL_LoaiMonAn
     {
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         //Lấy danh sách loại món ăn
         public IQueryable layDSLMA()

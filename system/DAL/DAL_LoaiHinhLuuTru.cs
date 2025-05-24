@@ -28,7 +28,7 @@ namespace DAL
             }
         }
 
-        private QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         /// <summary>
         /// Đổ dữ liệu loại hình lưu trú.

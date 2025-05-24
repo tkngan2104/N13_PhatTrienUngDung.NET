@@ -101,9 +101,14 @@ namespace BUS
         /// </summary>
         /// <param name="dgvDSCTDP"></param>
         /// <param name="v"></param>
-        public void DSChiTietDatPhong(DataGridView dgvDSCTDP, int v)
+        public void DSChiTietDatPhong(DataGridView dgvDSCTDP)
         {
             dgvDSCTDP.DataSource = DAL_ChiTietDatPhong.Instance.DSChiTietDatPhong();
+        }
+
+        public void DSChiTietDatPhongTheoMa(DataGridView dgvDSCTDP, string maDP)
+        {
+            dgvDSCTDP.DataSource = DAL_ChiTietDatPhong.Instance.DSChiTietDatPhongTheoMa(maDP);
         }
 
         /// <summary>

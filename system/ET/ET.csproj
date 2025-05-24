@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChiTietSuDungDTO.cs" />
+    <Compile Include="connect.cs" />
     <Compile Include="CurrentUser.cs" />
     <Compile Include="ET_ChiTiecDatTiec.cs" />
     <Compile Include="ET_ChiTietCombo.cs" />

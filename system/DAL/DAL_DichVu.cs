@@ -26,12 +26,14 @@ namespace DAL
             }
         }
 
-        QLResortDataContext db= new QLResortDataContext();
-        public IQueryable layDSDV()
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
+        public List<ET_DichVu> layDSDV()
         {
-            return db.DichVus.OrderByDescending(k => k.maDV);
+            var dv = from el in db.DichVus
+                     select new ET_DichVu(el.maDV, el.tenDV, el.giaTien); // Chuyển đổi thành đối tượng ET_DichVu
+            return dv.ToList(); // Trả về danh sách
         }
-        
+
 
         // Thêm dịch vụ
         public bool themDichVu(ET_DichVu et)

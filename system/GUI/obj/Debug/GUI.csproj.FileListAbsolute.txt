@@ -1,0 +1,519 @@
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChucVu.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatDichVu.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatPhong.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatTiec.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DichVu.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KhachHang.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Login.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Menu.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.MonAn.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.NhanSu.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Phong.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Setting.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe.config
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.pdb
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.dll
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.pdb
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.pdb
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll.config
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.pdb
+D:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll.config
+D:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.Up2Date
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\GUI.exe.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\GUI.exe
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\GUI.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\ET.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\BUS.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\ET.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\ET.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\bin\Debug\DAL.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.ChucVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.DatDichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.DatPhong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.DatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.DichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.KhachHang.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.Login.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.Menu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.MonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.NhanSu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.Phong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.Setting.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.csproj.Up2Date
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.exe
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET.git\system\GUI\obj\Debug\GUI.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\GUI.exe.config
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\GUI.exe
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\GUI.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\BUS.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\ET.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\DAL.dll
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\BUS.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\ET.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\ET.dll.config
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\DAL.pdb
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\DAL.dll.config
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ChucVu.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.DatDichVu.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.DatPhong.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.DatTiec.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.DichVu.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.KhachHang.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Login.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Menu.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.MonAn.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.NhanSu.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Phong.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Setting.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.exe
+D:\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\GUI.exe.config
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\GUI.exe
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\GUI.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\BUS.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\ET.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\DAL.dll
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\BUS.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\ET.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\ET.dll.config
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\DAL.pdb
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\bin\Debug\DAL.dll.config
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ChucVu.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.DatDichVu.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.DatPhong.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.DatTiec.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.DichVu.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.KhachHang.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Login.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Menu.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.MonAn.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.NhanSu.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Phong.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.Setting.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.exe
+C:\Users\ADMIN\Music\N13_PhatTrienUngDung.NET-test_Lam\system\GUI\obj\Debug\GUI.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.pdb
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll.config
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChucVu.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatDichVu.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatPhong.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatTiec.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DichVu.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KhachHang.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Login.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Menu.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.MonAn.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.NhanSu.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Phong.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Setting.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
+D:\Tan\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe.config
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.pdb
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.pdb
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.pdb
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll.config
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.pdb
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll.config
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChucVu.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatPhong.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatTiec.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DichVu.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KhachHang.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Login.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Menu.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.MonAn.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.NhanSu.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Phong.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Setting.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.Up2Date
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.Common.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.Design.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.SqlServer.Types.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\EnvDTE.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportSource.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.Shared.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+N:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe.config
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportSource.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.Shared.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.Common.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.Design.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.SqlServer.Types.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\EnvDTE.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll.config
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll.config
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChucVu.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatDichVu.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatPhong.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatTiec.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DichVu.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KhachHang.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Login.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Menu.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.MonAn.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.NhanSu.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Phong.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Setting.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNam.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNgay.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoThang.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.Up2Date
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoNam.resources
+T:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoThang.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNam.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNgay.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoThang.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoNam.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoThang.resources
+N:\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KetNoiData.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChiTietDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ChucVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ComboMonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatPhong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.InHoaDonDatPhong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.frm_ReportKhachHang.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KetNoiData.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.KhachHang.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.LoaiMonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Login.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Menu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.MonAn.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.NhanSu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Phong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SanhDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.Setting.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.SuDungDichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatPhong.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThanhToanDatTiec.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoNam.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoNgay.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatPhongTheoThang.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNam.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoNgay.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeDatTiecTheoThang.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoNam.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.ThongKeSuDungDichVuTheoThang.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.exe
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.DatDichVu.resources
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.exe
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\GUI.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\EnvDTE.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\stdole.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\BUS.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\DAL.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.pdb
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ET.dll.config
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\EnvDTE.xml
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Litterature Forest\Desktop\N13_PhatTrienUngDung.NET\system\GUI\obj\Debug\GUI.csproj.Up2Date

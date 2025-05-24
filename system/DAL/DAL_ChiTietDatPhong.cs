@@ -26,7 +26,6 @@ namespace DAL
             }
         }
 
-        private QLResortDataContext db = new QLResortDataContext();
         public IQueryable LayDSChiTietTheoMaDP(string maDP)
         {
             IQueryable chitiet = from ctdp in db.ChiTietDatPhongs
@@ -44,6 +43,8 @@ namespace DAL
             return chitiet;
         }
 
+
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         /// <summary>
         /// Tìm kiếm loại hình trong chi tiết đặt phòng.
@@ -123,6 +124,22 @@ namespace DAL
         {
             IQueryable chitiet = from ctdp in db.ChiTietDatPhongs
                                  join lh in db.LoaiHinhLuuTrus on ctdp.maLH equals lh.maLH
+                                 select new
+                                 {
+                                     MaDP = ctdp.maDP,
+                                     MaCTDP = ctdp.maCTDP,
+                                     MaLH = ctdp.maLH,
+                                     NgayTraPhong = ctdp.ngayTraPhong
+                                 };
+            return chitiet;
+        }
+
+        public IQueryable DSChiTietDatPhongTheoMa(string maDP)
+        {
+            IQueryable chitiet = from ctdp in db.ChiTietDatPhongs
+                                 join lh in db.LoaiHinhLuuTrus on ctdp.maLH equals lh.maLH
+                                 join dp in db.DatPhongs on ctdp.maDP equals dp.maDP
+                                 where ctdp.maDP == maDP
                                  select new
                                  {
                                      MaDP = ctdp.maDP,

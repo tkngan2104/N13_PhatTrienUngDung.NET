@@ -24,7 +24,7 @@ namespace DAL
             }
         }
 
-        private QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         /// <summary>
         /// Mã đặt phòng tự động.

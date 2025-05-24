@@ -19,6 +19,11 @@ namespace GUI
             InitializeComponent();
         }
 
+        private BUS_SuDungDichVu sddv = new BUS_SuDungDichVu();
+        private BUS_DichVu dv = new BUS_DichVu();
+        private BUS_ChiTietDatPhong ctdp = new BUS_ChiTietDatPhong();
+        private BUS_ThongKeSuDungDichVu tksddv = new BUS_ThongKeSuDungDichVu();
+
         /// <summary>
         /// Btn dịch vụ.
         /// </summary>
@@ -67,7 +72,7 @@ namespace GUI
         private void btnTim_Click(object sender, EventArgs e)
         {
             string tenLH = txtTimPhong.Text.Trim();
-            var ds = BUS_ChiTietDatPhong.Instance.TimTheoTenLoaiHinh(tenLH);
+            var ds = ctdp.TimTheoTenLoaiHinh(tenLH);
             dgvKetQuaTimKiem.DataSource = ds;
             dgvKetQuaTimKiem.Columns[4].Visible = false;
             dgvKetQuaTimKiem.Columns[5].Visible = false;
@@ -82,7 +87,7 @@ namespace GUI
             try
             {
                 string maCTDP = dgvKetQuaTimKiem.Rows[dong].Cells[1].Value?.ToString() ?? "";
-                BUS_SuDungDichVu.Instance.DSSDDV(dgvDSDichVu, maCTDP);
+                sddv.DSSDDV(dgvDSDichVu, maCTDP);
             }
             catch (Exception ex)
             {
@@ -92,11 +97,11 @@ namespace GUI
 
         private void SuDungDichVu_Load(object sender, EventArgs e)
         {
-            txtMaSDDV.Text = BUS_SuDungDichVu.Instance.TaoMaTuDong();
+            txtMaSDDV.Text = sddv.TaoMaTuDong();
 
             AutoCompleteStringCollection collection = new AutoCompleteStringCollection();
 
-            List<string> dsTenDV = BUS_DichVu.Instance.LayTatCaTenDichVu();
+            List<string> dsTenDV = dv.LayTatCaTenDichVu();
             collection.AddRange(dsTenDV.ToArray());
 
             txtDichVu.AutoCompleteCustomSource = collection;
@@ -112,7 +117,7 @@ namespace GUI
             string tenDV = txtDichVu.Text.Trim();
             int soLuong = (int)numSL.Value;
 
-            int giaTien = BUS_DichVu.Instance.LayGiaDichVuTheoTen(tenDV);
+            int giaTien = dv.LayGiaDichVuTheoTen(tenDV);
 
             int thanhTien = soLuong * giaTien;
 
@@ -182,8 +187,8 @@ namespace GUI
                     );
 
                     // Gọi BUS để thêm dịch vụ
-                    BUS_SuDungDichVu.Instance.ThemSDDV(etSDDV);
-                    BUS_SuDungDichVu.Instance.DSSDDV(dgvDSDichVu, txtCTDP.Text);
+                    sddv.ThemSDDV(etSDDV);
+                    sddv.DSSDDV(dgvDSDichVu, txtCTDP.Text);
                 }
                 else
                 {
@@ -204,8 +209,8 @@ namespace GUI
                 DialogResult ret = MessageBox.Show("Hãy chắc chắn rằng bạn muốn xóa dữ liệu vừa chọn !", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (ret == DialogResult.Yes)
                 {
-                    BUS_SuDungDichVu.Instance.XoaSDDV(dgvDSDichVu);
-                    BUS_SuDungDichVu.Instance.DSSDDV(dgvDSDichVu, txtCTDP.Text);
+                    sddv.XoaSDDV(dgvDSDichVu);
+                    sddv.DSSDDV(dgvDSDichVu, txtCTDP.Text);
                 }
             }
             else
@@ -228,14 +233,14 @@ namespace GUI
                 {
                     if (KTraMa(txtMaSDDV.Text) == true)
                     {
-                        BUS_SuDungDichVu.Instance.SuaSDDV(new ET_SuDungDichVu(
+                        sddv.SuaSDDV(new ET_SuDungDichVu(
                             txtMaSDDV.Text,
                             txtDichVu.Text,
                             txtCTDP.Text,
                             (int)numSL.Value,
                             float.Parse(txtThanhTien.Text)
                         ));
-                        BUS_SuDungDichVu.Instance.DSSDDV(dgvDSDichVu, txtCTDP.Text);
+                        sddv.DSSDDV(dgvDSDichVu, txtCTDP.Text);
                     }
                     else
                     {
@@ -261,7 +266,7 @@ namespace GUI
         /// <param name="e"></param>
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            txtMaSDDV.Text = BUS_SuDungDichVu.Instance.TaoMaTuDong();
+            txtMaSDDV.Text = sddv.TaoMaTuDong();
             txtDichVu.Clear();
             numSL.Value = numSL.Minimum;
             txtThanhTien.Clear();
@@ -295,11 +300,11 @@ namespace GUI
         {
             if (radThang.Checked == true)
             {
-                dgvDSSDDV_TK.DataSource = BUS_ThongKeSuDungDichVu.Instance.ThongKeDichVuTheoThang(dtpThoiGian.Value.Month, dtpThoiGian.Value.Year);
+                dgvDSSDDV_TK.DataSource = tksddv.ThongKeDichVuTheoThang(dtpThoiGian.Value.Month, dtpThoiGian.Value.Year);
             }
             else if (radNam.Checked == true)
             {
-                dgvDSSDDV_TK.DataSource = BUS_ThongKeSuDungDichVu.Instance.ThongKeDichVuTheoNam(dtpThoiGian.Value.Year);
+                dgvDSSDDV_TK.DataSource = tksddv.ThongKeDichVuTheoNam(dtpThoiGian.Value.Year);
             }
         }
 

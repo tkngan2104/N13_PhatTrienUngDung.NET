@@ -20,6 +20,10 @@ namespace GUI
             InitializeComponent();
         }
 
+        private BUS_NhanVien nv = new BUS_NhanVien();
+        private BUS_Sanh s = new BUS_Sanh();
+        private BUS_ChucVu cv = new BUS_ChucVu();
+
         /// <summary>
         /// Btn thoát.
         /// </summary>
@@ -57,9 +61,9 @@ namespace GUI
         private void NhanSu_Load(object sender, EventArgs e)
         {
             btnSua.Enabled = false;
-            BUS_NhanVien.Instance.DSNhanVien(dgvDSNS);
-            txtMaNS.Text = BUS_NhanVien.Instance.TaoMaTuDong();
-            BUS_ChucVu.Instance.DSChucVuCombobox(cboChucVu);
+            nv.DSNhanVien(dgvDSNS);
+            txtMaNS.Text = nv.TaoMaTuDong();
+            cv.DSChucVuCombobox(cboChucVu);
             dtpNgaySinh.MinDate = new DateTime(1950, 1, 1);
             dtpNgaySinh.MaxDate = DateTime.Today;
             dtpNgaySinh.Value = DateTime.Today;
@@ -166,8 +170,8 @@ namespace GUI
             {
                 if (KtraBoTrong() == true)
                 {
-                    BUS_NhanVien.Instance.ThemNhanVien(new ET_NhanVien(txtMaNS.Text, txtTenNS.Text, layGioiTinh(), txtSDT.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cboChucVu.SelectedValue.ToString(), dtpNgaySinh.Value, dtpNgayVaoLam.Value));
-                    BUS_NhanVien.Instance.DSNhanVien(dgvDSNS);
+                    nv.ThemNhanVien(new ET_NhanVien(txtMaNS.Text, txtTenNS.Text, layGioiTinh(), txtSDT.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cboChucVu.SelectedValue.ToString(), dtpNgaySinh.Value, dtpNgayVaoLam.Value));
+                    nv.DSNhanVien(dgvDSNS);
                 }
                 else
                 {
@@ -188,8 +192,8 @@ namespace GUI
                 DialogResult ret = MessageBox.Show("Hãy chắc chắn rằng bạn muốn xóa dữ liệu vừa chọn !", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (ret == DialogResult.Yes)
                 {
-                    BUS_NhanVien.Instance.XoaNhanVien(dgvDSNS);
-                    BUS_NhanVien.Instance.DSNhanVien(dgvDSNS);
+                    nv.XoaNhanVien(dgvDSNS);
+                    nv.DSNhanVien(dgvDSNS);
                 }
             }
             else
@@ -214,8 +218,8 @@ namespace GUI
                     {
                         if (KTraMa(txtMaNS.Text) == true)
                         {
-                            BUS_NhanVien.Instance.SuaNhanVien(new ET_NhanVien(txtMaNS.Text, txtTenNS.Text, layGioiTinh(), txtSDT.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cboChucVu.SelectedValue.ToString(), dtpNgaySinh.Value, dtpNgayVaoLam.Value));
-                            BUS_NhanVien.Instance.DSNhanVien(dgvDSNS);
+                            nv.SuaNhanVien(new ET_NhanVien(txtMaNS.Text, txtTenNS.Text, layGioiTinh(), txtSDT.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cboChucVu.SelectedValue.ToString(), dtpNgaySinh.Value, dtpNgayVaoLam.Value));
+                            nv.DSNhanVien(dgvDSNS);
                         }
                         else
                         {
@@ -242,13 +246,13 @@ namespace GUI
         /// <param name="e"></param>
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            txtMaNS.Text = BUS_Sanh.Instance.TaoMaTuDong();
+            txtMaNS.Text = s.TaoMaTuDong();
             txtTenNS.Clear();
             txtCCCD.Clear();
             txtDiaChi.Clear();
             txtEmail.Clear();
             txtSDT.Clear();
-            BUS_ChucVu.Instance.DSChucVuCombobox(cboChucVu);
+            cv.DSChucVuCombobox(cboChucVu);
             dtpNgaySinh.MinDate = new DateTime(1950, 1, 1);
             dtpNgaySinh.MaxDate = DateTime.Today;
             dtpNgaySinh.Value = DateTime.Today;
@@ -309,7 +313,7 @@ namespace GUI
             string cccd = txtCCCD.Text.Trim();
 
             // Kiểm tra nếu CCCD đã tồn tại trong cơ sở dữ liệu
-            if (BUS_NhanVien.Instance.KiemTraCCCDTonTai(cccd))
+            if (nv.KiemTraCCCDTonTai(cccd))
             {
                 MessageBox.Show("Số CCCD đã tồn tại trong hệ thống. Vui lòng nhập CCCD khác.", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -337,7 +341,7 @@ namespace GUI
             string sdt = txtSDT.Text.Trim();
 
             // Kiểm tra nếu số điện thoại đã tồn tại trong cơ sở dữ liệu
-            if (BUS_NhanVien.Instance.KiemTraSDTTonTai(sdt))
+            if (nv.KiemTraSDTTonTai(sdt))
             {
                 MessageBox.Show("Số điện thoại đã tồn tại trong hệ thống. Vui lòng nhập số điện thoại khác.", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
@@ -367,7 +371,7 @@ namespace GUI
                 MessageBox.Show("Email không hợp lệ. Vui lòng nhập đúng định dạng (ví dụ: ten@email.com)", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (BUS_NhanVien.Instance.KiemTraEmailTonTai(emailMoi, emailCu))
+            if (nv.KiemTraEmailTonTai(emailMoi, emailCu))
             {
                 MessageBox.Show("Email đã tồn tại trong hệ thống. Vui lòng nhập email khác!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

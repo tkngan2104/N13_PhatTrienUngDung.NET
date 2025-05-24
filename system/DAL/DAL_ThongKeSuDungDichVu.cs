@@ -23,7 +23,7 @@ namespace DAL
             }
         }
 
-        QLResortDataContext db = new QLResortDataContext();
+        private QLResortDataContext db = new QLResortDataContext(Connection_DAL.ConnectionString);
 
         /// <summary>
         /// Thống kê dịch vụ theo tháng.

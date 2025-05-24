@@ -20,6 +20,8 @@ namespace GUI
             InitializeComponent();
         }
 
+        private BUS_LoaiHinhLuuTru lhlt = new BUS_LoaiHinhLuuTru();
+
         /// <summary>
         /// Btn thoát.
         /// </summary>
@@ -47,11 +49,11 @@ namespace GUI
         private void Phong_Load(object sender, EventArgs e)
         {
             btnSua.Enabled = false;
-            BUS_LoaiHinhLuuTru.Instance.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
-            BUS_LoaiHinhLuuTru.Instance.DSTrangThaiCombobox(cboTrangThai);
+            lhlt.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
+            lhlt.DSTrangThaiCombobox(cboTrangThai);
             string loaiHinh = Convert.ToString(cboLoaiHinh.SelectedValue);
-            BUS_LoaiHinhLuuTru.Instance.DSLoaiHinh(dgvDSLHLT, loaiHinh);
-            txtMaLH.Text = BUS_LoaiHinhLuuTru.Instance.TaoMaTuDong(loaiHinh);
+            lhlt.DSLoaiHinh(dgvDSLHLT, loaiHinh);
+            txtMaLH.Text = lhlt.TaoMaTuDong(loaiHinh);
         }
 
         private void dgvDSLHLT_Click(object sender, EventArgs e)
@@ -73,14 +75,14 @@ namespace GUI
         {
             string loaiHinh = cboLoaiHinh.Text.Trim();
 
-            BUS_LoaiHinhLuuTru.Instance.DSLoaiHinh(dgvDSLHLT, loaiHinh);
+            lhlt.DSLoaiHinh(dgvDSLHLT, loaiHinh);
         }
 
         private void cboLoaiHinh_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadDSPhongTheoLuaChon();
             string loaiHinh = cboLoaiHinh.Text.Trim();
-            txtMaLH.Text = BUS_LoaiHinhLuuTru.Instance.TaoMaTuDong(loaiHinh);
+            txtMaLH.Text = lhlt.TaoMaTuDong(loaiHinh);
         }
 
         public bool KTraMa(string maP)
@@ -114,8 +116,8 @@ namespace GUI
                 if (KtraBoTrong() == true)
                 {
                     string loaiHinh = Convert.ToString(cboLoaiHinh.SelectedValue);
-                    BUS_LoaiHinhLuuTru.Instance.ThemLoaiHinh(new ET_LoaiHinhLuuTru(txtMaLH.Text, txtTenLH.Text, cboLoaiHinh.SelectedValue.ToString(), cboTrangThai.SelectedValue.ToString(), txtGhiChu.Text, int.Parse(txtSLNguoi.Text), float.Parse(txtGiaTien.Text)));
-                    BUS_LoaiHinhLuuTru.Instance.DSLoaiHinh(dgvDSLHLT, loaiHinh);
+                    lhlt.ThemLoaiHinh(new ET_LoaiHinhLuuTru(txtMaLH.Text, txtTenLH.Text, cboLoaiHinh.SelectedValue.ToString(), cboTrangThai.SelectedValue.ToString(), txtGhiChu.Text, int.Parse(txtSLNguoi.Text), float.Parse(txtGiaTien.Text)));
+                    lhlt.DSLoaiHinh(dgvDSLHLT, loaiHinh);
                 }
                 else
                 {
@@ -137,8 +139,8 @@ namespace GUI
                 if (ret == DialogResult.Yes)
                 {
                     string loaiHinh = Convert.ToString(cboLoaiHinh.SelectedValue);
-                    BUS_LoaiHinhLuuTru.Instance.XoaLoaiHinh(dgvDSLHLT);
-                    BUS_LoaiHinhLuuTru.Instance.DSLoaiHinh(dgvDSLHLT, loaiHinh);
+                    lhlt.XoaLoaiHinh(dgvDSLHLT);
+                    lhlt.DSLoaiHinh(dgvDSLHLT, loaiHinh);
                 }
             }
             else
@@ -164,8 +166,8 @@ namespace GUI
                         if (KTraMa(txtMaLH.Text) == true)
                         {
                             string loaiHinh = Convert.ToString(cboLoaiHinh.SelectedValue);
-                            BUS_LoaiHinhLuuTru.Instance.SuaLoaiHinh(new ET_LoaiHinhLuuTru(txtMaLH.Text, txtTenLH.Text, cboLoaiHinh.SelectedValue.ToString(), cboTrangThai.SelectedValue.ToString(), txtGhiChu.Text, int.Parse(txtSLNguoi.Text), float.Parse(txtGiaTien.Text)));
-                            BUS_LoaiHinhLuuTru.Instance.DSLoaiHinh(dgvDSLHLT, loaiHinh);
+                            lhlt.SuaLoaiHinh(new ET_LoaiHinhLuuTru(txtMaLH.Text, txtTenLH.Text, cboLoaiHinh.SelectedValue.ToString(), cboTrangThai.SelectedValue.ToString(), txtGhiChu.Text, int.Parse(txtSLNguoi.Text), float.Parse(txtGiaTien.Text)));
+                            lhlt.DSLoaiHinh(dgvDSLHLT, loaiHinh);
                         }
                         else
                         {
@@ -193,10 +195,10 @@ namespace GUI
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             string loaiHinh = Convert.ToString(cboLoaiHinh.SelectedValue);
-            txtMaLH.Text = BUS_LoaiHinhLuuTru.Instance.TaoMaTuDong(loaiHinh);
-            BUS_LoaiHinhLuuTru.Instance.DSLoaiHinh(dgvDSLHLT, loaiHinh);
-            BUS_LoaiHinhLuuTru.Instance.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
-            BUS_LoaiHinhLuuTru.Instance.DSTrangThaiCombobox(cboTrangThai);
+            txtMaLH.Text = lhlt.TaoMaTuDong(loaiHinh);
+            lhlt.DSLoaiHinh(dgvDSLHLT, loaiHinh);
+            lhlt.DSLoaiHinhLuuTruCombobox(cboLoaiHinh);
+            lhlt.DSTrangThaiCombobox(cboTrangThai);
             txtTenLH.Clear();
             txtSLNguoi.Clear();
             txtGhiChu.Clear();
@@ -305,7 +307,7 @@ namespace GUI
                 return;
             }
 
-            var result = BUS_LoaiHinhLuuTru.Instance.TimKiemLoaiHinhLuuTru(tenLH);
+            var result = lhlt.TimKiemLoaiHinhLuuTru(tenLH);
             dgvDSLHLT.DataSource = result;
         }
     }

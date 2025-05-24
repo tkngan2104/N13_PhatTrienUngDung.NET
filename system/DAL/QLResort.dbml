@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DbQuanLyResort" Class="QLResortDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=LAM\SQLEXPRESS;Initial Catalog=DbQuanLyResort;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="DbQuanLyResortConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
+    <Type Name="TaiKhoan">
+      <Column Name="taikhoan" Member="taikhoan1" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="matkhau" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Association Name="NhanSu_TaiKhoan" Member="NhanSu" ThisKey="MaNhanSu" OtherKey="MaNhanSu" Type="NhanSu" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.ComboMonAn" Member="ComboMonAns">
     <Type Name="ComboMonAn">
       <Column Name="maCB" Type="System.String" DbType="VarChar(7) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -7,14 +15,6 @@
       <Column Name="giaCB" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Association Name="ComboMonAn_ChiTiecDatTiec" Member="ChiTiecDatTiecs" ThisKey="maCB" OtherKey="maCB" Type="ChiTiecDatTiec" />
       <Association Name="ComboMonAn_ChiTietCombo" Member="ChiTietCombos" ThisKey="maCB" OtherKey="maCB" Type="ChiTietCombo" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
-    <Type Name="TaiKhoan">
-      <Column Name="taikhoan" Member="taikhoan1" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="matkhau" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Association Name="NhanSu_TaiKhoan" Member="NhanSu" ThisKey="MaNhanSu" OtherKey="MaNhanSu" Type="NhanSu" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ChiTiecDatTiec" Member="ChiTiecDatTiecs">
@@ -220,19 +220,6 @@
       <Association Name="DichVu_SuDungDichVu" Member="DichVu" ThisKey="maDV" OtherKey="maDV" Type="DichVu" IsForeignKey="true" />
     </Type>
   </Table>
-  <Function Name="dbo.DSDatPhongTheoNam" Method="DSDatPhongTheoNam">
-    <Parameter Name="SearchYear" Parameter="searchYear" Type="System.Int32" DbType="Int" />
-    <ElementType Name="DSDatPhongTheoNamResult">
-      <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
-      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Column Name="ngayDatPhong" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.sp_ThongKeDichVu_TheoThang" Method="sp_ThongKeDichVu_TheoThang">
     <Parameter Name="thang" Type="System.Int32" DbType="Int" />
     <Parameter Name="nam" Type="System.Int32" DbType="Int" />
@@ -240,33 +227,6 @@
       <Column Name="tenDV" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
       <Column Name="TongSoLanSuDung" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.DSDatPhongTheoNgay" Method="DSDatPhongTheoNgay">
-    <Parameter Name="SearchDate" Parameter="searchDate" Type="System.DateTime" DbType="Date" />
-    <ElementType Name="DSDatPhongTheoNgayResult">
-      <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
-      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Column Name="ngayDatPhong" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.DSDatPhongTheoThang" Method="DSDatPhongTheoThang">
-    <Parameter Name="Year" Parameter="year" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Month" Parameter="month" Type="System.Int32" DbType="Int" />
-    <ElementType Name="DSDatPhongTheoThangResult">
-      <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
-      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
-      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Column Name="ngayDatPhong" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.DSDatTiecTheoNam" Method="DSDatTiecTheoNam">
@@ -318,18 +278,6 @@
       <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.DSHoaDonDatPhong" Method="DSHoaDonDatPhong">
-    <ElementType Name="DSHoaDonDatPhongResult">
-      <Column Name="maHDDP" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
-      <Column Name="ngayLap" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="tongTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="trangThai" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
-      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
-      <Column Name="maSDDV" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
-      <Column Name="soLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.sp_TimChiTietDatPhongTheoTenLH" Method="sp_TimChiTietDatPhongTheoTenLH">
     <Parameter Name="tenLH" Type="System.String" DbType="VarChar(50)" />
     <ElementType Name="sp_TimChiTietDatPhongTheoTenLHResult">
@@ -359,6 +307,58 @@
       <Column Name="tenDV" Type="System.String" DbType="NVarChar(45) NOT NULL" CanBeNull="false" />
       <Column Name="TongSoLanSuDung" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DSDatPhongTheoThang" Method="DSDatPhongTheoThang">
+    <Parameter Name="Year" Parameter="year" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Month" Parameter="month" Type="System.Int32" DbType="Int" />
+    <ElementType Name="DSDatPhongTheoThangResult">
+      <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="ngayDatPhong" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DSDatPhongTheoNam" Method="DSDatPhongTheoNam">
+    <Parameter Name="SearchYear" Parameter="searchYear" Type="System.Int32" DbType="Int" />
+    <ElementType Name="DSDatPhongTheoNamResult">
+      <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="ngayDatPhong" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DSDatPhongTheoNgay" Method="DSDatPhongTheoNgay">
+    <Parameter Name="SearchDate" Parameter="searchDate" Type="System.DateTime" DbType="Date" />
+    <ElementType Name="DSDatPhongTheoNgayResult">
+      <Column Name="maDP" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="MaKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="ngayDatPhong" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="maLH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DSHoaDonDatPhong" Method="DSHoaDonDatPhong">
+    <ElementType Name="DSHoaDonDatPhongResult">
+      <Column Name="maHDDP" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MaNhanSu" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="ngayLap" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="tongTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="trangThai" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="maCTDP" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="maSDDV" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="soLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>

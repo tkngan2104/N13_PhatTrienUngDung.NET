@@ -67,7 +67,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(471, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 26);
+            this.label3.Size = new System.Drawing.Size(86, 24);
             this.label3.TabIndex = 21;
             this.label3.Text = "Số lượng";
             // 
@@ -76,7 +76,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(475, 79);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(271, 35);
+            this.numericUpDown1.Size = new System.Drawing.Size(271, 30);
             this.numericUpDown1.TabIndex = 20;
             // 
             // txtDiaChi
@@ -94,7 +94,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(471, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 26);
+            this.label2.Size = new System.Drawing.Size(76, 24);
             this.label2.TabIndex = 15;
             this.label2.Text = "Ghi chú";
             // 
@@ -104,7 +104,7 @@
             this.lblDichVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDichVu.Location = new System.Drawing.Point(69, 242);
             this.lblDichVu.Name = "lblDichVu";
-            this.lblDichVu.Size = new System.Drawing.Size(85, 26);
+            this.lblDichVu.Size = new System.Drawing.Size(73, 24);
             this.lblDichVu.TabIndex = 13;
             this.lblDichVu.Text = "Dịch vụ";
             // 
@@ -126,13 +126,13 @@
             this.dgvDSDV.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSDV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDSDV.Location = new System.Drawing.Point(3, 29);
+            this.dgvDSDV.Location = new System.Drawing.Point(3, 24);
             this.dgvDSDV.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.dgvDSDV.Name = "dgvDSDV";
             this.dgvDSDV.ReadOnly = true;
             this.dgvDSDV.RowHeadersWidth = 62;
             this.dgvDSDV.RowTemplate.Height = 28;
-            this.dgvDSDV.Size = new System.Drawing.Size(1251, 344);
+            this.dgvDSDV.Size = new System.Drawing.Size(1251, 349);
             this.dgvDSDV.TabIndex = 0;
             // 
             // groupBox1
@@ -166,7 +166,7 @@
             this.txtTongTien.Location = new System.Drawing.Point(895, 74);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(269, 35);
+            this.txtTongTien.Size = new System.Drawing.Size(269, 30);
             this.txtTongTien.TabIndex = 24;
             // 
             // label1
@@ -175,7 +175,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(889, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 26);
+            this.label1.Size = new System.Drawing.Size(90, 24);
             this.label1.TabIndex = 23;
             this.label1.Text = "Tổng tiền";
             // 
@@ -184,7 +184,7 @@
             this.txtDichVu.Location = new System.Drawing.Point(73, 265);
             this.txtDichVu.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.txtDichVu.Name = "txtDichVu";
-            this.txtDichVu.Size = new System.Drawing.Size(269, 35);
+            this.txtDichVu.Size = new System.Drawing.Size(269, 30);
             this.txtDichVu.TabIndex = 22;
             // 
             // cboMaDT
@@ -194,7 +194,7 @@
             this.cboMaDT.Location = new System.Drawing.Point(76, 170);
             this.cboMaDT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboMaDT.Name = "cboMaDT";
-            this.cboMaDT.Size = new System.Drawing.Size(269, 37);
+            this.cboMaDT.Size = new System.Drawing.Size(269, 33);
             this.cboMaDT.TabIndex = 12;
             // 
             // lblMaDT
@@ -203,7 +203,7 @@
             this.lblMaDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaDT.Location = new System.Drawing.Point(71, 143);
             this.lblMaDT.Name = "lblMaDT";
-            this.lblMaDT.Size = new System.Drawing.Size(118, 26);
+            this.lblMaDT.Size = new System.Drawing.Size(101, 24);
             this.lblMaDT.TabIndex = 2;
             this.lblMaDT.Text = "Mã đặt tiệc";
             // 
@@ -213,7 +213,7 @@
             this.txtMaCTDDV.Location = new System.Drawing.Point(75, 76);
             this.txtMaCTDDV.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.txtMaCTDDV.Name = "txtMaCTDDV";
-            this.txtMaCTDDV.Size = new System.Drawing.Size(269, 35);
+            this.txtMaCTDDV.Size = new System.Drawing.Size(269, 30);
             this.txtMaCTDDV.TabIndex = 1;
             // 
             // lblMaCTDDV
@@ -222,7 +222,7 @@
             this.lblMaCTDDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaCTDDV.Location = new System.Drawing.Point(71, 52);
             this.lblMaCTDDV.Name = "lblMaCTDDV";
-            this.lblMaCTDDV.Size = new System.Drawing.Size(222, 26);
+            this.lblMaCTDDV.Size = new System.Drawing.Size(191, 24);
             this.lblMaCTDDV.TabIndex = 0;
             this.lblMaCTDDV.Text = "Mã chi tiết đặt dịch vụ";
             // 
@@ -336,7 +336,7 @@
             this.lblTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTieuDe.Location = new System.Drawing.Point(401, 17);
             this.lblTieuDe.Name = "lblTieuDe";
-            this.lblTieuDe.Size = new System.Drawing.Size(583, 58);
+            this.lblTieuDe.Size = new System.Drawing.Size(492, 48);
             this.lblTieuDe.TabIndex = 2;
             this.lblTieuDe.Text = "CHI TIẾT ĐẶT DỊCH VỤ";
             // 
@@ -346,7 +346,7 @@
             this.lblQLChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQLChucVu.Location = new System.Drawing.Point(431, 17);
             this.lblQLChucVu.Name = "lblQLChucVu";
-            this.lblQLChucVu.Size = new System.Drawing.Size(39, 58);
+            this.lblQLChucVu.Size = new System.Drawing.Size(32, 48);
             this.lblQLChucVu.TabIndex = 1;
             this.lblQLChucVu.Text = " ";
             // 
@@ -359,7 +359,7 @@
             this.pnlTieuDe.Location = new System.Drawing.Point(0, 0);
             this.pnlTieuDe.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.pnlTieuDe.Name = "pnlTieuDe";
-            this.pnlTieuDe.Size = new System.Drawing.Size(1301, 80);
+            this.pnlTieuDe.Size = new System.Drawing.Size(1306, 80);
             this.pnlTieuDe.TabIndex = 47;
             // 
             // DatDichVu

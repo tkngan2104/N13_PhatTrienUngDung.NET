@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_ChiTietComBo.cs" />
+    <Compile Include="Connection_DAL.cs" />
     <Compile Include="DAL_ChiTietDatPhong.cs" />
     <Compile Include="DAL_ComBoMonAn.cs" />
     <Compile Include="DAL_DatPhong.cs" />
